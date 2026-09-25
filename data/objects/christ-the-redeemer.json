@@ -1,0 +1,116 @@
+{
+  "slug": "christ-the-redeemer",
+  "name": "Christ the Redeemer",
+  "category": "structures",
+  "phrase": "Christ the Redeemer",
+  "aliases": [
+    "cristo redentor",
+    "christ the redeemer statue",
+    "corcovado statue",
+    "rio jesus statue",
+    "jesus statue rio de janeiro"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "christ-the-redeemer",
+    "x": "armSpan",
+    "y": "height"
+  },
+  "subtitle": "Statue and pedestal on Mount Corcovado, Rio de Janeiro",
+  "description": "Christ the Redeemer is a reinforced-concrete statue of Jesus with outstretched arms on the summit of Mount Corcovado above Rio de Janeiro, clad in a mosaic of small triangular soapstone tiles. Designed by engineer Heitor da Silva Costa with French sculptor Paul Landowski, it was built from 1926 and dedicated on 12 October 1931. The figure is 30 m tall and stands on an 8 m pedestal, giving 38 m in all, and its arms span 28 m.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height including pedestal",
+      "kind": "length",
+      "value": 38,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "30 m statue plus 8 m pedestal, as given by the sanctuary that runs the monument",
+      "source": "santuario-curiosidades"
+    },
+    {
+      "key": "statueHeight",
+      "label": "Statue height",
+      "kind": "length",
+      "value": 30,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "The figure alone, without the pedestal (Britannica gives 98 ft)",
+      "source": [
+        "santuario-curiosidades",
+        "britannica-cristo"
+      ]
+    },
+    {
+      "key": "pedestalHeight",
+      "label": "Pedestal height",
+      "kind": "length",
+      "value": 8,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Square stone pedestal under the statue (Britannica gives about 26 ft)",
+      "source": [
+        "santuario-curiosidades",
+        "britannica-cristo"
+      ]
+    },
+    {
+      "key": "armSpan",
+      "label": "Arm span",
+      "kind": "length",
+      "value": 28,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Width across the outstretched arms (Britannica gives 92 ft)",
+      "source": "britannica-cristo"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The sanctuary compares the 38 m monument to a 13-storey building; each arm has an area of 88 square metres and the head weighs 30 tonnes.",
+      "source": "santuario-curiosidades"
+    },
+    {
+      "text": "Inside, 12 platforms linked by stairs lead up to hatches that open in the arms and the head; they are used only by maintenance staff.",
+      "source": "santuario-curiosidades"
+    },
+    {
+      "text": "The summit of Corcovado on which it stands is 704 m (2,310 ft) high.",
+      "source": "britannica-cristo"
+    },
+    {
+      "text": "Britannica describes it as the largest Art Deco sculpture in the world.",
+      "source": "britannica-cristo"
+    }
+  ],
+  "sources": [
+    {
+      "id": "santuario-curiosidades",
+      "publisher": "Santuário Cristo Redentor (Archdiocese of Rio de Janeiro)",
+      "title": "Curiosidades",
+      "url": "https://santuariocristoredentor.com.br/curiosidades",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-cristo",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Christ the Redeemer",
+      "url": "https://www.britannica.com/topic/Christ-the-Redeemer",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)",
+  "caveats": [
+    "A total weight of 1,145 tonnes is widely quoted, but it could not be read on a fetched primary page, so no mass is stored.",
+    "The headline height includes the 8 m pedestal; the statue alone is 30 m."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

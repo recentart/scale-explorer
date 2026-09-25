@@ -1,0 +1,108 @@
+{
+  "slug": "olympus-mons",
+  "name": "Olympus Mons",
+  "category": "space",
+  "phrase": "Olympus Mons",
+  "aliases": [
+    "olympus mons volcano",
+    "mars volcano",
+    "largest volcano",
+    "tallest mountain in the solar system",
+    "volcano",
+    "mountain"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "high",
+  "profile": {
+    "shape": "olympus-mons",
+    "x": "baseDiameter",
+    "y": "height"
+  },
+  "subtitle": "Shield volcano on Mars",
+  "description": "Olympus Mons is a shield volcano on Mars and the largest known volcano in the solar system. Its height is quoted from about 22 km (ESA) to 27 km (NASA), roughly two and a half to three times Mount Everest's height above sea level. It is over 600 km wide at the base, ringed by a cliff up to 6 km high, and topped by a caldera about 3 km deep.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "min": 22,
+      "max": 27,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "range",
+      "note": "22 km average elevation (ESA, Mars Express) to 27 km high (NASA Viking mosaic caption); the figures use different reference levels",
+      "source": [
+        "esa-olympus",
+        "nasa-pia00300"
+      ]
+    },
+    {
+      "key": "baseDiameter",
+      "label": "Base diameter",
+      "kind": "length",
+      "value": 600,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "Width at the base, stated as 'over 600 kilometers'",
+      "source": "nasa-pia00300"
+    },
+    {
+      "key": "scarpHeight",
+      "label": "Basal scarp height",
+      "kind": "length",
+      "max": 6,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Cliff ringing the volcano",
+      "source": "nasa-pia00300"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA's Viking mosaic caption describes Olympus Mons as 27 km high and over 600 km wide at the base, surrounded by a scarp up to 6 km high.",
+      "source": "nasa-pia00300"
+    },
+    {
+      "text": "ESA gives Olympus Mons an average elevation of 22 km, with a summit caldera about 3 km deep.",
+      "source": "esa-olympus"
+    },
+    {
+      "text": "NASA's Mars facts page says the volcano's base covers an area as large as the state of Arizona.",
+      "source": "nasa-mars-facts"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa-pia00300",
+      "publisher": "NASA Science (Photojournal)",
+      "title": "Olympus Mons (PIA00300)",
+      "url": "https://science.nasa.gov/photojournal/olympus-mons/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "esa-olympus",
+      "publisher": "European Space Agency",
+      "title": "Olympus Mons - the caldera in close-up",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Olympus_Mons_-_the_caldera_in_close-up",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-mars-facts",
+      "publisher": "NASA Science",
+      "title": "Mars: Facts",
+      "url": "https://science.nasa.gov/mars/facts/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Olympus_Mons",
+  "caveats": [
+    "Height depends on the reference level: ESA's 22 km is an elevation above the Mars reference surface, while NASA's Viking caption gives 27 km.",
+    "NASA's Mars facts page gives a much larger 'more than 25 miles (that's more than 132,000 feet, or 40 kilometers) tall from base to summit'; this is far above the other agency figures and is not used in the range.",
+    "The base width is stated only as 'over 600 kilometers', so 600 km is a lower bound."
+  ],
+  "schemaType": "Mountain",
+  "updated": "2026-09-25"
+}

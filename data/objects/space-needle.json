@@ -1,0 +1,122 @@
+{
+  "slug": "space-needle",
+  "name": "Space Needle",
+  "category": "structures",
+  "phrase": "the Space Needle",
+  "aliases": [
+    "seattle space needle",
+    "seattle tower",
+    "space needle seattle",
+    "observation tower"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "space-needle",
+    "x": "haloDiameter",
+    "y": "height"
+  },
+  "subtitle": "Observation tower at Seattle Center, Washington",
+  "description": "The Space Needle is an observation tower in Seattle built for the 1962 World's Fair, where it opened on 21 April 1962 after roughly 400 days of construction. Its slender legs carry a saucer-shaped top house with an observation deck at 520 ft, and the aircraft warning beacon on top reaches 605 ft above the ground. It stands on a 120 by 120 ft lot, anchored to a concrete foundation 30 ft deep.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height to the top of the beacon",
+      "kind": "length",
+      "value": 605,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "From the ground to the top of the red aircraft warning beacon",
+      "source": [
+        "spaceneedle-facts",
+        "spaceneedle-about"
+      ]
+    },
+    {
+      "key": "deckHeight",
+      "label": "Observation deck height",
+      "kind": "length",
+      "value": 520,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Height of the observation deck in the top house",
+      "source": [
+        "spaceneedle-funfacts",
+        "spaceneedle-about"
+      ]
+    },
+    {
+      "key": "haloDiameter",
+      "label": "Diameter of the halo",
+      "kind": "length",
+      "value": 138,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter of the halo ring around the top house (2016 fact sheet)",
+      "source": "spaceneedle-funfacts"
+    },
+    {
+      "key": "foundationDepth",
+      "label": "Foundation depth",
+      "kind": "length",
+      "value": 30,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Depth of the concrete foundation below ground (it is 120 ft across)",
+      "source": "spaceneedle-funfacts"
+    }
+  ],
+  "facts": [
+    {
+      "text": "It took 467 cement trucks less than 12 hours to fill the foundation hole, at the time the largest continuous concrete pour attempted in the West.",
+      "source": "spaceneedle-funfacts"
+    },
+    {
+      "text": "The tower is fastened to its foundation with 72 bolts, each 30 ft long, and its centre of gravity is only 5 ft above the ground.",
+      "source": "spaceneedle-funfacts"
+    },
+    {
+      "text": "The two high-speed elevators travel at 10 mph (800 ft per minute) and reach the top house in 43 seconds.",
+      "source": "spaceneedle-funfacts"
+    },
+    {
+      "text": "Built in about 400 days, it was nicknamed the '400-day wonder'.",
+      "source": "spaceneedle-facts"
+    }
+  ],
+  "sources": [
+    {
+      "id": "spaceneedle-facts",
+      "publisher": "Space Needle",
+      "title": "Space Needle Facts",
+      "url": "https://www.spaceneedle.com/facts-1",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "spaceneedle-about",
+      "publisher": "Space Needle",
+      "title": "About",
+      "url": "https://www.spaceneedle.com/about",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "spaceneedle-funfacts",
+      "publisher": "Space Needle (archived by the Internet Archive, 2016)",
+      "title": "Fun Facts",
+      "url": "https://web.archive.org/web/2016/http://www.spaceneedle.com/fun-facts/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Space_Needle",
+  "caveats": [
+    "The official fact sheets give weights in 'tons' without saying short or metric (the needle structure 3,700 tons and the foundation 5,850 tons), and the current fact page leaves the weight blank, so no mass is stored.",
+    "The halo diameter, foundation and elevator figures come from a 2016 archived copy of the official fun-facts page, before the 2018 renovation; they may not reflect later changes."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

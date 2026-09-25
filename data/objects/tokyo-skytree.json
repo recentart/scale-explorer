@@ -1,0 +1,108 @@
+{
+  "slug": "tokyo-skytree",
+  "name": "Tokyo Skytree",
+  "category": "structures",
+  "phrase": "Tokyo Skytree",
+  "aliases": [
+    "skytree",
+    "tokyo sky tree",
+    "東京スカイツリー",
+    "broadcasting tower"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "tokyo-skytree",
+    "x": "baseSide",
+    "y": "height"
+  },
+  "subtitle": "Broadcasting and observation tower, Oshiage, Sumida, Tokyo",
+  "description": "Tokyo Skytree is a steel broadcasting and observation tower in the Oshiage district of Sumida, Tokyo, completed in 2012 and responsible for transmitting terrestrial digital broadcasts. Its height was first planned at about 610 m and later fixed at 634 m, a number that can be read as 'Musashi', the old province that included the site. Guinness World Records certified it as the world's tallest tower on 17 November 2011. It stands on a triangular footprint with sides of about 68 m, and its observation decks are at floors 350 and 450.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Maximum height",
+      "kind": "length",
+      "value": 634,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official maximum height of the tower",
+      "source": [
+        "skytree-spec",
+        "skytree-outline"
+      ]
+    },
+    {
+      "key": "baseSide",
+      "label": "Side of the triangular base",
+      "kind": "length",
+      "value": 68,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Length of one side of the tower's triangular foot",
+      "source": "skytree-outline"
+    },
+    {
+      "key": "mass",
+      "label": "Weight of the steel tower",
+      "kind": "mass",
+      "value": 36000,
+      "unit": "t",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Total weight of the tower's steel framework including the observation decks (given as 約36,000t on the Japanese page)",
+      "source": "skytree-outline"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Guinness World Records certified the 634 m tower as the world's tallest tower on 17 November 2011.",
+      "source": "skytree-spec"
+    },
+    {
+      "text": "The steel pipes at the base of the tower are 2.3 m across with walls 10 cm thick; the first above-ground section, raised in April 2009, was about 4 m tall and weighed about 29 tons.",
+      "source": "skytree-structure"
+    },
+    {
+      "text": "Its earthquake damping uses a 'mass addition mechanism' that can cut the response shear force by about 40% in a major earthquake, an approach compared with the central pillar of traditional five-storey pagodas.",
+      "source": "skytree-structure"
+    },
+    {
+      "text": "When its site was chosen in 2006, Japan's tallest structure was the 1958 Tokyo Tower at about 333 m, roughly half Skytree's height.",
+      "source": "skytree-structure"
+    }
+  ],
+  "sources": [
+    {
+      "id": "skytree-spec",
+      "publisher": "TOKYO SKYTREE (official site)",
+      "title": "TOKYO SKYTREE Specifications (Height: 634m)",
+      "url": "https://en.tokyo-skytree.jp/about/spec/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "skytree-outline",
+      "publisher": "TOKYO SKYTREE (official site)",
+      "title": "Outline",
+      "url": "https://en.tokyo-skytree.jp/about/outline/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "skytree-structure",
+      "publisher": "TOKYO SKYTREE (official site)",
+      "title": "Structural Design",
+      "url": "https://en.tokyo-skytree.jp/about/spec/structure/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tokyo_Skytree",
+  "caveats": [
+    "The weight is the official figure for the tower's steel framework including the observation decks.",
+    "The official structure page also calls the height 'approximately 634 meters'; the specifications page gives 634 m as the maximum height."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

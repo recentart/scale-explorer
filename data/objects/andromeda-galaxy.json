@@ -1,0 +1,92 @@
+{
+  "slug": "andromeda-galaxy",
+  "name": "Andromeda Galaxy",
+  "category": "space",
+  "phrase": "the Andromeda Galaxy",
+  "aliases": [
+    "andromeda",
+    "m31",
+    "messier 31",
+    "ngc 224",
+    "galaxy",
+    "spiral galaxy"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "across",
+  "profile": {
+    "shape": "andromeda-galaxy",
+    "x": "diameter"
+  },
+  "subtitle": "Messier 31",
+  "description": "The Andromeda Galaxy (M31) is the nearest large spiral galaxy to the Milky Way, about 2.5 million light-years away. NASA estimates it at roughly 220,000 to 260,000 light-years across, well over twice the commonly quoted width of our own galaxy's disc. From a dark site it is visible to the unaided eye, and its angular size is about six times that of the full Moon.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter (estimated)",
+      "kind": "length",
+      "min": 220000,
+      "max": 260000,
+      "unit": "ly",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated: 'some 220,000 light-years wide' (NASA) to 260,000 light-years for the whole galaxy/disc (NASA GALEX, NASA Space Place)",
+      "source": [
+        "nasa-how-big",
+        "nasa-galex-m31",
+        "nasa-spaceplace-m31"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "text": "At about 2.5 million light-years away, Andromeda is the Milky Way's largest galactic neighbour; in NASA's Galaxy Evolution Explorer ultraviolet image the entire galaxy spans 260,000 light-years.",
+      "source": "nasa-galex-m31"
+    },
+    {
+      "text": "NASA Space Place gives the disc of Andromeda as about 260,000 light-years, compared with about 100,000 light-years for the Milky Way's disc.",
+      "source": "nasa-spaceplace-m31"
+    },
+    {
+      "text": "In angular size Andromeda appears about six times the apparent diameter of the full Moon; a 2025 Hubble panorama of it needed over 600 overlapping snapshots.",
+      "source": "nasa-messier-31"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa-how-big",
+      "publisher": "NASA Science",
+      "title": "Our Milky Way Galaxy: How Big is Space?",
+      "url": "https://science.nasa.gov/universe/exoplanets/our-milky-way-galaxy-how-big-is-space/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-galex-m31",
+      "publisher": "NASA",
+      "title": "The Galaxy Next Door",
+      "url": "https://www.nasa.gov/image-article/galaxy-next-door/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-spaceplace-m31",
+      "publisher": "NASA Space Place",
+      "title": "The Andromeda Galaxy - Across the Spectrum (poster)",
+      "url": "https://spaceplace.nasa.gov/review/posters/spitzer_posters/spitzer_andromeda_8x11_all.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-messier-31",
+      "publisher": "NASA Science",
+      "title": "Messier 31 (The Andromeda Galaxy)",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Andromeda_Galaxy",
+  "caveats": [
+    "All sizes are estimated. The galaxy has no sharp edge, and the figure depends on the wavelength and how far out the faint disc is traced.",
+    "No NASA or ESA page fetched gives Andromeda's mass in a unit the site supports, so mass is left out."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "milky-way",
+  "name": "Milky Way galaxy",
+  "category": "space",
+  "phrase": "the Milky Way",
+  "aliases": [
+    "milky way",
+    "our galaxy",
+    "the galaxy",
+    "home galaxy",
+    "galaxy",
+    "spiral galaxy"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "across",
+  "profile": {
+    "shape": "milky-way",
+    "x": "diameter"
+  },
+  "description": "The Milky Way is the spiral galaxy that contains our solar system, with an estimated 100 to 400 billion stars. NASA describes its disc of stars as about 100,000 light-years across, while a 2018 study led by the Instituto de Astrofisica de Canarias found disc stars far enough out to suggest a diameter of around 200,000 light-years. The solar system lies about halfway out from the centre and takes about 240 million years to complete one orbit.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Disc diameter (estimated)",
+      "kind": "length",
+      "min": 100000,
+      "max": 200000,
+      "unit": "ly",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated diameter of the stellar disc: about 100,000 ly (NASA) to around 200,000 ly (IAC 2018 study)",
+      "source": [
+        "nasa-how-big",
+        "nasa-galaxies",
+        "iac-disc"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA describes the Milky Way as a spiral galaxy with a disc of stars spanning more than 100,000 light-years; our solar system takes about 240 million years to orbit its centre.",
+      "source": "nasa-galaxies"
+    },
+    {
+      "text": "NASA estimates the galaxy probably contains 100 to 400 billion stars.",
+      "source": "nasa-how-big"
+    },
+    {
+      "text": "Measurements with Hubble and Gaia put the Milky Way's total mass at about 1.5 trillion solar masses, including a supermassive black hole of about 4 million solar masses.",
+      "source": "nasa-mw-mass"
+    },
+    {
+      "text": "A 2018 IAC-led study using APOGEE and LAMOST survey data found disc stars out to more than three times the Sun's distance from the galactic centre, implying a disc around 200,000 light-years across.",
+      "source": "iac-disc"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa-galaxies",
+      "publisher": "NASA Science",
+      "title": "Galaxies",
+      "url": "https://science.nasa.gov/universe/galaxies/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-how-big",
+      "publisher": "NASA Science",
+      "title": "Our Milky Way Galaxy: How Big is Space?",
+      "url": "https://science.nasa.gov/universe/exoplanets/our-milky-way-galaxy-how-big-is-space/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "iac-disc",
+      "publisher": "Instituto de Astrofisica de Canarias (IAC)",
+      "title": "The disc of the Milky Way is bigger than we thought",
+      "url": "https://www.iac.es/en/outreach/news/disc-milky-way-bigger-we-thought",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-mw-mass",
+      "publisher": "NASA Science",
+      "title": "What Does the Milky Way Weigh? Hubble and Gaia Investigate",
+      "url": "https://science.nasa.gov/missions/hubble/what-does-the-milky-way-weigh-hubble-and-gaia-investigate/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Milky_Way",
+  "caveats": [
+    "All sizes are estimated. A galaxy's disc has no sharp edge, so its diameter depends on which stars are counted; the much larger dark-matter halo is not included.",
+    "The mass (about 1.5 trillion solar masses) is given only in solar masses, which the site's units do not support, so it appears as a fact rather than a measure."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

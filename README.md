@@ -4,9 +4,11 @@
 
 Live site: https://scale-explorer.freewebtoolss.workers.dev
 
-- 32 objects in 6 categories (animals, vehicles, buildings, structures, nature, space), each with its own page, sourced measurements and a drawing to scale.
-- Compare any two to five objects side by side, with or without a person for scale.
-- Type your own size in meters, feet, kilometers or miles and see it next to familiar things.
+- 130+ objects in 10 categories (microscopic, everyday objects, animals, prehistoric, sports, vehicles, buildings, structures, nature, space), from a hydrogen atom to the Andromeda Galaxy, each with its own page, sourced measurements and a drawing to scale.
+- Compare any two to five objects side by side, with or without a person for scale, or add yourself by typing your height.
+- Weight and volume views (volumes drawn as equal-volume cubes) and "how many fit" counts: end to end, by weight and by volume, using only sourced figures.
+- "Surprise me" picks a random comparison.
+- Type your own size (meters, feet, kilometers or miles in the menu; nm, µm, mm, cm, in and light-years can be typed) and see it next to familiar things.
 - Very different sizes (a person next to Earth) get zoomed-in views and a step-by-step zoom, and every change of scale is labelled.
 - Static site: no backend, database, accounts, analytics, tracking or third-party requests. All drawing and maths run in the browser.
 

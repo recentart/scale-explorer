@@ -1,0 +1,135 @@
+{
+  "slug": "whale-shark",
+  "name": "Whale shark",
+  "category": "animals",
+  "phrase": "a whale shark",
+  "aliases": [
+    "rhincodon typus",
+    "shark",
+    "largest fish",
+    "biggest fish"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "whale-shark",
+    "x": "length"
+  },
+  "scientificName": "Rhincodon typus",
+  "description": "The whale shark is the largest fish alive, a slow-moving filter feeder of warm seas that strains plankton through a mouth up to about 4 ft wide. Georgia Aquarium gives a common adult length of 18 to 32.8 ft, and the largest one measured was 61.7 ft (18.8 m). Weights are hard to pin down: sources give figures from about 20 tons to as much as 40 tons.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (common)",
+      "kind": "length",
+      "min": 18,
+      "max": 32.8,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Common length (5.5 to 10 m)",
+      "source": "ga-whale-shark"
+    },
+    {
+      "key": "maxLength",
+      "label": "Largest measured",
+      "kind": "length",
+      "max": 61.7,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Largest measured whale shark (18.8 m); the Smithsonian Tropical Research Institute also gives 18.8 m, with old visual records to 21 m",
+      "source": [
+        "ga-whale-shark",
+        "stri-whale-shark"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Mass (large adult)",
+      "kind": "mass",
+      "max": 20.6,
+      "unit": "shortTon",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Georgia Aquarium: whale sharks 'can grow up to 40 feet long and weigh as much as 20.6 tons'",
+      "source": "ga-whale-shark-facts"
+    },
+    {
+      "key": "estimatedMaxMass",
+      "label": "Mass (upper estimate)",
+      "kind": "mass",
+      "max": 40,
+      "unit": "shortTon",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated: NOAA says whale sharks may grow to 40 ft and weigh as much as 40 tons 'by some estimates'",
+      "source": "noaa-bigfish"
+    },
+    {
+      "key": "pupLength",
+      "label": "Length at birth",
+      "kind": "length",
+      "min": 21,
+      "max": 25,
+      "unit": "in",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Pups measure 55 to 64 cm",
+      "source": "ga-whale-shark"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The whale shark is the largest fish in the world and the largest fish known to have lived. Its cartilage skeleton fossilizes poorly, and living animals are very hard to weigh accurately.",
+      "source": "ga-whale-shark"
+    },
+    {
+      "text": "Its mouth can reach up to 4 ft wide, and adult skin can be 4 inches (10 cm) thick.",
+      "source": "ga-whale-shark"
+    },
+    {
+      "text": "Whale sharks longer than about 39 ft are uncommon, and scientists think they may live roughly 60 to 100 years.",
+      "source": "noaa-bigfish"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ga-whale-shark",
+      "publisher": "Georgia Aquarium",
+      "title": "Whale Shark",
+      "url": "https://www.georgiaaquarium.org/animal/whale-shark/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "ga-whale-shark-facts",
+      "publisher": "Georgia Aquarium",
+      "title": "Celebrating International Whale Shark Day with Fun Facts!",
+      "url": "https://www.georgiaaquarium.org/resource-center/stories/celebrating-international-whale-shark-day-with-fun-facts/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "noaa-bigfish",
+      "publisher": "NOAA National Ocean Service",
+      "title": "What is the biggest fish in the ocean?",
+      "url": "https://oceanservice.noaa.gov/facts/bigfish.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "stri-whale-shark",
+      "publisher": "Smithsonian Tropical Research Institute (Shorefishes of the Greater Caribbean)",
+      "title": "Species: Rhincodon typus, Whale Shark",
+      "url": "https://biogeodb.stri.si.edu/caribbean/en/thefishes/species/26",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Whale_shark",
+  "caveats": [
+    "Weights for whale sharks are poorly known: Georgia Aquarium gives up to 20.6 tons and NOAA up to 40 tons 'by some estimates'. Both say 'tons' without specifying which; they are stored as US short tons as both are US organizations.",
+    "Georgia Aquarium's quick-facts box rounds the common length to '18-32 feet'; the 32.8 ft upper value from its detailed text is used.",
+    "NOAA Fisheries has no species page for the whale shark (the URL returned 404), so NOAA's National Ocean Service fact page was used instead."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

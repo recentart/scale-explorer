@@ -1,0 +1,63 @@
+{
+  "slug": "grain-of-rice",
+  "name": "Grain of rice",
+  "category": "everyday",
+  "phrase": "a grain of rice",
+  "aliases": [
+    "rice grain",
+    "rice kernel",
+    "long-grain rice",
+    "rice"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "grain-of-rice",
+    "x": "length"
+  },
+  "subtitle": "Long-grain rice kernel (brown rice, after hulling)",
+  "scientificName": "Oryza sativa",
+  "description": "Rice kernels are sorted into length classes, and long-grain varieties have long, slender kernels. The International Rice Research Institute's Standard Evaluation System classes a hulled brown-rice kernel as long when it measures 6.6 to 7.5 millimetres. Kernels over 7.5 mm count as extra long, while medium grains run 5.51 to 6.6 mm.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Kernel length (long-grain class)",
+      "kind": "length",
+      "min": 6.6,
+      "max": 7.5,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "range",
+      "note": "IRRI 'Long' class for brown rice length, measured after dehulling and before milling",
+      "source": "irri-ses"
+    }
+  ],
+  "facts": [
+    {
+      "text": "IRRI's length classes for brown rice are extra long (more than 7.5 mm), long (6.6 to 7.5 mm), medium (5.51 to 6.6 mm) and short (5.5 mm or less).",
+      "source": "irri-ses"
+    },
+    {
+      "text": "Kernels are called slender when their length is more than 3 times their width.",
+      "source": "irri-ses"
+    }
+  ],
+  "sources": [
+    {
+      "id": "irri-ses",
+      "publisher": "International Rice Research Institute (IRRI) Rice Knowledge Bank",
+      "title": "Standard Evaluation System for Rice (SES)",
+      "url": "http://www.knowledgebank.irri.org/images/docs/rice-standard-evaluation-system.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Rice",
+  "caveats": [
+    "The range is IRRI's long-grain class for brown rice (hulled, before milling); milled white rice was not measured by this source.",
+    "No USDA figure for kernel length was found, so the IRRI scale is used instead.",
+    "No primary source giving the mass of a single long-grain kernel was found, so mass is left out."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

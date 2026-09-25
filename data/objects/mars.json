@@ -38,6 +38,17 @@
       "qualifier": "exact",
       "note": "Source states 0.64169 × 10²⁴ kg",
       "source": "nssdca-mars"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 163120000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "NASA fact sheet lists this as 10^10 km³ units",
+      "source": "nssdca-mars"
     }
   ],
   "facts": [

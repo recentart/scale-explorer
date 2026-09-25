@@ -1,0 +1,160 @@
+{
+  "slug": "saturn",
+  "name": "Saturn",
+  "category": "space",
+  "phrase": "Saturn",
+  "aliases": [
+    "planet saturn",
+    "ringed planet",
+    "saturn rings",
+    "gas giant",
+    "planet"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "saturn",
+    "x": "mainRingOuterRadius"
+  },
+  "description": "Saturn is the sixth planet from the Sun and the second largest, a gas giant made mostly of hydrogen and helium. NASA's fact sheet gives an equatorial diameter of 120,536 km, about nine times Earth's width, and its fast spin flattens it noticeably at the poles. Its bright main rings (A, B and C) reach out to about 136,780 km from the planet's centre but are typically only about 10 m thick.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 120536,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator, at the 1-bar pressure level",
+      "source": [
+        "nssdca-planets",
+        "nasa-saturn"
+      ]
+    },
+    {
+      "key": "polarRadius",
+      "label": "Polar radius",
+      "kind": "length",
+      "value": 54364,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Centre to pole at the 1-bar level (equatorial radius is 60,268 km)",
+      "source": "nssdca-saturn"
+    },
+    {
+      "key": "mainRingOuterRadius",
+      "label": "Main rings outer radius",
+      "kind": "length",
+      "value": 136780,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance from Saturn's centre to the outer edge of the A ring, the outermost main ring (2.270 equatorial radii)",
+      "source": "nssdca-saturn-rings"
+    },
+    {
+      "key": "mainRingWidth",
+      "label": "Main rings radial width",
+      "kind": "length",
+      "value": 62120,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Radial extent of the A, B and C rings, inner to outer edge",
+      "source": "nasa-saturn-rings"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 5.6832e+26,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 568.32 x 10^24 kg",
+      "source": "nssdca-saturn"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 827130000000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Source states 82,713 x 10^10 km3",
+      "source": "nssdca-saturn"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Saturn's equatorial radius is 60,268 km and its polar radius 54,364 km, a flattening of about 0.098.",
+      "source": "nssdca-saturn"
+    },
+    {
+      "text": "NASA describes Saturn as about 120,500 km (74,897 miles) across at the equator, 9 times wider than Earth.",
+      "source": "nasa-saturn"
+    },
+    {
+      "text": "Saturn's ring system extends up to 282,000 km (175,000 miles) from the planet, yet the main rings are typically only about 10 m (30 ft) thick.",
+      "source": "nasa-saturn"
+    },
+    {
+      "text": "The Cassini Division, the gap between the A and B rings, is about 4,700 km (2,920 miles) wide.",
+      "source": "nasa-saturn"
+    },
+    {
+      "text": "Saturn's mean density is 687 kg/m3, lower than that of water.",
+      "source": "nssdca-saturn"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-saturn",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Saturn Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-saturn-rings",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Saturnian Rings Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/satringfact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-saturn",
+      "publisher": "NASA Science",
+      "title": "Saturn: Facts",
+      "url": "https://science.nasa.gov/saturn/facts/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-saturn-rings",
+      "publisher": "NASA Science",
+      "title": "Saturn's Rings",
+      "url": "https://science.nasa.gov/resource/saturns-rings-2/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Saturn",
+  "caveats": [
+    "No NASA page states an edge-to-edge span for the main rings, so no ringSpan measure is given and the profile uses only the planet's diameter. The NSSDCA ring sheet gives the A ring's outer edge as a radius from Saturn's centre (136,780 km, 2.270 times the equatorial radius), which the drawing can use for the ring proportion.",
+    "Giant-planet radii are measured at the level where atmospheric pressure is 1 bar, since Saturn has no solid surface.",
+    "NASA's Saturn facts page rounds the equatorial diameter to about 120,500 km; the NSSDCA table gives 120,536 km.",
+    "The drawing is scaled to the outer edge of the main rings; the planet disc inside it is drawn in proportion."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "triceratops",
+  "name": "Triceratops",
+  "category": "prehistoric",
+  "phrase": "a Triceratops",
+  "aliases": [
+    "triceratops horridus",
+    "triceratops prorsus",
+    "three-horned face",
+    "horned dinosaur",
+    "ceratopsian"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "triceratops",
+    "x": "length"
+  },
+  "subtitle": "Estimated size of a large adult",
+  "scientificName": "Triceratops",
+  "description": "Triceratops was a large, four-legged, plant-eating dinosaur with three horns, a parrot-like beak and a bony frill at the back of its skull. It lived in western North America at the very end of the Cretaceous, about 68 to 66 million years ago, and was one of the last non-bird dinosaurs. The Natural History Museum, London estimates it at about 9 metres long and 10,000 kg, while other museum estimates are smaller.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (estimated)",
+      "kind": "length",
+      "value": 9.0,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated nose-to-tail length; Britannica says body length approached 9 m (30 ft)",
+      "source": [
+        "nhm-triceratops",
+        "britannica-triceratops"
+      ]
+    },
+    {
+      "key": "lengthRange",
+      "label": "Length range (AMNH estimate)",
+      "kind": "length",
+      "min": 6,
+      "max": 8.5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated length of Triceratops horridus; AMNH gives 6 to 8.5 meters (20 to 28 feet)",
+      "source": "amnh-triceratops"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "value": 10000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated body weight",
+      "source": "nhm-triceratops"
+    },
+    {
+      "key": "largestAdultMass",
+      "label": "Mass of the largest adults (Britannica estimate)",
+      "kind": "mass",
+      "min": 5450,
+      "max": 7260,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated weight of the largest adults; Britannica also gives about 12,000-16,000 pounds",
+      "source": "britannica-triceratops"
+    },
+    {
+      "key": "skullLength",
+      "label": "Skull length (largest)",
+      "kind": "length",
+      "max": 3,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Some individuals had skulls nearly 3 m (about 10 ft) long",
+      "source": "britannica-triceratops"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Its frill could reach nearly one metre across, and its skull is one of the largest of any land animal.",
+      "source": "nhm-triceratops"
+    },
+    {
+      "text": "A partial Triceratops fossil collected in 1997 has a horn bitten off by Tyrannosaurus that later healed, showing the animal survived the attack.",
+      "source": "nhm-triceratops"
+    },
+    {
+      "text": "Othniel Charles Marsh first found Triceratops horn cores in 1887 and at first thought they came from a giant bison.",
+      "source": "nhm-triceratops"
+    },
+    {
+      "text": "Triceratops is the most commonly found dinosaur in the uppermost Cretaceous rocks of western North America, but it is rarely found in groups.",
+      "source": "britannica-triceratops"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-triceratops",
+      "publisher": "Natural History Museum, London",
+      "title": "Triceratops (Dino Directory)",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/triceratops.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-triceratops",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Triceratops",
+      "url": "https://www.britannica.com/animal/Triceratops",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "amnh-triceratops",
+      "publisher": "American Museum of Natural History",
+      "title": "Triceratops horridus (OLogy card 010)",
+      "url": "https://www.amnh.org/explore/ology/ology-cards/010-triceratops-horridus",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Triceratops",
+  "caveats": [
+    "All sizes are estimates from fossils.",
+    "Mass estimates differ: the Natural History Museum gives 10,000 kg, while Britannica puts the largest adults at 5,450-7,260 kg.",
+    "The AMNH card gives a smaller length range (6 to 8.5 m) than the Natural History Museum's 9 m."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "tyrannosaurus-rex",
+  "name": "Tyrannosaurus rex",
+  "category": "prehistoric",
+  "phrase": "a Tyrannosaurus rex",
+  "aliases": [
+    "t rex",
+    "t. rex",
+    "trex",
+    "tyrannosaurus",
+    "dinosaur",
+    "sue the t rex"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "tyrannosaurus-rex",
+    "x": "length"
+  },
+  "subtitle": "Estimated size of an adult, from fossil skeletons",
+  "scientificName": "Tyrannosaurus rex",
+  "description": "Tyrannosaurus rex was a large meat-eating dinosaur that lived in what is now the western United States and Canada at the very end of the Cretaceous, about 68 to 66 million years ago. London's Natural History Museum estimates a typical adult at about 12 metres long and 3.5 to 4 metres tall at the hips, weighing roughly 5 to 7 tonnes. The biggest known skeletons, Sue and Scotty, came from animals nearly 13 metres long and over 8 tonnes.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (typical adult)",
+      "kind": "length",
+      "value": 12,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated; nose to tail tip of a normal adult",
+      "source": "nhm-trex"
+    },
+    {
+      "key": "maxLength",
+      "label": "Length (largest specimens)",
+      "kind": "length",
+      "max": 13,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated; the NHM says Sue and Scotty were almost 13 m long in life, and the Field Museum gives Sue as more than 40 ft",
+      "source": [
+        "nhm-trex",
+        "field-sue"
+      ]
+    },
+    {
+      "key": "hipHeight",
+      "label": "Height at the hips",
+      "kind": "length",
+      "min": 3.5,
+      "max": 4.0,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated hip height of an adult; Sue stands 13 ft at the hip",
+      "source": [
+        "nhm-trex",
+        "field-sue"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Mass (typical adult)",
+      "kind": "mass",
+      "min": 5000,
+      "max": 7000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated weight of a normal adult",
+      "source": "nhm-trex"
+    },
+    {
+      "key": "maxMass",
+      "label": "Mass (largest specimens)",
+      "kind": "mass",
+      "value": 8000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "Estimated; the NHM says Sue and Scotty weighed over 8,000 kg in life",
+      "source": "nhm-trex"
+    },
+    {
+      "key": "skullLength",
+      "label": "Skull length (largest)",
+      "kind": "length",
+      "value": 1.5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "Some of the largest T. rex skulls are over 1.5 m long",
+      "source": "nhm-trex"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Sue, at the Field Museum in Chicago, is the largest and most complete T. rex skeleton found, at around 90 percent complete, and lived to about 28 years old.",
+      "source": "field-sue"
+    },
+    {
+      "text": "Barnum Brown found the first known T. rex skeletons in 1900 and 1902, and Henry Fairfield Osborn named the species in 1905.",
+      "source": "nhm-trex"
+    },
+    {
+      "text": "Tooth marks show T. rex fed on Triceratops and Edmontosaurus, and bone fragments turn up in its fossilised dung.",
+      "source": "nhm-trex"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-trex",
+      "publisher": "Natural History Museum, London",
+      "title": "Dino Directory: Tyrannosaurus",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "field-sue",
+      "publisher": "Field Museum",
+      "title": "SUE the T. rex",
+      "url": "https://www.fieldmuseum.org/blog/sue-t-rex",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tyrannosaurus",
+  "caveats": [
+    "All sizes are estimated from fossil skeletons; body mass in particular varies a lot between studies.",
+    "Size varied between individuals, and most T. rex were probably smaller than the record specimens."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

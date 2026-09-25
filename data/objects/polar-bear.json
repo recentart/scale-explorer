@@ -1,0 +1,141 @@
+{
+  "slug": "polar-bear",
+  "name": "Polar bear",
+  "category": "animals",
+  "phrase": "a polar bear",
+  "aliases": [
+    "polar bear",
+    "ice bear",
+    "white bear",
+    "ursus maritimus",
+    "bear"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "polar-bear",
+    "x": "length"
+  },
+  "subtitle": "Adult polar bear, head and body",
+  "scientificName": "Ursus maritimus",
+  "description": "The polar bear lives on Arctic sea ice and hunts seals; along with the brown bear it is the largest land carnivore. Most adults measure about 1.8 to 2.7 m in head and body length. Males are roughly twice the weight of females, normally 350 to 590 kg against 150 to 295 kg, and the biggest bears can stand about 3 m tall on their hind legs.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (head and body)",
+      "kind": "length",
+      "min": 1.8,
+      "max": 2.7,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Head and body length of most adults (6 to 9 ft)",
+      "source": "sdz-polar-bear"
+    },
+    {
+      "key": "shoulderHeight",
+      "label": "Height at shoulder",
+      "kind": "length",
+      "value": 1.7,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Most are close to about 5.6 ft (1.7 m) at the shoulder",
+      "source": "sdz-polar-bear"
+    },
+    {
+      "key": "standingHeight",
+      "label": "Standing height (largest bears)",
+      "kind": "length",
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Polar Bears International: polar bears 'can grow to 590 kg and stand 3 meters tall'",
+      "source": "pbi-polar-bear-facts",
+      "max": 3
+    },
+    {
+      "key": "mass",
+      "label": "Mass (adult male)",
+      "kind": "mass",
+      "min": 350,
+      "max": 590,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Adult males normally weigh 350 to 590 kg (772 to 1,300 lb)",
+      "source": "pbi-polar-bear-facts"
+    },
+    {
+      "key": "femaleMass",
+      "label": "Mass (adult female)",
+      "kind": "mass",
+      "min": 150,
+      "max": 295,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Adult females usually weigh 150 to 295 kg (331 to 650 lb), more in some regions",
+      "source": "pbi-polar-bear-facts"
+    },
+    {
+      "key": "recordMass",
+      "label": "Heaviest on record",
+      "kind": "mass",
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "One polar bear on record weighed more than 1,700 lb (770 kg)",
+      "source": "sdz-polar-bear",
+      "value": 770
+    }
+  ],
+  "facts": [
+    {
+      "text": "Newborn cubs weigh a little over half a kilogram (about 1 lb) and are about 30 to 35 cm long, blind and toothless.",
+      "source": "pbi-polar-bear-facts"
+    },
+    {
+      "text": "Males may measure over 3.7 m (12 ft) when standing on their hind legs, which is why most experts call polar bears the longest bears.",
+      "source": "sdz-polar-bear"
+    },
+    {
+      "text": "Pregnant females can weigh more than 453 kg (1,000 lb) before denning.",
+      "source": "sdz-polar-bear"
+    },
+    {
+      "text": "A polar bear's fat layer can be 5 to 10 cm (2 to 4 in) thick.",
+      "source": "sdz-polar-bear"
+    },
+    {
+      "text": "Polar bears can eat more than 45 kg (100 lb) of blubber in one sitting.",
+      "source": "pbi-polar-bear-facts"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sdz-polar-bear",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Polar Bear",
+      "url": "https://animals.sandiegozoo.org/animals/polar-bear",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "pbi-polar-bear-facts",
+      "publisher": "Polar Bears International",
+      "title": "Polar Bear Facts: Adaptations and Characteristics",
+      "url": "https://polarbearsinternational.org/polar-bears-changing-arctic/polar-bear-facts/adaptions-characteristics/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Polar_bear",
+  "caveats": [
+    "Polar Bears International gives weights but no body length; the length comes from San Diego Zoo Wildlife Alliance and covers adults of both sexes.",
+    "Sources disagree on standing height: Polar Bears International says polar bears can 'stand 3 meters tall', while San Diego Zoo says males may exceed 12 ft (3.7 m) on their hind legs. The PBI figure is stored as the measure.",
+    "San Diego Zoo gives male weights of 300 to 635 kg for most males, a wider range than PBI's 350 to 590 kg; the PBI range is stored.",
+    "The Alaska Department of Fish and Game page returned no content, and USFWS was not used."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

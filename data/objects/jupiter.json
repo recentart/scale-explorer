@@ -1,0 +1,132 @@
+{
+  "slug": "jupiter",
+  "name": "Jupiter",
+  "category": "space",
+  "phrase": "Jupiter",
+  "aliases": [
+    "planet jupiter",
+    "jupiter planet",
+    "gas giant",
+    "largest planet",
+    "biggest planet",
+    "planet"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "jupiter",
+    "x": "diameter"
+  },
+  "subtitle": "Largest planet in the Solar System",
+  "description": "Jupiter is the largest planet in the Solar System, a gas giant orbiting at an average of about 778 million km from the Sun. NASA's Planetary Fact Sheet gives an equatorial diameter of 142,984 km, measured at the level where the atmospheric pressure is 1 bar, about 11 times Earth's. Its mass of about 1.9 × 10²⁷ kg is nearly 318 times Earth's, and its fast spin flattens it noticeably at the poles.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 142984,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator, measured at the 1 bar atmospheric pressure level",
+      "source": "nssdca-planets"
+    },
+    {
+      "key": "equatorialRadius",
+      "label": "Equatorial radius",
+      "kind": "length",
+      "value": 71492,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius at the equator (1 bar pressure level)",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "key": "polarRadius",
+      "label": "Polar radius",
+      "kind": "length",
+      "value": 66854,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius from the centre to a pole",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "key": "radius",
+      "label": "Mean radius",
+      "kind": "length",
+      "value": 69911,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Volumetric mean radius (mean diameter is twice this)",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 1.89813e+27,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 1,898.13 × 10²⁴ kg",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 1431280000000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total volume; source states 143,128 × 10¹⁰ km³",
+      "source": "nssdca-jupiter"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Jupiter has 317.83 times Earth's mass and 1,321.33 times its volume.",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "text": "A day on Jupiter lasts 9.9259 hours, the shortest of any planet, and a year lasts 4,332.589 Earth days.",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "text": "Jupiter's polar radius (66,854 km) is about 4,600 km less than its equatorial radius, a flattening (ellipticity) of 0.06487.",
+      "source": "nssdca-jupiter"
+    },
+    {
+      "text": "NASA's fact sheet lists 95 natural satellites for Jupiter.",
+      "source": "nssdca-jupiter"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-jupiter",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Jupiter Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Jupiter_(planet)",
+  "caveats": [
+    "Jupiter has no solid surface; its radius and diameter are measured at the 1 bar pressure level in its atmosphere.",
+    "The moon count reflects the fact sheet on the access date and changes as new moons are confirmed."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

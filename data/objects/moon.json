@@ -39,6 +39,17 @@
       "qualifier": "exact",
       "note": "Source states 0.07346 × 10²⁴ kg",
       "source": "nssdca-moon"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 21968000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "NASA fact sheet lists this as 10^10 km³ units",
+      "source": "nssdca-moon"
     }
   ],
   "facts": [

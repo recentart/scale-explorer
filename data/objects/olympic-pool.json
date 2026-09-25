@@ -1,0 +1,112 @@
+{
+  "slug": "olympic-pool",
+  "name": "Olympic swimming pool",
+  "category": "sports",
+  "phrase": "an Olympic swimming pool",
+  "aliases": [
+    "olympic pool",
+    "olympic-size swimming pool",
+    "50 m pool",
+    "long course pool",
+    "swimming pool",
+    "pool"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "olympic-pool",
+    "x": "length"
+  },
+  "subtitle": "Pool standard for the Olympic Games and World Aquatics Championships",
+  "description": "An Olympic swimming pool is 50 metres long between the electronic touch panels at each end, and World Aquatics allows only 1 cm of extra length and none short. Pools used at the Olympic Games must be at least 25 m wide, enough for eight 2.5 m lanes plus a 2.5 m buffer space on each side. World Aquatics' current certification rules call for a water depth of at least 2.5 m, rising to 3 m when the pool is shared with artistic swimming.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 50,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Between the touch panels of the automatic officiating equipment; tolerance +0.010 m / -0.000 m",
+      "source": [
+        "wa-pool-cert-2024",
+        "fina-facilities-2021"
+      ]
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 25,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "at least",
+      "note": "Minimum for permanent pools at the Olympic Games; temporary pools are 26 m",
+      "source": [
+        "wa-pool-cert-2024",
+        "fina-facilities-2021"
+      ]
+    },
+    {
+      "key": "depth",
+      "label": "Minimum depth",
+      "kind": "length",
+      "value": 2.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "at least",
+      "note": "Olympic Games and World Aquatics Championships 50 m pools (certification rules in force from 1 January 2024); 3 m when also used for artistic swimming",
+      "source": "wa-pool-cert-2024"
+    },
+    {
+      "key": "laneWidth",
+      "label": "Lane width",
+      "kind": "length",
+      "value": 2.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Olympic Games lane width; 8 lanes with a 2.5 m space outside lanes 1 and 8",
+      "source": "fina-facilities-2021"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Without touch panels, the wall-to-wall distance of a 50 m pool must be between 50.020 m and 50.030 m so that the panels can be fitted and still leave 50.000 m.",
+      "source": "wa-pool-cert-2024"
+    },
+    {
+      "text": "Olympic Games pools have 8 lanes, while World Championships pools have 10.",
+      "source": "fina-facilities-2021"
+    },
+    {
+      "text": "The earlier 2021-2025 Facilities Rules set the Olympic pool minimum depth at 2 m, with 3 m recommended for multi-discipline use.",
+      "source": "fina-facilities-2021"
+    }
+  ],
+  "sources": [
+    {
+      "id": "wa-pool-cert-2024",
+      "publisher": "World Aquatics",
+      "title": "Swimming Pool Certification (in force as from 1 January 2024)",
+      "url": "https://resources.fina.org/fina/document/2024/06/28/dcaceb72-3012-4b65-90fb-e4dda53a3132/AQUA-Pool-Certification-Swimming_NEW.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "fina-facilities-2021",
+      "publisher": "FINA (now World Aquatics)",
+      "title": "FINA Facilities Rules 2021-2025, FR 2.2 Swimming Facilities for Olympic Games and World Championships",
+      "url": "https://resources.fina.org/fina/document/2022/02/08/77c3058d-b549-4543-8524-ad51a857864e/210805-Facilities-Rules_clean.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Olympic-size_swimming_pool",
+  "caveats": [
+    "Width and depth are minimums for Olympic Games pools; real pools can be wider or deeper.",
+    "No official source found gives a water volume, so none is listed."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

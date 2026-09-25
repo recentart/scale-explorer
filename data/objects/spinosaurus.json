@@ -1,0 +1,131 @@
+{
+  "slug": "spinosaurus",
+  "name": "Spinosaurus",
+  "category": "prehistoric",
+  "phrase": "a Spinosaurus",
+  "aliases": [
+    "spinosaurus aegyptiacus",
+    "spine lizard",
+    "sail dinosaur",
+    "sail-backed dinosaur",
+    "largest carnivorous dinosaur"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "spinosaurus",
+    "x": "length"
+  },
+  "subtitle": "Estimated adult size; estimates vary widely",
+  "scientificName": "Spinosaurus aegyptiacus",
+  "description": "Spinosaurus was a large meat-eating dinosaur from North Africa that lived about 99 to 94 million years ago in the Late Cretaceous. It had a narrow, fish-catching snout, a tall sail on its back and short hind legs, and may have spent much of its time in and around water. It is thought to be the longest known carnivorous dinosaur, with length estimates of about 14 to 18 metres, but no complete skeleton has been found.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (estimated range)",
+      "kind": "length",
+      "min": 14,
+      "max": 18,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated body length; Britannica gives 14-18 m (46-59 ft), and the Natural History Museum's single estimate is 14 m (46 ft) from nose to tail",
+      "source": [
+        "britannica-spinosaurus",
+        "nhm-spinosaurus"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "value": 7400,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated body weight; Britannica says later studies found the largest members of the genus were rarely more than 7,400 kg",
+      "source": [
+        "nhm-spinosaurus",
+        "britannica-spinosaurus"
+      ]
+    },
+    {
+      "key": "earlyMassEstimate",
+      "label": "Early high mass estimate",
+      "kind": "mass",
+      "max": 20000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated: some early studies suggested the largest individuals could have weighed up to 20,000 kg (22 tons)",
+      "source": "britannica-spinosaurus"
+    },
+    {
+      "key": "sailHeight",
+      "label": "Sail height",
+      "kind": "length",
+      "value": 1.5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Height of the sail on its back",
+      "source": "nhm-spinosaurus"
+    },
+    {
+      "key": "skullLength",
+      "label": "Skull length",
+      "kind": "length",
+      "value": 1.75,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Britannica gives 1.75 metres (roughly 6 feet)",
+      "source": "britannica-spinosaurus"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The first Spinosaurus fossils, found in Egypt in 1912 and named by Ernst Stromer in 1915, were destroyed in April 1944 when a bombing raid hit the Munich museum that held them.",
+      "source": [
+        "nhm-spinosaurus",
+        "britannica-spinosaurus"
+      ]
+    },
+    {
+      "text": "Its short hind legs meant that Tyrannosaurus stood taller at the hips, even though Spinosaurus was longer.",
+      "source": "nhm-spinosaurus"
+    },
+    {
+      "text": "It had a wide, paddle-like tail, and scientists still debate how much it swam and whether it walked on two legs or four.",
+      "source": "nhm-spinosaurus"
+    },
+    {
+      "text": "Later fragmentary remains have been found in Algeria, Morocco, Tunisia and Niger.",
+      "source": "britannica-spinosaurus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-spinosaurus",
+      "publisher": "Natural History Museum, London",
+      "title": "Spinosaurus (Dino Directory)",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/spinosaurus.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-spinosaurus",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Spinosaurus",
+      "url": "https://www.britannica.com/animal/Spinosaurus",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Spinosaurus",
+  "caveats": [
+    "All sizes are estimates. No complete Spinosaurus skeleton is known, and published estimates vary a lot; the length is kept as the 14-18 m range.",
+    "Mass estimates range from about 7,400 kg to early figures of up to 20,000 kg."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

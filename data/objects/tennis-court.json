@@ -1,0 +1,120 @@
+{
+  "slug": "tennis-court",
+  "name": "Tennis court",
+  "category": "sports",
+  "phrase": "a tennis court",
+  "aliases": [
+    "tennis",
+    "tennis court size",
+    "doubles court",
+    "singles court",
+    "court"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "tennis-court",
+    "x": "length"
+  },
+  "subtitle": "Full-size court under the ITF Rules of Tennis (2026)",
+  "description": "A regulation tennis court is a rectangle 78 feet (23.77 m) long. It is 27 feet wide for singles and 36 feet wide for doubles, with the extra width forming the doubles alleys along each side. The net hangs 3.5 feet high at the posts and is strapped down to 3 feet at the centre. Service lines sit 21 feet from the net on each side.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 78,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Baseline to baseline, measured to the outside of the lines (23.77 m)",
+      "source": "itf-rules-2026"
+    },
+    {
+      "key": "width",
+      "label": "Width (doubles)",
+      "kind": "length",
+      "value": 36,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Doubles sideline to doubles sideline (10.97 m)",
+      "source": "itf-rules-2026"
+    },
+    {
+      "key": "singlesWidth",
+      "label": "Width (singles)",
+      "kind": "length",
+      "value": 27,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Singles sideline to singles sideline (8.23 m)",
+      "source": "itf-rules-2026"
+    },
+    {
+      "key": "netHeightCentre",
+      "label": "Net height at centre",
+      "kind": "length",
+      "value": 3,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Held down by a white strap at the centre (0.914 m)",
+      "source": "itf-rules-2026"
+    },
+    {
+      "key": "netHeightPosts",
+      "label": "Net height at posts",
+      "kind": "length",
+      "value": 3.5,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Height of the net cord where it passes over the net posts (1.07 m)",
+      "source": "itf-rules-2026"
+    },
+    {
+      "key": "serviceLineDistance",
+      "label": "Service line distance from net",
+      "kind": "length",
+      "value": 21,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance from the net to each service line (6.40 m)",
+      "source": "itf-rules-2026"
+    }
+  ],
+  "facts": [
+    {
+      "text": "All tennis court measurements are taken to the outside of the lines.",
+      "source": "itf-rules-2026"
+    },
+    {
+      "text": "For doubles, the centres of the net posts stand 3 feet outside the doubles court on each side.",
+      "source": "itf-rules-2026"
+    },
+    {
+      "text": "For international competitions the ITF recommends at least 21 feet of space behind each baseline and at least 12 feet beside each sideline.",
+      "source": "itf-rules-2026"
+    }
+  ],
+  "sources": [
+    {
+      "id": "itf-rules-2026",
+      "publisher": "International Tennis Federation",
+      "title": "2026 Rules of Tennis, Rule 1: The Court and Appendix X",
+      "url": "https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tennis_court",
+  "caveats": [
+    "Width uses the doubles court. The run-off space around the court is not included in the length or width.",
+    "Smaller 'Red' and 'Orange' courts allowed for 10-and-under tennis are not covered here."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

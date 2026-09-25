@@ -1,0 +1,78 @@
+{
+  "slug": "dust-mite",
+  "name": "House dust mite",
+  "category": "microscopic",
+  "phrase": "a house dust mite",
+  "aliases": [
+    "dust mite",
+    "dermatophagoides",
+    "american house dust mite",
+    "european house dust mite",
+    "mite"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "dust-mite",
+    "x": "length"
+  },
+  "subtitle": "Adult Dermatophagoides farinae and D. pteronyssinus",
+  "scientificName": "Dermatophagoides spp.",
+  "description": "House dust mites are tiny, creamy-white arachnids that live in household dust and feed mainly on the skin flakes people shed. University of Florida entomologists describe adults as globular and about 420 micrometres long, with females slightly wider than males. Allergens in their droppings can become airborne and trigger asthma, rhinitis and eczema in sensitive people.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Adult body length",
+      "kind": "length",
+      "value": 420,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Adult female and male both about 420 microns long",
+      "source": "uf-edis-dust-mite"
+    },
+    {
+      "key": "width",
+      "label": "Adult body width",
+      "kind": "length",
+      "min": 245,
+      "max": 320,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Male about 245 microns wide, female about 320 microns wide",
+      "source": "uf-edis-dust-mite"
+    }
+  ],
+  "facts": [
+    {
+      "text": "A full life cycle, from egg to adult, takes 19 to 30 days depending on temperature and humidity; mated females live about two months.",
+      "source": "uf-edis-dust-mite"
+    },
+    {
+      "text": "At a relative humidity of 60% or lower, dust mite populations stop growing and die out.",
+      "source": "uf-edis-dust-mite"
+    },
+    {
+      "text": "The average person sheds 0.5 to 1.0 gram of skin a day, the mites' main food in homes.",
+      "source": "uf-edis-dust-mite"
+    }
+  ],
+  "sources": [
+    {
+      "id": "uf-edis-dust-mite",
+      "publisher": "University of Florida IFAS Extension (EDIS), Featured Creatures",
+      "title": "House Dust Mites, Dermatophagoides spp. (EENY-059/IN216), H. A. Denmark and H. L. Cromroy",
+      "url": "https://edis.ifas.ufl.edu/publication/IN216",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/House_dust_mite",
+  "caveats": [
+    "The source gives one approximate length for both species and both sexes; individual mites vary.",
+    "No source giving a dust mite's mass was found, so mass is left out."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

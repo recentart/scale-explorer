@@ -1,0 +1,116 @@
+{
+  "slug": "neptune",
+  "name": "Neptune",
+  "category": "space",
+  "phrase": "Neptune",
+  "aliases": [
+    "planet neptune",
+    "ice giant",
+    "planet"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "neptune",
+    "x": "diameter"
+  },
+  "description": "Neptune is the eighth and farthest planet from the Sun, an ice giant slightly smaller than Uranus but more massive. Its equatorial diameter is 49,528 km, about four times Earth's. It was found in 1846 from mathematical predictions of where an unseen planet should be.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 49528,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator, at the 1-bar pressure level",
+      "source": [
+        "nssdca-planets",
+        "nasa-neptune"
+      ]
+    },
+    {
+      "key": "polarRadius",
+      "label": "Polar radius",
+      "kind": "length",
+      "value": 24341,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Centre to pole at the 1-bar level (equatorial radius is 24,764 km)",
+      "source": "nssdca-neptune"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 1.02409e+26,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 102.409 x 10^24 kg",
+      "source": "nssdca-neptune"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 62540000000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Source states 6,254 x 10^10 km3",
+      "source": "nssdca-neptune"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA gives Neptune an equatorial diameter of 49,528 km (30,775 miles), about four times wider than Earth.",
+      "source": "nasa-neptune"
+    },
+    {
+      "text": "If Earth were the size of a nickel, Neptune would be about as big as a baseball.",
+      "source": "nasa-neptune"
+    },
+    {
+      "text": "Neptune was discovered on 23 September 1846 by Johann Gottfried Galle, based on predictions by John Couch Adams and Urbain Le Verrier.",
+      "source": "nssdca-neptune"
+    },
+    {
+      "text": "Wind speeds on Neptune reach up to 580 m/s.",
+      "source": "nssdca-neptune"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-neptune",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Neptune Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-neptune",
+      "publisher": "NASA Science",
+      "title": "Neptune: Facts",
+      "url": "https://science.nasa.gov/neptune/facts/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Neptune",
+  "caveats": [
+    "Radii are measured at the 1-bar pressure level, since Neptune has no solid surface.",
+    "Neptune is slightly smaller than Uranus in diameter but has more mass (102.409 vs 86.811 x 10^24 kg)."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

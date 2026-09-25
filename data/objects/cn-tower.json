@@ -1,0 +1,127 @@
+{
+  "slug": "cn-tower",
+  "name": "CN Tower",
+  "category": "structures",
+  "phrase": "the CN Tower",
+  "aliases": [
+    "cn tower toronto",
+    "canadian national tower",
+    "canada's national tower",
+    "toronto tower",
+    "communications tower"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "cn-tower",
+    "y": "height"
+  },
+  "subtitle": "Communications and observation tower, Toronto",
+  "description": "The CN Tower is a concrete communications and observation tower in Toronto, built by Canadian National from February 1973 by more than 1,500 workers over 40 months. It was finished on 2 April 1975 and opened to the public on 26 June 1976, and it remained the world's tallest freestanding structure until the Burj Khalifa overtook it. From its base to the tip of its antenna it measures 553.33 m (1,815.5 ft), with observation levels at 346 m and 447 m.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height to top of antenna",
+      "kind": "length",
+      "value": 553.33,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "From the base to the top of the antenna (1,815.5 ft)",
+      "source": [
+        "cntower-faq",
+        "cntower-explore"
+      ]
+    },
+    {
+      "key": "topDeckHeight",
+      "label": "Height of The Top observation level",
+      "kind": "length",
+      "value": 447,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Highest observation platform, above the ground (1,465 ft)",
+      "source": "cntower-explore"
+    },
+    {
+      "key": "mainDeckHeight",
+      "label": "Height of the Main Observation Level",
+      "kind": "length",
+      "value": 346,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Main Observation Level above the ground (1,136 ft)",
+      "source": "cntower-explore"
+    },
+    {
+      "key": "shaftHeight",
+      "label": "Concrete shaft height",
+      "kind": "length",
+      "value": 335,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Hexagonal concrete core with three curved support arms (1,100 ft)",
+      "source": "cntower-history"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The shaft was cast with a slipform that climbed on hydraulic jacks and gradually narrowed to give the tower its tapered outline.",
+      "source": "cntower-history"
+    },
+    {
+      "text": "In March 1975 a Sikorsky helicopter nicknamed Olga lifted the antenna into place in 39 pieces.",
+      "source": "cntower-history"
+    },
+    {
+      "text": "At The Top, 447 m up, the tower can sway by almost half a metre in the wind.",
+      "source": "cntower-explore"
+    },
+    {
+      "text": "The Glass Floor gives a view 342 m straight down, and the high-speed elevators reach the Main Observation Level in 58 seconds at 22 km/h.",
+      "source": "cntower-explore"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cntower-faq",
+      "publisher": "CN Tower",
+      "title": "Common questions",
+      "url": "https://www.cntower.ca/plan-your-visit/at-the-tower/common-questions",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "cntower-explore",
+      "publisher": "CN Tower",
+      "title": "Inspiring by day, stellar by night",
+      "url": "https://www.cntower.ca/explore-the-tower",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "cntower-history",
+      "publisher": "CN Tower",
+      "title": "History",
+      "url": "https://www.cntower.ca/history",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-cntower",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "CN Tower",
+      "url": "https://www.britannica.com/topic/CN-Tower",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/CN_Tower",
+  "caveats": [
+    "A total weight of 117,910 tonnes is widely quoted, but it was not found on a fetched official page, so no mass is stored.",
+    "No official base width was found, so only the height axis is used for the drawing.",
+    "The official history page says the Burj Khalifa overtook it in 2009, while Britannica says it was surpassed by the Burj Dubai in 2007; the description gives no year."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "soda-can",
+  "name": "Soda can",
+  "category": "everyday",
+  "phrase": "a soda can",
+  "aliases": [
+    "drink can",
+    "beverage can",
+    "pop can",
+    "coke can",
+    "beer can",
+    "aluminum can",
+    "12 oz can",
+    "355 ml can"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "soda-can",
+    "y": "height",
+    "x": "diameter"
+  },
+  "subtitle": "Standard 12 US fl oz (355 mL) aluminum can",
+  "description": "The standard North American drink can holds 12 US fluid ounces (355 mL), with a separate, narrower lid. Can maker Ball Corporation's industry-standard drawing gives the aluminum body a 2.600 in (66.04 mm) outside diameter and a height of 4.812 in (122.22 mm). The top narrows to a smaller neck so that a smaller lid can be used.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 4.812,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Flanged can height (122.22 mm), tolerance +/- 0.015 in, measured on the open can body before the lid is seamed on",
+      "source": "ball-12oz"
+    },
+    {
+      "key": "diameter",
+      "label": "Body diameter",
+      "kind": "length",
+      "value": 2.6,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Body outside diameter 2.600 in (66.04 mm), tolerance +/- 0.008 in",
+      "source": "ball-12oz"
+    },
+    {
+      "key": "volume",
+      "label": "Fill volume",
+      "kind": "volume",
+      "value": 12,
+      "unit": "flozUS",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "12.00 US fl oz (355.00 mL) fill volume, not the total internal volume",
+      "source": "ball-12oz"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Ball's standard 12 oz can is designated 202/211 x 413: a 211 body diameter, a 413 height and a necked-in 202 lid.",
+      "source": "ball-12oz"
+    },
+    {
+      "text": "The neck at the top of the can has a plug diameter of 2.063 in (52.40 mm), narrower than the 2.600 in body.",
+      "source": "ball-12oz"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ball-12oz",
+      "publisher": "Ball Corporation (Metal Beverage Container Operations), hosted by CanSource",
+      "title": "Product standard CS-A0934: 12 oz 202/211 x 413 necked and flanged can, industry standard manufacturing specifications",
+      "url": "https://www.cansource.com/assets/Uploads/Products/Documents/Ball-12oz-std-can-specs.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Drink_can",
+  "caveats": [
+    "Ball's height is for the open, flanged can body before the lid is seamed on; no primary source was found for the height of a sealed can, which differs slightly.",
+    "No can-maker source for the weight of an empty or full can was found, so mass is left out.",
+    "The Ball drawing is hosted on a distributor's site (CanSource), not on ball.com."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

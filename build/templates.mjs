@@ -7,7 +7,8 @@ import { esc, renderStage, headlineText, headlineLabel } from '../src/lib/render
 import { vizFigure as fig, zoomFigures as zoomFig, ladderSection as ladderSec } from '../src/lib/figure.js'
 import { formatBoth, formatMeasure, measureRange } from '../src/lib/measures.js'
 import { pickReferences, sizeOf, shapeOf } from '../src/lib/layout.js'
-import { compareSentence, comparisonSet, adjOf, phraseOf, factorText } from '../src/lib/compare.js'
+import { compareSentence, comparisonSet, adjOf, phraseOf, factorText, howManyFit } from '../src/lib/compare.js'
+import { howManyHtml } from '../src/lib/figure.js'
 import { formatNumber, UNITS } from '../src/lib/units.js'
 
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1)
@@ -50,6 +51,7 @@ function header(ctx, active) {
     ['/compare', 'Compare', 'compare'],
     ['/measure', 'Custom size', 'measure'],
     ['/objects', 'All objects', 'objects'],
+    ['/compare?surprise=1', 'Surprise me', 'surprise'],
   ]
   return `<header class="site-header">
   <div class="wrap header-row">
@@ -202,7 +204,7 @@ export function homePage(ctx) {
       <h1>See how big things really are.</h1>
       <p class="hero-lede">Real measurements, drawn to scale. Pick anything from a lion to the planet Mars and see it next to a person, a bus or a skyscraper.</p>
       ${searchBox('hero-search', { big: true })}
-      <p class="hero-links">Or <a href="/compare">compare two objects</a> · <a href="/measure">see what 150 m looks like</a></p>
+      <p class="hero-links">Or <a href="/compare">compare two objects</a> · <a href="/measure">see what 150 m looks like</a> · <a href="/compare?surprise=1" data-surprise>surprise me</a></p>
     </div>
   </div>
   <div class="wrap">
@@ -251,6 +253,16 @@ export function homePage(ctx) {
         <label for="home-unit" class="visually-hidden">Unit</label>
         <select id="home-unit" name="unit"><option value="m">meters</option><option value="ft">feet</option><option value="km">kilometers</option><option value="mi">miles</option></select>
         <button class="btn" type="submit">Show me</button>
+      </form>
+    </div>
+    <div>
+      <h2>How do you measure up?</h2>
+      <p>Enter your height and stand next to anything, from a giraffe to a Tyrannosaurus rex.</p>
+      <form class="mini-compare" action="/compare" method="get">
+        <label>Your height <input name="you" placeholder="5 ft 10 in or 178 cm" autocomplete="off"></label>
+        <label>Next to <select name="a">${optionList(ctx, 'giraffe')}</select></label>
+        <input type="hidden" name="human" value="0">
+        <button class="btn" type="submit">Compare me</button>
       </form>
     </div>
   </div>
@@ -357,8 +369,10 @@ ${crumbs(ctx, trail)}
     <section aria-labelledby="about-h">
       <h2 id="about-h">About ${esc(phraseOf(obj).replace(/^(a|an) /, 'the '))}</h2>
       <p>${esc(full.description)}</p>
-      ${full.facts?.length ? `<ul class="facts">${full.facts.map(f => `<li>${esc(f.text)} <a class="ref" href="#src-${esc(f.source)}">[${full.sources.findIndex(s => s.id === f.source) + 1}]</a></li>`).join('')}</ul>` : ''}
+      ${full.facts?.length ? `<ul class="facts">${full.facts.map(f => `<li>${esc(f.text)} ${(Array.isArray(f.source) ? f.source : [f.source]).map(id => `<a class="ref" href="#src-${esc(id)}">[${full.sources.findIndex(s => s.id === id) + 1}]</a>`).join(' ')}</li>`).join('')}</ul>` : ''}
     </section>
+
+    ${objHowMany(ctx, obj, compareRefs)}
 
     <section aria-labelledby="cmp-h">
       <h2 id="cmp-h">How it compares</h2>
@@ -476,20 +490,26 @@ ${crumbs(ctx, trail)}
   <div class="cf-row" data-pickers>
     <label class="cf-pick"><span>First object</span><select name="a">${optionList(ctx, a.slug)}</select></label>
     <button type="button" class="swap" data-swap aria-label="Swap the first and second objects" title="Swap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 7h12l-3-3M17 17H5l3 3"/></svg></button>
-    <label class="cf-pick"><span>Second object</span><select name="b">${optionList(ctx, b.slug)}</select></label>
+    <label class="cf-pick"><span>Second object</span><select name="b"><option value="">None</option>${optionList(ctx, b.slug)}</select></label>
   </div>
   <div class="cf-extra" data-extra></div>
   <div class="cf-options">
     <button type="button" class="btn btn-ghost" data-add hidden>+ Add another object</button>
     <input type="hidden" name="human" value="0">
-    <label class="check"><input type="checkbox" name="human" value="1" checked data-human> Include a human for scale</label>
+    <label class="check"><input type="checkbox" name="human" value="1" checked data-human> Include an average adult for scale</label>
+    <button type="button" class="btn btn-ghost" data-surprise>Surprise me</button>
     <button class="btn" type="submit" data-submit>Compare</button>
+  </div>
+  <div class="cf-you">
+    <label class="cf-pick"><span>Your height (optional)</span><input name="you" data-you placeholder="e.g. 5 ft 10 in or 178 cm" autocomplete="off" spellcheck="false" aria-describedby="you-error"></label>
+    <p id="you-error" class="form-error" data-you-error hidden></p>
   </div>
 </form>
 <div class="ad-slot" data-ad-slot="below-form" hidden></div>
 <section class="compare-result" aria-labelledby="result-h" data-compare-result>
   <h2 id="result-h" data-result-title>${esc(a.name)} vs ${esc(b.name)}</h2>
   <ul class="sentences" data-sentences>${[compareSentence(b, a), compareSentence(a, human), compareSentence(b, human)].map(s => `<li>${esc(s)}</li>`).join('')}</ul>
+  <div data-result-howmany>${howManyHtml(howManyFit(a, b))}</div>
   <div data-result-viz>${vizFigure(ctx, lineup, { id: 'cmp' })}</div>
   <div data-result-zoom></div>
   <div data-result-ladder></div>
@@ -636,4 +656,17 @@ ${searchBox('nf-search', { big: true })}
 <ul class="link-list">${ctx.categories.map(c => `<li><a href="/category/${c.slug}">${esc(c.name)}</a></li>`).join('')}</ul>
 </div>`
   return layout(ctx, { path: '/404', title: 'Page Not Found | Scale Explorer', description: 'This page could not be found. Search Scale Explorer or browse animals, vehicles, buildings, structures, nature and space.', active: 'notfound', main, noindex: true })
+}
+
+function objHowMany(ctx, obj, refs) {
+  const human = ctx.clientBySlug.human
+  const others = refs.filter(r => r.slug !== obj.slug && r.slug !== 'human')
+  const pairs = [obj.slug === 'human' ? null : human, others.find(r => sizeOf(r) < sizeOf(obj)) || others[0]].filter(Boolean)
+  const rows = pairs.flatMap(r => howManyFit(obj, r))
+  if (!rows.length) return ''
+  return `<section aria-labelledby="fit-h">
+      <h2 id="fit-h">How many fit?</h2>
+      ${howManyHtml(rows)}
+      <p class="fine">Counts divide one sourced figure by another. "End to end" uses each object's main measurement; weight and volume rows appear only when both figures are sourced.</p>
+    </section>`
 }

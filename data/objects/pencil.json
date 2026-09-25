@@ -1,0 +1,82 @@
+{
+  "slug": "pencil",
+  "name": "Pencil",
+  "category": "everyday",
+  "phrase": "a pencil",
+  "aliases": [
+    "wooden pencil",
+    "#2 pencil",
+    "number 2 pencil",
+    "graphite pencil",
+    "lead pencil",
+    "HB pencil"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "pencil",
+    "x": "length",
+    "y": "diameter"
+  },
+  "subtitle": "Standard full-length wood-cased pencil",
+  "description": "A wood-cased pencil is a graphite core glued inside a wooden barrel, usually hexagonal or round in cross-section. US pencil maker Musgrave lists its standard hex and round pencils at 7.5 in (190 mm) long and about 7 mm across. Pencils get shorter with every sharpening, so this is the length of a new one.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (new)",
+      "kind": "length",
+      "value": 7.5,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "typical",
+      "note": "Standard full-length hex and round pencils, 7.5 in (190 mm), as listed by the manufacturer",
+      "source": "musgrave-specs"
+    },
+    {
+      "key": "diameter",
+      "label": "Barrel diameter",
+      "kind": "length",
+      "min": 0.275,
+      "max": 0.284,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Hexagonal pencil 0.275 in (7 mm) to round pencil 0.284 in (7.2 mm)",
+      "source": "musgrave-specs"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Musgrave's carpenter pencils are shorter than a standard pencil at 7 in (178 mm), and its golf pencils are 3.0 in (76.2 mm) long.",
+      "source": "musgrave-specs"
+    },
+    {
+      "text": "Ticonderoga describes its standard #2 pencil as having a 9/32-inch diameter.",
+      "source": "ticonderoga-pmp"
+    }
+  ],
+  "sources": [
+    {
+      "id": "musgrave-specs",
+      "publisher": "Musgrave Pencil Company",
+      "title": "Capabilities - Custom Pencils (pencil styles and sizes)",
+      "url": "https://musgravepencil.com/pages/capabilities-custom-pencils",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "ticonderoga-pmp",
+      "publisher": "Ticonderoga (Dixon Ticonderoga Company)",
+      "title": "Pencil Makes Perfect",
+      "url": "https://weareticonderoga.com/blog-activities/post/pencil-makes-perfect",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Pencil",
+  "caveats": [
+    "Dixon Ticonderoga's product pages and 2022 catalog list the standard pencil's length only as 'Standard' with no number, so the length comes from another US maker, Musgrave Pencil Company.",
+    "No manufacturer source for the weight of a pencil was found, so mass is left out."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

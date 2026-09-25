@@ -1,0 +1,137 @@
+{
+  "slug": "colosseum",
+  "name": "Colosseum",
+  "category": "structures",
+  "phrase": "the Colosseum",
+  "aliases": [
+    "roman colosseum",
+    "coliseum",
+    "flavian amphitheatre",
+    "flavian amphitheater",
+    "colosseo",
+    "anfiteatro flavio",
+    "amphitheatre"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "colosseum",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "Flavian Amphitheatre, Rome",
+  "description": "The Colosseum is the oval amphitheatre just east of the Palatine Hill in Rome, begun under the emperor Vespasian around 70-72 CE on the site of the drained lake of Nero's Golden House. Titus dedicated it in 80 CE with 100 days of games, and Domitian finished the top storey in 82 CE. Built of travertine, tufa and concrete, it measures about 189 by 156 m, stands about 48 m high and held around 50,000 spectators.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 48,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Height of the building as given by Rome's official tourism site, which words it as 'over 48 meters high'",
+      "source": "turismoroma-colosseum"
+    },
+    {
+      "key": "length",
+      "label": "Length (long axis)",
+      "kind": "length",
+      "value": 189,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length along the long axis of the oval (Britannica gives 620 ft)",
+      "source": [
+        "turismoroma-colosseum",
+        "britannica-colosseum"
+      ]
+    },
+    {
+      "key": "width",
+      "label": "Width (short axis)",
+      "kind": "length",
+      "value": 156,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall width along the short axis of the oval (Britannica gives 513 ft)",
+      "source": [
+        "turismoroma-colosseum",
+        "britannica-colosseum"
+      ]
+    },
+    {
+      "key": "area",
+      "label": "Footprint",
+      "kind": "area",
+      "value": 24000,
+      "unit": "m2",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Ground area covered by the building",
+      "source": "turismoroma-colosseum"
+    },
+    {
+      "key": "arenaLength",
+      "label": "Arena floor length",
+      "kind": "length",
+      "value": 76,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "The arena floor was 76 m long and 46 m wide",
+      "source": "turismoroma-colosseum"
+    }
+  ],
+  "facts": [
+    {
+      "text": "It is the largest amphitheatre in the world.",
+      "source": "colosseo-park"
+    },
+    {
+      "text": "Unlike earlier amphitheatres, which were mostly dug into hillsides, it is freestanding, held up by barrel and groin vaults.",
+      "source": "britannica-colosseum"
+    },
+    {
+      "text": "Its outer arcades are framed by Doric, Ionic and Corinthian half-columns, and a huge awning called the velarium, worked by sailors, shaded the crowd.",
+      "source": "britannica-colosseum"
+    },
+    {
+      "text": "The arena floor was a large wooden platform covered with sand.",
+      "source": "turismoroma-colosseum"
+    }
+  ],
+  "sources": [
+    {
+      "id": "turismoroma-colosseum",
+      "publisher": "Turismo Roma (Roma Capitale)",
+      "title": "The Flavian Amphitheatre (The Colosseum)",
+      "url": "https://www.turismoroma.it/en/places/flavian-amphitheatre-colosseum",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-colosseum",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Colosseum",
+      "url": "https://www.britannica.com/topic/Colosseum",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "colosseo-park",
+      "publisher": "Parco archeologico del Colosseo (archived by the Internet Archive)",
+      "title": "The Colosseum",
+      "url": "https://web.archive.org/web/2025/https://colosseo.it/en/area/the-colosseum/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Colosseum",
+  "caveats": [
+    "The Parco archeologico del Colosseo site did not respond, and its archived page gives no dimensions, so the height and footprint come from Rome's official tourism site and the plan dimensions from both it and Britannica.",
+    "Turismo Roma words the height as 'over 48 meters high', so it is stored as approximate.",
+    "No mass or volume from a primary source was found."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

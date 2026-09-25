@@ -1,0 +1,83 @@
+{
+  "slug": "tennis-ball",
+  "name": "Tennis ball",
+  "category": "sports",
+  "phrase": "a tennis ball",
+  "aliases": [
+    "tennis"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "tennis-ball",
+    "x": "diameter"
+  },
+  "description": "A tennis ball is a hollow rubber ball covered in fabric, usually bright yellow. The ITF Rules of Tennis require the standard fast and medium balls to measure 6.54 to 6.86 cm across and weigh 56.0 to 59.4 g. A larger, slower ball is also allowed, and every approved ball must pass bounce and squash tests too.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "min": 6.54,
+      "max": 6.86,
+      "unit": "cm",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Size limits for Type 1 (fast), Type 2 (medium) and high-altitude balls, 2.57-2.70 in",
+      "source": [
+        "itf-rules-2026",
+        "itf-ball-tests"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "min": 56.0,
+      "max": 59.4,
+      "unit": "g",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Mass limits for all ball types, 1.975-2.095 oz",
+      "source": "itf-rules-2026"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The Type 3 (slow) ball is larger, at 7.00-7.30 cm across, but has the same mass limits.",
+      "source": "itf-rules-2026"
+    },
+    {
+      "text": "Dropped from a set height, a Type 1 (fast) ball must bounce back 138-151 cm.",
+      "source": "itf-rules-2026"
+    },
+    {
+      "text": "The ITF checks a ball's size with two ring gauges: it must fall through the larger ring under its own weight but not through the smaller one.",
+      "source": "itf-ball-tests"
+    }
+  ],
+  "sources": [
+    {
+      "id": "itf-rules-2026",
+      "publisher": "International Tennis Federation",
+      "title": "ITF Rules of Tennis 2026, Appendix I: The Ball",
+      "url": "https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "itf-ball-tests",
+      "publisher": "International Tennis Federation",
+      "title": "Ball Approval Tests (November 2019)",
+      "url": "https://www.itftennis.com/media/2100/balls-ball-approval-tests.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tennis_ball",
+  "caveats": [
+    "The Rules table calls this measure 'size'; the ITF's ball approval document explains it is the ball's diameter, checked with ring gauges.",
+    "The larger Type 3 (slow) ball, 7.00-7.30 cm, is not included in the headline range."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

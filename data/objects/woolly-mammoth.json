@@ -1,0 +1,126 @@
+{
+  "slug": "woolly-mammoth",
+  "name": "Woolly mammoth",
+  "category": "prehistoric",
+  "phrase": "a woolly mammoth",
+  "aliases": [
+    "mammoth",
+    "mammuthus primigenius",
+    "wooly mammoth",
+    "ice age mammoth"
+  ],
+  "familiar": true,
+  "headline": "shoulderHeight",
+  "headlineAdj": "tall at the shoulder",
+  "profile": {
+    "shape": "woolly-mammoth",
+    "y": "shoulderHeight"
+  },
+  "subtitle": "Estimated adult size",
+  "scientificName": "Mammuthus primigenius",
+  "description": "The woolly mammoth was an Ice Age member of the elephant family, adapted to cold climates with a thick coat of hair, small ears, a layer of fat under the skin and spiral-curved tusks. The Natural History Museum, London says adults stood about 3 to 3.5 metres at the shoulder and weighed about 4 to 6 tonnes depending on sex, roughly between the sizes of modern Asian and African elephants. Its back was high at the shoulder and sloped down towards the tail.",
+  "measures": [
+    {
+      "key": "shoulderHeight",
+      "label": "Shoulder height (estimated)",
+      "kind": "length",
+      "min": 3,
+      "max": 3.5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated adult shoulder height",
+      "source": "nhm-mammoths"
+    },
+    {
+      "key": "heightBritannica",
+      "label": "Height (Britannica estimate)",
+      "kind": "length",
+      "min": 3,
+      "max": 3.7,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated standing height; Britannica gives about 3 to 3.7 metres (about 10 to 12 feet) tall",
+      "source": "britannica-woolly-mammoth"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "min": 4,
+      "max": 6,
+      "unit": "t",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated body weight, depending on whether male or female; the museum says 'about four to five or six tonnes'",
+      "source": "nhm-mammoths"
+    },
+    {
+      "key": "massBritannica",
+      "label": "Mass (Britannica estimate)",
+      "kind": "mass",
+      "min": 5500,
+      "max": 7300,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated weight; Britannica gives 5,500 to 7,300 kg (about 6 to 8 tons)",
+      "source": "britannica-woolly-mammoth"
+    },
+    {
+      "key": "hairLength",
+      "label": "Longest outer hair",
+      "kind": "length",
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "The coarse dark-brown outer hair grew more than 70 cm long in some individuals",
+      "source": "britannica-woolly-mammoth",
+      "value": 70
+    }
+  ],
+  "facts": [
+    {
+      "text": "Its tusks curved in a spiral, bending in two directions, unlike the gentle one-direction curve of living elephants' tusks.",
+      "source": "nhm-mammoths"
+    },
+    {
+      "text": "Southern and steppe mammoths were bigger still, weighing some 10 tonnes and standing up to four metres tall.",
+      "source": "nhm-mammoths"
+    },
+    {
+      "text": "Under its thick skin was a layer of insulating fat up to 8 cm (3 inches) thick, beneath a woolly undercoat about 2.5 cm deep.",
+      "source": "britannica-woolly-mammoth"
+    },
+    {
+      "text": "Island mammoths could be tiny: the Californian pygmy mammoth stood about 1.7 metres tall and the Sardinian mammoth about 1.5 metres.",
+      "source": "nhm-mammoths"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-mammoths",
+      "publisher": "Natural History Museum, London",
+      "title": "Were all mammoths woolly?",
+      "url": "https://www.nhm.ac.uk/discover/were-all-mammoths-woolly.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-woolly-mammoth",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Woolly mammoth",
+      "url": "https://www.britannica.com/animal/woolly-mammoth",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+  "caveats": [
+    "All sizes are estimates from fossils and frozen remains.",
+    "The Natural History Museum's spoken estimate 'about four to five or six tonnes' (varying with sex) is stored as a 4-6 t range.",
+    "Britannica's 3-3.7 m is described as how tall mammoths stood, without saying it is at the shoulder; the headline uses the Natural History Museum's explicit shoulder height.",
+    "The Royal BC Museum's pages were checked but gave no shoulder height or weight for the living animal (only 2 m tusks on its replica), so they were not used."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

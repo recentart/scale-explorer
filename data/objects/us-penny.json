@@ -1,0 +1,94 @@
+{
+  "slug": "us-penny",
+  "name": "US penny",
+  "category": "everyday",
+  "phrase": "a US penny",
+  "aliases": [
+    "penny",
+    "one-cent coin",
+    "cent",
+    "lincoln cent",
+    "1 cent coin",
+    "coin"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "us-penny",
+    "x": "diameter"
+  },
+  "subtitle": "Lincoln one-cent coin, copper-plated zinc",
+  "description": "The one-cent coin, or penny, was one of the first coins made by the U.S. Mint after 1792 and shows President Lincoln on the front. Today's penny is copper-plated zinc, 19.05 mm across and 1.52 mm thick, and weighs 2.50 g. The Mint struck its final circulating penny on November 12, 2025, but the coin remains legal tender.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 19.05,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official specification (0.750 in)",
+      "source": "usmint-specs"
+    },
+    {
+      "key": "thickness",
+      "label": "Thickness",
+      "kind": "length",
+      "value": 1.52,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official specification (0.06 in)",
+      "source": "usmint-specs"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "value": 2.5,
+      "unit": "g",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official specification, stated as 2.50 g (0.088 oz)",
+      "source": "usmint-specs"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The penny is 97.5% zinc and 2.5% copper, with a plain edge.",
+      "source": "usmint-specs"
+    },
+    {
+      "text": "The final circulating penny was struck in Philadelphia on November 12, 2025, ending a 232-year production run.",
+      "source": "usmint-final-penny"
+    },
+    {
+      "text": "The cost of making each penny rose from 1.42 cents to 3.69 cents over the preceding decade, and an estimated 300 billion pennies remain in circulation.",
+      "source": "usmint-final-penny"
+    }
+  ],
+  "sources": [
+    {
+      "id": "usmint-specs",
+      "publisher": "United States Mint",
+      "title": "Coin Specifications",
+      "url": "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "usmint-final-penny",
+      "publisher": "United States Mint",
+      "title": "United States Mint Hosts Historic Ceremonial Strike for Final Production of the Circulating One-Cent Coin (press release, November 12, 2025)",
+      "url": "https://www.usmint.gov/news/press-releases/united-states-mint-hosts-historic-ceremonial-strike-for-final-production-of-the-circulating-one-cent-coin",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Penny_(United_States_coin)",
+  "caveats": [
+    "Specifications are those the Mint lists for the current copper-plated zinc penny; older pennies made of other metals are not covered."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

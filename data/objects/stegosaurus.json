@@ -1,0 +1,143 @@
+{
+  "slug": "stegosaurus",
+  "name": "Stegosaurus",
+  "category": "prehistoric",
+  "phrase": "a Stegosaurus",
+  "aliases": [
+    "stegosaur",
+    "stegosaurus stenops",
+    "roof lizard",
+    "plated dinosaur",
+    "spiked tail dinosaur"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "stegosaurus",
+    "x": "length"
+  },
+  "subtitle": "Estimated size of a large adult",
+  "scientificName": "Stegosaurus",
+  "description": "Stegosaurus was a plant-eating armoured dinosaur that lived in North America in the Late Jurassic, about 152 to 145 million years ago. It is known for the two rows of large bony plates along its back and the spikes on its tail, and it had a very small head for its size. The Natural History Museum, London estimates it at about 9 metres long, and the American Museum of Natural History estimates about 8.5 metres and 2,720 kg for Stegosaurus stenops. These sizes are estimates, and many individuals were smaller.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (estimated)",
+      "kind": "length",
+      "value": 9.0,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated nose-to-tail length; Britannica also says some reached 9 m (30 ft)",
+      "source": [
+        "nhm-stegosaurus",
+        "britannica-stegosaurus"
+      ]
+    },
+    {
+      "key": "typicalLength",
+      "label": "Usual length (estimated)",
+      "kind": "length",
+      "value": 6.5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Estimated: Britannica says Stegosaurus usually grew to about 6.5 m (21 ft)",
+      "source": "britannica-stegosaurus"
+    },
+    {
+      "key": "amnhLength",
+      "label": "Length of Stegosaurus stenops (AMNH estimate)",
+      "kind": "length",
+      "value": 8.5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated; AMNH gives 8.5 meters (28 feet)",
+      "source": "amnh-stegosaurus"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "value": 2720,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated weight of Stegosaurus stenops; AMNH also gives 6,000 pounds",
+      "source": "amnh-stegosaurus"
+    },
+    {
+      "key": "sophieMass",
+      "label": "Mass of the NHM specimen 'Sophie' (estimated)",
+      "kind": "mass",
+      "value": 1600,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated living weight of the Natural History Museum's Stegosaurus stenops, a young adult, from a 3D model of its skeleton and leg-bone measurements",
+      "source": "nhm-stegosaurus-weight"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The plates on its back were embedded in the skin rather than attached to the skeleton. O C Marsh first thought they lay flat, but a specimen held in place by mud showed they stood upright in alternating rows.",
+      "source": "nhm-stegosaurus"
+    },
+    {
+      "text": "Its brain was about the size of a plum.",
+      "source": "nhm-stegosaurus"
+    },
+    {
+      "text": "Its back legs were about twice as long as its front legs.",
+      "source": "amnh-stegosaurus"
+    },
+    {
+      "text": "Because its forelimbs were much shorter than its hind limbs, its back had a characteristic arch.",
+      "source": "britannica-stegosaurus"
+    },
+    {
+      "text": "An almost complete Stegosaurus stenops skeleton went on display at the Natural History Museum, London in December 2014. Museum scientists estimated it weighed around 1,600 kg in life, similar to a small rhino.",
+      "source": "nhm-stegosaurus-weight"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-stegosaurus",
+      "publisher": "Natural History Museum, London",
+      "title": "Stegosaurus (Dino Directory)",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nhm-stegosaurus-weight",
+      "publisher": "Natural History Museum, London",
+      "title": "Weight of the world's most complete Stegosaurus revealed",
+      "url": "https://www.nhm.ac.uk/discover/news/2015/march/weight-of-the-worlds-most-complete-stegosaurus-revealed.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "amnh-stegosaurus",
+      "publisher": "American Museum of Natural History",
+      "title": "Stegosaurus stenops (OLogy card 017)",
+      "url": "https://www.amnh.org/explore/ology/ology-cards/017-stegosaurus-stenops",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-stegosaurus",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Stegosaurus",
+      "url": "https://www.britannica.com/animal/Stegosaurus",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Stegosaurus",
+  "caveats": [
+    "All sizes are estimates. The NHM Dino Directory gives no weight for Stegosaurus, so the headline mass is the AMNH figure.",
+    "Mass estimates differ widely: AMNH gives 2,720 kg, while the NHM's well-preserved young adult was estimated at about 1,600 kg.",
+    "The 9 m headline is at the large end; Britannica says Stegosaurus usually grew to about 6.5 m."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

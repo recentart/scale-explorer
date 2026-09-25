@@ -1,0 +1,155 @@
+{
+  "slug": "quetzalcoatlus",
+  "name": "Quetzalcoatlus",
+  "category": "prehistoric",
+  "phrase": "a Quetzalcoatlus",
+  "aliases": [
+    "quetzalcoatlus northropi",
+    "quetz",
+    "pterosaur",
+    "pterodactyl",
+    "azhdarchid",
+    "largest flying animal"
+  ],
+  "familiar": false,
+  "headline": "wingspan",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "quetzalcoatlus",
+    "x": "wingspan",
+    "y": "height"
+  },
+  "subtitle": "Quetzalcoatlus northropi, the larger species; estimated size",
+  "scientificName": "Quetzalcoatlus northropi",
+  "description": "Quetzalcoatlus was a giant pterosaur, a flying reptile rather than a dinosaur, that lived in what is now Big Bend in West Texas about 70 million years ago. The larger species, Q. northropi, is the largest flying animal known, with an estimated wingspan of 37 to 40 feet, and it stood about 12 feet tall on the ground. It had no tail, a very long neck and long toothless jaws, and is thought to have launched itself into the air with a powerful leap.",
+  "measures": [
+    {
+      "key": "wingspan",
+      "label": "Wingspan (estimated)",
+      "kind": "length",
+      "min": 37,
+      "max": 40,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated wingspan of Quetzalcoatlus northropi from the 2021 Society of Vertebrate Paleontology memoir; Britannica gives up to 11 meters (36 feet)",
+      "source": [
+        "berkeley-quetzalcoatlus",
+        "britannica-quetzalcoatlus"
+      ]
+    },
+    {
+      "key": "height",
+      "label": "Standing height (estimated)",
+      "kind": "length",
+      "value": 12,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated height standing on the ground",
+      "source": "berkeley-quetzalcoatlus"
+    },
+    {
+      "key": "heightBritannica",
+      "label": "Standing height (Britannica estimate)",
+      "kind": "length",
+      "value": 5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated; Britannica says Q. northropi stood about 5 meters (16 feet) tall",
+      "source": "britannica-quetzalcoatlus"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "max": 250,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated; Britannica says weight estimates are elusive but it could have been as much as 250 kg (550 pounds) according to some researchers",
+      "source": "britannica-quetzalcoatlus"
+    },
+    {
+      "key": "neckLength",
+      "label": "Neck length",
+      "kind": "length",
+      "value": 6,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated neck length; Britannica gives up to 3 meters (10 feet) for Q. northropi",
+      "source": "berkeley-quetzalcoatlus"
+    },
+    {
+      "key": "lawsoniWingspan",
+      "label": "Wingspan of the smaller species, Q. lawsoni",
+      "kind": "length",
+      "min": 18,
+      "max": 20,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated wingspan of Quetzalcoatlus lawsoni, named in 2021",
+      "source": "utexas-quetzalcoatlus"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Its wings were so long that they touched the ground when folded, so it walked on all fours with an unusual step-by-step gait.",
+      "source": "berkeley-quetzalcoatlus"
+    },
+    {
+      "text": "Researchers think it took off by leaping at least 8 feet into the air before sweeping its wings down.",
+      "source": "utexas-quetzalcoatlus"
+    },
+    {
+      "text": "All known Quetzalcoatlus fossils are held in the University of Texas at Austin collections; the large species is known from a single set of bones found in Big Bend National Park.",
+      "source": [
+        "utexas-quetzalcoatlus",
+        "berkeley-quetzalcoatlus"
+      ]
+    },
+    {
+      "text": "Like all pterosaurs it had no feathers; its body was covered with hair.",
+      "source": [
+        "britannica-quetzalcoatlus",
+        "berkeley-quetzalcoatlus"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "berkeley-quetzalcoatlus",
+      "publisher": "University of California, Berkeley",
+      "title": "Fleshing out the Bones of Quetzalcoatlus, Earth's Largest Flier Ever",
+      "url": "https://vcresearch.berkeley.edu/news/fleshing-out-bones-quetzalcoatlus-earths-largest-flier-ever",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "utexas-quetzalcoatlus",
+      "publisher": "The University of Texas at Austin",
+      "title": "World's Largest Pterosaur Leaped Aloft to Fly",
+      "url": "https://news.utexas.edu/2021/12/08/worlds-largest-pterosaur-leaped-aloft-to-fly/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-quetzalcoatlus",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Quetzalcoatlus",
+      "url": "https://www.britannica.com/animal/Quetzalcoatlus",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Quetzalcoatlus",
+  "caveats": [
+    "All sizes are estimates from a small number of fossil bones.",
+    "Standing height estimates differ: 12 feet (UC Berkeley, 2021) versus about 5 m / 16 feet (Britannica). The Berkeley figure is used for the drawing.",
+    "Britannica gives the wingspan as up to 11 m (36 ft), a little below the 37-40 ft of the 2021 memoir; elsewhere in the same article it also says 'a wingspan of up to 6 meters', which appears to be an error and was not used.",
+    "Neck length also differs: 6 feet (UC Berkeley) versus up to 3 m / 10 feet (Britannica).",
+    "No museum source fetched gave a firm mass; the only figure is Britannica's 'as much as 250 kg according to some researchers'."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

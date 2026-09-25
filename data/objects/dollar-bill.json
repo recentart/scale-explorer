@@ -1,0 +1,96 @@
+{
+  "slug": "dollar-bill",
+  "name": "US dollar bill",
+  "category": "everyday",
+  "phrase": "a US dollar bill",
+  "aliases": [
+    "dollar bill",
+    "one dollar bill",
+    "banknote",
+    "us currency",
+    "federal reserve note",
+    "$1 bill",
+    "paper money"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "dollar-bill",
+    "x": "length",
+    "y": "width"
+  },
+  "subtitle": "Current-size US banknote (series 1928 onward)",
+  "description": "US paper money has been printed at its present size since the 1928 series, when the older large-format notes were reduced. The Bureau of Engraving and Printing gives that present size as 6.14 by 2.61 inches. A note of any denomination weighs about one gram, and the paper is made of 75% cotton and 25% linen.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 6.14,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Long side of a current-size note",
+      "source": "bep-history"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 2.61,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Short side of a current-size note",
+      "source": "bep-history"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "value": 1,
+      "unit": "g",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Approximate weight of a note of any denomination",
+      "source": "bep-faq"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Before the 1928 series, US notes were larger, measuring 7.375 by 3.125 inches.",
+      "source": "bep-history"
+    },
+    {
+      "text": "A note can take about 4,000 double folds (forward, then backward) before it tears.",
+      "source": "bep-faq"
+    },
+    {
+      "text": "Currency paper is 75% cotton and 25% linen.",
+      "source": "bep-faq"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bep-history",
+      "publisher": "Bureau of Engraving and Printing, U.S. Department of the Treasury",
+      "title": "BEP History Fact Sheet",
+      "url": "https://www.bep.gov/media/1081/download?inline=",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "bep-faq",
+      "publisher": "Bureau of Engraving and Printing, U.S. Department of the Treasury",
+      "title": "Currency FAQs",
+      "url": "https://www.bep.gov/currency/faqs",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/United_States_one-dollar_bill",
+  "caveats": [
+    "Note thickness is left out because it was not found on a BEP page fetched for this entry."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

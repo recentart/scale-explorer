@@ -1,0 +1,120 @@
+{
+  "slug": "hockey-rink",
+  "name": "Ice hockey rink (NHL)",
+  "category": "sports",
+  "phrase": "an NHL ice hockey rink",
+  "aliases": [
+    "hockey rink",
+    "ice rink",
+    "nhl rink",
+    "ice hockey rink",
+    "rink"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "hockey-rink",
+    "x": "length"
+  },
+  "subtitle": "NHL regulation rink (Official Rules 2025-2026)",
+  "description": "An NHL rink is 200 feet long and 85 feet wide, with corners rounded on a 28-foot radius. The goal lines sit 11 feet in from each end, and the two blue lines are 64 feet out from the goal lines. Each goal opening is 6 feet wide and 4 feet high, and the boards around the ice stand about 42 inches tall.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 200,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official rink length, end boards to end boards",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 85,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official rink width, side boards to side boards",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "key": "cornerRadius",
+      "label": "Corner radius",
+      "kind": "length",
+      "value": 28,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius of the rounded corners",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "key": "goalWidth",
+      "label": "Goal width",
+      "kind": "length",
+      "value": 6,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Measured between the inside of the goal posts",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "key": "goalHeight",
+      "label": "Goal height",
+      "kind": "length",
+      "value": 4,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Goal posts extend 4 ft above the ice surface",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "key": "boardHeight",
+      "label": "Board height",
+      "kind": "length",
+      "min": 40,
+      "max": 48,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Height of the boards above the ice; 42 in is the stated ideal",
+      "source": "nhl-rules-2025-26"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Goal lines are drawn 11 feet from each end of the rink, and the blue lines are 64 feet out from the goal lines, dividing the ice into three zones.",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "text": "Safety glass rises 8 feet above the boards at each end of the rink and at least 6 feet along the sides.",
+      "source": "nhl-rules-2025-26"
+    },
+    {
+      "text": "An NHL puck is 1 inch thick and 3 inches across and weighs between 5.5 and 6 ounces.",
+      "source": "nhl-rules-2025-26"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhl-rules-2025-26",
+      "publisher": "National Hockey League",
+      "title": "National Hockey League Official Rules 2025-2026, Rules 1, 2 and 13",
+      "url": "https://media.d3.nhle.com/image/private/t_document/prd/slwjuaqwmuvj5bkplixo.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Ice_hockey_rink",
+  "caveats": [
+    "These are NHL dimensions. International (IIHF) rinks are wider and use metric sizes."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "giant-squid",
+  "name": "Giant squid",
+  "category": "animals",
+  "phrase": "a giant squid",
+  "aliases": [
+    "architeuthis",
+    "architeuthis dux",
+    "squid",
+    "kraken"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "giant-squid",
+    "x": "length"
+  },
+  "subtitle": "Longest recorded, tentacles included",
+  "scientificName": "Architeuthis dux",
+  "description": "The giant squid lives in cold, dark water roughly 500 to 1,000 m deep and is known mostly from carcasses found at the surface. Its two feeding tentacles often double its total length, and the longest scientifically recorded individual measured about 43 ft (13 m) including them. Its eyes, about 1 ft across, are the largest in the animal kingdom.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Total length (record)",
+      "kind": "length",
+      "max": 43,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Longest total length on record, including tentacles (13 m)",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "key": "mantleLength",
+      "label": "Mantle length (record)",
+      "kind": "length",
+      "max": 7.4,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Longest mantle (body) length on record, 2.25 m; scientists treat mantle length as the best measure of a squid's real size",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "key": "bodyToArmLength",
+      "label": "Fin tip to arm tips",
+      "kind": "length",
+      "max": 16,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Length from the tip of the top fin to the end of the arms (excluding the two long tentacles) rarely exceeds 16 ft (5 m)",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "key": "estimatedMaxLength",
+      "label": "Possible maximum length",
+      "kind": "length",
+      "max": 66,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated from beak size (20 m); no squid this large has ever been documented",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "key": "eyeDiameter",
+      "label": "Eye diameter",
+      "kind": "length",
+      "value": 1,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "About 30 cm across, the largest eyes in the animal kingdom",
+      "source": "si-ocean-giant-squid"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The largest giant squid ever recorded by scientists was almost 43 ft (13 m) long and may have weighed nearly a ton.",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "text": "A female on display at the National Museum of Natural History, caught off Spain in 2005, was about 11 m (36 ft) long in life, with tentacles extending 6.7 m (22 ft). It has since shrunk to about 7.6 m (25 ft).",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "text": "Giant squid can seize prey up to 33 ft (10 m) away by shooting out their two feeding tentacles.",
+      "source": "si-ocean-giant-squid"
+    },
+    {
+      "text": "Giant squid are thought to live about five years and to reproduce only once.",
+      "source": "si-ocean-giant-squid"
+    }
+  ],
+  "sources": [
+    {
+      "id": "si-ocean-giant-squid",
+      "publisher": "Smithsonian Ocean (Smithsonian National Museum of Natural History)",
+      "title": "How Big is the Giant Squid?",
+      "url": "https://ocean.si.edu/ocean-life/invertebrates/giant-squid",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Giant_squid",
+  "caveats": [
+    "Total length is unreliable for squid because tentacles and arms can fall off or stretch; the headline is the longest recorded total length, not a typical adult.",
+    "The Smithsonian says the record specimen 'may have weighed nearly a ton' without a firm figure, so no mass measure is included.",
+    "Some researchers recognise up to eight Architeuthis species; the scientific name given is the one on the Smithsonian page."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

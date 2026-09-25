@@ -1,0 +1,110 @@
+{
+  "slug": "concorde",
+  "name": "Concorde",
+  "category": "vehicles",
+  "phrase": "Concorde",
+  "aliases": [
+    "concorde jet",
+    "supersonic jet",
+    "supersonic airliner",
+    "SST",
+    "plane",
+    "airliner"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "concorde",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "Air France F-BVFA, Smithsonian National Air and Space Museum",
+  "description": "Concorde was the first supersonic airliner to enter service, carrying passengers across the Atlantic at twice the speed of sound for more than 25 years. It was built jointly by France's Aérospatiale and the British Aircraft Corporation. The Smithsonian lists its Air France example at 61.66 m long with a slender delta wing only 25.56 m across.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 61.66,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "202 ft 3 in",
+      "source": "nasm-concorde"
+    },
+    {
+      "key": "wingspan",
+      "label": "Wingspan",
+      "kind": "length",
+      "value": 25.56,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "83 ft 10 in",
+      "source": "nasm-concorde"
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 11.3,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "37 ft 1 in",
+      "source": "nasm-concorde"
+    },
+    {
+      "key": "mass",
+      "label": "Gross weight",
+      "kind": "mass",
+      "value": 181435,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Gross weight, 400,000 lb",
+      "source": "nasm-concorde"
+    },
+    {
+      "key": "emptyMass",
+      "label": "Empty weight",
+      "kind": "mass",
+      "value": 79265,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "174,750 lb",
+      "source": "nasm-concorde"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Air France donated Concorde F-BVFA to the National Air and Space Museum on June 12, 2003, after its last flight. It had flown 17,824 hours.",
+      "source": "nasm-concorde"
+    },
+    {
+      "text": "F-BVFA was the first Air France Concorde to open service to Rio de Janeiro, Washington, D.C., and New York.",
+      "source": "nasm-concorde"
+    },
+    {
+      "text": "It is powered by four Rolls-Royce/SNECMA Olympus 593 Mk 602 engines of 38,050 lb thrust each.",
+      "source": "nasm-concorde"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasm-concorde",
+      "publisher": "Smithsonian National Air and Space Museum",
+      "title": "Concorde, Fox Alpha, Air France",
+      "url": "https://airandspace.si.edu/collection-objects/concorde-fox-alpha-air-france/nasm_A20030139000",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Concorde",
+  "caveats": [
+    "All figures come from the Smithsonian's record for one aircraft (F-BVFA); British Airways and Air France museum pages were not used."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

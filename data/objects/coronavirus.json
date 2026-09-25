@@ -1,0 +1,96 @@
+{
+  "slug": "coronavirus",
+  "name": "Coronavirus (SARS-CoV-2)",
+  "category": "microscopic",
+  "phrase": "a coronavirus particle",
+  "aliases": [
+    "SARS-CoV-2",
+    "COVID-19 virus",
+    "covid virus",
+    "coronavirus",
+    "virus",
+    "virion"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "across",
+  "profile": {
+    "shape": "coronavirus",
+    "x": "diameter"
+  },
+  "subtitle": "SARS-CoV-2, the virus that causes COVID-19",
+  "scientificName": "Severe acute respiratory syndrome coronavirus 2",
+  "description": "SARS-CoV-2 is the coronavirus behind the COVID-19 pandemic. Under the electron microscope its particles look roughly round, studded with spike proteins that give the family its crown-like appearance. Early imaging measured the particles at about 60 to 140 nm across, and later cryo-electron studies of Omicron sublineages found average diameters of about 75 to 82 nm.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Particle diameter",
+      "kind": "length",
+      "min": 60,
+      "max": 140,
+      "unit": "nm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Range from early electron-microscope observations of the virion",
+      "source": "karami-2022"
+    },
+    {
+      "key": "omicronDiameter",
+      "label": "Mean diameter (Omicron BA.1 to BA.2)",
+      "kind": "length",
+      "min": 75.0,
+      "max": 81.5,
+      "unit": "nm",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Mean diameters from cryo-electron tomography: BA.1 75.0 +/- 7.9 nm, BA.2 81.5 +/- 6.6 nm",
+      "source": "ma-2023"
+    },
+    {
+      "key": "spikeWidth",
+      "label": "Spike protein diameter",
+      "kind": "length",
+      "min": 9,
+      "max": 12,
+      "unit": "nm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Width of the spike proteins projecting from the envelope",
+      "source": "karami-2022"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Cryo-electron tomography counted on average about 23 pre-fusion spikes on each Omicron BA.1 particle and about 35 on each BA.2 particle, compared with about 26 reported for the original virus.",
+      "source": "ma-2023"
+    },
+    {
+      "text": "The Omicron BA.1 and BA.2 particles were found to be similar in size to the original (wild-type) virus grown in the same cells.",
+      "source": "ma-2023"
+    }
+  ],
+  "sources": [
+    {
+      "id": "karami-2022",
+      "publisher": "Osong Public Health and Research Perspectives (via PubMed Central, NIH)",
+      "title": "SARS-CoV-2 in brief: from virus to prevention (Karami, Karimi, Karami, 2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10211433/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "ma-2023",
+      "publisher": "Signal Transduction and Targeted Therapy (via PubMed Central, NIH)",
+      "title": "Structural characteristics of the SARS-CoV-2 Omicron lineages BA.1 and BA.2 virions (Ma et al., 2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10026235/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/SARS-CoV-2",
+  "caveats": [
+    "No CDC, NIH or NIAID web page stating the particle size could be fetched (NIAID returned 403 and PubMed returned a CAPTCHA), so sizes come from peer-reviewed papers hosted on NIH's PubMed Central.",
+    "Particles are pleomorphic (not perfectly round), and measured size depends on variant, preparation and imaging method.",
+    "No sourced mass or volume was found."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

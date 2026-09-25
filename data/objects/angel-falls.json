@@ -1,0 +1,118 @@
+{
+  "slug": "angel-falls",
+  "name": "Angel Falls",
+  "category": "nature",
+  "phrase": "Angel Falls",
+  "aliases": [
+    "kerepakupai meru",
+    "kerepakupai merú",
+    "salto angel",
+    "salto ángel",
+    "tallest waterfall",
+    "highest waterfall",
+    "waterfall"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "angel-falls",
+    "y": "height"
+  },
+  "subtitle": "Kerepakupai Merú, Canaima National Park, Venezuela",
+  "description": "Angel Falls, also known as Kerepakupai Merú, is the world's tallest waterfall, in Canaima National Park in Bolívar state, southeastern Venezuela. It pours off the flat-topped Auyán-tepui and falls a total of 979 m (3,212 ft), including a single uninterrupted drop of 807 m (2,648 ft). The falls were named after the American pilot Jimmie Angel, who flew over them in the 1930s.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Total height",
+      "kind": "length",
+      "value": 979,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total drop from the lip of Auyán-tepui, including the main plunge and the cascades below it (3,212 ft)",
+      "source": [
+        "britannica-angel-falls",
+        "gwr-tallest-waterfall"
+      ]
+    },
+    {
+      "key": "singleDrop",
+      "label": "Longest single drop",
+      "kind": "length",
+      "value": 807,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Uninterrupted free fall of the main plunge (2,648 ft)",
+      "source": "gwr-tallest-waterfall"
+    },
+    {
+      "key": "baseWidth",
+      "label": "Width at the base",
+      "kind": "length",
+      "value": 150,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Britannica gives 500 feet (150 metres) wide at the base",
+      "source": "britannica-angel-falls"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The falls are on a branch of the Carrao River, an upper tributary of the Caroní, and are best seen from the air because of the dense jungle around them.",
+      "source": [
+        "gwr-tallest-waterfall",
+        "britannica-angel-falls"
+      ]
+    },
+    {
+      "text": "The height was last surveyed by a National Geographic expedition in 1949. Guinness notes that if only the 807 m drop counted, the 948 m multi-drop Tugela Falls in South Africa would be the tallest waterfall overall.",
+      "source": "gwr-tallest-waterfall"
+    },
+    {
+      "text": "The Pemón name Kerepakupai Merú means 'waterfall of the deepest place'. In 2009 Venezuela's president declared that this Indigenous name should be used.",
+      "source": [
+        "gwr-tallest-waterfall",
+        "britannica-angel-falls"
+      ]
+    },
+    {
+      "text": "Canaima National Park covers about 3 million hectares, and roughly 65% of it is table mountain (tepui) formations.",
+      "source": "unesco-canaima"
+    }
+  ],
+  "sources": [
+    {
+      "id": "britannica-angel-falls",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Angel Falls",
+      "url": "https://www.britannica.com/place/Angel-Falls",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "gwr-tallest-waterfall",
+      "publisher": "Guinness World Records",
+      "title": "Tallest waterfall",
+      "url": "https://www.guinnessworldrecords.com/world-records/highest-waterfall",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "unesco-canaima",
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Canaima National Park",
+      "url": "https://whc.unesco.org/en/list/701/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Angel_Falls",
+  "caveats": [
+    "No Venezuelan park authority page could be found; UNESCO's Canaima page gives only a rounded 1,000 m for the world's highest waterfall, so the 979 m and 807 m figures come from Britannica and Guinness World Records.",
+    "The 979 m total includes cascades below the main plunge; some question whether all of it should count as one waterfall.",
+    "Britannica says Jimmie Angel crash-landed nearby in 1937, while Guinness says he recorded the falls after flying over them in November 1933.",
+    "The waterfall outline is illustrative; only its height is to scale."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

@@ -1,8 +1,12 @@
 [
-  { "slug": "animals", "name": "Animals", "singular": "animal", "icon": "giraffe", "description": "From a lion to the largest animal that has ever lived: how big animals really are next to a person." },
-  { "slug": "vehicles", "name": "Vehicles", "singular": "vehicle", "icon": "boeing-747", "description": "Cars, buses, trucks, airliners and ships, drawn to scale so you can see how they measure up." },
-  { "slug": "buildings", "name": "Buildings", "singular": "building", "icon": "empire-state-building", "description": "Homes and skyscrapers compared at their true heights, from a family house to the tallest building in the world." },
-  { "slug": "structures", "name": "Structures", "singular": "structure", "icon": "eiffel-tower", "description": "Towers, monuments, dams and sports fields: famous structures measured and drawn side by side." },
-  { "slug": "nature", "name": "Nature", "singular": "natural wonder", "icon": "mount-everest", "description": "The tallest trees, great waterfalls, the highest mountain and the deepest canyons, measured against familiar things." },
-  { "slug": "space", "name": "Space", "singular": "space object", "icon": "saturn-v", "description": "Rockets, the space station, the Moon and the planets, from 100 metres to thousands of kilometres across." }
+  { "slug": "microscopic", "name": "Microscopic", "singular": "microscopic thing", "icon": "coronavirus", "description": "Atoms, DNA, viruses, cells and grains of sand: things far too small to see, drawn next to things you know." },
+  { "slug": "everyday", "name": "Everyday objects", "singular": "everyday object", "icon": "smartphone", "description": "Coins, cards, phones, paper and shipping containers: familiar objects measured to their official specifications." },
+  { "slug": "animals", "name": "Animals", "singular": "animal", "icon": "giraffe", "description": "From an ant to the largest animal that has ever lived: how big animals really are next to a person." },
+  { "slug": "prehistoric", "name": "Prehistoric", "singular": "prehistoric animal", "icon": "tyrannosaurus-rex", "description": "Dinosaurs, Megalodon and woolly mammoths. Their sizes are estimates from fossils, so they are shown as ranges." },
+  { "slug": "sports", "name": "Sports", "singular": "sports object", "icon": "basketball", "description": "Balls, courts, pitches, rinks and pools, measured to the official rules of each sport." },
+  { "slug": "vehicles", "name": "Vehicles", "singular": "vehicle", "icon": "boeing-747", "description": "Cars, buses, trucks, airliners, airships and ships, drawn to scale so you can see how they measure up." },
+  { "slug": "buildings", "name": "Buildings", "singular": "building", "icon": "empire-state-building", "description": "Homes and skyscrapers compared at their true heights, from a family house to the tallest buildings in the world." },
+  { "slug": "structures", "name": "Structures", "singular": "structure", "icon": "eiffel-tower", "description": "Towers, monuments, bridges, dams and stadiums: famous structures measured and drawn side by side." },
+  { "slug": "nature", "name": "Nature", "singular": "natural wonder", "icon": "mount-everest", "description": "The tallest trees, great waterfalls, the highest mountains and the deepest trench, measured against familiar things." },
+  { "slug": "space", "name": "Space", "singular": "space object", "icon": "saturn", "description": "Spacecraft, planets, the Sun, giant stars and whole galaxies, from metres to hundreds of thousands of light-years across." }
 ]

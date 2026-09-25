@@ -1,0 +1,63 @@
+{
+  "slug": "paramecium",
+  "name": "Paramecium",
+  "category": "microscopic",
+  "phrase": "a paramecium",
+  "aliases": [
+    "paramecia",
+    "Paramecium caudatum",
+    "slipper animalcule",
+    "ciliate",
+    "protozoan"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "paramecium",
+    "x": "length"
+  },
+  "subtitle": "Range across the genus, which includes P. caudatum",
+  "scientificName": "Paramecium",
+  "description": "Paramecium is a genus of single-celled, free-living protozoans that is widely used as a model organism because it is easy to grow in the laboratory. The cell is an elongated oval covered in beating cilia, which it uses both to swim and to sweep bacteria and other food into its mouth. Depending on the species, paramecia range from about 0.05 to 0.32 mm long.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "min": 0.05,
+      "max": 0.32,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Length range across the genus (0.002 to 0.013 inch)",
+      "source": "britannica-paramecium"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Paramecia have two kinds of nucleus: a large macronucleus that runs the cell's metabolism and at least one small micronucleus that holds the germline genetic material.",
+      "source": "britannica-paramecium"
+    },
+    {
+      "text": "Paramecium is the only genus in the family Parameciidae, within the ciliate phylum Ciliophora.",
+      "source": "britannica-paramecium"
+    }
+  ],
+  "sources": [
+    {
+      "id": "britannica-paramecium",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Paramecium",
+      "url": "https://www.britannica.com/science/Paramecium",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Paramecium",
+  "caveats": [
+    "No primary or university source giving a length range specifically for P. caudatum could be fetched, so the range covers the whole genus.",
+    "No sourced width, mass or volume was found."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

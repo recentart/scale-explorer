@@ -1,0 +1,104 @@
+{
+  "slug": "big-ben",
+  "name": "Big Ben (Elizabeth Tower)",
+  "category": "structures",
+  "phrase": "Big Ben",
+  "aliases": [
+    "big ben",
+    "elizabeth tower",
+    "clock tower",
+    "great clock of westminster",
+    "houses of parliament clock",
+    "london clock tower"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "big-ben",
+    "y": "height"
+  },
+  "subtitle": "Elizabeth Tower, Palace of Westminster, London",
+  "description": "Big Ben is strictly the Great Bell inside the clock tower at the north end of the Palace of Westminster, though the name is now used for the clock, the bell and the tower together. Work on the tower began in 1843 as part of Charles Barry's rebuilding of the palace after the 1834 fire, and the Great Clock started running in 1859. The tower was called the Clock Tower until 2012, when it was renamed the Elizabeth Tower for Queen Elizabeth II's Diamond Jubilee. UK Parliament gives its height as 96 metres over 11 floors.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height of the Elizabeth Tower",
+      "kind": "length",
+      "value": 96,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Height of the tower as given by UK Parliament (11 floors)",
+      "source": "parliament-facts"
+    },
+    {
+      "key": "dialDiameter",
+      "label": "Clock dial diameter",
+      "kind": "length",
+      "value": 7,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter of each of the four clock dials",
+      "source": "parliament-facts"
+    },
+    {
+      "key": "bellMass",
+      "label": "Weight of the Great Bell",
+      "kind": "mass",
+      "value": 13.7,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "The bell called Big Ben itself, not the tower",
+      "source": "parliament-facts"
+    }
+  ],
+  "facts": [
+    {
+      "text": "It takes 334 steps to reach the belfry where Big Ben hangs, and another 65 to reach the Ayrton Light, which shines when Parliament is sitting.",
+      "source": "parliament-facts"
+    },
+    {
+      "text": "The tower was built with 850 cubic metres of stone and 2,600 cubic metres of brick.",
+      "source": "parliament-facts"
+    },
+    {
+      "text": "Each copper minute hand is 4.2 m long and weighs 100 kg.",
+      "source": "parliament-facts"
+    },
+    {
+      "text": "The Clock Tower was renamed the Elizabeth Tower in 2012 to mark Queen Elizabeth II's Diamond Jubilee.",
+      "source": "parliament-dates"
+    },
+    {
+      "text": "The Great Clock began ticking on 31 May 1859, and the bell was first heard striking on 11 July that year.",
+      "source": "parliament-dates"
+    }
+  ],
+  "sources": [
+    {
+      "id": "parliament-facts",
+      "publisher": "UK Parliament",
+      "title": "Facts and figures: Big Ben and Elizabeth Tower",
+      "url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "parliament-dates",
+      "publisher": "UK Parliament",
+      "title": "A brief history of Big Ben and Elizabeth Tower",
+      "url": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/building-clock-tower/key-dates-/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Big_Ben",
+  "caveats": [
+    "UK Parliament gives the height as a round 96 metres and does not say exactly which points it is measured between.",
+    "No official width or total mass of the tower was found, so only the height axis is used for the drawing.",
+    "The mass listed is the Great Bell's, not the tower's."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

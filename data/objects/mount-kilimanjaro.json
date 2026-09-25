@@ -1,0 +1,89 @@
+{
+  "slug": "mount-kilimanjaro",
+  "name": "Mount Kilimanjaro",
+  "category": "nature",
+  "phrase": "Mount Kilimanjaro",
+  "aliases": [
+    "kilimanjaro",
+    "mt kilimanjaro",
+    "kibo",
+    "uhuru peak",
+    "highest mountain in africa",
+    "mountain",
+    "volcano"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "mount-kilimanjaro",
+    "y": "height"
+  },
+  "subtitle": "Kibo summit, northeastern Tanzania",
+  "description": "Kilimanjaro is a volcanic massif in northeastern Tanzania, close to the Kenyan border, and the highest point in Africa. Its central cone, Kibo, reaches 5,895 m (19,340 ft). The mountain stands on its own above the surrounding plains, and UNESCO describes it as the largest free-standing volcanic mass in the world.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height above sea level",
+      "kind": "length",
+      "value": 5895,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Summit of the central cone, Kibo; Britannica also gives 19,340 ft",
+      "source": [
+        "britannica-kilimanjaro",
+        "unesco-kilimanjaro"
+      ]
+    },
+    {
+      "key": "prominenceAbovePlains",
+      "label": "Rise above surrounding plains",
+      "kind": "length",
+      "value": 4877,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Height of the massif above the plains around it",
+      "source": "unesco-kilimanjaro"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Kilimanjaro has three main volcanic peaks: Kibo, Mawenzi and Shira.",
+      "source": "unesco-kilimanjaro"
+    },
+    {
+      "text": "Kilimanjaro National Park, a UNESCO World Heritage Site, covers some 75,575 hectares and is encircled by mountain forest.",
+      "source": "unesco-kilimanjaro"
+    },
+    {
+      "text": "Europeans first learned of the mountain in 1848, when it was reached by the German missionaries Johannes Rebmann and Johann Ludwig Krapf.",
+      "source": "britannica-kilimanjaro"
+    }
+  ],
+  "sources": [
+    {
+      "id": "britannica-kilimanjaro",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Kilimanjaro",
+      "url": "https://www.britannica.com/place/Kilimanjaro",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "unesco-kilimanjaro",
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Kilimanjaro National Park",
+      "url": "https://whc.unesco.org/en/list/403/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro",
+  "caveats": [
+    "The Tanzania National Parks page for Kilimanjaro returned a 'page not found' error, so the height comes from Britannica and UNESCO, which agree on 5,895 m.",
+    "The 4,877 m rise is measured from the surrounding plains, not from sea level, so it is smaller than the summit elevation.",
+    "The mountain outline is illustrative; only its height above sea level is to scale."
+  ],
+  "schemaType": "Mountain",
+  "updated": "2026-09-25"
+}

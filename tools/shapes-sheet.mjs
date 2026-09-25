@@ -1,5 +1,5 @@
 // Contact sheet of every silhouette, for checking shapes after editing them.
-//   node tools/shapes-sheet.mjs [key ...]   -> .e2e/shapes.png
+//   node tools/shapes-sheet.mjs [key ...] [--out=file.png]   -> .e2e/shapes.png by default
 // Each shape is shown large and small on light and dark tiles, with its tight
 // box dashed and the measured extents (refX red, refY blue) drawn in.
 
@@ -10,7 +10,11 @@ import { SHAPES } from '../src/lib/silhouettes.js'
 import { launchChrome } from './cdp.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const keys = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(SHAPES)
+const args = process.argv.slice(2)
+const outArg = args.find(a => a.startsWith('--out='))
+const keys = args.filter(a => !a.startsWith('--')).length ? args.filter(a => !a.startsWith('--')) : Object.keys(SHAPES)
+const missing = keys.filter(k => !SHAPES[k])
+if (missing.length) { console.error(`Unknown shapes: ${missing.join(', ')}`); process.exit(1) }
 
 function svg(s, targetH, targetW) {
   const k = Math.min(targetH / s.h, targetW / s.w)
@@ -42,7 +46,7 @@ body{margin:10px;font:12px system-ui;background:#fff}
 .light{background:#fbfaf6}.dark{background:#12161e}
 </style><div class="grid">${tiles}</div>`
 
-const chrome = await launchChrome({ port: 9335 })
+const chrome = await launchChrome({ port: 9400 + (process.pid % 500) })
 await chrome.send('Page.enable')
 const rows = Math.ceil(keys.length / 2)
 const height = rows * 290 + 30
@@ -51,8 +55,8 @@ const { frameTree } = await chrome.send('Page.getFrameTree')
 await chrome.send('Page.setDocumentContent', { frameId: frameTree.frame.id, html })
 await chrome.evaluate('new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))')
 const { data } = await chrome.send('Page.captureScreenshot', { format: 'png', clip: { x: 0, y: 0, width: 1500, height, scale: 1 } })
-await mkdir(path.join(ROOT, '.e2e'), { recursive: true })
-const out = path.join(ROOT, '.e2e', 'shapes.png')
+const out = outArg ? path.resolve(outArg.slice(6)) : path.join(ROOT, '.e2e', 'shapes.png')
+await mkdir(path.dirname(out), { recursive: true })
 await writeFile(out, Buffer.from(data, 'base64'))
 await chrome.close()
 console.log(`Wrote ${out} (${keys.length} shapes)`)

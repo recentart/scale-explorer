@@ -1,0 +1,137 @@
+{
+  "slug": "boeing-737",
+  "name": "Boeing 737",
+  "category": "vehicles",
+  "phrase": "a Boeing 737",
+  "aliases": [
+    "737",
+    "737 MAX",
+    "737 MAX 8",
+    "737-8",
+    "plane",
+    "airliner",
+    "airplane",
+    "jet"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "boeing-737",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "737-8 (737 MAX 8)",
+  "description": "The Boeing 737 is a twin-engine, single-aisle airliner family; the 737 MAX series, with CFM LEAP-1B engines and dual-feather Advanced Technology winglets, is its latest generation. Boeing's airport planning document gives the 737-8 an overall length of 129 ft 6 in (39.47 m) and a wingspan of 117 ft 10 in (35.92 m). It seats 178 passengers in a typical two-class layout and can take off at up to 182,200 lb.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 39.47,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "737-8 overall length, 129 ft 6 in; Boeing's drawings are accurate within +/- 6 inches",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "key": "wingspan",
+      "label": "Wingspan",
+      "kind": "length",
+      "value": 35.92,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "737-8 wingspan including winglets, 117 ft 10 in",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "key": "height",
+      "label": "Tail height",
+      "kind": "length",
+      "min": 11.86,
+      "max": 12.45,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Ground to top of the vertical stabilizer (38 ft 11 in to 40 ft 10 in), varying with loading, oleo and tire pressures",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "key": "fuselageLength",
+      "label": "Fuselage length",
+      "kind": "length",
+      "value": 39.12,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "737-8 fuselage length, 128 ft 4 in",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum takeoff weight",
+      "kind": "mass",
+      "min": 159400,
+      "max": 182200,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "range",
+      "note": "737-8 maximum design takeoff weight options (72,302 to 82,644 kg)",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "key": "cargoVolume",
+      "label": "Lower-deck cargo volume",
+      "kind": "volume",
+      "value": 1515,
+      "unit": "ft3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Maximum lower-deck cargo volume (42.9 cubic metres)",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "key": "fuelCapacity",
+      "label": "Usable fuel",
+      "kind": "volume",
+      "value": 6820,
+      "unit": "galUS",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Usable fuel capacity (25,816 L)",
+      "source": "boeing-737max-acaps"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The 737-8 seats 178 passengers in a two-class layout or 189 in a single class.",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "text": "The 737 MAX family covers the 737-7, 737-8, 737-8-200, 737-9, 737-10 and Business Jet versions, all powered by CFM LEAP-1B engines.",
+      "source": "boeing-737max-acaps"
+    },
+    {
+      "text": "The 737 MAX remains an FAA Airplane Design Group III and ICAO Aerodrome Reference Code C aircraft, the same airport category as earlier 737s.",
+      "source": "boeing-737max-acaps"
+    }
+  ],
+  "sources": [
+    {
+      "id": "boeing-737max-acaps",
+      "publisher": "Boeing Commercial Airplanes",
+      "title": "737 MAX Airplane Characteristics for Airport Planning (D6-38A004, Rev K, July 2025)",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/acaps/737MAX_RevK.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Boeing_737_MAX",
+  "caveats": [
+    "All figures are for the 737-8 (737 MAX 8). Other 737 versions range from shorter (737-7) to longer (737-10), and older generations differ.",
+    "Length, wingspan and fuselage length were read from Boeing's general-dimensions drawing (section 2.2.2), which Boeing says is accurate within +/- 6 inches."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

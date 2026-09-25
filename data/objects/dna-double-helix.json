@@ -1,0 +1,101 @@
+{
+  "slug": "dna-double-helix",
+  "name": "DNA double helix",
+  "category": "microscopic",
+  "phrase": "a DNA double helix",
+  "aliases": [
+    "DNA",
+    "double helix",
+    "B-DNA",
+    "deoxyribonucleic acid",
+    "DNA strand width"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "dna-double-helix",
+    "x": "diameter"
+  },
+  "subtitle": "B-form DNA, the common form in cells",
+  "description": "DNA carries genetic information as two strands wound around each other in a right-handed double helix. The paired bases are stacked in the middle like the steps of a spiral staircase, with the sugar-phosphate backbones on the outside. In the common B form the helix is about 2 nm across, and it makes one full turn roughly every 3.4 nm along its length.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 2,
+      "unit": "nm",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Width of the double helix, stated as 20 Å (2 nm)",
+      "source": "guelph-dna"
+    },
+    {
+      "key": "optimisedDiameter",
+      "label": "Diameter (fibre model)",
+      "kind": "length",
+      "value": 2.04,
+      "unit": "nm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "20.4 Å for B-DNA from optimised fibre-diffraction parameters (Arnott and Hukins 1972), as listed by BioNumbers; converted from Å",
+      "source": "bionumbers-dna"
+    },
+    {
+      "key": "helicalTurn",
+      "label": "Length of one helical turn",
+      "kind": "length",
+      "value": 3.4,
+      "unit": "nm",
+      "approx": true,
+      "qualifier": "about",
+      "note": "One complete turn holds about 10 base pairs; stated as 34 Å",
+      "source": "guelph-dna"
+    },
+    {
+      "key": "baseStep",
+      "label": "Spacing between base pairs",
+      "kind": "length",
+      "value": 0.34,
+      "unit": "nm",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Stacked base pairs are 3.4 Å apart along the helix axis",
+      "source": "guelph-dna"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Each complete turn of the B-DNA helix contains about 10 base pairs.",
+      "source": "guelph-dna"
+    },
+    {
+      "text": "In solution, water bound to DNA makes its apparent (hydrodynamic) diameter larger, about 22 to 26 Å.",
+      "source": "bionumbers-dna"
+    }
+  ],
+  "sources": [
+    {
+      "id": "guelph-dna",
+      "publisher": "University of Guelph (eCampusOntario Pressbooks)",
+      "title": "The DNA Double Helix - BIOC*2580: Introduction to Biochemistry (John Dawson)",
+      "url": "https://ecampusontario.pressbooks.pub/bioc2580/chapter/the-dna-double-helix/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "bionumbers-dna",
+      "publisher": "BioNumbers, Harvard Medical School",
+      "title": "Diameter of DNA double helix - BNID 105243",
+      "url": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=105243&ver=1",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Nucleic_acid_double_helix",
+  "caveats": [
+    "Both sources give the width in angstroms (20 Å and 20.4 Å), a unit not in the site's list; the Guelph text itself also states 2 nm, while 2.04 nm is an exact conversion of 20.4 Å. Turn length and base spacing are likewise converted from 34 Å and 3.4 Å.",
+    "Only the helix width is shown; a DNA molecule's length depends on how many base pairs it has, so no single length is given."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

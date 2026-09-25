@@ -1,0 +1,60 @@
+{
+  "slug": "grain-of-sand",
+  "name": "Grain of sand",
+  "category": "microscopic",
+  "phrase": "a grain of sand",
+  "aliases": [
+    "sand grain",
+    "sand",
+    "sand particle"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "grain-of-sand",
+    "x": "diameter"
+  },
+  "subtitle": "Sand size class on the Wentworth grade scale",
+  "description": "Geologists define sand by grain size rather than by what it is made of. On the Wentworth grade scale used by the U.S. Geological Survey, sand grains are smaller than 2.0 millimetres and larger than 62.5 micrometres across. Coarser particles count as gravel, and finer ones as silt or clay.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Grain diameter (sand size class)",
+      "kind": "length",
+      "min": 0.0625,
+      "max": 2.0,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Nominal diameter limits of sand on the Wentworth scale; the source states the lower limit as 62.5 µm",
+      "source": "usgs-of03-001"
+    }
+  ],
+  "facts": [
+    {
+      "text": "On the Wentworth scale, silt-sized particles are between 4.0 and 62.5 micrometres and clay is smaller than 4.0 micrometres.",
+      "source": "usgs-of03-001"
+    },
+    {
+      "text": "Particles with a nominal diameter of 2.0 millimetres and up are classed as gravel.",
+      "source": "usgs-of03-001"
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs-of03-001",
+      "publisher": "U.S. Geological Survey",
+      "title": "Surficial Sediment Data from the Gulf of Maine, Georges Bank, and Vicinity: A GIS Compilation (Open-File Report 03-001), Sediment nomenclature",
+      "url": "https://pubs.usgs.gov/of/2003/of03-001/htmldocs/nomenclature.htm",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sand",
+  "caveats": [
+    "Sand is a size class, so a single grain can be anywhere in the range; the limits follow Wentworth (1922).",
+    "Grain mass depends on size and mineral, so no single mass is given."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "human-egg-cell",
+  "name": "Human egg cell",
+  "category": "microscopic",
+  "phrase": "a human egg cell",
+  "aliases": [
+    "ovum",
+    "oocyte",
+    "egg cell",
+    "human egg",
+    "largest human cell"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "across",
+  "profile": {
+    "shape": "human-egg-cell",
+    "x": "diameter"
+  },
+  "subtitle": "Mature oocyte at ovulation",
+  "description": "The human egg cell, or oocyte, is the female reproductive cell and one of the largest cells in the body. It develops inside a follicle in the ovary and is enclosed by a protective outer coat called the zona pellucida. By ovulation it has reached a final diameter of around 110 to 120 µm, not counting that coat.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter at ovulation",
+      "kind": "length",
+      "min": 110,
+      "max": 120,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Final oocyte diameter reached by ovulation, as stated in the paper's introduction",
+      "source": "pors-2022"
+    },
+    {
+      "key": "measuredDiameter",
+      "label": "Mean measured diameter (mature MII oocytes)",
+      "kind": "length",
+      "value": 123,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "average",
+      "note": "123 +/- 9.7 µm for metaphase II oocytes matured in vitro, measured from the inner side of the zona pellucida (zona not included)",
+      "source": "pors-2022"
+    }
+  ],
+  "facts": [
+    {
+      "text": "In a study of immature human oocytes collected from ovarian tissue and matured in the lab, diameters ranged from 60 to 171 µm, with a mean of 115 µm.",
+      "source": "pors-2022"
+    },
+    {
+      "text": "The same study found that oocytes that reached full maturity (metaphase II) were larger on average than those that did not.",
+      "source": "pors-2022"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pors-2022",
+      "publisher": "Journal of Assisted Reproduction and Genetics (via PubMed Central, NIH)",
+      "title": "Oocyte diameter predicts the maturation rate of human immature oocytes collected ex vivo (Pors et al., 2022)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9596637/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Egg_cell",
+  "caveats": [
+    "The study's own measurements exclude the zona pellucida, so the egg with its coat is somewhat wider; no sourced zona thickness was fetched.",
+    "Only one source was used; no sourced mass or volume was found."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

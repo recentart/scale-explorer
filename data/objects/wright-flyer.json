@@ -1,0 +1,111 @@
+{
+  "slug": "wright-flyer",
+  "name": "Wright Flyer (1903)",
+  "category": "vehicles",
+  "phrase": "the 1903 Wright Flyer",
+  "aliases": [
+    "wright flyer",
+    "1903 wright flyer",
+    "wright brothers plane",
+    "kitty hawk",
+    "first airplane",
+    "flyer i",
+    "wright brothers"
+  ],
+  "familiar": false,
+  "headline": "wingspan",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "wright-flyer",
+    "x": "wingspan",
+    "y": "height"
+  },
+  "subtitle": "The original airplane at the National Air and Space Museum",
+  "description": "The 1903 Wright Flyer, built by Wilbur and Orville Wright, made its first flights on December 17, 1903, at Kitty Hawk, North Carolina. It is a canard biplane of wood and muslin with a 12-horsepower engine driving two pusher propellers through chains. The Smithsonian gives its wingspan as 12.3 m (40 ft 4 in) and its empty weight as 274 kg.",
+  "measures": [
+    {
+      "key": "wingspan",
+      "label": "Wingspan",
+      "kind": "length",
+      "value": 12.3,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "40 ft 4 in",
+      "source": "nasm-wright-flyer"
+    },
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 6.4,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "21 ft 1 in",
+      "source": "nasm-wright-flyer"
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 2.8,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "9 ft 4 in",
+      "source": "nasm-wright-flyer"
+    },
+    {
+      "key": "mass",
+      "label": "Empty weight",
+      "kind": "mass",
+      "value": 274,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "605 lb",
+      "source": "nasm-wright-flyer"
+    },
+    {
+      "key": "grossMass",
+      "label": "Gross weight",
+      "kind": "mass",
+      "value": 341,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "750 lb",
+      "source": "nasm-wright-flyer"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Orville Wright made the first flight on December 17, 1903: 12 seconds covering 36 m (120 ft).",
+      "source": "nasm-wright-flyer"
+    },
+    {
+      "text": "The fourth and last flight that day, flown by Wilbur, covered 255.6 m (852 ft) in 59 seconds.",
+      "source": "nasm-wright-flyer"
+    },
+    {
+      "text": "A single 12-horsepower, four-cylinder Wright engine drove two pusher propellers through a sprocket-and-chain transmission.",
+      "source": "nasm-wright-flyer"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasm-wright-flyer",
+      "publisher": "Smithsonian National Air and Space Museum",
+      "title": "1903 Wright Flyer",
+      "url": "https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Wright_Flyer",
+  "caveats": [
+    "The Smithsonian page does not say what the 341 kg gross weight includes beyond the empty airframe."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

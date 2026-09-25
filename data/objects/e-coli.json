@@ -1,0 +1,94 @@
+{
+  "slug": "e-coli",
+  "name": "E. coli bacterium",
+  "category": "microscopic",
+  "phrase": "an E. coli bacterium",
+  "aliases": [
+    "E. coli",
+    "Escherichia coli",
+    "bacterium",
+    "bacteria"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "e-coli",
+    "x": "length",
+    "y": "diameter"
+  },
+  "scientificName": "Escherichia coli",
+  "description": "Escherichia coli is a rod-shaped bacterium that lives in the gut and is one of the most studied organisms in biology. Its shape is close to a cylinder with rounded ends. A widely used rule of thumb puts a cell at about 2 µm long and 1 µm wide, with a volume near 1 cubic micrometre and a mass of about a picogram, though cell size changes with growth conditions.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 2,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Rule-of-thumb cell length based on light and electron microscopy",
+      "source": "cbbn-ecoli"
+    },
+    {
+      "key": "diameter",
+      "label": "Diameter (width)",
+      "kind": "length",
+      "value": 1,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Rule-of-thumb cell diameter",
+      "source": "cbbn-ecoli"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 1e-12,
+      "unit": "cm3",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Stated as about 1 µm³ (1 fL); 1 µm³ = 1e-12 cm³. Volumes range from about 0.4 to 2.5 µm³ depending on growth rate",
+      "source": "cbbn-ecoli"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 1e-12,
+      "unit": "g",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Stated as about 1 pg (1e-12 g), estimated from the 1 µm³ volume at the density of water",
+      "source": "cbbn-ecoli"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Faster-growing cells are larger: E. coli dry mass differs about five-fold between slow- and fast-growing cultures.",
+      "source": "cbbn-ecoli"
+    },
+    {
+      "text": "Treating the cell as a cylinder with hemispherical caps, 1 µm wide and 2 µm long, gives a volume of about 1.3 µm³.",
+      "source": "cbbn-ecoli"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cbbn-ecoli",
+      "publisher": "Cell Biology by the Numbers (Milo and Phillips)",
+      "title": "How big is an E. coli cell and what is its mass?",
+      "url": "https://book.bionumbers.org/how-big-is-an-e-coli-cell-and-what-is-its-mass/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Escherichia_coli",
+  "caveats": [
+    "The source presents these as rules of thumb and notes that laboratories do not always agree; size varies with strain and growth rate.",
+    "Volume and mass are converted exactly from the source's µm³ and pg because those units are not in the site's unit list."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

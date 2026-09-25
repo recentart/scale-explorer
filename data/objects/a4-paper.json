@@ -1,0 +1,77 @@
+{
+  "slug": "a4-paper",
+  "name": "A4 sheet of paper",
+  "category": "everyday",
+  "phrase": "a sheet of A4 paper",
+  "aliases": [
+    "a4",
+    "a4 paper",
+    "paper",
+    "sheet of paper",
+    "iso 216"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "a4-paper",
+    "x": "width",
+    "y": "height"
+  },
+  "subtitle": "ISO 216 A-series trimmed size",
+  "description": "A4 is one of the A-series paper sizes defined in the international standard ISO 216 for stationery and printed matter. The series starts from A0, a sheet with an area of one square metre, and each smaller size is made by cutting the one above it in half parallel to its shorter side. A4 is trimmed to 210 by 297 millimetres.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (long side)",
+      "kind": "length",
+      "value": 297,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Long side of the A4 trimmed size",
+      "source": "iso-216"
+    },
+    {
+      "key": "width",
+      "label": "Width (short side)",
+      "kind": "length",
+      "value": 210,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Short side of the A4 trimmed size",
+      "source": "iso-216"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The basic A0 sheet has an area of 1 square metre and measures 841 by 1,189 mm.",
+      "source": "iso-216"
+    },
+    {
+      "text": "A3 (297 x 420 mm) is twice the size of A4, and A5 (148 x 210 mm) is half of it.",
+      "source": "iso-216"
+    },
+    {
+      "text": "Because each size is half the one above and all sizes share the same shape, two successive A sizes differ in area by a ratio of 2:1.",
+      "source": "iso-216"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iso-216",
+      "publisher": "International Organization for Standardization (preview via iTeh Standards)",
+      "title": "ISO 216:2007 Writing paper and certain classes of printed matter - Trimmed sizes - A and B series, and indication of machine direction (Table 1)",
+      "url": "https://cdn.standards.iteh.ai/samples/36631/c0883203ea25445c9992bb09343620c5/ISO-216-2007.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/ISO_216",
+  "caveats": [
+    "A sheet's weight depends on the paper's grammage, so no single mass is given.",
+    "ISO 216 allows small trimming tolerances, which are not listed here."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,121 @@
+{
+  "slug": "hindenburg",
+  "name": "Hindenburg airship",
+  "category": "vehicles",
+  "phrase": "the Hindenburg",
+  "aliases": [
+    "hindenburg",
+    "lz 129",
+    "lz129",
+    "zeppelin",
+    "airship",
+    "blimp",
+    "dirigible"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "hindenburg",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "LZ 129 Hindenburg, German passenger zeppelin",
+  "description": "The LZ 129 Hindenburg was a German rigid airship that carried passengers across the Atlantic in 1936 and 1937. The Smithsonian's National Air and Space Museum gives it as 803 ft long and 135 ft in diameter, with 7,063,000 cubic feet of hydrogen held in 16 gas cells. It was destroyed by fire on May 6, 1937, in a disaster that killed 36 people.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 803,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length per the National Air and Space Museum; Airships.net gives 803.8 ft (245 m)",
+      "source": [
+        "nasm-hindenburg",
+        "airships-hindenburg"
+      ]
+    },
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 135,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Maximum hull diameter; Airships.net gives 135.1 ft (41.2 m)",
+      "source": [
+        "nasm-hindenburg",
+        "airships-hindenburg"
+      ]
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 146,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall height as given by the National Air and Space Museum, taller than the hull diameter",
+      "source": "nasm-hindenburg"
+    },
+    {
+      "key": "gasVolume",
+      "label": "Gas volume",
+      "kind": "volume",
+      "value": 7063000,
+      "unit": "ft3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Gas space of the 16 hydrogen cells; Airships.net gives 200,000 cubic metres (7,062,000 cubic feet)",
+      "source": [
+        "nasm-hindenburg",
+        "airships-hindenburg"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "text": "Its four diesel engines produced 1,100 horsepower each.",
+      "source": "nasm-hindenburg"
+    },
+    {
+      "text": "It could carry 50 passengers plus crew, and its transatlantic crossings took two to three days.",
+      "source": "nasm-hindenburg"
+    },
+    {
+      "text": "It first flew on March 4, 1936, and was destroyed on May 6, 1937.",
+      "source": "airships-hindenburg"
+    },
+    {
+      "text": "Its cruising speed was 125 km/h (76 mph) and its top speed 135 km/h (84 mph).",
+      "source": "airships-hindenburg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasm-hindenburg",
+      "publisher": "Smithsonian National Air and Space Museum",
+      "title": "Zeppelin LZ 129 Hindenburg Menu (archival collection description)",
+      "url": "https://airandspace.si.edu/collection-archive/zeppelin-lz-129-hindenburg-menu/sova-nasm-xxxx-0872",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "airships-hindenburg",
+      "publisher": "Airships.net",
+      "title": "Hindenburg: Size and Speed",
+      "url": "https://www.airships.net/hindenburg/size-speed/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/LZ_129_Hindenburg",
+  "caveats": [
+    "The Smithsonian figures come from the description of an archival collection, not a dedicated specifications page. Airships.net, a specialist history site, gives slightly more precise figures (803.8 ft, 135.1 ft).",
+    "No source gave the airship's empty or gross weight; Airships.net lists a lift of 511,500 lb, which is not the same as its mass, so no mass is stored."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

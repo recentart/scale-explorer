@@ -1,0 +1,102 @@
+{
+  "slug": "pluto",
+  "name": "Pluto",
+  "category": "space",
+  "phrase": "Pluto",
+  "aliases": [
+    "dwarf planet pluto",
+    "dwarf planet",
+    "134340 pluto",
+    "kuiper belt"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "pluto",
+    "x": "diameter"
+  },
+  "description": "Pluto is a dwarf planet in the Kuiper Belt, discovered in 1930 and long counted as the ninth planet. NASA's fact sheet gives a radius of 1,188 km and a diameter of 2,376 km, about one-fifth the width of Earth and about two-thirds the width of Earth's Moon. NASA's New Horizons spacecraft flew past it in July 2015.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 2376,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter from the NSSDCA planetary table (radius 1,188 km)",
+      "source": "nssdca-planets"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 1.303e+22,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 0.01303 x 10^24 kg",
+      "source": "nssdca-pluto"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 7020000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Source states 0.702 x 10^10 km3",
+      "source": "nssdca-pluto"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA's Pluto facts page gives an equatorial diameter of about 2,377 km (1,477 miles), about 1/5 the width of Earth.",
+      "source": "nasa-pluto"
+    },
+    {
+      "text": "Pluto's largest moon, Charon, has an equatorial radius of 606 km.",
+      "source": "nssdca-pluto"
+    },
+    {
+      "text": "Pluto's tallest mountains are 2 to 3 km (6,500 to 9,800 ft) high, and some craters reach 260 km (162 miles) across.",
+      "source": "nasa-pluto"
+    },
+    {
+      "text": "New Horizons photographed Pluto's heart-shaped region on 13 July 2015 from 768,000 km away.",
+      "source": "nasa-pluto"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-pluto",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Pluto Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-pluto",
+      "publisher": "NASA Science",
+      "title": "Pluto: Facts",
+      "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Pluto",
+  "caveats": [
+    "The NSSDCA table gives 2,376 km while NASA's Pluto facts page gives about 2,377 km; both reflect a radius of about 1,188 km."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

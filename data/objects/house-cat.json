@@ -1,0 +1,83 @@
+{
+  "slug": "house-cat",
+  "name": "House cat",
+  "category": "animals",
+  "phrase": "a house cat",
+  "aliases": [
+    "cat",
+    "domestic cat",
+    "kitty",
+    "pet cat",
+    "felis catus"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "house-cat",
+    "x": "length"
+  },
+  "subtitle": "Typical adult domestic cat",
+  "scientificName": "Felis catus",
+  "description": "The domestic cat most likely descends from African wildcats or Asian desert cats. There are more than 100 breeds, but nearly all share a very similar body shape and size, differing mainly in coat type and colour. The Animal Diversity Web gives an average length of 76.2 cm and an adult weight of 4.1 to 5.4 kg.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (average adult)",
+      "kind": "length",
+      "value": 76.2,
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average length for the species; the source does not say whether the tail is included",
+      "source": "adw-felis-catus"
+    },
+    {
+      "key": "mass",
+      "label": "Adult mass",
+      "kind": "mass",
+      "min": 4.1,
+      "max": 5.4,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult mass range",
+      "source": "adw-felis-catus"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Cats have about 244 bones, around 30 of them vertebrae, which lets them twist half of the spine through 180 degrees.",
+      "source": "adw-felis-catus"
+    },
+    {
+      "text": "A cat can jump about five times its own height.",
+      "source": "adw-felis-catus"
+    },
+    {
+      "text": "Cats have no collarbone, which helps them slip through narrow gaps.",
+      "source": "adw-felis-catus"
+    },
+    {
+      "text": "Adult cats have 26 teeth; the milk teeth appear at about two weeks old.",
+      "source": "adw-felis-catus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "adw-felis-catus",
+      "publisher": "Animal Diversity Web, University of Michigan Museum of Zoology",
+      "title": "Felis catus (domestic cat) - Birch, N. and A. Toenjes 2014",
+      "url": "https://animaldiversity.org/accounts/Felis_catus/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Cat",
+  "caveats": [
+    "The brief asked for head-body length, but no veterinary or university source giving a cat's head-body length could be fetched. The only fetched length is ADW's 'average length is 76.2 cm' (30.0 in), which does not say whether the tail is included. The silhouette should be drawn to that length nose to tail tip only after checking this.",
+    "Wikipedia states a head-to-body length of about 46 cm and a tail of about 30 cm, citing Sunquist and Sunquist, Wild Cats of the World (University of Chicago Press, 2002). That book could not be read (Internet Archive lending only, Google Books blocked), so those figures are left out.",
+    "Britannica's cat article returned 403 to every fetch method."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

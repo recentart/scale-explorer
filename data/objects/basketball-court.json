@@ -1,0 +1,134 @@
+{
+  "slug": "basketball-court",
+  "name": "Basketball court (NBA)",
+  "category": "sports",
+  "phrase": "an NBA basketball court",
+  "aliases": [
+    "basketball court",
+    "nba court",
+    "basketball",
+    "hoops court",
+    "court"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "basketball-court",
+    "x": "length"
+  },
+  "subtitle": "NBA regulation court (Official 2025-26 NBA Playing Rules)",
+  "description": "An NBA court is a rectangle 94 feet long and 50 feet wide, measured inside the boundary lines. The basket ring is 18 inches across, with its upper edge set 10 feet above the floor, and hangs from a transparent backboard 6 feet wide and 3.5 feet tall. The three-point arc sits 23 feet 9 inches from the middle of the basket, and the free throw line is 15 feet from the face of the backboard.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 94,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Baseline to baseline, measured inside the boundary lines",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 50,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Sideline to sideline, measured inside the boundary lines",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "key": "rimHeight",
+      "label": "Rim height",
+      "kind": "length",
+      "value": 10,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Floor to the upper edge of the basket ring",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "key": "rimDiameter",
+      "label": "Rim inside diameter",
+      "kind": "length",
+      "value": 18,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Inside diameter of the metal basket ring",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "key": "backboardWidth",
+      "label": "Backboard width",
+      "kind": "length",
+      "value": 6,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Horizontal size of the rectangular backboard (it is 3.5 ft tall)",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "key": "threePointDistance",
+      "label": "Three-point line distance",
+      "kind": "length",
+      "value": 23.75,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius of the three-point arc from the middle of the basket (23 ft 9 in); it is 22 ft in the corners, where the line runs 3 ft from the sidelines",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "key": "freeThrowDistance",
+      "label": "Free throw line distance",
+      "kind": "length",
+      "value": 15,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "From the plane of the face of the backboard to the free throw line",
+      "source": "nba-rules-2025-26"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The NBA playing court is 94 feet long and 50 feet wide, both measured inside the lines, and all lines are 2 inches wide.",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "text": "Each basket ring must have its upper edge 10 feet above the floor, with the nearest inside edge of the ring 6 inches out from the face of the backboard.",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "text": "The backboard is a flat, transparent rectangle 6 feet wide and 3.5 feet tall.",
+      "source": "nba-rules-2025-26"
+    },
+    {
+      "text": "The court diagram requires an apron of at least 8 feet beyond the end lines and at least 5 feet beyond the sidelines.",
+      "source": "nba-rules-2025-26"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nba-rules-2025-26",
+      "publisher": "National Basketball Association",
+      "title": "Official Rules of the National Basketball Association 2025-26, Rule No. 1: Court Dimensions - Equipment",
+      "url": "https://cdn.nba.com/manage/2026/01/Official-2025-26-NBA-Playing-Rules.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Basketball_court",
+  "caveats": [
+    "These are NBA dimensions. FIBA, NCAA and high school courts use different sizes and three-point distances."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

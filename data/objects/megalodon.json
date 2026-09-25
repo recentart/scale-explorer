@@ -1,0 +1,135 @@
+{
+  "slug": "megalodon",
+  "name": "Megalodon",
+  "category": "prehistoric",
+  "phrase": "a megalodon",
+  "aliases": [
+    "otodus megalodon",
+    "carcharodon megalodon",
+    "carcharocles megalodon",
+    "meg",
+    "megalodon shark",
+    "giant shark"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "megalodon",
+    "x": "length"
+  },
+  "subtitle": "Estimated maximum size of the largest individuals",
+  "scientificName": "Otodus megalodon",
+  "description": "Megalodon was a giant shark whose earliest fossils date to about 23 million years ago. Because its skeleton was cartilage, almost nothing survives but teeth and a few vertebrae, so its size has to be estimated. Tooth-based estimates put the largest individuals at 15 to 18 metres, while a 2025 study of fossil backbones suggested it may have reached 24.3 metres and about 94 tonnes. Its teeth could be nearly 18 centimetres long.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Maximum length (estimates)",
+      "kind": "length",
+      "min": 15,
+      "max": 24.3,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated length of the largest individuals: 15-18 m from teeth, up to 24.3 m from vertebral columns (2025 study)",
+      "source": "nhm-megalodon"
+    },
+    {
+      "key": "lengthEstimate2021",
+      "label": "Maximum length (2021 Florida Museum study)",
+      "kind": "length",
+      "max": 65,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated from tooth crown width; the authors give an error of about 10 ft for the largest individuals",
+      "source": "flmnh-megalodon"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum mass",
+      "kind": "mass",
+      "max": 94,
+      "unit": "t",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated weight of a 24.3 m megalodon (2025 study)",
+      "source": "nhm-megalodon"
+    },
+    {
+      "key": "birthLength",
+      "label": "Length at birth",
+      "kind": "length",
+      "max": 3.9,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated length of newborn megalodons (2025 study)",
+      "source": "nhm-megalodon"
+    },
+    {
+      "key": "toothLength",
+      "label": "Largest tooth",
+      "kind": "length",
+      "value": 18,
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "The largest megalodon tooth found is almost 18 cm long",
+      "source": "nhm-megalodon"
+    },
+    {
+      "key": "jawSpan",
+      "label": "Jaw opening",
+      "kind": "length",
+      "min": 2.7,
+      "max": 3.4,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated jaw span, 2.7 m by 3.4 m",
+      "source": "nhm-megalodon"
+    }
+  ],
+  "facts": [
+    {
+      "text": "No complete megalodon skeleton has ever been found; the 24.3 m estimate came from nearly complete and partial vertebral columns found in Belgium and Denmark.",
+      "source": "nhm-megalodon"
+    },
+    {
+      "text": "Great white shark teeth are usually about 5 cm long, compared with almost 18 cm for the largest megalodon tooth.",
+      "source": "nhm-megalodon"
+    },
+    {
+      "text": "Megalodon is not a close relative of the great white shark and may have had a slimmer body than a scaled-up great white.",
+      "source": "nhm-megalodon"
+    },
+    {
+      "text": "A 2021 method based on tooth width, published in Palaeontologia Electronica, estimated megalodon at up to 65 ft, compared with earlier estimates of about 50 to 60 ft.",
+      "source": "flmnh-megalodon"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-megalodon",
+      "publisher": "Natural History Museum, London",
+      "title": "Megalodon: The truth about the largest shark that ever lived",
+      "url": "https://www.nhm.ac.uk/discover/megalodon--the-truth-about-the-largest-shark-that-ever-lived.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "flmnh-megalodon",
+      "publisher": "Florida Museum of Natural History",
+      "title": "School lesson gone wrong leads to new, bigger megalodon size estimate (7 June 2021)",
+      "url": "https://www.floridamuseum.ufl.edu/science/school-lesson-leads-to-bigger-megalodon-size/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Megalodon",
+  "caveats": [
+    "All sizes are estimated. Almost no skeleton survives, and published maximum lengths differ by several metres depending on the method.",
+    "The headline range covers maximum-size estimates for the biggest individuals, not the average adult."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "baseball",
+  "name": "Baseball",
+  "category": "sports",
+  "phrase": "a baseball",
+  "aliases": [
+    "baseball ball",
+    "MLB ball",
+    "hardball"
+  ],
+  "familiar": true,
+  "headline": "circumference",
+  "headlineAdj": "around",
+  "profile": {
+    "shape": "baseball",
+    "x": "circumference",
+    "circumference": true
+  },
+  "description": "A baseball is made of yarn wound around a small cork or rubber core and covered with two strips of white horsehide or cowhide stitched together. Major League Baseball's Official Baseball Rules require it to measure 9 to 9 1/4 inches around. It must weigh between 5 and 5 1/4 ounces.",
+  "measures": [
+    {
+      "key": "circumference",
+      "label": "Circumference",
+      "kind": "length",
+      "min": 9,
+      "max": 9.25,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Rule 3.01: not less than nine nor more than 9 1/4 inches in circumference",
+      "source": "mlb-obr-2026"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "min": 5,
+      "max": 5.25,
+      "unit": "oz",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Rule 3.01: not less than five nor more than 5 1/4 ounces avoirdupois",
+      "source": "mlb-obr-2026"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Under Rule 3.01, players may not intentionally discolor or damage the ball, for example by rubbing it with soil, rosin or sandpaper.",
+      "source": "mlb-obr-2026"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mlb-obr-2026",
+      "publisher": "Major League Baseball",
+      "title": "Official Baseball Rules, 2026 Edition (Rule 3.01 The Ball)",
+      "url": "https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Baseball_(ball)",
+  "caveats": [
+    "The rules give circumference, not diameter; any diameter shown is calculated from it."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

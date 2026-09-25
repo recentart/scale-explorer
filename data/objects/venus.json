@@ -1,0 +1,132 @@
+{
+  "slug": "venus",
+  "name": "Venus",
+  "category": "space",
+  "phrase": "Venus",
+  "aliases": [
+    "planet venus",
+    "venus planet",
+    "morning star",
+    "evening star",
+    "earth's twin",
+    "planet"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "venus",
+    "x": "diameter"
+  },
+  "subtitle": "Second planet from the Sun",
+  "description": "Venus orbits the Sun between Mercury and Earth, at an average of about 108 million km, and is the planet closest to Earth in size. NASA's Planetary Fact Sheet gives it an equatorial diameter of 12,104 km, about 95% of Earth's, and a mass of about 4.87 × 10²⁴ kg. Its thick, mostly carbon dioxide atmosphere presses on the surface at 92 bars, and the average temperature there is 464 °C.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 12104,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator, from NASA's Planetary Fact Sheet",
+      "source": "nssdca-planets"
+    },
+    {
+      "key": "equatorialRadius",
+      "label": "Equatorial radius",
+      "kind": "length",
+      "value": 6051.8,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius at the equator",
+      "source": "nssdca-venus"
+    },
+    {
+      "key": "polarRadius",
+      "label": "Polar radius",
+      "kind": "length",
+      "value": 6051.8,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius from the centre to a pole",
+      "source": "nssdca-venus"
+    },
+    {
+      "key": "radius",
+      "label": "Mean radius",
+      "kind": "length",
+      "value": 6051.8,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Volumetric mean radius (mean diameter is twice this)",
+      "source": "nssdca-venus"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 4.8673e+24,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 4.8673 × 10²⁴ kg",
+      "source": "nssdca-venus"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 928430000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total volume; source states 92.843 × 10¹⁰ km³",
+      "source": "nssdca-venus"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Venus has 0.815 times Earth's mass and 0.857 times its volume.",
+      "source": "nssdca-venus"
+    },
+    {
+      "text": "Venus spins backwards. Its sidereal rotation period is 5,832.6 hours (listed as negative for retrograde), longer than its 224.701-day year.",
+      "source": "nssdca-venus"
+    },
+    {
+      "text": "Surface pressure on Venus is 92 bars and the average temperature is 737 K (464 °C).",
+      "source": "nssdca-venus"
+    },
+    {
+      "text": "Venus has no natural satellites.",
+      "source": "nssdca-venus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-venus",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Venus Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Venus",
+  "caveats": [
+    "NASA lists the same value (6,051.8 km) for Venus's equatorial, polar and mean radius, so the planet is treated as a sphere.",
+    "The diameter is measured to the solid surface, not the top of the thick cloud layer."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

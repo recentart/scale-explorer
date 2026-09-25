@@ -1,0 +1,99 @@
+{
+  "slug": "aa-battery",
+  "name": "AA battery",
+  "category": "everyday",
+  "phrase": "an AA battery",
+  "aliases": [
+    "aa",
+    "double a battery",
+    "lr6",
+    "mignon",
+    "alkaline battery",
+    "battery",
+    "15a"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "aa-battery",
+    "x": "diameter",
+    "y": "height"
+  },
+  "subtitle": "Energizer E91 alkaline AA (IEC LR6)",
+  "description": "The AA is a common cylindrical battery size, designated LR6 by the IEC and 15A by ANSI in its alkaline form. Energizer's datasheet for its E91 alkaline AA gives industry-standard dimensions of 49.50 to 50.50 mm tall and 13.50 to 14.50 mm across. A typical cell weighs 23.0 g and delivers a nominal 1.5 volts.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Overall height",
+      "kind": "length",
+      "min": 49.5,
+      "max": 50.5,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Industry standard dimension limits, 49.50 (1.949 in) to 50.50 mm (1.988 in)",
+      "source": "energizer-e91"
+    },
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "min": 13.5,
+      "max": 14.5,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Industry standard dimension limits, 13.50 (0.531 in) to 14.50 mm (0.571 in)",
+      "source": "energizer-e91"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "value": 23.0,
+      "unit": "g",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Typical weight of an Energizer E91 (0.8 oz)",
+      "source": "energizer-e91"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 8.1,
+      "unit": "cm3",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Typical volume of an Energizer E91 (0.5 cubic inch)",
+      "source": "energizer-e91"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The E91 uses a zinc-manganese dioxide alkaline chemistry with a nominal voltage of 1.5 volts.",
+      "source": "energizer-e91"
+    },
+    {
+      "text": "Energizer rates the E91's shelf life at 10 years at 21 °C.",
+      "source": "energizer-e91"
+    }
+  ],
+  "sources": [
+    {
+      "id": "energizer-e91",
+      "publisher": "Energizer",
+      "title": "Energizer E91 AA Product Datasheet (Form No. E91NA1018)",
+      "url": "https://data.energizer.com/pdfs/e91.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/AA_battery",
+  "caveats": [
+    "Weight and volume are for the Energizer E91 alkaline cell only; other brands and chemistries were not checked.",
+    "Height and diameter are the minimum and maximum limits shown on the datasheet's industry-standard dimension drawing."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

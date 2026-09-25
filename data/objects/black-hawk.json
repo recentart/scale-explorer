@@ -1,0 +1,168 @@
+{
+  "slug": "black-hawk",
+  "name": "UH-60 Black Hawk helicopter",
+  "category": "vehicles",
+  "phrase": "a Black Hawk helicopter",
+  "aliases": [
+    "black hawk",
+    "blackhawk",
+    "UH-60",
+    "UH-60 Black Hawk",
+    "S-70",
+    "helicopter",
+    "army helicopter"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "black-hawk",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "UH-60A / UH-60L, rotors turning",
+  "description": "The Sikorsky UH-60 Black Hawk is the U.S. Army's main utility helicopter, used for air assault, medical evacuation and command roles; it first flew in 1974 and more than 5,000 have been built. The Army's operator's manual gives an overall length of 64 ft 10 in with the rotors turning and a main rotor diameter of 53 ft 8 in. With the rotors and tail pylon folded for storage it shrinks to 41 ft 4 in long.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Overall length (rotors turning)",
+      "kind": "length",
+      "value": 64.83,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "64 ft 10 in, main rotor tip to tail rotor tip; the Army describes all dimensions as approximate",
+      "source": "army-tm-uh60"
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 16.83,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "16 ft 10 in, ground to the upper tip path of the canted tail rotor",
+      "source": "army-tm-uh60"
+    },
+    {
+      "key": "rotorDiameter",
+      "label": "Main rotor diameter",
+      "kind": "length",
+      "value": 53.67,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "53 ft 8 in; Sikorsky's historical archives give 53.6 ft",
+      "source": [
+        "army-tm-uh60",
+        "sikorsky-archives-uh60l"
+      ]
+    },
+    {
+      "key": "fuselageLength",
+      "label": "Fuselage length",
+      "kind": "length",
+      "value": 50.625,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "50 ft 7.5 in",
+      "source": "army-tm-uh60"
+    },
+    {
+      "key": "foldedLength",
+      "label": "Length (rotors and pylon folded)",
+      "kind": "length",
+      "value": 41.33,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "41 ft 4 in",
+      "source": "army-tm-uh60"
+    },
+    {
+      "key": "tailRotorDiameter",
+      "label": "Tail rotor diameter",
+      "kind": "length",
+      "value": 11,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Four-blade tail rotor, canted 20 degrees",
+      "source": [
+        "army-tm-uh60",
+        "sikorsky-archives-uh60l"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Maximum gross weight",
+      "kind": "mass",
+      "min": 20250,
+      "max": 22000,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Slick configuration: UH-60A 20,250 lb; UH-60L and UH-60M 22,000 lb",
+      "source": "lm-uh60m-brochure"
+    },
+    {
+      "key": "emptyMass",
+      "label": "Empty weight",
+      "kind": "mass",
+      "min": 11284,
+      "max": 12511,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "range",
+      "note": "UH-60A 11,284 lb, UH-60L 11,782 lb, UH-60M 12,511 lb",
+      "source": "lm-uh60m-brochure"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The fuselage is 7 ft 9 in wide; with external fuel tanks on the stub wings the helicopter spans 21 ft.",
+      "source": "army-tm-uh60"
+    },
+    {
+      "text": "A Black Hawk carries 11 troops, and the UH-60M's cargo hook can lift 9,000 lb.",
+      "source": "lm-uh60m-brochure"
+    },
+    {
+      "text": "The Black Hawk first flew on October 17, 1974, and over 5,000 have been delivered, making it Sikorsky's longest production program.",
+      "source": "sikorsky-archives-uh60l"
+    }
+  ],
+  "sources": [
+    {
+      "id": "army-tm-uh60",
+      "publisher": "Headquarters, Department of the Army",
+      "title": "TM 1-1520-237-10 Operator's Manual for UH-60A, UH-60L and EH-60A Helicopters (31 October 1996), Figures 2-2 and 2-3",
+      "url": "https://archive.org/details/Operators_Manual_for_UH-60A_Helicopter_TM_1-1520-237-10",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "lm-uh60m-brochure",
+      "publisher": "Lockheed Martin (Sikorsky)",
+      "title": "Sikorsky UH-60M Black Hawk helicopter brochure",
+      "url": "https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/black-hawk/sikorsky-UH60M-brochure.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "sikorsky-archives-uh60l",
+      "publisher": "Igor I. Sikorsky Historical Archives",
+      "title": "Sikorsky S-70A: UH-60L Black Hawk Family",
+      "url": "https://sikorskyarchives.com/home/sikorsky-product-history/helicopter-innovation-era/sikorsky-s-70a-uh-60l-black-hawk-family/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sikorsky_UH-60_Black_Hawk",
+  "caveats": [
+    "Dimensions come from the Army operator's manual for the UH-60A and UH-60L (hosted on the Internet Archive, distribution statement A: approved for public release). No primary source giving UH-60M overall dimensions was found; Lockheed Martin's product page and UH-60M brochure give weights only.",
+    "Lengths are stored in decimal feet converted from the manual's feet-and-inches (for example 64 ft 10 in = 64.83 ft).",
+    "The manual's height figure is to the top of the tail rotor's path; the fixed structure and main rotor hub are lower."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,115 @@
+{
+  "slug": "mauna-kea",
+  "name": "Mauna Kea",
+  "category": "nature",
+  "phrase": "Mauna Kea",
+  "aliases": [
+    "maunakea",
+    "mauna kea volcano",
+    "tallest mountain",
+    "tallest mountain from base",
+    "hawaii volcano",
+    "volcano",
+    "mountain"
+  ],
+  "familiar": false,
+  "headline": "baseToSummit",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "mauna-kea",
+    "y": "baseToSummit"
+  },
+  "subtitle": "Island of Hawai'i, USA",
+  "description": "Mauna Kea is a volcano on the Island of Hawai'i and the highest peak in the state, reaching 4,207 m (13,803 ft) above sea level. Most of the mountain lies under the Pacific: the USGS says it extends about 6,000 m below sea level to the ocean floor, giving a total height of about 10,211 m from base to summit. Measured that way it is taller than Mount Everest, and its summit hosts a large group of astronomical observatories.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height above sea level",
+      "kind": "length",
+      "value": 4207,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Summit elevation above sea level; USGS gives 4,207.3 m (13,803 ft)",
+      "source": "usgs-mauna-kea"
+    },
+    {
+      "key": "baseToSummit",
+      "label": "Height from ocean floor to summit",
+      "kind": "length",
+      "value": 10211,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Total height from the deep ocean floor, which USGS describes as 'nearly 33,500 feet (10,211 meters)'",
+      "source": "usgs-hawaiian-volcanoes"
+    },
+    {
+      "key": "depthBelowSeaLevel",
+      "label": "Depth of base below sea level",
+      "kind": "length",
+      "value": 6000,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "How far the volcano extends below sea level to meet the ocean floor (about 19,700 ft)",
+      "source": "usgs-hawaiian-volcanoes"
+    }
+  ],
+  "facts": [
+    {
+      "text": "USGS says Mauna Kea's total height from the ocean floor is considerably greater than the height of Mount Everest above sea level.",
+      "source": "usgs-hawaiian-volcanoes"
+    },
+    {
+      "text": "Mauna Kea is slightly taller than neighbouring Mauna Loa above sea level, but Mauna Loa's base is much deeper and it is far larger in volume.",
+      "source": [
+        "usgs-volcano-watch-olympics",
+        "usgs-hawaiian-volcanoes"
+      ]
+    },
+    {
+      "text": "The University of Hawai'i Institute for Astronomy says the summit sits above 40 percent of Earth's atmosphere, and it describes Mauna Kea as rising 9,750 m (32,000 ft) from the ocean floor.",
+      "source": "ifa-mko"
+    }
+  ],
+  "sources": [
+    {
+      "id": "usgs-mauna-kea",
+      "publisher": "U.S. Geological Survey, Hawaiian Volcano Observatory",
+      "title": "Mauna Kea",
+      "url": "https://www.usgs.gov/volcanoes/mauna-kea",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "usgs-hawaiian-volcanoes",
+      "publisher": "U.S. Geological Survey",
+      "title": "How big are the Hawaiian volcanoes?",
+      "url": "https://www.usgs.gov/faqs/how-big-are-hawaiian-volcanoes",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "usgs-volcano-watch-olympics",
+      "publisher": "U.S. Geological Survey, Hawaiian Volcano Observatory",
+      "title": "Volcano Watch - Hawaiian volcanoes and their Olympic moments: tall, bigger, longer, and deeper",
+      "url": "https://www.usgs.gov/news/volcano-watch-hawaiian-volcanoes-and-their-olympic-moments-tall-bigger-longer-and-deeper",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "ifa-mko",
+      "publisher": "University of Hawai'i Institute for Astronomy",
+      "title": "Maunakea Observatories",
+      "url": "https://about.ifa.hawaii.edu/facility/mauna-kea-observatories/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mauna_Kea",
+  "caveats": [
+    "Summit figures differ slightly between sources: the USGS Mauna Kea page gives 4,207 m (13,803 ft), while the USGS FAQ and the University of Hawai'i Institute for Astronomy use an older 4,205 m (13,796 ft).",
+    "Base-to-summit height depends on where the base is taken to be. USGS gives about 10,211 m; the University of Hawai'i Institute for Astronomy gives 9,750 m (32,000 ft).",
+    "The headline height is above sea level so it compares directly with other mountains; the base-to-summit figure is listed separately.",
+    "The mountain outline is illustrative; only its height is to scale."
+  ],
+  "schemaType": "Mountain",
+  "updated": "2026-09-25"
+}

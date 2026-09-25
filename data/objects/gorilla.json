@@ -1,0 +1,136 @@
+{
+  "slug": "gorilla",
+  "name": "Gorilla",
+  "category": "animals",
+  "phrase": "a gorilla",
+  "aliases": [
+    "gorilla",
+    "silverback",
+    "western lowland gorilla",
+    "ape",
+    "great ape",
+    "gorilla gorilla"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "gorilla",
+    "y": "height"
+  },
+  "subtitle": "Adult male western lowland gorilla, standing upright",
+  "scientificName": "Gorilla gorilla gorilla",
+  "description": "Gorillas are the largest of the great apes, and adult males, called silverbacks, are much larger than females. The western lowland gorilla, the smallest subspecies and the one most often seen in zoos, has males that stand up to about 1.8 m tall and weigh an average of 136 kg. Gorillas usually move on all fours, walking on their knuckles because their arms are longer than their legs.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Standing height (adult male)",
+      "kind": "length",
+      "max": 6,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Western lowland gorilla males stand up to 6 ft (1.8 m) tall",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "key": "femaleHeight",
+      "label": "Standing height (adult female)",
+      "kind": "length",
+      "max": 4.5,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Females stand up to 4.5 ft (1.4 m) tall",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "key": "armSpan",
+      "label": "Arm span (adult male)",
+      "kind": "length",
+      "value": 8,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Adult males have an arm span of 8 ft (2.4 m); females 6.5 ft (2 m)",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (adult male, average)",
+      "kind": "mass",
+      "value": 300,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average adult male weight, 300 lb (136.1 kg)",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "key": "maxMass",
+      "label": "Mass (adult male, maximum)",
+      "kind": "mass",
+      "max": 500,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Adult males weigh up to 500 lb (226.8 kg)",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "key": "femaleMass",
+      "label": "Mass (adult female)",
+      "kind": "mass",
+      "min": 150,
+      "max": 200,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult females weigh 150 to 200 lb",
+      "source": "nzp-western-lowland-gorilla"
+    }
+  ],
+  "facts": [
+    {
+      "text": "San Diego Zoo Wildlife Alliance gives males a height of up to 5.7 ft (1.75 m) and a weight of 300 to 400 lb (136 to 181 kg); females reach up to 5 ft (1.5 m) and 159 to 216 lb (72 to 98 kg).",
+      "source": "sdz-gorilla"
+    },
+    {
+      "text": "Newborn gorillas weigh about 4 lb (2 kg), and for the first couple of years infants grow at twice the rate of a human baby.",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "text": "An adult male gorilla eats about 45 lb of food per day, mostly leaves, stems and fruit; females eat about two-thirds as much.",
+      "source": "nzp-western-lowland-gorilla"
+    },
+    {
+      "text": "Each gorilla has unique fingerprints and nose prints.",
+      "source": "nzp-western-lowland-gorilla"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nzp-western-lowland-gorilla",
+      "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+      "title": "Western Lowland Gorilla",
+      "url": "https://nationalzoo.si.edu/animals/western-lowland-gorilla",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "sdz-gorilla",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Gorilla",
+      "url": "https://animals.sandiegozoo.org/animals/gorilla",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Western_lowland_gorilla",
+  "caveats": [
+    "The height is a maximum ('up to 6 feet') for males standing upright; gorillas normally stand and move on all fours, so the drawing should show an upright male at that height.",
+    "Sources differ on male height: 6 ft (1.8 m) from the National Zoo versus 5.7 ft (1.75 m) from San Diego Zoo. The National Zoo figure is used.",
+    "The National Zoo pairs '150 to 200 pounds' with a single metric value of 113.4 kg (which equals 250 lb); the pound figures are stored.",
+    "WWF was not consulted; the figures are for the western lowland subspecies, and the larger eastern gorillas are not covered."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

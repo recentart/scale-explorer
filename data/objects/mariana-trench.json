@@ -1,0 +1,116 @@
+{
+  "slug": "mariana-trench",
+  "name": "Mariana Trench (Challenger Deep)",
+  "category": "nature",
+  "phrase": "the Challenger Deep in the Mariana Trench",
+  "aliases": [
+    "mariana trench",
+    "marianas trench",
+    "challenger deep",
+    "deepest point in the ocean",
+    "deepest place on earth",
+    "ocean trench",
+    "trench"
+  ],
+  "familiar": false,
+  "headline": "depth",
+  "headlineAdj": "deep",
+  "profile": {
+    "shape": "mariana-trench",
+    "y": "depth"
+  },
+  "subtitle": "Challenger Deep, western Pacific Ocean",
+  "description": "The Challenger Deep, at the southern end of the Mariana Trench in the western Pacific, is the deepest known point in the ocean. Modern measurements put it at about 10.9 to 11.0 km below sea level: a 2010 sonar survey found 10,994 m (plus or minus 40 m), while a 2020 study using submersible dives found 10,935 m (plus or minus 6 m). The trench itself is a crescent-shaped scar in Earth's crust more than 2,550 km long.",
+  "measures": [
+    {
+      "key": "depth",
+      "label": "Depth of Challenger Deep",
+      "kind": "length",
+      "min": 10935,
+      "max": 10994,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Depth below sea level of the deepest point: 10,935 m (plus or minus 6 m) from June 2020 submersible dives, and 10,994 m (plus or minus 40 m) from a 2010 University of New Hampshire multibeam sonar survey",
+      "source": [
+        "noaa-greenaway-2021",
+        "ncei-mariana",
+        "noaa-ocean-depth"
+      ]
+    },
+    {
+      "key": "length",
+      "label": "Length of the Mariana Trench",
+      "kind": "length",
+      "value": 2550,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "NCEI says 'more than 1,500 miles (2,550 kilometers) long'",
+      "source": "ncei-mariana"
+    },
+    {
+      "key": "width",
+      "label": "Average width of the Mariana Trench",
+      "kind": "length",
+      "value": 69,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average width (43 miles)",
+      "source": "ncei-mariana"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NOAA Ocean Service gives the Challenger Deep as approximately 10,935 m (35,876 ft) deep.",
+      "source": "noaa-ocean-depth"
+    },
+    {
+      "text": "The deep is named after HMS Challenger, whose crew first sounded the trench in 1875. Using a weighted rope, that expedition recorded 4,475 fathoms (8,184 m).",
+      "source": [
+        "noaa-ocean-depth",
+        "ncei-mariana"
+      ]
+    },
+    {
+      "text": "The trench lies several hundred kilometres southwest of the U.S. territory of Guam.",
+      "source": "noaa-ocean-depth"
+    },
+    {
+      "text": "In 2012 film director James Cameron made a solo dive to the bottom of the Challenger Deep in the submersible DEEPSEA CHALLENGER.",
+      "source": "ncei-mariana"
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa-ocean-depth",
+      "publisher": "NOAA National Ocean Service",
+      "title": "How deep is the ocean?",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "noaa-greenaway-2021",
+      "publisher": "NOAA Institutional Repository (Deep Sea Research Part I, 2021)",
+      "title": "Greenaway et al., Revised depth of the Challenger Deep from submersible transects; including a general method for precise, pressure-derived depths in the ocean",
+      "url": "https://repository.library.noaa.gov/view/noaa/33477",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "ncei-mariana",
+      "publisher": "NOAA National Centers for Environmental Information",
+      "title": "Planet Postcard: The Mariana Trench",
+      "url": "https://www.ncei.noaa.gov/news/planet-postcard-mariana-trench",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Challenger_Deep",
+  "caveats": [
+    "The depth range spans two modern measurements with different methods: the 2020 pressure-referenced submersible figure (10,935 m, plus or minus 6 m at 95% confidence), which NOAA Ocean Service now uses, and the 2010 multibeam sonar figure (10,994 m, plus or minus 40 m) quoted by NCEI.",
+    "The NOAA repository PDF of the 2021 paper refused automated download, so the 2020 figure was read from the paper's abstract on the repository page.",
+    "Only the depth is to scale; the trench outline is illustrative."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

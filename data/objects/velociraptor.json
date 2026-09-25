@@ -1,0 +1,111 @@
+{
+  "slug": "velociraptor",
+  "name": "Velociraptor",
+  "category": "prehistoric",
+  "phrase": "a Velociraptor",
+  "aliases": [
+    "raptor",
+    "velociraptor mongoliensis",
+    "quick plunderer",
+    "speedy thief",
+    "dromaeosaur"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "velociraptor",
+    "x": "length"
+  },
+  "subtitle": "Estimated adult size",
+  "scientificName": "Velociraptor mongoliensis",
+  "description": "Velociraptor was a small, feathered, meat-eating dinosaur that lived in Mongolia and China in the Late Cretaceous, roughly 74 to 70 million years ago. It walked on two legs and had a large sickle-shaped claw on each foot. Museum estimates put it at about 1.8 metres long, far smaller than the animals shown in the Jurassic Park films.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (estimated)",
+      "kind": "length",
+      "value": 1.8,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated nose-to-tail length; the NHM, AMNH (1.8 meters, 6 feet) and Britannica all give 1.8 m",
+      "source": [
+        "nhm-velociraptor",
+        "amnh-velociraptor",
+        "britannica-velociraptor"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "value": 7,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated body weight from the Natural History Museum, London",
+      "source": "nhm-velociraptor"
+    },
+    {
+      "key": "amnhMass",
+      "label": "Mass (AMNH estimate)",
+      "kind": "mass",
+      "value": 18,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated weight; AMNH gives 18 kilograms (40 pounds)",
+      "source": "amnh-velociraptor"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The Jurassic Park films showed Velociraptor at about twice its real size, modelled closely on its larger relative Deinonychus.",
+      "source": "nhm-velociraptor"
+    },
+    {
+      "text": "Velociraptor is now thought to have had a fine covering of feather-like structures.",
+      "source": "nhm-velociraptor"
+    },
+    {
+      "text": "Velociraptor mongoliensis was named by Osborn in 1924.",
+      "source": "nhm-velociraptor"
+    },
+    {
+      "text": "Stiffened tendons in its tail helped it keep its balance while striking at prey with one foot raised.",
+      "source": "britannica-velociraptor"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-velociraptor",
+      "publisher": "Natural History Museum, London",
+      "title": "Velociraptor (Dino Directory)",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/velociraptor.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "amnh-velociraptor",
+      "publisher": "American Museum of Natural History",
+      "title": "Velociraptor mongoliensis (OLogy card 018)",
+      "url": "https://www.amnh.org/explore/ology/ology-cards/018-velociraptor-mongoliensis",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-velociraptor",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Velociraptor",
+      "url": "https://www.britannica.com/animal/Velociraptor",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Velociraptor",
+  "caveats": [
+    "All sizes are estimates from fossils.",
+    "Mass estimates vary a lot: 7 kg (Natural History Museum), 18 kg (AMNH), and 'perhaps no more than 45 kg' (Britannica). The NHM figure is used as the main mass.",
+    "The AMNH gives the age as about 80 million years ago; the Natural History Museum gives 74-70 million years ago."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

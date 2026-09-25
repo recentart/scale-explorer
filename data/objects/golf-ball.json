@@ -1,0 +1,63 @@
+{
+  "slug": "golf-ball",
+  "name": "Golf ball",
+  "category": "sports",
+  "phrase": "a golf ball",
+  "aliases": [
+    "golfball",
+    "golf"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "golf-ball",
+    "x": "diameter"
+  },
+  "description": "A golf ball is a small dimpled ball, and the Rules of Golf, written jointly by The R&A and the USGA, limit how small and how heavy it can be. It must be at least 1.680 in (42.67 mm) across and weigh no more than 1.620 oz (45.93 g). The rules set only these two limits on size and weight: a minimum diameter and a maximum weight.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 1.68,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "at least",
+      "note": "Minimum diameter allowed by the Rules of Equipment, 1.680 in (42.67 mm)",
+      "source": "randa-roe-balls"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "max": 1.62,
+      "unit": "oz",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Maximum weight allowed, 1.620 ounces avoirdupois (45.93 g)",
+      "source": "randa-roe-balls"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The rules set only a minimum diameter and a maximum weight, so a legal golf ball can be larger or lighter than these limits.",
+      "source": "randa-roe-balls"
+    }
+  ],
+  "sources": [
+    {
+      "id": "randa-roe-balls",
+      "publisher": "The R&A (with the USGA)",
+      "title": "The Rules of Equipment, Part 4: Conformance of Balls",
+      "url": "https://www.randa.org/en/roe/the-rules-of-equipment/part-4-conformance-of-balls",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Golf_ball",
+  "caveats": [
+    "The diameter is the rule's minimum; the typical diameter of balls on sale was not found in a primary source."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

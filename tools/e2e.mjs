@@ -143,11 +143,11 @@ for (const o of OBJECTS) {
       h1: document.querySelectorAll('h1').length,
       h1text: document.querySelector('h1')?.textContent,
       canonical: document.querySelector('link[rel=canonical]')?.href,
-      svg: document.querySelectorAll('#viz .stage-svg').length,
-      drawn: document.querySelectorAll('#viz .stage-svg [data-slug="${o.slug}"], #viz .stage-svg .marker').length,
-      width: document.querySelector('#viz .stage-svg')?.getAttribute('width'),
+      svg: document.querySelectorAll('#viz-stage .stage-svg').length,
+      drawn: document.querySelectorAll('#viz-stage .stage-svg [data-slug="${o.slug}"], #viz-stage .stage-svg .marker').length,
+      width: document.querySelector('#viz-stage .stage-svg')?.getAttribute('width'),
       bad: /NaN|Infinity|undefined/.test(document.querySelector('main').innerHTML),
-      sources: document.querySelectorAll('.sources li a[href^="https://"]').length,
+      sources: document.querySelectorAll('.sources li a[href^="http"]').length,
       rows: document.querySelectorAll('.dims tbody tr').length,
       ld: [...document.querySelectorAll('script[type="application/ld+json"]')].map(s => { try { JSON.parse(s.textContent); return true } catch { return false } }),
     }))()`)
@@ -178,9 +178,9 @@ for (const c of CATEGORIES) {
     const n = await evaluate(`document.querySelectorAll('.card-grid .card').length`)
     const expected = OBJECTS.filter(o => o.category === c.slug).length
     assert(n === expected, `${n} cards, expected ${expected}`)
-    const drawn = await evaluate(`document.querySelectorAll('#viz .stage-svg .obj, #viz .stage-svg .marker').length`)
+    const drawn = await evaluate(`document.querySelectorAll('#viz-stage .stage-svg .obj, #viz-stage .stage-svg .marker').length`)
     assert(drawn === expected, `drawing shows ${drawn} of ${expected}`)
-    const zoomNeeded = await evaluate(`document.querySelectorAll('#viz .stage-svg .marker').length > 0`)
+    const zoomNeeded = await evaluate(`document.querySelectorAll('#viz-stage .stage-svg .marker').length > 0`)
     if (zoomNeeded) assert(await evaluate(`document.querySelectorAll('.zoom-level').length > 0`), 'tiny objects but no zoomed view')
   })
 }
@@ -263,7 +263,7 @@ console.log('\nCompare')
 await check('compare from URL', async () => {
   await goto('/compare?items=blue-whale,boeing-747')
   assert(await evaluate(`document.querySelector('[data-result-title]').textContent === 'Blue whale vs Boeing 747'`), 'title')
-  const slugs = await evaluate(`[...document.querySelectorAll('#cmp .stage-svg .obj')].map(g => g.dataset.slug)`)
+  const slugs = await evaluate(`[...document.querySelectorAll('#cmp-stage .stage-svg .obj')].map(g => g.dataset.slug)`)
   assert(slugs.includes('blue-whale') && slugs.includes('boeing-747') && slugs.includes('human'), `drawn: ${slugs}`)
   const s = await evaluate(`document.querySelector('[data-sentences]').textContent`)
   assert(/times as long as/.test(s), `sentences: ${s}`)
@@ -273,13 +273,13 @@ await check('compare controls update drawing and URL', async () => {
   await evaluate(`(() => { const s = document.querySelector('select[name=b]'); s.value = 'titanic'; s.dispatchEvent(new Event('change')) })()`)
   await settle()
   assert(await evaluate(`location.search === '?items=blue-whale,titanic'`), 'URL after change: ' + await evaluate('location.search'))
-  assert(await evaluate(`[...document.querySelectorAll('#cmp .stage-svg .obj')].some(g => g.dataset.slug === 'titanic')`), 'titanic drawn')
+  assert(await evaluate(`[...document.querySelectorAll('#cmp-stage .stage-svg .obj')].some(g => g.dataset.slug === 'titanic')`), 'titanic drawn')
   await evaluate(`document.querySelector('[data-swap]').click()`)
   await settle()
   assert(await evaluate(`location.search === '?items=titanic,blue-whale'`), 'swap')
   await evaluate(`document.querySelector('[data-human]').click()`)
   await settle()
-  assert(await evaluate(`location.search.includes('human=0') && ![...document.querySelectorAll('#cmp .stage-svg .obj')].some(g => g.dataset.slug === 'human')`), 'human removed')
+  assert(await evaluate(`location.search.includes('human=0') && ![...document.querySelectorAll('#cmp-stage .stage-svg .obj')].some(g => g.dataset.slug === 'human')`), 'human removed')
   await evaluate(`document.querySelector('[data-add]').click()`)
   await settle()
   assert(await evaluate(`document.querySelectorAll('[data-extra] select').length === 1 && location.search.split(',').length === 3`), 'third object added')
@@ -293,7 +293,7 @@ await check('compare falls back on bad URL input', async () => {
 })
 await check('extreme comparison: human vs Earth uses markers, zoom levels and a ladder', async () => {
   await goto('/compare?items=human,earth')
-  assert(await evaluate(`document.querySelectorAll('#cmp .stage-svg .marker').length >= 1`), 'marker for human')
+  assert(await evaluate(`document.querySelectorAll('#cmp-stage .stage-svg .marker').length >= 1`), 'marker for human')
   assert(await evaluate(`!/NaN|Infinity/.test(document.querySelector('#cmp').innerHTML)`), 'NaN')
   assert(await evaluate(`document.querySelectorAll('[data-result-zoom] .zoom-level').length >= 1`), 'zoom level')
   assert(await evaluate(`document.querySelectorAll('[data-result-ladder] .ladder-step').length >= 4`), 'ladder steps')
@@ -302,8 +302,48 @@ await check('extreme comparison: human vs Earth uses markers, zoom levels and a 
 })
 await check('extreme comparison: ISS vs Mars', async () => {
   await goto('/compare?items=iss,mars')
-  assert(await evaluate(`document.querySelectorAll('#cmp .stage-svg .marker').length >= 1`), 'marker')
+  assert(await evaluate(`document.querySelectorAll('#cmp-stage .stage-svg .marker').length >= 1`), 'marker')
   assert(await evaluate(`document.querySelectorAll('[data-result-ladder] .ladder-step').length >= 2`), 'ladder')
+})
+
+await check('surprise me picks two different objects', async () => {
+  await goto('/compare?surprise=1')
+  const items = await evaluate(`new URLSearchParams(location.search).get('items')`)
+  const parts = (items || '').split(',')
+  assert(parts.length === 2 && parts[0] !== parts[1], `items: ${items}`)
+  await evaluate(`document.querySelector('[data-surprise]').click()`)
+  await settle()
+  assert(await evaluate(`document.querySelectorAll('#cmp-stage .stage-svg .obj, #cmp-stage .stage-svg .marker').length >= 2`), 'drawn')
+})
+await check('compare yourself: your height joins the drawing', async () => {
+  await goto(`/compare?you=${encodeURIComponent("5'10\"")}&items=giraffe&human=0`)
+  assert(await evaluate(`!!document.querySelector('#cmp-stage .stage-svg [data-slug=you]')`), 'you drawn')
+  assert(await evaluate(`/You/.test(document.querySelector('[data-result-title]').textContent)`), 'title')
+  const sent = await evaluate(`document.querySelector('[data-sentences]').textContent`)
+  assert(/you are|as you/.test(sent) && !/you is/.test(sent), 'sentence grammar: ' + sent)
+  await evaluate(`(() => { const i = document.querySelector('[data-you]'); i.value = '12 m'; i.dispatchEvent(new Event('change')) })()`)
+  await settle()
+  assert(await evaluate(`!document.querySelector('[data-you-error]').hidden`), 'bad height error')
+})
+await check('how many fit cards and weight/volume views', async () => {
+  await goto('/compare?items=blue-whale,human')
+  assert(await evaluate(`document.querySelectorAll('[data-result-howmany] .fit-card').length >= 1`), 'fit cards')
+  await evaluate(`document.querySelector('#cmp-tab-mass').click()`)
+  await settle()
+  assert(await evaluate(`document.querySelectorAll('#cmp-mass .bar-row').length >= 2`), 'weight bars')
+  await evaluate(`document.querySelector('#cmp-tab-volume').click()`)
+  await settle()
+  assert(await evaluate(`!document.querySelector('#cmp-volume').hidden && document.querySelector('#cmp-volume').textContent.length > 10`), 'volume pane')
+  await goto('/compare?items=earth,moon')
+  await evaluate(`document.querySelector('#cmp-tab-volume').click()`)
+  await settle()
+  assert(await evaluate(`document.querySelectorAll('#cmp-volume .stage-svg .obj').length >= 2`), 'volume cubes for planets')
+})
+await check('extreme range: atom vs galaxy', async () => {
+  await goto('/compare?items=hydrogen-atom,milky-way&human=1')
+  assert(await evaluate(`!/NaN|Infinity/.test(document.querySelector('.compare-result').innerHTML)`), 'NaN')
+  assert(await evaluate(`document.querySelectorAll('[data-result-zoom] .zoom-level').length >= 2`), 'zoom levels')
+  assert(await evaluate(`document.querySelectorAll('[data-result-ladder] .ladder-step').length >= 8`), 'ladder')
 })
 
 console.log('\nCustom size and units')
@@ -311,7 +351,7 @@ await check('custom size: 150 m', async () => {
   await goto('/measure?q=150&unit=m')
   const conv = await evaluate(`[...document.querySelectorAll('.conv td')].map(td => td.textContent)`)
   assert(conv.join('|') === '150 m|492.126 ft|0.15 km|0.0932057 mi', `conversions: ${conv.join('|')}`)
-  assert(await evaluate(`!!document.querySelector('#mviz .stage-svg [data-slug=custom]')`), 'custom drawn')
+  assert(await evaluate(`!!document.querySelector('#mviz-stage .stage-svg [data-slug=custom]')`), 'custom drawn')
   assert(await evaluate(`document.querySelectorAll('.measure-result .sentences li').length >= 3`), 'comparisons')
 })
 for (const [q, unit, expect] of [
@@ -327,7 +367,7 @@ for (const [q, unit, expect] of [
     assert(conv.join('|') === expect.join('|'), `got ${conv.join('|')}`)
   })
 }
-for (const [q, msg] of [['', 'Enter a size'], ['abc', 'Enter a number'], ['-5', 'greater than zero'], ['0', 'greater than zero'], ['10 yards', 'not a supported unit'], ['2000000 km', 'larger than'], ['0.001', 'smaller than 1 cm']]) {
+for (const [q, msg] of [['', 'Enter a size'], ['abc', 'Enter a number'], ['-5', 'greater than zero'], ['0', 'greater than zero'], ['10 yards', 'not a supported unit'], ['1e20 km', 'larger than'], ['0.0000000001', 'smaller than 1 nanometre']]) {
   await check(`invalid custom size "${q}"`, async () => {
     await goto('/measure')
     await evaluate(`(() => { const i = document.querySelector('[data-measure-input]'); i.value = ${JSON.stringify(q)}; i.form.requestSubmit() })()`)
@@ -347,11 +387,11 @@ await check('metre/foot toggle redraws labels and persists', async () => {
   await goto('/objects/eiffel-tower')
   await evaluate(`document.querySelector('.units button[data-system=metric]').click()`)
   await settle()
-  const m = await evaluate(`document.querySelector('#viz .stage-svg').textContent`)
+  const m = await evaluate(`document.querySelector('#viz-stage .stage-svg').textContent`)
   assert(/ m\b/.test(m) && !/ ft\b/.test(m), 'metric labels')
   await evaluate(`document.querySelector('.units button[data-system=imperial]').click()`)
   await settle()
-  const ft = await evaluate(`document.querySelector('#viz .stage-svg').textContent`)
+  const ft = await evaluate(`document.querySelector('#viz-stage .stage-svg').textContent`)
   assert(/ ft\b/.test(ft), 'imperial labels: ' + ft.slice(0, 200))
   await goto('/objects/titanic')
   assert(await evaluate(`document.querySelector('.units button[data-system=imperial]').getAttribute('aria-pressed') === 'true'`), 'persisted')
@@ -359,10 +399,10 @@ await check('metre/foot toggle redraws labels and persists', async () => {
 })
 await check('chips toggle objects in a drawing', async () => {
   await goto('/objects/blue-whale')
-  const before = await evaluate(`document.querySelectorAll('#viz .stage-svg .obj, #viz .stage-svg .marker').length`)
+  const before = await evaluate(`document.querySelectorAll('#viz-stage .stage-svg .obj, #viz-stage .stage-svg .marker').length`)
   await evaluate(`document.querySelector('#viz .viz-chips input').click()`)
   await settle()
-  const after = await evaluate(`document.querySelectorAll('#viz .stage-svg .obj, #viz .stage-svg .marker').length`)
+  const after = await evaluate(`document.querySelectorAll('#viz-stage .stage-svg .obj, #viz-stage .stage-svg .marker').length`)
   assert(after === before - 1, `${before} -> ${after}`)
 })
 await check('bars view', async () => {

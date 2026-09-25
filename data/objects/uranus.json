@@ -1,0 +1,115 @@
+{
+  "slug": "uranus",
+  "name": "Uranus",
+  "category": "space",
+  "phrase": "Uranus",
+  "aliases": [
+    "planet uranus",
+    "ice giant",
+    "planet"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "uranus",
+    "x": "diameter"
+  },
+  "description": "Uranus is the seventh planet from the Sun and an ice giant. It has an equatorial diameter of 51,118 km, about four times Earth's width. Its spin axis is tipped over by about 98 degrees, so it travels around the Sun almost on its side.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 51118,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator, at the 1-bar pressure level",
+      "source": [
+        "nssdca-planets",
+        "nasa-uranus"
+      ]
+    },
+    {
+      "key": "polarRadius",
+      "label": "Polar radius",
+      "kind": "length",
+      "value": 24973,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Centre to pole at the 1-bar level (equatorial radius is 25,559 km)",
+      "source": "nssdca-uranus"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 8.6811e+25,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 86.811 x 10^24 kg",
+      "source": "nssdca-uranus"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 68330000000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Source states 6,833 x 10^10 km3",
+      "source": "nssdca-uranus"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA gives Uranus an equatorial diameter of 51,118 km (31,763 miles), four times wider than Earth.",
+      "source": "nasa-uranus"
+    },
+    {
+      "text": "If Earth were the size of a nickel, Uranus would be about as big as a softball.",
+      "source": "nasa-uranus"
+    },
+    {
+      "text": "Uranus's obliquity to its orbit is 97.77 degrees, and one day there lasts about 17.24 hours.",
+      "source": "nssdca-uranus"
+    },
+    {
+      "text": "Uranus has 28 known moons and a ring system.",
+      "source": "nssdca-uranus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nssdca-uranus",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Uranus Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-uranus",
+      "publisher": "NASA Science",
+      "title": "Uranus: Facts",
+      "url": "https://science.nasa.gov/uranus/facts/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Uranus",
+  "caveats": [
+    "Radii are measured at the 1-bar pressure level, since Uranus has no solid surface."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

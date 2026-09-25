@@ -1,0 +1,164 @@
+{
+  "slug": "saltwater-crocodile",
+  "name": "Saltwater crocodile",
+  "category": "animals",
+  "phrase": "a saltwater crocodile",
+  "aliases": [
+    "saltie",
+    "estuarine crocodile",
+    "indo-pacific crocodile",
+    "crocodylus porosus",
+    "crocodile",
+    "croc",
+    "largest reptile"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "saltwater-crocodile",
+    "x": "length"
+  },
+  "subtitle": "Large adult",
+  "scientificName": "Crocodylus porosus",
+  "description": "The saltwater crocodile is the largest living reptile and ranges from India and Sri Lanka through Southeast Asia to northern Australia and the Solomon Islands. Males grow far larger than females: the Northern Territory Government says males normally reach up to 6 m while females normally grow to a little over 3 m. San Diego Zoo Wildlife Alliance gives an average length of 16 to 20 ft and a weight of about 2,000 lb.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (average large adult)",
+      "kind": "length",
+      "min": 16,
+      "max": 20,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average length given by San Diego Zoo (5 to 6 m), total length nose to tail",
+      "source": "sdz-crocodilian"
+    },
+    {
+      "key": "maleLength",
+      "label": "Length (adult male, normal maximum)",
+      "kind": "length",
+      "max": 6,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Males normally grow up to 6 m",
+      "source": "nt-crocwise"
+    },
+    {
+      "key": "maxLength",
+      "label": "Maximum length",
+      "kind": "length",
+      "max": 23,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Maximum length given by San Diego Zoo (7 m); the IUCN Crocodile Specialist Group cites reported lengths of up to 6-7 m",
+      "source": [
+        "sdz-crocodilian",
+        "csg-porosus"
+      ]
+    },
+    {
+      "key": "femaleLength",
+      "label": "Length (adult female)",
+      "kind": "length",
+      "max": 3,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "In Australia females rarely exceed 3 m total length; in Sarawak and Sabah (Malaysia) females up to 4 m are relatively common",
+      "source": "csg-porosus"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 2000,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Weight given by San Diego Zoo (908 kg) alongside the 16 to 20 ft average length",
+      "source": "sdz-crocodilian"
+    },
+    {
+      "key": "largeMaleMass",
+      "label": "Mass (large male)",
+      "kind": "mass",
+      "value": 1000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "Large males can weigh more than 1,000 kg",
+      "source": "qm-crocodiles"
+    },
+    {
+      "key": "femaleMass",
+      "label": "Mass (adult female)",
+      "kind": "mass",
+      "max": 150,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Females are usually around 3 m long and weigh up to 150 kg",
+      "source": "qm-crocodiles"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Large males can exceed six metres in length and weigh more than 1,000 kg, while females are usually around three metres long.",
+      "source": "qm-crocodiles"
+    },
+    {
+      "text": "Crocodiles of up to 10 m were recorded in the wild in the past, but such sizes are extremely rare.",
+      "source": "nt-crocwise"
+    },
+    {
+      "text": "An average hatchling weighs 72 g and is 29.3 cm long; females mature at around 2.3 m and males at around 3.3 m.",
+      "source": "nt-crocwise"
+    },
+    {
+      "text": "It is one of the most widely distributed crocodilians, found from southern India and Sri Lanka east to Micronesia and south to northern Australia.",
+      "source": "csg-porosus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sdz-crocodilian",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Crocodilian",
+      "url": "https://animals.sandiegozoo.org/animals/crocodilian",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nt-crocwise",
+      "publisher": "Northern Territory Government (Be Crocwise)",
+      "title": "Saltwater crocodiles",
+      "url": "https://becrocwise.nt.gov.au/about-crocodiles/saltwater-crocodiles",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "qm-crocodiles",
+      "publisher": "Queensland Museum",
+      "title": "Crocodiles - Animals of Queensland",
+      "url": "https://www.museum.qld.gov.au/learn-and-discover/animals-of-queensland/crocodiles/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "csg-porosus",
+      "publisher": "IUCN SSC Crocodile Specialist Group",
+      "title": "Saltwater Crocodile Crocodylus porosus (Webb, Manolis and Brien 2018), Crocodiles: Status Survey and Conservation Action Plan, Fourth Edition",
+      "url": "https://www.iucncsg.org/365_docs/attachments/protarea/ad36d8689b30614e8c5db1a9e118d990.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Saltwater_crocodile",
+  "caveats": [
+    "San Diego Zoo's 16 to 20 ft 'average' and 2,000 lb weight describe large adults, not the species as a whole; females are much smaller.",
+    "Queensland Museum gives a slightly different maximum ('up to 7 metres but rarely more than 5 metres') from the Northern Territory Government's 'males normally up to 6 metres'.",
+    "The IUCN Crocodile Specialist Group account gives lengths but no weights."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

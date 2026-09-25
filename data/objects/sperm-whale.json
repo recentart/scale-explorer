@@ -1,0 +1,103 @@
+{
+  "slug": "sperm-whale",
+  "name": "Sperm whale",
+  "category": "animals",
+  "phrase": "a sperm whale",
+  "aliases": [
+    "cachalot",
+    "physeter macrocephalus",
+    "whale",
+    "largest toothed whale",
+    "moby dick"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "sperm-whale",
+    "x": "length"
+  },
+  "subtitle": "Adult male",
+  "scientificName": "Physeter macrocephalus",
+  "description": "The sperm whale is the largest of the toothed whales and one of the most widely distributed marine mammals. NOAA Fisheries lists males at about 52 ft long and 45 tons, roughly three times the weight of females, which reach about 40 ft and 15 tons. Sperm whales hunt squid, sharks, skates and fish on deep dives that routinely reach 2,000 ft.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (adult male)",
+      "kind": "length",
+      "value": 52,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Males reach physical maturity at around 50 years old, when they are approximately 52 ft long",
+      "source": "noaa-sperm-whale"
+    },
+    {
+      "key": "femaleLength",
+      "label": "Length (adult female)",
+      "kind": "length",
+      "value": 40,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Adult female length from NOAA's species summary",
+      "source": "noaa-sperm-whale"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (adult male)",
+      "kind": "mass",
+      "value": 45,
+      "unit": "shortTon",
+      "approx": true,
+      "qualifier": "about",
+      "note": "NOAA gives weight as '15 tons (females) to 45 tons (males)'",
+      "source": "noaa-sperm-whale"
+    },
+    {
+      "key": "femaleMass",
+      "label": "Mass (adult female)",
+      "kind": "mass",
+      "value": 15,
+      "unit": "shortTon",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Adult female weight from NOAA's species summary",
+      "source": "noaa-sperm-whale"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Sperm whales are the largest of the toothed whales and have one of the widest global distributions of any marine mammal.",
+      "source": "noaa-sperm-whale"
+    },
+    {
+      "text": "Their deep feeding dives routinely reach 2,000 ft and can last 45 minutes.",
+      "source": "noaa-sperm-whale"
+    },
+    {
+      "text": "For their first 10 years males are only slightly larger than females, but they keep growing substantially into their 30s.",
+      "source": "noaa-sperm-whale"
+    },
+    {
+      "text": "Females reach sexual maturity at about 9 years old, when roughly 29 ft long. Sperm whales can live up to 60 years.",
+      "source": "noaa-sperm-whale"
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa-sperm-whale",
+      "publisher": "NOAA Fisheries",
+      "title": "Sperm Whale",
+      "url": "https://www.fisheries.noaa.gov/species/sperm-whale",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sperm_whale",
+  "caveats": [
+    "NOAA writes the weights only as 'tons' without saying which ton; they are stored as US short tons (2,000 lb) because NOAA is a US agency using US customary units.",
+    "NOAA gives a single figure per sex rather than a range or maximum."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

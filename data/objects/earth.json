@@ -51,6 +51,17 @@
       "qualifier": "exact",
       "note": "Total mass; source states 5.9722 × 10²⁴ kg",
       "source": "nssdca-earth"
+    },
+    {
+      "key": "volume",
+      "label": "Volume",
+      "kind": "volume",
+      "value": 1083210000000.0,
+      "unit": "km3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "NASA fact sheet lists this as 10^10 km³ units",
+      "source": "nssdca-earth"
     }
   ],
   "facts": [

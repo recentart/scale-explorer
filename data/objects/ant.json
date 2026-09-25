@@ -1,0 +1,112 @@
+{
+  "slug": "ant",
+  "name": "Ant (black garden ant)",
+  "category": "animals",
+  "phrase": "a black garden ant",
+  "aliases": [
+    "ant",
+    "black ant",
+    "garden ant",
+    "common black ant",
+    "small black ant",
+    "lasius niger",
+    "worker ant"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "ant",
+    "x": "length"
+  },
+  "subtitle": "Worker of the black garden ant, Lasius niger",
+  "scientificName": "Lasius niger",
+  "description": "The black garden ant is a small brown-black ant and one of the most familiar ants in European gardens. Its workers, the non-reproductive females seen foraging for most of the year, are about 3.4 to 5 mm long. Winged queens are roughly twice that size, and a colony has a single queen with anywhere from a few hundred to thousands of workers.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (worker)",
+      "kind": "length",
+      "min": 3.4,
+      "max": 5,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Body length of a worker ant",
+      "source": "naturespot-lasius-niger"
+    },
+    {
+      "key": "queenLength",
+      "label": "Length (queen)",
+      "kind": "length",
+      "min": 8,
+      "max": 9,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Body length of a reproductive queen",
+      "source": "naturespot-lasius-niger"
+    },
+    {
+      "key": "maleLength",
+      "label": "Length (male)",
+      "kind": "length",
+      "min": 3.5,
+      "max": 4.7,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Body length of a winged male",
+      "source": "naturespot-lasius-niger"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Winged queens are almost twice the size of the workers.",
+      "source": "naturespot-lasius-niger"
+    },
+    {
+      "text": "A colony has a single queen and from several hundred up to 10,000 workers.",
+      "source": "bwars-lasius-niger"
+    },
+    {
+      "text": "What was long called the common black ant is actually two separate species, Lasius niger and Lasius platythorax, first told apart in 1991.",
+      "source": "bwars-lasius-niger"
+    },
+    {
+      "text": "The ants seen outside the nest for most of the year are female workers gathering food; large nests can hold more than 20,000 workers.",
+      "source": "nhm-flying-ant-day"
+    }
+  ],
+  "sources": [
+    {
+      "id": "naturespot-lasius-niger",
+      "publisher": "NatureSpot (Leicestershire and Rutland wildlife recording)",
+      "title": "Small Black Ant - Lasius niger",
+      "url": "https://www.naturespot.org/species/small-black-ant",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "bwars-lasius-niger",
+      "publisher": "Bees, Wasps and Ants Recording Society (BWARS)",
+      "title": "Lasius niger",
+      "url": "https://bwars.com/ant/formicidae/formicinae/lasius-niger",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nhm-flying-ant-day",
+      "publisher": "Natural History Museum, London",
+      "title": "Flying ant day: when winged ants take their nuptial flight",
+      "url": "https://www.nhm.ac.uk/discover/when-why-winged-ants-swarm-nuptial-flight.html",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Black_garden_ant",
+  "caveats": [
+    "No university or museum page giving a Lasius niger worker body length could be fetched (AntWiki was blocked by a bot check, the BWARS species account gives no size, and a 2020 body-size study measured only head width). The worker, queen and male lengths come from NatureSpot, a UK biological recording site.",
+    "The Natural History Museum says queens 'can be up to 15 millimetres long', well above NatureSpot's 8 to 9 mm. The NHM article does not say how that length was measured, so it is not used as a measure.",
+    "No source with an ant's body mass was found."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

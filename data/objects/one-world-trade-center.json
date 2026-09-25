@@ -1,0 +1,94 @@
+{
+  "slug": "one-world-trade-center",
+  "name": "One World Trade Center",
+  "category": "buildings",
+  "phrase": "One World Trade Center",
+  "aliases": [
+    "one wtc",
+    "1 wtc",
+    "freedom tower",
+    "world trade center",
+    "wtc",
+    "tallest building in the us",
+    "new york skyscraper",
+    "skyscraper"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "one-world-trade-center",
+    "y": "height"
+  },
+  "description": "One World Trade Center is the main tower of the rebuilt World Trade Center in Lower Manhattan, New York City, completed in 2014. Its architectural height of 1,776 ft (541.3 m), which counts the spire, makes it the tallest building in the United States on the Skyscraper Center's list. The very top of the building reaches 546.2 m (1,792 ft).",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 541.3,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to architectural top, including spires but not antennas (1,776 ft)",
+      "source": "cvu-one-world-trade-center"
+    },
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 546.2,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to the highest point of the building (1,792 ft)",
+      "source": "cvu-one-world-trade-center"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 386.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center occupied height (1,268 ft)",
+      "source": "cvu-one-world-trade-center"
+    }
+  ],
+  "facts": [
+    {
+      "text": "One World Trade Center has 94 floors above ground and 5 below ground.",
+      "source": "cvu-one-world-trade-center"
+    },
+    {
+      "text": "Construction started in 2006 and the tower was completed in 2014.",
+      "source": "cvu-one-world-trade-center"
+    },
+    {
+      "text": "The Skyscraper Center ranks it the tallest building in North America, the United States and New York City, and the seventh-tallest in the world (September 2026).",
+      "source": "cvu-one-world-trade-center"
+    },
+    {
+      "text": "It was designed by Skidmore, Owings & Merrill; the current owners are the Port Authority of New York and New Jersey and The Durst Organization.",
+      "source": "cvu-one-world-trade-center"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cvu-one-world-trade-center",
+      "publisher": "Council on Vertical Urbanism, formerly CTBUH (The Skyscraper Center)",
+      "title": "One World Trade Center - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/one-world-trade-center/98",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/One_World_Trade_Center",
+  "caveats": [
+    "The Skyscraper Center database now carries the Council on Vertical Urbanism (CVU) name; its height categories are the CTBUH ones (architectural top includes spires but not antennas).",
+    "The 1,776 ft architectural height includes the spire; the 546.2 m to-tip figure is the highest point of the building.",
+    "World rankings change as new towers are completed; the ranks quoted are as shown on the Skyscraper Center in September 2026."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "hydrogen-atom",
+  "name": "Hydrogen atom",
+  "category": "microscopic",
+  "phrase": "a hydrogen atom",
+  "aliases": [
+    "hydrogen",
+    "atom",
+    "bohr radius",
+    "H atom",
+    "smallest atom"
+  ],
+  "familiar": false,
+  "headline": "bohrRadius",
+  "headlineAdj": "in radius",
+  "profile": {
+    "shape": "hydrogen-atom",
+    "x": "bohrRadius"
+  },
+  "subtitle": "Sized by the Bohr radius",
+  "description": "Hydrogen is the simplest atom, made of a single proton and a single electron. An atom has no hard edge, so its size is usually expressed through the Bohr radius, a fundamental physical constant that sets the natural length scale of the hydrogen atom. The CODATA 2022 value published by NIST is about 5.29 x 10^-11 m, a little over half of a ten-billionth of a metre.",
+  "measures": [
+    {
+      "key": "bohrRadius",
+      "label": "Bohr radius",
+      "kind": "length",
+      "value": 5.29177210544e-11,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CODATA 2022 recommended value of the Bohr radius a0, 5.291 772 105 44(82) x 10^-11 m; standard uncertainty 0.000 000 000 82 x 10^-11 m (relative 1.6 x 10^-10). Used as the atom's radius, so the drawing is twice this wide.",
+      "source": "nist-a0"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NIST lists the Bohr radius with a relative standard uncertainty of 1.6 x 10^-10, making it one of the most precisely known lengths in physics.",
+      "source": "nist-a0"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nist-a0",
+      "publisher": "NIST (CODATA 2022)",
+      "title": "CODATA Value: Bohr radius",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hydrogen_atom",
+  "caveats": [
+    "An atom has no sharp boundary; the Bohr radius is a defined length scale (the electron's orbit radius in the Bohr model of hydrogen), not a measured edge, so drawing the atom as a disc of this radius is a convention.",
+    "No sourced mass for a hydrogen atom in kilograms was fetched, so mass is left out."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "basketball",
+  "name": "Basketball",
+  "category": "sports",
+  "phrase": "a basketball",
+  "aliases": [
+    "basketball ball",
+    "size 7 basketball",
+    "NBA ball",
+    "hoops ball"
+  ],
+  "familiar": true,
+  "headline": "circumference",
+  "headlineAdj": "around",
+  "profile": {
+    "shape": "basketball",
+    "x": "circumference",
+    "circumference": true
+  },
+  "subtitle": "Size 7 ball used in men's competitions",
+  "description": "A basketball is an inflated rubber or leather ball with a pebbled surface. FIBA, the world governing body, requires a size 7 ball for all men's competitions, measuring 750 to 770 mm around and weighing 580 to 620 g. Women's games use a slightly smaller size 6 ball.",
+  "measures": [
+    {
+      "key": "circumference",
+      "label": "Circumference",
+      "kind": "length",
+      "min": 750,
+      "max": 770,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "range",
+      "note": "FIBA tolerance for a size 7 ball (men's competitions)",
+      "source": "fiba-equipment-2024"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "min": 580,
+      "max": 620,
+      "unit": "g",
+      "approx": false,
+      "qualifier": "range",
+      "note": "FIBA tolerance for a size 7 ball",
+      "source": "fiba-equipment-2024"
+    }
+  ],
+  "facts": [
+    {
+      "text": "FIBA's size 6 ball for women's competitions is 715-730 mm around and weighs 510-550 g.",
+      "source": "fiba-equipment-2024"
+    },
+    {
+      "text": "Dropped from about 1,800 mm, a FIBA ball must bounce back to between 1,035 and 1,085 mm.",
+      "source": "fiba-equipment-2024"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fiba-equipment-2024",
+      "publisher": "FIBA",
+      "title": "Official Basketball Rules 2024: Basketball Equipment (Table 1, basketball circumference and weight tolerances)",
+      "url": "https://assets.fiba.basketball/image/upload/documents-corporate-fiba-official-rules-2024-official-basketball-rules-and-basketball-equipment.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nba-rules-2025",
+      "publisher": "National Basketball Association",
+      "title": "Official 2025-26 NBA Playing Rules (Rule No. 1, Section II Equipment)",
+      "url": "https://cdn.nba.com/manage/2026/01/Official-2025-26-NBA-Playing-Rules.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Basketball_(ball)",
+  "caveats": [
+    "The NBA's 2025-26 Playing Rules only require an officially approved NBA ball and give no circumference or weight, so FIBA's size 7 figures are used.",
+    "The rules give circumference, not diameter; any diameter shown is calculated from it."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "human-hair",
+  "name": "Human hair (width)",
+  "category": "microscopic",
+  "phrase": "the width of a human hair",
+  "aliases": [
+    "hair",
+    "hair width",
+    "hair thickness",
+    "strand of hair",
+    "hair diameter"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "human-hair",
+    "x": "diameter"
+  },
+  "subtitle": "Cross-section of a single strand",
+  "description": "The width of a human hair is a common everyday yardstick for very small things. Hair thickness varies a great deal between people and hair types, with fine light hair at the thin end and coarse dark hair at the thick end. The US Environmental Protection Agency uses an average of about 70 micrometres when comparing hair with airborne particles.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Average diameter",
+      "kind": "length",
+      "value": 70,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average human hair width used by the EPA for particle-size comparisons",
+      "source": "epa-pm"
+    },
+    {
+      "key": "diameterRange",
+      "label": "Diameter range",
+      "kind": "length",
+      "min": 17,
+      "max": 181,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "range",
+      "note": "From fine flaxen hair (1/1500 in) to coarse black hair (1/140 in)",
+      "source": "bionumbers-hair"
+    }
+  ],
+  "facts": [
+    {
+      "text": "According to the EPA, an average human hair is about 30 times wider than the largest fine particle (PM2.5).",
+      "source": "epa-pm"
+    },
+    {
+      "text": "Flaxen hair is the finest, about 1/1500 to 1/500 of an inch across, while black hair is the coarsest, about 1/450 to 1/140 of an inch.",
+      "source": "bionumbers-hair"
+    }
+  ],
+  "sources": [
+    {
+      "id": "epa-pm",
+      "publisher": "U.S. Environmental Protection Agency",
+      "title": "Particulate Matter (PM) Basics",
+      "url": "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "bionumbers-hair",
+      "publisher": "BioNumbers, Harvard Medical School",
+      "title": "Diameter of human hair - BNID 106856",
+      "url": "https://bionumbers.hms.harvard.edu/bionumber.aspx?s=n&v=2&id=106856",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hair",
+  "caveats": [
+    "The 17 to 181 µm range in BioNumbers is drawn from The Physics Factbook (Glenn Elert), and BioNumbers itself notes that a better source is needed.",
+    "Hair width varies with ethnicity, age, colour and body site; the EPA figure is a rounded average for comparison, not a measurement study."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

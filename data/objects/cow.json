@@ -1,0 +1,105 @@
+{
+  "slug": "cow",
+  "name": "Cow (Holstein)",
+  "category": "animals",
+  "phrase": "a Holstein cow",
+  "aliases": [
+    "cow",
+    "holstein",
+    "holstein friesian",
+    "friesian",
+    "dairy cow",
+    "cattle",
+    "bos taurus"
+  ],
+  "familiar": true,
+  "headline": "heightAtWithers",
+  "headlineAdj": "tall at the shoulder",
+  "profile": {
+    "shape": "cow",
+    "y": "heightAtWithers"
+  },
+  "subtitle": "Mature Holstein dairy cow",
+  "scientificName": "Bos taurus",
+  "description": "The black-and-white Holstein is the best-known dairy breed. Oklahoma State University and Michigan State University Extension both describe a mature Holstein cow as weighing about 1,500 lb and standing about 58 in tall at the shoulder. Calves weigh roughly 80 to 100 lb at birth.",
+  "measures": [
+    {
+      "key": "heightAtWithers",
+      "label": "Height at shoulder",
+      "kind": "length",
+      "value": 58,
+      "unit": "in",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Mature cow, height at the shoulder",
+      "source": [
+        "okstate-holstein",
+        "msu-holstein"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Weight (mature cow)",
+      "kind": "mass",
+      "value": 1500,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Mature cow",
+      "source": [
+        "okstate-holstein",
+        "msu-holstein"
+      ]
+    },
+    {
+      "key": "calfMass",
+      "label": "Birth weight",
+      "kind": "mass",
+      "min": 80,
+      "max": 100,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Holstein calf at birth",
+      "source": "msu-holstein"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Holstein heifers can be bred at about 15 months old, when they weigh about 800 lb.",
+      "source": "okstate-holstein"
+    },
+    {
+      "text": "Oklahoma State University says a healthy Holstein calf weighs 90 lb or more at birth.",
+      "source": "okstate-holstein"
+    },
+    {
+      "text": "Holstein gestation lasts about nine months, and first calving is ideally between 24 and 27 months of age.",
+      "source": "okstate-holstein"
+    }
+  ],
+  "sources": [
+    {
+      "id": "okstate-holstein",
+      "publisher": "Oklahoma State University, Department of Animal and Food Sciences",
+      "title": "Holstein Cattle (Breeds of Livestock)",
+      "url": "https://breeds.okstate.edu/cattle/holstein-cattle",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "msu-holstein",
+      "publisher": "University of Delaware Animal Science with Extension (article by Melissa Elischer, Michigan State University Extension)",
+      "title": "The Holstein Dairy Cow",
+      "url": "https://sites.udel.edu/canr-animalscience/2016/04/07/the-holstein-dairy-cow/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Holstein_Friesian",
+  "caveats": [
+    "Holstein Association USA pages (Holstein 101 and its fact sheet PDF) sat behind a bot check and could not be read.",
+    "Both sources give a single typical height and weight, not a range; bulls are not covered.",
+    "The two sources differ slightly on calf birth weight: 80 to 100 lb (MSU Extension) versus 90 lb or more (Oklahoma State)."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

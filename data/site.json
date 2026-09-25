@@ -3,16 +3,60 @@
   "tagline": "See how big things really are.",
   "url": "https://scale-explorer.freewebtoolss.workers.dev",
   "repo": "https://github.com/recentart/scale-explorer",
-  "description": "See how big things really are. Real, sourced measurements of animals, vehicles, buildings, natural wonders and planets, drawn side by side at their true relative size.",
-  "updated": "2026-09-24",
-  "heroLineup": ["human", "car", "elephant", "blue-whale"],
-  "popular": [
-    ["blue-whale", "boeing-747"],
-    ["titanic", "cruise-ship"],
-    ["eiffel-tower", "burj-khalifa"],
-    ["saturn-v", "starship"],
-    ["earth", "moon"],
-    ["statue-of-liberty", "empire-state-building"]
+  "description": "See how big things really are. Real, sourced measurements of 130 things, from a hydrogen atom to the Andromeda Galaxy, drawn side by side at their true relative size.",
+  "updated": "2026-09-25",
+  "heroLineup": [
+    "human",
+    "car",
+    "elephant",
+    "blue-whale"
   ],
-  "featured": ["blue-whale", "eiffel-tower", "iss", "boeing-747", "mount-everest", "earth"]
+  "popular": [
+    [
+      "blue-whale",
+      "boeing-747"
+    ],
+    [
+      "tyrannosaurus-rex",
+      "elephant"
+    ],
+    [
+      "sun",
+      "earth"
+    ],
+    [
+      "titanic",
+      "cruise-ship"
+    ],
+    [
+      "eiffel-tower",
+      "burj-khalifa"
+    ],
+    [
+      "human-hair",
+      "red-blood-cell"
+    ],
+    [
+      "saturn-v",
+      "starship"
+    ],
+    [
+      "megalodon",
+      "great-white-shark"
+    ],
+    [
+      "statue-of-liberty",
+      "empire-state-building"
+    ]
+  ],
+  "featured": [
+    "blue-whale",
+    "tyrannosaurus-rex",
+    "eiffel-tower",
+    "iss",
+    "sun",
+    "coronavirus",
+    "mount-everest",
+    "milky-way"
+  ]
 }

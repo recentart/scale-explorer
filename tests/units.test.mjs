@@ -67,6 +67,16 @@ test('measures keep the source figure and convert honestly', () => {
   assert.equal(formatMeasure({ value: 5.9722e24, unit: 'kg', approx: false, qualifier: 'exact' }, 'metric'), '5.9722 × 10²⁴ kg')
 })
 
+test('tiny and huge values pick readable units', () => {
+  assert.equal(formatValue('length', 5.29e-11, 'metric'), '52.9 pm')
+  assert.equal(formatValue('length', 2e-9, 'imperial'), '2 nm')
+  assert.equal(formatValue('length', 7.5e-6, 'metric'), '7.5 µm')
+  assert.equal(formatValue('length', 0.0019, 'metric'), '1.9 mm')
+  assert.equal(formatValue('length', 9.46e20, 'metric'), '100,000 light-years')
+  assert.equal(formatValue('volume', 0.00035, 'metric'), '350 mL')
+  assert.equal(convert(1, 'ly', 'km'), 9460730472580.8)
+})
+
 test('parseNumber accepts common formats', () => {
   assert.equal(parseNumber('1500'), 1500)
   assert.equal(parseNumber('1,500'), 1500)
@@ -98,6 +108,12 @@ test('parseLength understands units and rejects bad input', () => {
   ok('5\'10"', 'm', 70 * 0.0254)
   ok('5 ft 10 in', 'm', 70 * 0.0254)
   ok('  2 KM ', 'm', 2000)
+  ok('5 mm', 'm', 0.005)
+  ok('70 microns', 'm', 7e-5)
+  ok('10 µm', 'm', 1e-5)
+  ok('2 nm', 'm', 2e-9)
+  ok('3 in', 'm', 0.0762)
+  ok('100000 light years', 'm', 100000 * 9460730472580800)
 
   const bad = (text, pattern) => {
     const r = parseLength(text, 'm')
@@ -108,8 +124,8 @@ test('parseLength understands units and rejects bad input', () => {
   bad('abc', /Enter a number/)
   bad('-5', /greater than zero/)
   bad('0', /greater than zero/)
-  bad('0.001', /smaller than 1 cm/)
-  bad('2000000 km', /larger than 1,000,000 km/)
+  bad('0.0000000001', /smaller than 1 nanometre/)
+  bad('1e20 km', /larger than about a million light-years/)
   bad('10 yards', /not a supported unit/)
   bad('10 sq m', /not a supported unit/)
   bad('5\'13"', /Inches should be less than 12/)

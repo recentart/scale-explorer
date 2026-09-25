@@ -1,0 +1,112 @@
+{
+  "slug": "leaning-tower-of-pisa",
+  "name": "Leaning Tower of Pisa",
+  "category": "structures",
+  "phrase": "the Leaning Tower of Pisa",
+  "aliases": [
+    "tower of pisa",
+    "pisa tower",
+    "torre di pisa",
+    "torre pendente",
+    "leaning tower",
+    "pisa bell tower"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "leaning-tower-of-pisa",
+    "x": "diameter",
+    "y": "height"
+  },
+  "subtitle": "Bell tower of Pisa Cathedral, Piazza dei Miracoli, Italy",
+  "description": "The Leaning Tower is the free-standing marble bell tower of Pisa Cathedral, begun in 1173 and finished in the 14th century after long pauses. Its foundations began sinking unevenly into the soft ground while it was still being built, giving it a lean that reached 5.5 degrees in the late 20th century. After stabilisation work between 1990 and 2001, the Opera della Primaziale Pisana gives its current tilt as about 5.115 degrees, its height as 58.36 m and its weight as 14,453 tonnes.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 58.36,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Official height given by the Opera della Primaziale Pisana, which does not say which side it is measured on",
+      "source": "opapisa-tower"
+    },
+    {
+      "key": "diameter",
+      "label": "External diameter",
+      "kind": "length",
+      "value": 15,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Outside diameter of the cylindrical tower",
+      "source": "opapisa-tower"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "value": 14453,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total weight of the tower (written 14.453 tonnes in the European style)",
+      "source": "opapisa-tower"
+    },
+    {
+      "key": "stoneArea",
+      "label": "Stone surface area",
+      "kind": "area",
+      "value": 7735,
+      "unit": "m2",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Stone surfaces of the tower (written 7.735 square metres in the European style)",
+      "source": "opapisa-tower"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Its current inclination is about 5.115 degrees.",
+      "source": "opapisa-tower"
+    },
+    {
+      "text": "In the late 20th century the tower leaned 5.5 degrees, about 4.5 m (15 ft) off the vertical; soil was removed from under the foundations until 2001, and by 2008 the lean had improved by 48 cm (19 in) in total.",
+      "source": "britannica-pisa"
+    },
+    {
+      "text": "Construction stopped for almost a century after the first three of its eight storeys were built, which let the ground settle and probably saved it from collapsing early.",
+      "source": "britannica-pisa"
+    },
+    {
+      "text": "It holds seven bells, one for each musical note; the largest, cast in 1655, weighs three and a half tonnes.",
+      "source": "opapisa-tower"
+    }
+  ],
+  "sources": [
+    {
+      "id": "opapisa-tower",
+      "publisher": "Opera della Primaziale Pisana",
+      "title": "Tower",
+      "url": "https://www.opapisa.it/en/square-of-miracles/tower/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-pisa",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Leaning Tower of Pisa",
+      "url": "https://www.britannica.com/topic/Leaning-Tower-of-Pisa",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
+  "caveats": [
+    "Separate heights for the low and high sides of the tower could not be confirmed from a fetched official page, so only the single official height of 58.36 m is stored.",
+    "Step counts differ between sources: the Opera della Primaziale Pisana lists 273 steps and Britannica says 294 steps lead to the bell chamber, so no step count is used.",
+    "Britannica gives the originally planned height as 56 m (185 ft), which differs from the official measured height."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

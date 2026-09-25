@@ -1,0 +1,100 @@
+{
+  "slug": "red-blood-cell",
+  "name": "Red blood cell",
+  "category": "microscopic",
+  "phrase": "a red blood cell",
+  "aliases": [
+    "RBC",
+    "erythrocyte",
+    "blood cell",
+    "red blood corpuscle"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "across",
+  "profile": {
+    "shape": "red-blood-cell",
+    "x": "diameter",
+    "y": "thickness"
+  },
+  "subtitle": "Human",
+  "description": "Red blood cells carry oxygen around the body and are the most common cells in human blood. A healthy one is a flexible disc that is thinner in the middle than at the rim, a biconcave shape that lets it squeeze through capillaries narrower than itself. Human red blood cells are about 7.5 to 8.7 µm across and 1.7 to 2.2 µm thick.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "min": 7.5,
+      "max": 8.7,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Diameter of the normal disc-shaped (discocyte) human red blood cell",
+      "source": "diezsilva-2010"
+    },
+    {
+      "key": "thickness",
+      "label": "Thickness",
+      "kind": "length",
+      "min": 1.7,
+      "max": 2.2,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Thickness of the normal discocyte",
+      "source": "diezsilva-2010"
+    },
+    {
+      "key": "volume",
+      "label": "Cytosol volume",
+      "kind": "volume",
+      "value": 9.4e-11,
+      "unit": "cm3",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Volume of the cell's internal fluid, averaging 94 µm³ at 300 mOsmol/kg (1 µm³ = 1e-12 cm³)",
+      "source": "diezsilva-2010"
+    },
+    {
+      "key": "diameterRounded",
+      "label": "Diameter (rounded)",
+      "kind": "length",
+      "value": 8,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Single rounded value listed by BioNumbers (from Rosen, Optimality Principles in Biology, 1967)",
+      "source": "bionumbers-rbc"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Red blood cells can deform enough to pass through capillaries narrower than their own resting diameter.",
+      "source": "diezsilva-2010"
+    }
+  ],
+  "sources": [
+    {
+      "id": "diezsilva-2010",
+      "publisher": "MRS Bulletin (via PubMed Central, NIH)",
+      "title": "Shape and Biomechanical Characteristics of Human Red Blood Cells in Health and Disease (Diez-Silva, Dao, Han, Lim, Suresh, 2010)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2998922",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "bionumbers-rbc",
+      "publisher": "BioNumbers, Harvard Medical School",
+      "title": "Diameter of red blood cell - BNID 100798",
+      "url": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100798&ver=1",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Red_blood_cell",
+  "caveats": [
+    "NCBI Bookshelf (StatPearls) pages returned a CAPTCHA and could not be read, so the dimensions come from a peer-reviewed review hosted on PubMed Central.",
+    "The 94 µm³ figure is the cytosol (internal fluid) volume, not a separately stated whole-cell volume; converted exactly from µm³.",
+    "No sourced mass was found."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

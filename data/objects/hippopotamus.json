@@ -1,0 +1,117 @@
+{
+  "slug": "hippopotamus",
+  "name": "Hippopotamus",
+  "category": "animals",
+  "phrase": "a hippopotamus",
+  "aliases": [
+    "hippo",
+    "common hippopotamus",
+    "river hippopotamus",
+    "river horse",
+    "hippopotamus amphibius"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "hippopotamus",
+    "x": "length"
+  },
+  "subtitle": "Common (river) hippopotamus",
+  "scientificName": "Hippopotamus amphibius",
+  "description": "The common hippopotamus is a huge, barrel-bodied African mammal that spends most of the day wallowing in shallow water and comes ashore at night to graze. San Diego Zoo Wildlife Alliance gives adults a length of 3.3 to 5 m and a shoulder height of up to 1.6 m. Males are much heavier than females, weighing from about 1,600 kg to as much as 4,500 kg.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "min": 3.3,
+      "max": 5,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult length as listed by San Diego Zoo (10.8 to 16.5 ft); the source does not say whether the tail is included",
+      "source": "sdz-hippo"
+    },
+    {
+      "key": "shoulderHeight",
+      "label": "Height at shoulder",
+      "kind": "length",
+      "max": 1.6,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Up to 5.2 ft (1.6 m) at the shoulder",
+      "source": "sdz-hippo"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (adult male)",
+      "kind": "mass",
+      "min": 1600,
+      "max": 4500,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Males, 3,500 to 9,920 lb",
+      "source": "sdz-hippo"
+    },
+    {
+      "key": "femaleMass",
+      "label": "Mass (adult female)",
+      "kind": "mass",
+      "value": 1400,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Females, 3,000 lb average",
+      "source": "sdz-hippo"
+    },
+    {
+      "key": "birthMass",
+      "label": "Birth weight",
+      "kind": "mass",
+      "min": 25,
+      "max": 45,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Newborn calf, 50 to 110 lb",
+      "source": "sdz-hippo"
+    }
+  ],
+  "facts": [
+    {
+      "text": "A hippo's eyes, ears and nostrils sit on top of its head, so it can see, hear and breathe while almost fully submerged.",
+      "source": "sdz-hippo"
+    },
+    {
+      "text": "Hippos can hold their breath for five minutes or longer and can even sleep underwater, surfacing to breathe by reflex without waking.",
+      "source": "sdz-hippo"
+    },
+    {
+      "text": "Despite their bulk, hippos eat only about 40 kg (88 lb) of food a night, around 1 to 1.5 percent of their body weight.",
+      "source": "sdz-hippo"
+    },
+    {
+      "text": "Some hippo calls have been measured at 115 decibels.",
+      "source": "sdz-hippo"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sdz-hippo",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Hippopotamus",
+      "url": "https://animals.sandiegozoo.org/animals/hippo",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hippopotamus",
+  "caveats": [
+    "No Smithsonian National Zoo page for the common hippopotamus was found, so all figures come from San Diego Zoo Wildlife Alliance (single source).",
+    "The source gives a single 'Length' without saying whether the tail is included."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

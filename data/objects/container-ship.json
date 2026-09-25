@@ -1,0 +1,127 @@
+{
+  "slug": "container-ship",
+  "name": "Container ship",
+  "category": "vehicles",
+  "phrase": "a container ship",
+  "aliases": [
+    "ever alot",
+    "evergreen a-class",
+    "cargo ship",
+    "boxship",
+    "ultra large container ship",
+    "ulcv",
+    "largest container ship",
+    "freighter"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "container-ship",
+    "x": "length"
+  },
+  "subtitle": "Ever Alot, an Evergreen A-class ship of 24,004 TEU",
+  "description": "The biggest container ships are about 400 m long and carry more than 24,000 standard 20-foot containers. Ever Alot, built by China's Hudong-Zhonghua Shipbuilding for Evergreen Marine and delivered in June 2022, measures 399.99 m long and 61.5 m wide. It was the first ship able to carry more than 24,000 TEU, and Guinness World Records lists it among the record holders for container capacity.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length overall",
+      "kind": "length",
+      "value": 399.99,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Ever Alot overall length as reported at delivery by the builder; the Port of Hamburg rounds it to 400 m",
+      "source": [
+        "marinelink-ever-alot",
+        "hamburg-ever-alot"
+      ]
+    },
+    {
+      "key": "beam",
+      "label": "Beam (width)",
+      "kind": "length",
+      "value": 61.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Ever Alot width",
+      "source": [
+        "marinelink-ever-alot",
+        "hamburg-ever-alot"
+      ]
+    },
+    {
+      "key": "depth",
+      "label": "Moulded depth",
+      "kind": "length",
+      "value": 33.2,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Hull depth from keel to main deck",
+      "source": "marinelink-ever-alot"
+    },
+    {
+      "key": "draught",
+      "label": "Draught",
+      "kind": "length",
+      "value": 17,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Depth of the hull below the waterline",
+      "source": "hamburg-ever-alot"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Ever Alot can carry 24,004 TEU (twenty-foot equivalent units), 12 TEU more than its predecessor Ever Ace.",
+      "source": "hamburg-ever-alot"
+    },
+    {
+      "text": "Ever Alot was the seventh ship in Evergreen's series of 13 A-class ships and the first in the world over 24,000 TEU; it is classed by ABS and was deployed on Far East to Europe routes.",
+      "source": "marinelink-ever-alot"
+    },
+    {
+      "text": "Guinness World Records lists Ever Alot, Ever Atop and Ever Aria as the largest container ships by capacity, with a gross tonnage of 236,228.",
+      "source": "gwr-container-ship"
+    },
+    {
+      "text": "According to Guinness, these ships stop just short of 400 m because ships over 400 m count as oversized and pay higher docking fees at many ports.",
+      "source": "gwr-container-ship"
+    }
+  ],
+  "sources": [
+    {
+      "id": "marinelink-ever-alot",
+      "publisher": "MarineLink (Maritime Reporter)",
+      "title": "World's Largest Containership Ever Alot Delivered in China",
+      "url": "https://www.marinelink.com/news/worlds-largest-containership-ever-alot-497622",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "hamburg-ever-alot",
+      "publisher": "Port of Hamburg (Hafen Hamburg Marketing)",
+      "title": "Ever Alot - ship specials",
+      "url": "https://www.hafen-hamburg.de/en/all-vessels/ship-specials/ever-alot/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "gwr-container-ship",
+      "publisher": "Guinness World Records",
+      "title": "Largest container ship (capacity)",
+      "url": "https://www.guinnessworldrecords.com/world-records/106922-largest-container-ship-capacity",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Evergreen_A-class_container_ship",
+  "caveats": [
+    "No page from Evergreen or Hudong-Zhonghua itself could be read; the 399.99 m length, 61.5 m width and 33.2 m depth are the builder's figures as reported by MarineLink at delivery.",
+    "Guinness World Records gives the length as 399.9 m (1,312 ft), slightly different from the 399.99 m reported at delivery.",
+    "Gross tonnage (236,228) is a measure of enclosed volume, not weight, so it is not stored as a mass. No source gave the ship's actual mass (lightship weight or displacement).",
+    "The record status quoted is as shown on the Guinness page in September 2026; newer ships may since have been reported with higher capacities."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

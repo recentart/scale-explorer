@@ -1,0 +1,103 @@
+{
+  "slug": "smartphone",
+  "name": "Smartphone",
+  "category": "everyday",
+  "phrase": "a smartphone",
+  "aliases": [
+    "phone",
+    "iPhone",
+    "iPhone 17",
+    "mobile phone",
+    "cell phone",
+    "cellphone"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "smartphone",
+    "y": "height",
+    "x": "width"
+  },
+  "subtitle": "Apple iPhone 17 (the base iPhone model in Apple's current lineup)",
+  "description": "Modern smartphones are thin glass-and-metal slabs about the size of a hand. As a typical example, Apple's iPhone 17 is 149.6 mm tall, 71.5 mm wide and 7.95 mm thick, and weighs 177 g. Sizes vary by brand and model, and larger phones are taller and heavier.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 149.6,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "iPhone 17, 5.89 in (149.6 mm)",
+      "source": "apple-iphone17"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 71.5,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "iPhone 17, 2.81 in (71.5 mm)",
+      "source": "apple-iphone17"
+    },
+    {
+      "key": "depth",
+      "label": "Depth (thickness)",
+      "kind": "length",
+      "value": 7.95,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "iPhone 17, 0.31 in (7.95 mm)",
+      "source": "apple-iphone17"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "value": 177,
+      "unit": "g",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "iPhone 17, 6.24 oz (177 g)",
+      "source": "apple-iphone17"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Apple lists the iPhone 17 at 5.89 in tall, 2.81 in wide and 0.31 in deep, weighing 6.24 oz.",
+      "source": "apple-iphone17"
+    },
+    {
+      "text": "Apple's comparison page shows iPhone 18 Pro and 18 Pro Max models but no base iPhone 18, so the iPhone 17 is the newest standard iPhone.",
+      "source": "apple-compare"
+    }
+  ],
+  "sources": [
+    {
+      "id": "apple-iphone17",
+      "publisher": "Apple",
+      "title": "iPhone 17 - Technical Specifications",
+      "url": "https://www.apple.com/iphone-17/specs/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "apple-compare",
+      "publisher": "Apple",
+      "title": "iPhone - Compare Models",
+      "url": "https://www.apple.com/iphone/compare/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/IPhone_17",
+  "caveats": [
+    "Smartphone sizes vary widely by brand and model; the iPhone 17 is used as one representative example.",
+    "Apple does not publish a volume figure, so volume is left out."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

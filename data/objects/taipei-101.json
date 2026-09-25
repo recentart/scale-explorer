@@ -1,0 +1,91 @@
+{
+  "slug": "taipei-101",
+  "name": "Taipei 101",
+  "category": "buildings",
+  "phrase": "Taipei 101",
+  "aliases": [
+    "taipei 101",
+    "taipei financial center",
+    "tallest building in taiwan",
+    "taiwan tower",
+    "skyscraper"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "taipei-101",
+    "y": "height"
+  },
+  "description": "Taipei 101 is a 101-storey skyscraper in Taipei's Xinyi District, completed in 2004. Its stacked eight-storey modules flare outward like a pagoda, and a large tuned mass damper near the top counters sway from wind. The Skyscraper Center gives it a height of 508 m (1,667 ft), and it was the world's tallest building until the Burj Khalifa took the title.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 508,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to architectural top, including spires but not antennas (1,667 ft)",
+      "source": "cvu-taipei-101"
+    },
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 508,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to the highest point of the building (1,667 ft)",
+      "source": "cvu-taipei-101"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 438,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center occupied height (1,437 ft)",
+      "source": "cvu-taipei-101"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Taipei 101 has 101 floors above ground and 5 below ground; construction started in 1999 and it was completed in 2004.",
+      "source": "cvu-taipei-101"
+    },
+    {
+      "text": "It was the tallest building in the world from 2004 to 2010, taking the title from Petronas Tower 1 and losing it to the Burj Khalifa.",
+      "source": "cvu-taipei-101"
+    },
+    {
+      "text": "A 728-ton spherical steel pendulum, a tuned mass damper, sits in a multi-storey cavity near the top to offset wind movement.",
+      "source": "cvu-taipei-101"
+    },
+    {
+      "text": "It earned LEED Platinum certification for operations and maintenance in 2011.",
+      "source": "cvu-taipei-101"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cvu-taipei-101",
+      "publisher": "Council on Vertical Urbanism, formerly CTBUH (The Skyscraper Center)",
+      "title": "TAIPEI 101 - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/taipei-101/117",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Taipei_101",
+  "caveats": [
+    "The Skyscraper Center database now carries the Council on Vertical Urbanism (CVU) name; its height categories are the CTBUH ones (architectural top includes spires but not antennas).",
+    "The Skyscraper Center gives the tuned mass damper as 728 tons without saying which ton, so it is not stored as a mass measure.",
+    "World rankings change as new towers are completed; the ranks quoted are as shown on the Skyscraper Center in September 2026."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

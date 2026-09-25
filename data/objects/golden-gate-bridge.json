@@ -1,0 +1,149 @@
+{
+  "slug": "golden-gate-bridge",
+  "name": "Golden Gate Bridge",
+  "category": "structures",
+  "phrase": "the Golden Gate Bridge",
+  "aliases": [
+    "golden gate",
+    "san francisco bridge",
+    "golden gate suspension bridge",
+    "suspension bridge",
+    "bridge"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "golden-gate-bridge",
+    "x": "length",
+    "y": "towerHeight"
+  },
+  "subtitle": "Suspension bridge across the Golden Gate strait, San Francisco",
+  "description": "The Golden Gate Bridge is a suspension bridge carrying U.S. Route 101 and California State Route 1 across the Golden Gate strait between San Francisco and Marin County. Built under chief engineer Joseph Strauss from January 1933, it opened to vehicles on 28 May 1937 as the tallest and longest suspension bridge in the world. Its two towers stand 746 ft above the water and are 4,200 ft apart, and with its approaches the bridge runs 8,981 ft (1.7 miles) from abutment to abutment.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Total length",
+      "kind": "length",
+      "value": 8981,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Whole bridge including approaches, from abutment to abutment (2,737 m; about 1.7 miles)",
+      "source": "ggb-stats"
+    },
+    {
+      "key": "mainSpan",
+      "label": "Main span",
+      "kind": "length",
+      "value": 4200,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Suspended span between the two towers (1,280 m)",
+      "source": [
+        "ggb-stats",
+        "britannica-ggb"
+      ]
+    },
+    {
+      "key": "towerHeight",
+      "label": "Tower height above water",
+      "kind": "length",
+      "value": 746,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Height of each main tower above the water (227 m); the towers rise 500 ft above the roadway",
+      "source": [
+        "ggb-stats",
+        "britannica-ggb"
+      ]
+    },
+    {
+      "key": "clearance",
+      "label": "Clearance above water",
+      "kind": "length",
+      "value": 220,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Clearance above mean higher high water (67 m)",
+      "source": "ggb-stats"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 90,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Width of the bridge (27 m)",
+      "source": "ggb-stats"
+    },
+    {
+      "key": "mass",
+      "label": "Total weight (1937)",
+      "kind": "mass",
+      "value": 894500,
+      "unit": "shortTon",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Bridge, anchorages and approaches as built in 1937; the District gives 811,500,000 kg, which matches short tons",
+      "source": "ggb-stats"
+    },
+    {
+      "key": "concreteVolume",
+      "label": "Concrete used",
+      "kind": "volume",
+      "value": 389000,
+      "unit": "yd3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total concrete as built, not the volume of the bridge itself",
+      "source": "ggb-stats"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Each of the two main cables is 36 3/8 in (0.92 m) thick including its outer wrapping.",
+      "source": "ggb-stats"
+    },
+    {
+      "text": "The two main towers together weigh 44,000 tons (40,200,000 kg).",
+      "source": "ggb-stats"
+    },
+    {
+      "text": "It held the record for the world's longest main span until the Verrazzano-Narrows Bridge in New York was completed in 1964.",
+      "source": "britannica-ggb"
+    },
+    {
+      "text": "A movable safety net beneath the work saved 19 men during construction, but 11 workers died over the four years of building.",
+      "source": "britannica-ggb"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ggb-stats",
+      "publisher": "Golden Gate Bridge, Highway and Transportation District",
+      "title": "Design & Construction Stats",
+      "url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-ggb",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Golden Gate Bridge",
+      "url": "https://www.britannica.com/topic/Golden-Gate-Bridge",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+  "caveats": [
+    "Britannica gives the midpoint roadway height as 256 ft (81 m) above mean high water, while the District gives a clearance of 220 ft (67 m) above mean higher high water; only the District figure is stored.",
+    "The stored weight is the 1937 as-built figure and includes the anchorages and approaches."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

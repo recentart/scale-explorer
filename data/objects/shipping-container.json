@@ -1,0 +1,126 @@
+{
+  "slug": "shipping-container",
+  "name": "Shipping container (40 ft)",
+  "category": "everyday",
+  "phrase": "a 40 ft shipping container",
+  "aliases": [
+    "shipping container",
+    "40 foot container",
+    "40ft container",
+    "intermodal container",
+    "cargo container",
+    "FEU",
+    "ISO container",
+    "conex box"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "shipping-container",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "Standard 40 ft general-purpose container (8 ft 6 in high)",
+  "description": "Standard steel shipping containers are built to external sizes set by the international standard ISO 668, so they stack and lock together on ships, trains and trucks. A 40 ft general-purpose container measures 12,192 mm long, 2,438 mm wide and 2,591 mm (8 ft 6 in) high on the outside. Shipping line Hapag-Lloyd lists its 40 ft boxes at about 3.7 tonnes empty with 67.7 cubic metres of cargo space.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "External length",
+      "kind": "length",
+      "value": 12192,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "40 ft, as standardised in ISO 668",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "key": "width",
+      "label": "External width",
+      "kind": "length",
+      "value": 2438,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "8 ft, as standardised in ISO 668",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "key": "height",
+      "label": "External height",
+      "kind": "length",
+      "value": 2591,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "8 ft 6 in standard container; high-cube containers are 9 ft 6 in (2,896 mm)",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "key": "mass",
+      "label": "Empty (tare) weight",
+      "kind": "mass",
+      "min": 3700,
+      "max": 3780,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Tare weights of Hapag-Lloyd's 40 ft general-purpose container series",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "key": "maxGrossMass",
+      "label": "Maximum gross weight",
+      "kind": "mass",
+      "min": 30480,
+      "max": 32500,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Container plus cargo, depending on the container series",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "key": "volume",
+      "label": "Cargo capacity",
+      "kind": "volume",
+      "value": 67.7,
+      "unit": "m3",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Internal capacity listed for Hapag-Lloyd's 40 ft general-purpose containers (2,391 cubic feet)",
+      "source": "hapag-lloyd-spec"
+    }
+  ],
+  "facts": [
+    {
+      "text": "ISO 668 sets a minimum internal size for a 40 ft container of 12,029 mm long, 2,350 mm wide and 2,350 mm high.",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "text": "A standard 20 ft container is 6,058 mm long, a little under half the length of a 40 ft container.",
+      "source": "hapag-lloyd-spec"
+    },
+    {
+      "text": "Some of Hapag-Lloyd's 40 ft general-purpose container series can carry up to 28,800 kg of cargo.",
+      "source": "hapag-lloyd-spec"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hapag-lloyd-spec",
+      "publisher": "Hapag-Lloyd",
+      "title": "Container Specification (external and minimum internal dimensions according to ISO 668; 40' general purpose container)",
+      "url": "https://www.hapag-lloyd.com/content/dam/website/downloads/press_and_media/publications/15211_Container_Specification_engl_Gesamt_web.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Intermodal_container",
+  "caveats": [
+    "The ISO 668 standard itself is sold, not published free; the dimensions are taken from Hapag-Lloyd's specification, which reproduces the ISO 668 table.",
+    "Weights and capacity are for Hapag-Lloyd's fleet and vary slightly by manufacturer."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

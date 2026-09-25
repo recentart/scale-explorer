@@ -1,0 +1,90 @@
+{
+  "slug": "mount-fuji",
+  "name": "Mount Fuji",
+  "category": "nature",
+  "phrase": "Mount Fuji",
+  "aliases": [
+    "fuji",
+    "fujisan",
+    "fuji-san",
+    "mt fuji",
+    "fujiyama",
+    "highest mountain in japan",
+    "volcano",
+    "mountain"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "mount-fuji",
+    "y": "height"
+  },
+  "subtitle": "Fujisan, Yamanashi and Shizuoka prefectures, Japan",
+  "description": "Mount Fuji is a solitary, often snow-capped stratovolcano about 100 km south-west of Tokyo and the highest mountain in Japan. Japan's national mapping agency, the Geospatial Information Authority of Japan, gives the height of its highest point as 3,776 m. Its southern slopes reach down to the shore of Suruga Bay, and it is a UNESCO World Heritage Site as a sacred place and source of artistic inspiration.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height above sea level",
+      "kind": "length",
+      "value": 3776,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Elevation of the highest point of Mount Fuji as published by the Geospatial Information Authority of Japan",
+      "source": [
+        "gsi-fuji",
+        "unesco-fujisan"
+      ]
+    },
+    {
+      "key": "triangulationPoint",
+      "label": "Summit survey marker elevation",
+      "kind": "length",
+      "value": 3775.56,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Second-order triangulation point 'Fujisan', resurveyed by satellite positioning on 25 July 2024 (previously 3,775.51 m); it sits slightly below the true highest point",
+      "source": "gsi-fuji"
+    }
+  ],
+  "facts": [
+    {
+      "text": "On 25 July 2024 GSI resurveyed the summit triangulation point by satellite positioning, raising its elevation by 5 cm to 3,775.56 m; the published height of the highest point stays at 3,776 m.",
+      "source": "gsi-fuji"
+    },
+    {
+      "text": "The base of Mount Fuji's southern slopes extends to the shores of Suruga Bay.",
+      "source": "unesco-fujisan"
+    },
+    {
+      "text": "Yamanashi and Shizuoka prefectures, together with local governments, manage the World Heritage property through the Fujisan World Cultural Heritage Council.",
+      "source": "unesco-fujisan"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gsi-fuji",
+      "publisher": "Geospatial Information Authority of Japan (国土地理院)",
+      "title": "衛星測位を基盤とする三角点「富士山」の新しい標高 (New elevation of the 'Fujisan' triangulation point based on satellite positioning), press release, 24 December 2024",
+      "url": "https://www.gsi.go.jp/WNEW/PRESS-RELEASE/keikaku61003.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "unesco-fujisan",
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Fujisan, sacred place and source of artistic inspiration",
+      "url": "https://whc.unesco.org/en/list/1418/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Fuji",
+  "caveats": [
+    "GSI gives the highest point as a whole-metre figure (3,776 m); the more precise 3,775.56 m value belongs to the survey marker, which is lower than the true summit.",
+    "The GSI press release is in Japanese; figures were read directly from it.",
+    "The mountain outline is illustrative; only its height above sea level is to scale."
+  ],
+  "schemaType": "Mountain",
+  "updated": "2026-09-25"
+}

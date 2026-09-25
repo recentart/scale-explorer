@@ -1,0 +1,95 @@
+{
+  "slug": "great-pyramid",
+  "name": "Great Pyramid of Giza",
+  "category": "structures",
+  "phrase": "the Great Pyramid of Giza",
+  "aliases": [
+    "great pyramid",
+    "pyramid of khufu",
+    "pyramid of cheops",
+    "giza pyramid",
+    "pyramids of giza",
+    "egyptian pyramid",
+    "pyramid"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "great-pyramid",
+    "x": "baseLength",
+    "y": "height"
+  },
+  "subtitle": "Pyramid of Khufu, Giza, Egypt",
+  "description": "The Great Pyramid is the largest of the three pyramids on the Giza plateau west of the Nile, built for the 4th-dynasty king Khufu (Cheops) and finished in the early 25th century BCE. It was originally about 147 m tall, but erosion and the loss of most of its smooth limestone casing have brought it down to about 137 m. Each side of its square base is about 230 m long, and its faces slope at 51.87 degrees.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Current height",
+      "kind": "length",
+      "value": 137,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Present height after erosion and removal of most of the casing stones (Britannica gives 449 ft)",
+      "source": "britannica-pyramid"
+    },
+    {
+      "key": "originalHeight",
+      "label": "Original height",
+      "kind": "length",
+      "value": 147,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Height when the polished limestone casing was complete (Britannica gives about 482 ft)",
+      "source": "britannica-pyramid"
+    },
+    {
+      "key": "baseLength",
+      "label": "Base side length",
+      "kind": "length",
+      "value": 230,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Length of each side of the square base (Britannica gives 755 ft)",
+      "source": "britannica-pyramid"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Its faces rise at an angle of 51.87 degrees and are closely aligned to the four cardinal compass points.",
+      "source": "britannica-pyramid"
+    },
+    {
+      "text": "About 2.3 million stone blocks were cut, moved and set in place to build it.",
+      "source": "britannica-pyramid"
+    },
+    {
+      "text": "Its entrance is on the north face, about 18 m (59 ft) above the ground, and the corbelled Grand Gallery inside is 46 m (151 ft) long.",
+      "source": "britannica-pyramid"
+    },
+    {
+      "text": "The Pyramids of Giza are the only one of the Seven Wonders of the ancient world still standing.",
+      "source": "britannica-pyramid"
+    }
+  ],
+  "sources": [
+    {
+      "id": "britannica-pyramid",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Great Pyramid of Giza",
+      "url": "https://www.britannica.com/topic/Great-Pyramid-of-Giza",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+  "caveats": [
+    "Britannica gives the total weight as '5.75-million-ton' without saying whether short or metric tons are meant, so no mass is stored.",
+    "No volume figure was found in the fetched source, so volume is left out.",
+    "No Egyptian Ministry of Tourism and Antiquities page with dimensions could be fetched; all figures come from Britannica."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

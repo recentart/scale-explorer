@@ -1,0 +1,94 @@
+{
+  "slug": "shanghai-tower",
+  "name": "Shanghai Tower",
+  "category": "buildings",
+  "phrase": "the Shanghai Tower",
+  "aliases": [
+    "shanghai tower",
+    "tallest building in china",
+    "lujiazui tower",
+    "twisting skyscraper",
+    "skyscraper"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "shanghai-tower",
+    "y": "height"
+  },
+  "description": "Shanghai Tower is a mixed-use supertall skyscraper in Shanghai's Lujiazui financial district, completed in 2015. Its twisting, spiralling form stands beside Jin Mao Tower and the Shanghai World Financial Center. The Skyscraper Center gives it an architectural height of 632 m (2,073 ft), the same as its height to tip, with 128 floors above ground.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 632,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to architectural top, including spires but not antennas (2,073 ft)",
+      "source": "cvu-shanghai-tower"
+    },
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 632,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to the highest point of the building (2,073 ft)",
+      "source": "cvu-shanghai-tower"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 583.4,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center occupied height (1,914 ft)",
+      "source": "cvu-shanghai-tower"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Shanghai Tower has 128 floors above ground and 5 below ground.",
+      "source": "cvu-shanghai-tower"
+    },
+    {
+      "text": "Construction started in 2009 and the tower was completed in 2015.",
+      "source": "cvu-shanghai-tower"
+    },
+    {
+      "text": "The Skyscraper Center ranks it the third-tallest building in the world and the tallest in China (September 2026).",
+      "source": "cvu-shanghai-tower"
+    },
+    {
+      "text": "Wind tunnel tests showed its twisting form cuts structural wind loading by 24 percent compared with a rectangular building of the same height.",
+      "source": "cvu-shanghai-tower"
+    },
+    {
+      "text": "The building is split into nine vertical zones, each starting at a sky lobby with a garden atrium.",
+      "source": "cvu-shanghai-tower"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cvu-shanghai-tower",
+      "publisher": "Council on Vertical Urbanism, formerly CTBUH (The Skyscraper Center)",
+      "title": "Shanghai Tower - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/shanghai-tower/56",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Shanghai_Tower",
+  "caveats": [
+    "The Skyscraper Center database now carries the Council on Vertical Urbanism (CVU) name; its height categories are the CTBUH ones (architectural top includes spires but not antennas).",
+    "World rankings change as new towers are completed; the ranks quoted are as shown on the Skyscraper Center in September 2026."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

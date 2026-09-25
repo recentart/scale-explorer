@@ -1,0 +1,167 @@
+{
+  "slug": "uluru",
+  "name": "Uluru",
+  "category": "nature",
+  "phrase": "Uluru",
+  "aliases": [
+    "uluṟu",
+    "ayers rock",
+    "uluru ayers rock",
+    "big red rock",
+    "monolith",
+    "rock"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "uluru",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "Uluṟu-Kata Tjuṯa National Park, Northern Territory, Australia",
+  "description": "Uluru is a huge sandstone rock in the desert of Central Australia, within Uluṟu-Kata Tjuṯa National Park. Parks Australia says it rises 348 m above the surrounding plain and is 9.4 km around its base. It is roughly oval, about 3.6 km long and 2.4 km wide, and is a sacred place for its Aṉangu Traditional Owners, who own the land and manage the park jointly with Parks Australia.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height above the surrounding plain",
+      "kind": "length",
+      "value": 348,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Height of the rock above the desert plain around it (Britannica also gives 1,142 ft)",
+      "source": [
+        "parks-uluru-facts",
+        "parks-uluru",
+        "britannica-uluru"
+      ]
+    },
+    {
+      "key": "elevation",
+      "label": "Summit height above sea level",
+      "kind": "length",
+      "value": 863,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Summit elevation above sea level (2,831 ft)",
+      "source": "britannica-uluru"
+    },
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 3.6,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Length of the oval-shaped rock (2.2 miles)",
+      "source": "britannica-uluru"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 2.4,
+      "unit": "km",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Width of the rock (1.5 miles)",
+      "source": "britannica-uluru"
+    },
+    {
+      "key": "circumference",
+      "label": "Circumference at the base",
+      "kind": "length",
+      "value": 9.4,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance around the base of the rock",
+      "source": [
+        "parks-uluru-facts",
+        "ga-rock-features"
+      ]
+    },
+    {
+      "key": "area",
+      "label": "Area",
+      "kind": "area",
+      "value": 3.3,
+      "unit": "km2",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Ground area covered by the rock",
+      "source": "ga-rock-features"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (above ground)",
+      "kind": "mass",
+      "value": 1425000000,
+      "unit": "t",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated in 2018 by the Northern Territory Geological Survey; covers only the part above ground",
+      "source": "parks-uluru-facts"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Uluru is the surface expression of a much larger body of rock. It was laid down in an inland sea during the Cambrian Period about 500 million years ago and later tipped on end by uplift and folding.",
+      "source": "ga-rock-features"
+    },
+    {
+      "text": "The tallest dome of nearby Kata Tjuṯa rises 546 m above the plain, higher than Uluru.",
+      "source": "parks-uluru-facts"
+    },
+    {
+      "text": "Uluru is made of arkosic sandstone rich in feldspar, and it changes colour with the position of the Sun, glowing orange-red at sunset.",
+      "source": "britannica-uluru"
+    },
+    {
+      "text": "The explorer William Gosse became the first European to see Uluru, in 1873. In 1985 the Aṉangu were recognised as Traditional Owners and handed back the deeds to the land.",
+      "source": "parks-uluru-facts"
+    }
+  ],
+  "sources": [
+    {
+      "id": "parks-uluru-facts",
+      "publisher": "Parks Australia",
+      "title": "Amazing facts - Uluṟu-Kata Tjuṯa National Park",
+      "url": "https://uluru.gov.au/discover/highlights/amazing-facts/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "parks-uluru",
+      "publisher": "Parks Australia",
+      "title": "Uluṟu - Uluṟu-Kata Tjuṯa National Park",
+      "url": "https://parksaustralia.gov.au/uluru/discover/highlights/uluru/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "ga-rock-features",
+      "publisher": "Geoscience Australia",
+      "title": "Significant Rock Features",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/significant-rock-features",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-uluru",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Uluru/Ayers Rock",
+      "url": "https://www.britannica.com/place/Uluru-Ayers-Rock",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Uluru",
+  "caveats": [
+    "Parks Australia gives the height (348 m) and circumference (9.4 km) but not the length or width, so those come from Britannica.",
+    "Geoscience Australia gives a slightly lower height of 345 m above the plains; Parks Australia's 348 m is used here.",
+    "The mass is an estimate for the visible part only; much more of the rock lies underground.",
+    "The drawing uses the length and height; the outline itself is illustrative."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

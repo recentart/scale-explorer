@@ -1,0 +1,112 @@
+{
+  "slug": "betelgeuse",
+  "name": "Betelgeuse",
+  "category": "space",
+  "phrase": "Betelgeuse",
+  "aliases": [
+    "alpha orionis",
+    "betelgeuse star",
+    "red supergiant",
+    "orion shoulder star",
+    "star"
+  ],
+  "familiar": false,
+  "headline": "radius",
+  "headlineAdj": "in radius",
+  "profile": {
+    "shape": "betelgeuse",
+    "x": "radius"
+  },
+  "subtitle": "Red supergiant in Orion",
+  "description": "Betelgeuse is a red supergiant star marking the shoulder of the constellation Orion, several hundred light-years away. Its size is hard to pin down: recent NASA and NOIRLab estimates put its radius at about 700 to 724 times the Sun's, while ALMA observations of its extended atmosphere at millimetre wavelengths give around 1,400 times. Placed where the Sun is, it would swallow the orbits of the inner planets.",
+  "measures": [
+    {
+      "key": "radius",
+      "label": "Radius (estimated)",
+      "kind": "length",
+      "min": 700,
+      "max": 1400,
+      "unit": "solarRadius",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated; about 700 (NOIRLab) and 724 (NASA) solar radii, and around 1,400 in the millimetre continuum seen by ALMA (ESO)",
+      "source": [
+        "noirlab-betelgeuse",
+        "nasa-betelgeuse",
+        "eso-betelgeuse"
+      ]
+    },
+    {
+      "key": "radiusOptical",
+      "label": "Radius, recent NASA/NOIRLab estimates",
+      "kind": "length",
+      "min": 700,
+      "max": 724,
+      "unit": "solarRadius",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Estimated; NOIRLab 'around 700', NASA 'approximately 724' times the Sun's radius",
+      "source": [
+        "noirlab-betelgeuse",
+        "nasa-betelgeuse"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA estimates Betelgeuse's radius at approximately 724 times the Sun's; placed at the centre of our solar system it would swallow the orbits of Mercury, Venus, Earth and Mars.",
+      "source": "nasa-betelgeuse"
+    },
+    {
+      "text": "NASA gives an uncertain distance of roughly 548 light-years and says Betelgeuse likely started life with at least 20 times the Sun's mass.",
+      "source": "nasa-betelgeuse"
+    },
+    {
+      "text": "In 2025 the Gemini North telescope found a faint companion star, estimated at about 1.5 solar masses, orbiting within Betelgeuse's extended outer atmosphere.",
+      "source": "noirlab-betelgeuse"
+    },
+    {
+      "text": "Seen by ALMA in the millimetre continuum, Betelgeuse's radius is around 1,400 times the Sun's.",
+      "source": "eso-betelgeuse"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa-betelgeuse",
+      "publisher": "NASA Marshall Space Flight Center (Watch the Skies blog)",
+      "title": "Betelgeuse! Betelgeuse! Betelgeuse! Stargazers Won't See Ghosts but Supergiant Star for Spooky Season",
+      "url": "https://www.nasa.gov/blogs/watch-the-skies/2024/09/06/betelgeuse-betelgeuse-betelgeuse-stargazers-wont-see-ghosts-but-supergiant-star-for-spooky-season/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "noirlab-betelgeuse",
+      "publisher": "NSF NOIRLab",
+      "title": "Gemini North Discovers Long-Predicted Stellar Companion of Betelgeuse (noirlab2523)",
+      "url": "https://noirlab.edu/public/news/noirlab2523/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "eso-betelgeuse",
+      "publisher": "ESO",
+      "title": "Betelgeuse captured by ALMA (potw1726a)",
+      "url": "https://www.eso.org/public/images/potw1726a/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nasa-apod-betelgeuse",
+      "publisher": "NASA Science",
+      "title": "APOD: 1998 April 19 - Betelgeuse",
+      "url": "https://science.nasa.gov/image-article/apod-1998-april-19-betelgeuse/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Betelgeuse",
+  "caveats": [
+    "All sizes are estimated. Betelgeuse is a pulsating star with an uncertain distance and no sharp edge, so its measured size depends on wavelength and method.",
+    "The 1,400 solar-radius figure is for the millimetre continuum (ALMA), which sees the star's extended atmosphere; the NASA and NOIRLab estimates are about half that.",
+    "An older NASA APOD caption (1998) described Betelgeuse as 'over 1000 times larger' than the Sun without saying whether radius or diameter; it is listed as a source but not used for a number.",
+    "Sources give mass only as multiples of the Sun's mass, which the site's units do not support, so mass is left out."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

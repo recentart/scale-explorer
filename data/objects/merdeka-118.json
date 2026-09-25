@@ -1,0 +1,93 @@
+{
+  "slug": "merdeka-118",
+  "name": "Merdeka 118",
+  "category": "buildings",
+  "phrase": "Merdeka 118",
+  "aliases": [
+    "merdeka 118",
+    "menara merdeka maybank",
+    "merdeka tower",
+    "pnb 118",
+    "kl118",
+    "tallest building in malaysia",
+    "skyscraper"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "merdeka-118",
+    "y": "height"
+  },
+  "description": "Merdeka 118 is a 118-storey megatall skyscraper in Kuala Lumpur, Malaysia, completed in 2023; the Skyscraper Center now lists it as Menara Merdeka Maybank. Its architectural height, including the spire, is 678.9 m (2,227 ft), and its tip reaches 680.5 m. It is the second-tallest building in the world after the Burj Khalifa and the tallest in Asia.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 678.9,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to architectural top, including spires but not antennas (2,227 ft)",
+      "source": "cvu-merdeka-118"
+    },
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 680.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to the highest point of the building (2,233 ft)",
+      "source": "cvu-merdeka-118"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 502.8,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center occupied height (1,650 ft)",
+      "source": "cvu-merdeka-118"
+    }
+  ],
+  "facts": [
+    {
+      "text": "It has 118 floors above ground and 5 below ground; construction started in 2014 and it was completed in 2023.",
+      "source": "cvu-merdeka-118"
+    },
+    {
+      "text": "The Skyscraper Center ranks it the second-tallest building in the world and the tallest in Asia, Malaysia and Kuala Lumpur (September 2026).",
+      "source": "cvu-merdeka-118"
+    },
+    {
+      "text": "Its core walls and mega-columns are reinforced concrete without embedded structural steel except at the outrigger trusses, which cut imported steel costs.",
+      "source": "cvu-merdeka-118"
+    },
+    {
+      "text": "The developer is Permodalan Nasional Berhad, and the listed tenants include Malayan Banking Berhad (Maybank).",
+      "source": "cvu-merdeka-118"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cvu-merdeka-118",
+      "publisher": "Council on Vertical Urbanism, formerly CTBUH (The Skyscraper Center)",
+      "title": "Menara Merdeka Maybank - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/menara-merdeka-maybank/10115",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Merdeka_118",
+  "caveats": [
+    "The Skyscraper Center database now carries the Council on Vertical Urbanism (CVU) name; its height categories are the CTBUH ones (architectural top includes spires but not antennas).",
+    "The Skyscraper Center now lists the tower as Menara Merdeka Maybank; it is widely known as Merdeka 118.",
+    "World rankings change as new towers are completed; the ranks quoted are as shown on the Skyscraper Center in September 2026."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

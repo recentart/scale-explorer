@@ -1,0 +1,121 @@
+{
+  "slug": "city-bus",
+  "name": "City bus",
+  "category": "vehicles",
+  "phrase": "a city bus",
+  "aliases": [
+    "bus",
+    "transit bus",
+    "40 ft bus",
+    "40-foot bus",
+    "new flyer xcelsior",
+    "xcelsior",
+    "public bus",
+    "low-floor bus"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "city-bus",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "New Flyer Xcelsior 40-foot transit bus",
+  "description": "New Flyer's Xcelsior low-floor transit bus is built in 35, 40 and 60 ft sizes, and the 40-foot version measures 41 ft 0 in (12.50 m) over the bumpers and 102 in (2.6 m) wide, with a roof height of 10 ft 6 in to 11 ft 1 in depending on the powertrain. It seats up to 40 passengers with room for up to 44 more standing.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length over bumpers",
+      "kind": "length",
+      "value": 12.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "40-foot Xcelsior, 41 ft 0 in over bumpers; 40 ft 2 in (12.24 m) over the body",
+      "source": [
+        "nf-xcelsior-2020",
+        "nf-clean-diesel"
+      ]
+    },
+    {
+      "key": "height",
+      "label": "Roof height",
+      "kind": "length",
+      "min": 3.2,
+      "max": 3.38,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "range",
+      "note": "10 ft 6 in over the A/C (diesel) to 11 ft 1 in over roof enclosures or charging rails (CNG, electric)",
+      "source": "nf-xcelsior-2020"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 102,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Body width (2.6 m)",
+      "source": [
+        "nf-xcelsior-2020",
+        "nf-clean-diesel"
+      ]
+    },
+    {
+      "key": "mass",
+      "label": "Curb weight",
+      "kind": "mass",
+      "min": 27750,
+      "max": 33805,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Approximate empty weight of the 40-foot bus, from diesel (27,750 lb) to battery-electric (33,805 lb); varies with options",
+      "source": "nf-xcelsior-2020"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The 40-foot Xcelsior seats up to 40 passengers and carries up to 44 standees.",
+      "source": "nf-clean-diesel"
+    },
+    {
+      "text": "The bus comes in diesel, hybrid, CNG and battery-electric versions; the curb weight of the 40-foot model ranges from about 27,750 lb (diesel) to 33,805 lb (electric).",
+      "source": "nf-xcelsior-2020"
+    },
+    {
+      "text": "The wheelbase is 283.75 in (7.2 m), and interior height is 95 in (2.4 m) mid-coach.",
+      "source": "nf-xcelsior-2020"
+    },
+    {
+      "text": "New Flyer says it has delivered over 6,400 clean diesel buses in North America since 2010.",
+      "source": "nf-clean-diesel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nf-xcelsior-2020",
+      "publisher": "New Flyer of America",
+      "title": "Xcelsior brochure (2020)",
+      "url": "https://www.newflyer.com/site-content/uploads/2020/01/NF_Xcelsior_2020-web.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nf-clean-diesel",
+      "publisher": "New Flyer of America",
+      "title": "Xcelsior Clean Diesel brochure",
+      "url": "https://www.newflyer.com/site-content/uploads/2021/07/Xcelsior-Clean-Diesel-Brochure.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/New_Flyer_Xcelsior",
+  "caveats": [
+    "A '40-foot' bus is a nominal size class; the example here is 41 ft 0 in over bumpers and 40 ft 2 in over the body. Other makers' 40-foot buses differ slightly.",
+    "Weights are New Flyer's approximate curb weights and vary with customer options."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

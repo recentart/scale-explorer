@@ -1,0 +1,108 @@
+{
+  "slug": "petronas-towers",
+  "name": "Petronas Towers",
+  "category": "buildings",
+  "phrase": "the Petronas Towers",
+  "aliases": [
+    "petronas twin towers",
+    "petronas",
+    "klcc towers",
+    "twin towers kuala lumpur",
+    "kuala lumpur towers",
+    "skyscraper"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "petronas-towers",
+    "y": "height"
+  },
+  "subtitle": "Height of each of the two identical towers",
+  "description": "The Petronas Towers are two identical 88-storey towers in Kuala Lumpur, Malaysia, completed in 1998 and linked by a skybridge at the 41st and 42nd floors. The Skyscraper Center lists each tower at 451.9 m (1,483 ft), both to the architectural top and to the tip. They shared the title of world's tallest building from 1998 until Taipei 101 overtook them in 2004, and they remain the tallest twin towers in the world.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 451.9,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to architectural top, including spires but not antennas (1,483 ft)",
+      "source": "cvu-petronas-towers"
+    },
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 451.9,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center height to the highest point of the building (1,483 ft)",
+      "source": "cvu-petronas-towers"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 375,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Skyscraper Center occupied height (1,230 ft)",
+      "source": "cvu-petronas-towers"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Each tower has 88 floors above ground and 5 below ground; construction started in 1992 and finished in 1998.",
+      "source": [
+        "cvu-petronas-towers",
+        "cvu-petronas-tower-2"
+      ]
+    },
+    {
+      "text": "They are the tallest twin towers in the world and shared the title of world's tallest building from 1998 to 2004, between the Sears Tower and Taipei 101.",
+      "source": "cvu-petronas-towers"
+    },
+    {
+      "text": "The skybridge at the 41st and 42nd floors gives no structural benefit, but lets the towers share facilities and is part of the fire evacuation plan.",
+      "source": "cvu-petronas-towers"
+    },
+    {
+      "text": "Two construction consortiums, one Japanese and one South Korean, each built one tower; Tower 2 reached its top first.",
+      "source": "cvu-petronas-towers"
+    },
+    {
+      "text": "The design is based on Islamic geometry, reflecting Malaysia's cultural heritage.",
+      "source": "cvu-petronas-towers"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cvu-petronas-towers",
+      "publisher": "Council on Vertical Urbanism, formerly CTBUH (The Skyscraper Center)",
+      "title": "Petronas Twin Tower 1 - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/petronas-twin-tower-1/149",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "cvu-petronas-tower-2",
+      "publisher": "Council on Vertical Urbanism, formerly CTBUH (The Skyscraper Center)",
+      "title": "Petronas Twin Tower 2 - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/petronas-twin-tower-2/150",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Petronas_Towers",
+  "caveats": [
+    "The Skyscraper Center database now carries the Council on Vertical Urbanism (CVU) name; its height categories are the CTBUH ones (architectural top includes spires but not antennas).",
+    "The Skyscraper Center lists the two towers separately; Tower 1 and Tower 2 have identical heights and floor counts.",
+    "The distance between the two towers was not sourced, so only one tower's height is given.",
+    "World rankings change as new towers are completed; the ranks quoted are as shown on the Skyscraper Center in September 2026."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

@@ -1,0 +1,110 @@
+{
+  "slug": "ohio-class-submarine",
+  "name": "Ohio-class submarine",
+  "category": "vehicles",
+  "phrase": "an Ohio-class submarine",
+  "aliases": [
+    "ohio class",
+    "ssbn",
+    "ballistic missile submarine",
+    "boomer",
+    "trident submarine",
+    "nuclear submarine",
+    "submarine"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "ohio-class-submarine",
+    "x": "length"
+  },
+  "subtitle": "US Navy ballistic missile submarine (SSBN)",
+  "description": "The Ohio class is the US Navy's fleet of nuclear-powered ballistic missile submarines, often called 'boomers', built by General Dynamics Electric Boat. The Navy lists each boat at 560 ft (170.69 m) long with a 42 ft beam, displacing 18,750 tons when submerged. The Navy lists 14 boats, each now carrying up to 20 Trident II D5 missiles, and the Columbia class is planned to replace them.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 560,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length in the Navy fact file (170.69 m)",
+      "source": "navy-ssbn"
+    },
+    {
+      "key": "beam",
+      "label": "Beam (width)",
+      "kind": "length",
+      "value": 42,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Hull width (12.8 m)",
+      "source": "navy-ssbn"
+    },
+    {
+      "key": "mass",
+      "label": "Displacement (surfaced)",
+      "kind": "mass",
+      "value": 17033.03,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Surfaced displacement, the mass of water the hull displaces: 16,764 tons (long tons) or 17,033.03 metric tons",
+      "source": "navy-ssbn"
+    },
+    {
+      "key": "submergedDisplacement",
+      "label": "Displacement (submerged)",
+      "kind": "mass",
+      "value": 19000.1,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Submerged displacement, including water taken on to dive: 18,750 tons (long tons) or 19,000.1 metric tons",
+      "source": "navy-ssbn"
+    }
+  ],
+  "facts": [
+    {
+      "text": "There are 14 Ohio-class ballistic missile submarines, based at Bangor, Washington, and Kings Bay, Georgia.",
+      "source": "navy-ssbn"
+    },
+    {
+      "text": "Each boat originally carried up to 24 missiles; under the New START treaty four tubes on each were permanently deactivated, leaving a maximum of 20.",
+      "source": "navy-ssbn"
+    },
+    {
+      "text": "Each submarine has two crews, Blue and Gold, that take turns on patrol. On average a boat spends 77 days at sea, then 35 days in port for maintenance.",
+      "source": "navy-ssbn"
+    },
+    {
+      "text": "The crew is 15 officers and 144 enlisted sailors, and the top speed is given as 20+ knots.",
+      "source": "navy-ssbn"
+    },
+    {
+      "text": "The replacement Columbia class is also 560 ft long, with a 43 ft beam and a displacement of 20,800 long tons.",
+      "source": "navy-ssbn"
+    }
+  ],
+  "sources": [
+    {
+      "id": "navy-ssbn",
+      "publisher": "U.S. Navy",
+      "title": "Fleet Ballistic Missile Submarines - SSBN (fact file, last updated 27 Feb 2025)",
+      "url": "https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2169580/fleet-ballistic-missile-submarines-ssbn/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Ohio-class_submarine",
+  "caveats": [
+    "navy.mil returns HTTP 403 to plain fetches, so the fact file was read in headless Chrome.",
+    "Displacement is the mass of water pushed aside by the hull, which equals the submarine's mass when floating. The Navy's 'tons' are long tons; the metric figures are stored.",
+    "The four Ohio-class boats converted to guided-missile submarines (SSGN) are not covered by this fact file.",
+    "No height (hull depth or sail height) was found in the Navy source, so only the length axis is drawn."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

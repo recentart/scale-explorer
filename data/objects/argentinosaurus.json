@@ -1,0 +1,93 @@
+{
+  "slug": "argentinosaurus",
+  "name": "Argentinosaurus",
+  "category": "prehistoric",
+  "phrase": "an Argentinosaurus",
+  "aliases": [
+    "argentinosaurus huinculensis",
+    "argentina lizard",
+    "titanosaur",
+    "biggest dinosaur",
+    "largest dinosaur"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "argentinosaurus",
+    "x": "length"
+  },
+  "subtitle": "Estimated adult size",
+  "scientificName": "Argentinosaurus huinculensis",
+  "description": "Argentinosaurus was a titanosaur, a type of long-necked, plant-eating sauropod, that lived in what is now Argentina about 90 million years ago in the Late Cretaceous. It is one of the largest land animals ever found: the Natural History Museum, London estimates it at about 35 metres long and 70,000 kg. Only an incomplete skeleton is known, so its true size is uncertain.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (estimated)",
+      "kind": "length",
+      "value": 35.0,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated nose-to-tail length; the museum stresses the exact size is hard to estimate from the incomplete fossils",
+      "source": "nhm-argentinosaurus"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "value": 70000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated body weight; Britannica's dinosaur article independently gives an estimate of 70 metric tons",
+      "source": [
+        "nhm-argentinosaurus",
+        "britannica-argentinosaurus"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "text": "Argentinosaurus kept growing through most of its life. Hatchlings would have taken about 15 years to reach adulthood, and were vulnerable to predators such as Giganotosaurus while they grew.",
+      "source": "nhm-argentinosaurus"
+    },
+    {
+      "text": "Other similarly huge dinosaurs, such as Patagotitan and Puertasaurus, were also titanosaurs.",
+      "source": "nhm-argentinosaurus"
+    },
+    {
+      "text": "It was named by Bonaparte and Coria in 1993.",
+      "source": "nhm-argentinosaurus"
+    },
+    {
+      "text": "A reconstruction at the Museo Municipal Carmen Funes in Plaza Huincul, Argentina, measures about 40 metres (131 feet) from head to tail.",
+      "source": "britannica-argentinosaurus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-argentinosaurus",
+      "publisher": "Natural History Museum, London",
+      "title": "Argentinosaurus (Dino Directory)",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/argentinosaurus.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-argentinosaurus",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Argentinosaurus",
+      "url": "https://www.britannica.com/animal/Argentinosaurus",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Argentinosaurus",
+  "caveats": [
+    "All sizes are estimates from a very incomplete skeleton.",
+    "The Natural History Museum is not consistent: its Argentinosaurus page gives 70,000 kg, but its Brachiosaurus page says Argentinosaurus weighed 80,000 kg. The 70,000 kg figure is used because it is on the species' own page and matches Britannica's 70 metric tons.",
+    "Britannica's Argentinosaurus page opens with an AI-generated summary quoting 37-40 m and up to 100 metric tons; it is labelled as AI-made and was not used for any measure.",
+    "The 40 m figure in the facts is the size of a museum reconstruction, not a scientific estimate of the living animal."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

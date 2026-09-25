@@ -67,7 +67,7 @@ export function validate({ site, categories, objects, UNITS, SHAPES }) {
     if (!Array.isArray(o.sources) || !o.sources.length) e(o, 'needs at least one source')
     for (const s of o.sources || []) {
       if (!s.id || sources.has(s.id)) e(o, `source id missing or duplicated: ${s.id}`)
-      if (!/^https:\/\/\S+$/.test(s.url || '')) e(o, `source ${s.id} needs an https url`)
+      if (!/^https?:\/\/\S+$/.test(s.url || '')) e(o, `source ${s.id} needs a web url`)
       if (!s.publisher || !s.title) e(o, `source ${s.id} needs publisher and title`)
       if (!/^\d{4}-\d{2}-\d{2}$/.test(s.accessed || '')) e(o, `source ${s.id} needs an accessed date (YYYY-MM-DD)`)
       sources.set(s.id, s)
@@ -108,7 +108,8 @@ export function validate({ site, categories, objects, UNITS, SHAPES }) {
     }
     for (const f of o.facts || []) {
       if (!f.text) e(o, 'fact without text')
-      if (!sources.has(f.source)) e(o, `fact source "${f.source}" is not listed`)
+      const fids = Array.isArray(f.source) ? f.source : [f.source]
+      if (!fids.length || fids.some(id => !sources.has(id))) e(o, `fact source "${fids.join(', ')}" is not listed`)
     }
     for (const r of [...(o.related || []), ...(o.lineup || [])]) {
       if (!slugs.has(r)) e(o, `unknown related/lineup slug ${r}`)

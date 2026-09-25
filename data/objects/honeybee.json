@@ -1,0 +1,116 @@
+{
+  "slug": "honeybee",
+  "name": "Honeybee",
+  "category": "animals",
+  "phrase": "a honeybee",
+  "aliases": [
+    "honey bee",
+    "bee",
+    "worker bee",
+    "western honey bee",
+    "european honey bee",
+    "apis mellifera"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "honeybee",
+    "x": "length"
+  },
+  "subtitle": "Worker of the western honey bee, Apis mellifera",
+  "scientificName": "Apis mellifera",
+  "description": "The western honey bee is a moderately hairy, elongated bee, black to amber brown with a striped abdomen, native to Europe, Asia and the Middle East and now kept around the world. Most bees in a hive are sterile female workers about 10 to 15 mm long. The single queen and the male drones are larger, and a strong colony can hold 50,000 or more workers.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (worker)",
+      "kind": "length",
+      "min": 10,
+      "max": 15,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult sterile worker",
+      "source": "adw-apis-mellifera"
+    },
+    {
+      "key": "queenLength",
+      "label": "Length (queen)",
+      "kind": "length",
+      "min": 18,
+      "max": 20,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Fertile queen",
+      "source": "adw-apis-mellifera"
+    },
+    {
+      "key": "droneLength",
+      "label": "Length (drone)",
+      "kind": "length",
+      "min": 15,
+      "max": 17,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Male (drone) at maturity",
+      "source": "adw-apis-mellifera"
+    },
+    {
+      "key": "lengthGeneral",
+      "label": "Length (honey bees in general)",
+      "kind": "length",
+      "min": 0.4,
+      "max": 0.6,
+      "unit": "in",
+      "approx": true,
+      "qualifier": "range",
+      "note": "WSU Extension length for honey bees; castes not separated",
+      "source": "wsu-hortsense-honey-bee"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Workers are smaller than drones but have longer wings.",
+      "source": "adw-apis-mellifera"
+    },
+    {
+      "text": "Workers live 2 to 4 weeks in summer, or up to 11 months if they live through the winter.",
+      "source": "adw-apis-mellifera"
+    },
+    {
+      "text": "Colonies can grow to 50,000 or more workers and last through winter on their stored honey.",
+      "source": "wsu-hortsense-honey-bee"
+    },
+    {
+      "text": "A worker's sting is barbed and tears away from its body when used.",
+      "source": "adw-apis-mellifera"
+    }
+  ],
+  "sources": [
+    {
+      "id": "adw-apis-mellifera",
+      "publisher": "Animal Diversity Web, University of Michigan Museum of Zoology",
+      "title": "Apis mellifera (honey bee) - Hammond, G. and M. Blankenship 2009",
+      "url": "https://animaldiversity.org/accounts/Apis_mellifera/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "wsu-hortsense-honey-bee",
+      "publisher": "Washington State University Extension (Hortsense)",
+      "title": "Apidae: Honey bee (Apis mellifera)",
+      "url": "https://hortsense.cahnrs.wsu.edu/fact-sheet/apidae-honey-bee-apis-mellifera/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Western_honey_bee",
+  "caveats": [
+    "No USDA page with a worker body length was found; the lengths come from the University of Michigan's Animal Diversity Web and WSU Extension.",
+    "A Colorado State University Extension bee-size chart was fetched, but its extracted text does not reliably pair the length ranges with the bee groups, so it is not used.",
+    "No source with a worker bee's body mass was fetched."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

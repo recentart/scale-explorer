@@ -1,0 +1,109 @@
+{
+  "slug": "dog",
+  "name": "Dog (Labrador Retriever)",
+  "category": "animals",
+  "phrase": "a Labrador Retriever",
+  "aliases": [
+    "dog",
+    "labrador",
+    "lab",
+    "labrador retriever",
+    "retriever",
+    "puppy",
+    "canis familiaris"
+  ],
+  "familiar": true,
+  "headline": "heightAtWithers",
+  "headlineAdj": "tall at the shoulder",
+  "profile": {
+    "shape": "dog",
+    "y": "heightAtWithers"
+  },
+  "subtitle": "Labrador Retriever, American Kennel Club breed standard",
+  "scientificName": "Canis familiaris",
+  "description": "Dog size varies enormously by breed, so this entry uses the Labrador Retriever, a strongly built, medium-sized retriever and one of the best-known breeds. The American Kennel Club standard sets the height at the withers at 22.5 to 24.5 in for males and 21.5 to 23.5 in for females. In working condition males weigh about 65 to 80 lb and females about 55 to 70 lb.",
+  "measures": [
+    {
+      "key": "heightAtWithers",
+      "label": "Height at withers",
+      "kind": "length",
+      "min": 21.5,
+      "max": 24.5,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Combined breed-standard range: females 21.5 to 23.5 in, males 22.5 to 24.5 in, ground to top of withers",
+      "source": "akc-labrador-standard"
+    },
+    {
+      "key": "heightMale",
+      "label": "Height at withers (male)",
+      "kind": "length",
+      "min": 22.5,
+      "max": 24.5,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Breed standard for dogs (males)",
+      "source": "akc-labrador-standard"
+    },
+    {
+      "key": "heightFemale",
+      "label": "Height at withers (female)",
+      "kind": "length",
+      "min": 21.5,
+      "max": 23.5,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Breed standard for bitches (females)",
+      "source": "akc-labrador-standard"
+    },
+    {
+      "key": "mass",
+      "label": "Weight",
+      "kind": "mass",
+      "min": 55,
+      "max": 80,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Approximate weight in working condition: males 65 to 80 lb, females 55 to 70 lb",
+      "source": "akc-labrador-standard"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Under the AKC standard, a Labrador more than half an inch above or below the height range is disqualified from the show ring. The height rule does not apply to dogs under twelve months old.",
+      "source": "akc-labrador-standard"
+    },
+    {
+      "text": "The standard calls for a short-coupled body: the length from the point of the shoulder to the point of the rump equals, or is slightly more than, the height at the withers.",
+      "source": "akc-labrador-standard"
+    },
+    {
+      "text": "The distance from the elbow to the ground should be half the height at the withers.",
+      "source": "akc-labrador-standard"
+    },
+    {
+      "text": "The current AKC Labrador Retriever standard was approved on February 12, 1994 and took effect on March 31, 1994.",
+      "source": "akc-labrador-standard"
+    }
+  ],
+  "sources": [
+    {
+      "id": "akc-labrador-standard",
+      "publisher": "American Kennel Club",
+      "title": "Official Standard for the Labrador Retriever",
+      "url": "https://images.akc.org/pdf/breeds/standards/LabradorRetriever.pdf",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Labrador_Retriever",
+  "caveats": [
+    "The AKC standard gives heights as 22 1/2 to 24 1/2 in and 21 1/2 to 23 1/2 in; they are stored as decimals.",
+    "Heights are the show standard, not a population survey; individual pet Labradors can fall outside them, and weights are stated as approximate."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

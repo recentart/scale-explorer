@@ -1,0 +1,137 @@
+{
+  "slug": "ostrich",
+  "name": "Ostrich",
+  "category": "animals",
+  "phrase": "an ostrich",
+  "aliases": [
+    "common ostrich",
+    "struthio camelus",
+    "camel bird",
+    "largest bird",
+    "tallest bird"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "ostrich",
+    "y": "height"
+  },
+  "subtitle": "Common ostrich, adult male",
+  "scientificName": "Struthio camelus",
+  "description": "The common ostrich of Africa's grasslands and savannas is the tallest and heaviest living bird. It cannot fly but is built for running, with long, powerful two-toed legs. San Diego Zoo Wildlife Alliance lists adult males at 6.9 to 9 ft tall and females at 5.7 to 6.2 ft, with males weighing 220 to 287 lb.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (adult male)",
+      "kind": "length",
+      "min": 6.9,
+      "max": 9,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Standing height of adult males, head included",
+      "source": "sdz-ostrich"
+    },
+    {
+      "key": "femaleHeight",
+      "label": "Height (adult female)",
+      "kind": "length",
+      "min": 5.7,
+      "max": 6.2,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Standing height of adult females (1.7 to 1.9 m)",
+      "source": "sdz-ostrich"
+    },
+    {
+      "key": "maxHeight",
+      "label": "Maximum height",
+      "kind": "length",
+      "max": 9,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Fully grown ostrich measured including the neck; females tend to be shorter than males",
+      "source": "nzcbi-ostrich"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (adult male)",
+      "kind": "mass",
+      "min": 220,
+      "max": 287,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult males, 100 to 130 kg",
+      "source": "sdz-ostrich"
+    },
+    {
+      "key": "femaleMass",
+      "label": "Mass (adult female)",
+      "kind": "mass",
+      "min": 198,
+      "max": 242,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult females, 90 to 110 kg",
+      "source": "sdz-ostrich"
+    },
+    {
+      "key": "adultMass",
+      "label": "Mass (adults)",
+      "kind": "mass",
+      "min": 200,
+      "max": 300,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult ostriches of either sex, 90 to 136 kg",
+      "source": "nzcbi-ostrich"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Ostriches can sprint in short bursts at up to 43 mph (70 km/h) and hold a steady 31 mph (50 km/h); a single stride can cover 10 to 16 ft.",
+      "source": "sdz-ostrich"
+    },
+    {
+      "text": "An ostrich egg averages about 6 by 5 inches (15 by 13 cm) and weighs about 3 lb.",
+      "source": "sdz-ostrich"
+    },
+    {
+      "text": "Ostrich eyes are about 2 inches (5 cm) across, the largest of any bird.",
+      "source": "nzcbi-ostrich"
+    },
+    {
+      "text": "The Smithsonian's National Zoo describes ostriches as the fastest two-legged animals on Earth.",
+      "source": "nzcbi-ostrich"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sdz-ostrich",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Ostrich",
+      "url": "https://animals.sandiegozoo.org/animals/ostrich",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nzcbi-ostrich",
+      "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+      "title": "Ostrich",
+      "url": "https://nationalzoo.si.edu/animals/ostrich",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Common_ostrich",
+  "caveats": [
+    "San Diego Zoo's metric conversion for male height contains a typo ('21. to 2.7 meters'), so the feet values (6.9 to 9 ft) are stored.",
+    "The Smithsonian's National Zoo gives a broader adult weight range (200 to 300 lb) than San Diego Zoo's sex-specific ranges."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

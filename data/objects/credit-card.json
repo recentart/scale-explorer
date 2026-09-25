@@ -1,0 +1,93 @@
+{
+  "slug": "credit-card",
+  "name": "Credit card",
+  "category": "everyday",
+  "phrase": "a credit card",
+  "aliases": [
+    "bank card",
+    "debit card",
+    "id card",
+    "id-1",
+    "cr80",
+    "driver's license",
+    "payment card"
+  ],
+  "familiar": true,
+  "headline": "width",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "credit-card",
+    "x": "width",
+    "y": "height"
+  },
+  "subtitle": "ISO/IEC 7810 ID-1 card format",
+  "description": "Payment cards use the ID-1 size, one of four card sizes defined in the international standard ISO/IEC 7810 for identification cards. An ID-1 card is nominally 85.60 mm wide, 53.98 mm high and 0.76 mm thick. The same standard also defines larger ID-2 and ID-3 sizes for other documents.",
+  "measures": [
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 85.6,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Nominal ID-1 width, stated as 85,60 mm (3.370 in)",
+      "source": "iso-7810"
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 53.98,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Nominal ID-1 height (2.125 in)",
+      "source": "iso-7810"
+    },
+    {
+      "key": "thickness",
+      "label": "Thickness",
+      "kind": "length",
+      "value": 0.76,
+      "unit": "mm",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Nominal ID-1 thickness (0.030 in)",
+      "source": "iso-7810"
+    }
+  ],
+  "facts": [
+    {
+      "text": "ISO/IEC 7813, the standard for financial transaction cards, is tested against ID-1 cards.",
+      "source": "iso-7813"
+    },
+    {
+      "text": "The larger ID-2 and ID-3 sizes are nominally 105.00 x 74.00 mm and 125.00 x 88.00 mm, with the same 0.76 mm thickness.",
+      "source": "iso-7810"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iso-7810",
+      "publisher": "ISO/IEC (preview via iTeh Standards)",
+      "title": "ISO/IEC 7810:2019 Identification cards - Physical characteristics, clause 3.5",
+      "url": "https://cdn.standards.iteh.ai/samples/70483/16f04de1cda3494f9e12567b7d1aa541/ISO-IEC-7810-2019.pdf",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "iso-7813",
+      "publisher": "International Organization for Standardization",
+      "title": "ISO/IEC 7813:2006 Information technology - Identification cards - Financial transaction cards (abstract)",
+      "url": "https://www.iso.org/standard/43317.html",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/ISO/IEC_7810",
+  "caveats": [
+    "Values are the nominal ID-1 dimensions; the standard allows small tolerances, which are not listed here, and notes its SI and imperial values are rounded separately.",
+    "No official source giving the mass of a card was found, so mass is left out."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

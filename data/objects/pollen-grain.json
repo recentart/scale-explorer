@@ -1,0 +1,63 @@
+{
+  "slug": "pollen-grain",
+  "name": "Pollen grain",
+  "category": "microscopic",
+  "phrase": "a grain of ragweed pollen",
+  "aliases": [
+    "pollen",
+    "ragweed pollen",
+    "ambrosia pollen",
+    "pollen particle"
+  ],
+  "familiar": false,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "pollen-grain",
+    "x": "diameter"
+  },
+  "subtitle": "Common ragweed (Ambrosia artemisiifolia) pollen",
+  "scientificName": "Ambrosia artemisiifolia",
+  "description": "Pollen grains carry the male reproductive cells of seed plants, and their size and surface pattern differ from species to species. A grain of common ragweed pollen is a small spiny sphere with three openings. The PalDat pollen database measures hydrated ragweed grains at 16 to 20 micrometres across.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter (hydrated grain)",
+      "kind": "length",
+      "min": 16,
+      "max": 20,
+      "unit": "um",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Size of hydrated pollen under light microscopy; shortest and longest diameters both 16-20 µm",
+      "source": "paldat-ragweed"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Ragweed pollen is spheroidal with a spiny (echinate) surface and three short colpori (combined slit-and-pore apertures).",
+      "source": "paldat-ragweed"
+    },
+    {
+      "text": "PalDat places ragweed pollen in its 'small' size class, 10 to 25 micrometres.",
+      "source": "paldat-ragweed"
+    }
+  ],
+  "sources": [
+    {
+      "id": "paldat-ragweed",
+      "publisher": "PalDat - Palynological Database",
+      "title": "Ambrosia artemisiifolia (diagnosis by S. Sam, H. Halbritter, H. Heigl; published 2020-12-17)",
+      "url": "https://www.paldat.org/pub/Ambrosia_artemisiifolia/304617",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Pollen",
+  "caveats": [
+    "Pollen size varies greatly between plant species; this entry uses common ragweed as the example.",
+    "The diameter is for hydrated grains; dry grains shrink and change outline.",
+    "No source giving the mass of a single ragweed pollen grain was found, so mass is left out."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

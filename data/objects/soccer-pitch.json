@@ -1,0 +1,146 @@
+{
+  "slug": "soccer-pitch",
+  "name": "Soccer pitch",
+  "category": "sports",
+  "phrase": "a soccer pitch",
+  "aliases": [
+    "football pitch",
+    "soccer field",
+    "association football pitch",
+    "field of play",
+    "pitch"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "soccer-pitch",
+    "x": "length"
+  },
+  "subtitle": "International match size under IFAB Law 1 (The Field of Play)",
+  "description": "Soccer pitches do not have one fixed size. The Laws of the Game allow touchlines from 90 to 120 m in general, but international matches must be played on a pitch 100 to 110 m long and 64 to 75 m wide. The goals are 7.32 m (8 yd) wide between the posts and 2.44 m (8 ft) high to the underside of the crossbar. The penalty mark is 11 m from the goal.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (international matches)",
+      "kind": "length",
+      "min": 100,
+      "max": 110,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Touchline length allowed for international matches (110 to 120 yd)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "width",
+      "label": "Width (international matches)",
+      "kind": "length",
+      "min": 64,
+      "max": 75,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Goal line length allowed for international matches (70 to 80 yd)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "lengthAnyMatch",
+      "label": "Length (all matches)",
+      "kind": "length",
+      "min": 90,
+      "max": 120,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Touchline length allowed outside international matches (100 to 130 yd)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "widthAnyMatch",
+      "label": "Width (all matches)",
+      "kind": "length",
+      "min": 45,
+      "max": 90,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "range",
+      "note": "Goal line length allowed outside international matches (50 to 100 yd)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "goalWidth",
+      "label": "Goal width",
+      "kind": "length",
+      "value": 8,
+      "unit": "yd",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance between the inside of the goalposts (7.32 m)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "goalHeight",
+      "label": "Goal height",
+      "kind": "length",
+      "value": 8,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Ground to the lower edge of the crossbar (2.44 m)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "penaltyDistance",
+      "label": "Penalty mark distance",
+      "kind": "length",
+      "value": 11,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "From the midpoint between the goalposts (12 yd)",
+      "source": "ifab-law1"
+    },
+    {
+      "key": "centreCircleRadius",
+      "label": "Centre circle radius",
+      "kind": "length",
+      "value": 9.15,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Radius of the circle around the centre mark (10 yd)",
+      "source": "ifab-law1"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The penalty area reaches 16.5 m (18 yd) out from the inside of each goalpost and 16.5 m into the field; the goal area is 5.5 m (6 yd) on the same pattern.",
+      "source": "ifab-law1"
+    },
+    {
+      "text": "Goalposts and the crossbar may be no more than 12 cm (5 in) wide, and all pitch lines share one width of no more than 12 cm.",
+      "source": "ifab-law1"
+    },
+    {
+      "text": "Competitions may choose their own touchline and goal line lengths as long as they stay within the Law 1 limits.",
+      "source": "ifab-law1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ifab-law1",
+      "publisher": "The International Football Association Board (IFAB)",
+      "title": "Laws of the Game, Law 1 - The Field of Play (latest edition)",
+      "url": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Football_pitch",
+  "caveats": [
+    "There is no single pitch size; the headline range is the one allowed for international matches.",
+    "The IFAB gives metric and imperial figures side by side; they are rounded equivalents, not exact conversions (for example 100 m is listed with 110 yd)."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-25"
+}

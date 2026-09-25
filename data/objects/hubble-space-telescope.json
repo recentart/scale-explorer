@@ -1,0 +1,96 @@
+{
+  "slug": "hubble-space-telescope",
+  "name": "Hubble Space Telescope",
+  "category": "space",
+  "phrase": "the Hubble Space Telescope",
+  "aliases": [
+    "hubble",
+    "hst",
+    "hubble telescope",
+    "space telescope",
+    "telescope"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "hubble-space-telescope",
+    "x": "length"
+  },
+  "description": "The Hubble Space Telescope is a space telescope launched in 1990 that orbits Earth above the atmosphere. NASA gives it a length of 13.2 m (43.5 ft), a width of 4.2 m (14 ft) at the instrument end, and a weight of about 12,246 kg (27,000 lb), roughly the size and weight of a school bus. Its main mirror is 2.4 m across.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 13.2,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length of the telescope (43.5 ft)",
+      "source": "nasa-hubble-design"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 4.2,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Width at the back, where the science instruments are housed (14 ft)",
+      "source": "nasa-hubble-design"
+    },
+    {
+      "key": "mirrorDiameter",
+      "label": "Primary mirror diameter",
+      "kind": "length",
+      "value": 2.4,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Main mirror (94.5 in)",
+      "source": "nasa-hubble-design"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 12246,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Weight about 27,000 lb",
+      "source": "nasa-hubble-design"
+    }
+  ],
+  "facts": [
+    {
+      "text": "NASA says Hubble is approximately the same size and weight as a school bus.",
+      "source": "nasa-hubble-design"
+    },
+    {
+      "text": "Hubble's 2.4 m (94.5 in) primary mirror is polished so smoothly that, scaled to the diameter of Earth, no bump would stand more than 15 cm (6 in) tall.",
+      "source": "nasa-hubble-design"
+    },
+    {
+      "text": "Hubble is a Cassegrain reflector powered by two solar arrays.",
+      "source": "nasa-hubble-design"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa-hubble-design",
+      "publisher": "NASA Science",
+      "title": "Hubble Design",
+      "url": "https://science.nasa.gov/mission/hubble/observatory/design/",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+  "caveats": [
+    "Dimensions exclude the two solar arrays, whose size NASA's design page does not give."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-25"
+}

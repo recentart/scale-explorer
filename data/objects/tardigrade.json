@@ -1,0 +1,88 @@
+{
+  "slug": "tardigrade",
+  "name": "Tardigrade",
+  "category": "microscopic",
+  "phrase": "a tardigrade",
+  "aliases": [
+    "water bear",
+    "moss piglet",
+    "tardigrada",
+    "water bears"
+  ],
+  "familiar": false,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "tardigrade",
+    "x": "length"
+  },
+  "subtitle": "Phylum Tardigrada (all species)",
+  "scientificName": "Tardigrada",
+  "description": "Tardigrades, or water bears, are tiny eight-legged invertebrates that live in damp moss, sand, fresh water and the sea around the world. Adults of different species span roughly 50 to 2,100 micrometres in length, and most are about a millimetre or smaller. They are known for surviving drying out and other extreme conditions, which has made them a subject of space research.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Body length (range across species)",
+      "kind": "length",
+      "min": 50,
+      "max": 2100,
+      "unit": "um",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Range of body lengths across tardigrade species, from the smallest to the largest known",
+      "source": "pmc-tardigrades-space"
+    },
+    {
+      "key": "typicalLength",
+      "label": "Typical size",
+      "kind": "length",
+      "max": 1,
+      "unit": "mm",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Britannica: most tardigrades are about 1 mm (0.04 inch) or less",
+      "source": "britannica-tardigrade"
+    }
+  ],
+  "facts": [
+    {
+      "text": "About 1,200 tardigrade species are known according to this review, and the true number is thought to be much higher.",
+      "source": "pmc-tardigrades-space"
+    },
+    {
+      "text": "The body has a head segment followed by four segments, each carrying one pair of unjointed legs that usually end in claws.",
+      "source": "pmc-tardigrades-space"
+    },
+    {
+      "text": "Adult tardigrades live roughly two to several months.",
+      "source": "pmc-tardigrades-space"
+    },
+    {
+      "text": "Tardigrades live in damp moss, on flowering plants, in sand, in fresh water and in the sea.",
+      "source": "britannica-tardigrade"
+    }
+  ],
+  "sources": [
+    {
+      "id": "pmc-tardigrades-space",
+      "publisher": "Origins of Life and Evolution of the Biosphere (via PubMed Central)",
+      "title": "Tardigrades in Space Research - Past and Future (Erdmann W., Kaczmarek Ł.; vol. 47)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5705745/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-tardigrade",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Tardigrade",
+      "url": "https://www.britannica.com/animal/tardigrade",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Tardigrade",
+  "caveats": [
+    "Size varies widely by species; the 50 to 2,100 micrometre range covers the whole phylum, not a single species.",
+    "No source giving a tardigrade's mass was found, so mass is left out."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}

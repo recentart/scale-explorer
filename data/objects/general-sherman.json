@@ -1,0 +1,128 @@
+{
+  "slug": "general-sherman",
+  "name": "General Sherman tree",
+  "category": "nature",
+  "phrase": "the General Sherman tree",
+  "aliases": [
+    "general sherman",
+    "sherman tree",
+    "giant sequoia",
+    "sequoia",
+    "largest tree",
+    "biggest tree"
+  ],
+  "familiar": false,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "general-sherman",
+    "y": "height"
+  },
+  "subtitle": "Giant sequoia, Sequoia National Park, California",
+  "scientificName": "Sequoiadendron giganteum",
+  "description": "The General Sherman Tree is a giant sequoia in the Giant Forest grove of Sequoia National Park, California. The National Park Service calls it the largest tree in the world by volume, estimating its wood at about 52,500 cubic feet. It stands 274.9 ft (83.8 m) above its base and measures 102.6 ft (31.1 m) around at the ground.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height above base",
+      "kind": "length",
+      "value": 83.8,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Height above the base of the trunk; the park also gives 274.9 ft",
+      "source": "nps-sherman"
+    },
+    {
+      "key": "baseDiameter",
+      "label": "Maximum diameter at base",
+      "kind": "length",
+      "value": 11.1,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Widest diameter at the base of the trunk (36.5 ft)",
+      "source": "nps-sherman"
+    },
+    {
+      "key": "circumference",
+      "label": "Circumference at ground",
+      "kind": "length",
+      "value": 31.1,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance around the trunk at ground level (102.6 ft)",
+      "source": "nps-sherman"
+    },
+    {
+      "key": "crownSpread",
+      "label": "Average crown spread",
+      "kind": "length",
+      "value": 32.5,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "average",
+      "note": "Average width of the crown (106.5 ft)",
+      "source": "nps-sherman"
+    },
+    {
+      "key": "volume",
+      "label": "Wood volume",
+      "kind": "volume",
+      "value": 52500,
+      "unit": "ft3",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated volume of the tree; the park gives 1,486.6 cubic meters",
+      "source": "nps-sherman"
+    },
+    {
+      "key": "mass",
+      "label": "Trunk weight",
+      "kind": "mass",
+      "max": 1400,
+      "unit": "shortTon",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "The park says the trunk alone weighs 'nearly 1,400 tons'; branches and roots are not included",
+      "source": "nps-sherman"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The trunk is 17.5 ft (5.3 m) across at 60 ft above the base and 14.0 ft (4.3 m) across at 180 ft above the base.",
+      "source": "nps-sherman"
+    },
+    {
+      "text": "The first large branch starts 130.0 ft (39.6 m) above the base, and the largest branch is 6.8 ft (2.1 m) in diameter.",
+      "source": "nps-sherman"
+    },
+    {
+      "text": "In lumber terms the tree probably holds about 630,000 board feet of wood.",
+      "source": "nps-sherman"
+    },
+    {
+      "text": "The world's second-largest tree, the General Grant Tree, stands in the Grant Grove area of Kings Canyon National Park.",
+      "source": "nps-sherman"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps-sherman",
+      "publisher": "U.S. National Park Service, Sequoia & Kings Canyon National Parks",
+      "title": "The General Sherman Tree",
+      "url": "https://www.nps.gov/seki/learn/nature/sherman.htm",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/General_Sherman_(tree)",
+  "caveats": [
+    "'Largest' refers to volume of wood; taller trees exist, including coast redwoods.",
+    "The park does not say which ton it means for the trunk weight; short tons (2,000 lb) are assumed because the page uses US customary units. The figure covers the trunk only.",
+    "The park's statistics table gives no measurement date, and the tree's dimensions change slowly as it grows and loses branches.",
+    "The tree outline is illustrative; only its height is to scale."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-25"
+}

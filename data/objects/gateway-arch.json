@@ -1,0 +1,128 @@
+{
+  "slug": "gateway-arch",
+  "name": "Gateway Arch",
+  "category": "structures",
+  "phrase": "the Gateway Arch",
+  "aliases": [
+    "st. louis arch",
+    "st louis arch",
+    "gateway to the west",
+    "jefferson national expansion memorial",
+    "arch"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "gateway-arch",
+    "x": "width",
+    "y": "height"
+  },
+  "subtitle": "Gateway Arch National Park, St. Louis, Missouri",
+  "description": "The Gateway Arch is a stainless-steel monument in St. Louis, designed by architect Eero Saarinen to commemorate Thomas Jefferson's vision. It has the shape of a weighted catenary, and its steel skin carries its own weight without an internal frame. The National Park Service gives it a maximum height of 630 ft (192 m) and the same 630 ft width between the outer faces of its legs, and calls it the nation's tallest monument.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Maximum height",
+      "kind": "length",
+      "value": 630,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Maximum height of the arch (192 m)",
+      "source": "nps-factsheet"
+    },
+    {
+      "key": "width",
+      "label": "Outer width",
+      "kind": "length",
+      "value": 630,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "From the outside of the north leg to the outside of the south leg (192 m)",
+      "source": "nps-factsheet"
+    },
+    {
+      "key": "legWidthBase",
+      "label": "Leg dimension at base",
+      "kind": "length",
+      "value": 54,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Size of each leg's triangular cross-section at the base (16.46 m); it narrows to 17 ft (5.18 m) at the top",
+      "source": "nps-factsheet"
+    },
+    {
+      "key": "steelMass",
+      "label": "Total steel weight",
+      "kind": "mass",
+      "value": 4644,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "All steel in the arch, in metric tons; the fact sheet also gives 5,199 tons",
+      "source": "nps-factsheet"
+    },
+    {
+      "key": "concreteMass",
+      "label": "Total concrete weight",
+      "kind": "mass",
+      "value": 34570,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "All concrete, in metric tons (the fact sheet also gives 38,107 Tons)",
+      "source": "nps-factsheet"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The foundations are reinforced concrete reaching 60 ft deep, with 30 ft set into bedrock.",
+      "source": "nps-architecture"
+    },
+    {
+      "text": "The outer skin is 900 tons of polished stainless steel in panels 1/4 in thick, over an inner wall of 3/8 in carbon steel.",
+      "source": "nps-architecture"
+    },
+    {
+      "text": "The arch is built from 142 sections and is designed to deflect 18 in in a 150 mph wind.",
+      "source": "nps-factsheet"
+    },
+    {
+      "text": "The Park Service's construction sequence shows the arch rising between February 29, 1964 and October 28, 1965.",
+      "source": "nps-architecture"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps-factsheet",
+      "publisher": "U.S. National Park Service",
+      "title": "Gateway Arch Fact Sheet",
+      "url": "https://www.nps.gov/jeff/planyourvisit/gateway-arch-fact-sheet.htm",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nps-architecture",
+      "publisher": "U.S. National Park Service",
+      "title": "Arch Architecture",
+      "url": "https://www.nps.gov/jeff/planyourvisit/architecture.htm",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "nps-arch",
+      "publisher": "U.S. National Park Service",
+      "title": "Gateway Arch",
+      "url": "https://www.nps.gov/jeff/planyourvisit/gateway-arch.htm",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Gateway_Arch",
+  "caveats": [
+    "The fact sheet gives the steel weight as 5,199 tons and 4,644 metric tons, which do not convert exactly into each other; the metric figure is stored.",
+    "The steel and concrete weights are listed separately and the foundations are reinforced concrete, so neither figure is the weight of the visible arch alone."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-25"
+}

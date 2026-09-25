@@ -1,0 +1,126 @@
+{
+  "slug": "brachiosaurus",
+  "name": "Brachiosaurus",
+  "category": "prehistoric",
+  "phrase": "a Brachiosaurus",
+  "aliases": [
+    "brachiosaur",
+    "brachiosaurus altithorax",
+    "arm lizard",
+    "tallest dinosaur",
+    "long neck dinosaur"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "brachiosaurus",
+    "y": "height"
+  },
+  "subtitle": "Estimated head height of a feeding adult",
+  "scientificName": "Brachiosaurus altithorax",
+  "description": "Brachiosaurus was a long-necked, plant-eating sauropod that lived in North America in the Late Jurassic, about 152 to 145 million years ago. Its front legs were longer than its back legs, tilting its body upward so it could browse high in trees. Britannica says brachiosaurs could lift their heads to about 12 metres above the ground, and the Natural History Museum, London estimates Brachiosaurus at about 22 metres long and 46,900 kg. No complete skeleton is known, so all of these figures are estimates.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Head height (estimated)",
+      "kind": "length",
+      "value": 12,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated: how high brachiosaurs could raise their heads above the ground to browse; Britannica also gives 39 ft",
+      "source": "britannica-brachiosaur"
+    },
+    {
+      "key": "length",
+      "label": "Length (estimated)",
+      "kind": "length",
+      "value": 22.0,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated nose-to-tail length of Brachiosaurus",
+      "source": "nhm-brachiosaurus"
+    },
+    {
+      "key": "maxLength",
+      "label": "Maximum length (estimated, brachiosaurs)",
+      "kind": "length",
+      "max": 25,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated: Britannica says brachiosaurs reached a maximum length approaching 25 m",
+      "source": "britannica-brachiosaur"
+    },
+    {
+      "key": "mass",
+      "label": "Mass (estimated)",
+      "kind": "mass",
+      "value": 46900,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Estimated body weight of Brachiosaurus",
+      "source": "nhm-brachiosaurus"
+    },
+    {
+      "key": "maxMass",
+      "label": "Maximum mass (estimated, brachiosaurs)",
+      "kind": "mass",
+      "max": 80,
+      "unit": "t",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Estimated: Britannica says brachiosaurs reached a weight of nearly 80 metric tons",
+      "source": "britannica-brachiosaur"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The first Brachiosaurus remains were found in Colorado in 1900 by Elmer S Riggs, a scientist from Chicago, who named the dinosaur in 1903. At the time it was the largest dinosaur ever discovered.",
+      "source": "nhm-brachiosaurus"
+    },
+    {
+      "text": "The name means 'arm lizard', because its front legs were longer than its back legs.",
+      "source": "nhm-brachiosaurus"
+    },
+    {
+      "text": "There is no complete Brachiosaurus skeleton, so most full-body reconstructions are based on the related African dinosaur Giraffatitan.",
+      "source": "nhm-brachiosaurus"
+    },
+    {
+      "text": "Some experts think the Brachiosaurus fossils came from an individual that was not fully grown, so the animal may have been somewhat larger than current estimates.",
+      "source": "nhm-brachiosaurus"
+    },
+    {
+      "text": "Brachiosaurs could not chew; their neckbones were deeply hollowed into a lightweight framework of struts and plates.",
+      "source": "britannica-brachiosaur"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhm-brachiosaurus",
+      "publisher": "Natural History Museum, London",
+      "title": "Brachiosaurus (Dino Directory)",
+      "url": "https://www.nhm.ac.uk/discover/dino-directory/brachiosaurus.html",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "britannica-brachiosaur",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Brachiosaur",
+      "url": "https://www.britannica.com/animal/brachiosaur",
+      "accessed": "2026-09-25"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Brachiosaurus",
+  "caveats": [
+    "All sizes are estimates from incomplete fossils.",
+    "The height, maximum length and maximum mass come from Britannica's article on brachiosaurs as a group (genus Brachiosaurus and its relatives, which Britannica counts as including African material), not specifically Brachiosaurus altithorax; the Natural History Museum's 22 m and 46,900 kg are for Brachiosaurus itself.",
+    "No museum source fetched gave a standing shoulder or hip height, so the headline is the head height Britannica gives for a browsing animal."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-25"
+}
