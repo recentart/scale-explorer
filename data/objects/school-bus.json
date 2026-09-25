@@ -16,7 +16,7 @@
     "x": "length"
   },
   "subtitle": "Conventional (Type C) full-size school bus",
-  "description": "The familiar yellow school bus in the United States is usually a Type C, or conventional, bus: the engine sits under a hood in front of the windshield and the entrance door is behind the front wheels. In a study funded through the US DOT university transportation centers program, a 65/66-passenger Type C bus had a manufacturer-specified length of about 35.6 ft (10.9 m), and the national standards of the time capped school buses at 40 ft. Blue Bird lists its current Vision model as 96 inches wide and 121 to 128 inches tall.",
+  "description": "The familiar yellow school bus in the United States is usually a Type C, or conventional, bus: the engine sits under a hood in front of the windshield and the entrance door is behind the front wheels. In a study funded through the US DOT university transportation centers program, a 65/66-passenger Type C bus had a manufacturer-specified length of about 35.6 ft (10.9 m), and today's national standards cap school buses at 45 ft. Blue Bird lists its current Vision model as 96 inches wide and 121 to 128 inches tall.",
   "measures": [
     {
       "key": "length",
@@ -33,12 +33,12 @@
       "key": "maxLength",
       "label": "Maximum length (national standards)",
       "kind": "length",
-      "max": 40,
+      "max": 45,
       "unit": "ft",
       "approx": false,
       "qualifier": "up to",
-      "note": "Overall length limit in the 1995 National Standards for School Transportation, as cited by the study",
-      "source": "gattis"
+      "note": "Overall length limit, excluding accessories, in the 2025 National School Transportation Specifications and Procedures",
+      "source": "nstsp"
     },
     {
       "key": "height",
@@ -106,13 +106,20 @@
       "title": "2006 Type-C School Bus Specifications",
       "url": "https://www.ncbussafety.org/documents/buses/typecspecs2006.pdf",
       "accessed": "2026-09-24"
+    },
+    {
+      "id": "nstsp",
+      "publisher": "National Congress on School Transportation (copy hosted by the Maine Department of Education)",
+      "title": "National School Transportation Specifications and Procedures, 2025 (Seventeenth National Congress)",
+      "url": "https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/Transportation%20Safety%20Commission%20-%20May%202025%20National%20Congress%20on%20School%20Transportation%20Manual%20-%202.27.2026.pdf",
+      "accessed": "2026-09-25"
     }
   ],
   "wikipedia": "https://en.wikipedia.org/wiki/School_bus",
   "caveats": [
-    "School bus lengths vary with seating capacity. The 35.6 ft length is one manufacturer-specified 65/66-passenger bus from a 1998 study; larger buses approach 40 ft.",
-    "The current Blue Bird specification sheet gives height and width but not overall length."
+    "School bus lengths vary with seating capacity. The 35.6 ft typical length is one manufacturer-specified 65/66-passenger bus from a 1998 study; the largest buses approach the 45 ft limit.",
+    "Current manufacturer specification sheets (Blue Bird, IC Bus, Thomas Built) list wheelbases, height and width but not overall length."
   ],
   "schemaType": "Product",
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }

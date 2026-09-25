@@ -19,57 +19,88 @@
     "x": "length",
     "y": "height"
   },
-  "subtitle": "747-8, the longest version",
-  "description": "The Boeing 747 'jumbo jet' first flew in 1969 and is known for its hump-shaped upper deck. Its final version, the 747-8, is also the longest: Boeing's airport planning document gives it a length of 250 ft 2 in (76.25 m), a wingspan of 224 ft 5 in (68.40 m) and a maximum takeoff weight of 987,000 lb.",
+  "subtitle": "747-400 and 747-8",
+  "description": "The Boeing 747 'jumbo jet' first flew in 1969 and is known for its hump-shaped upper deck. Boeing's airport planning documents give the 747-400 a length of 231 ft 10 in (70.67 m) and the stretched 747-8 a length of 250 ft 2 in (76.25 m), with wingspans of about 64.4 m and 68.4 m. The heaviest 747-8 can take off at 987,000 lb.",
   "measures": [
     {
       "key": "length",
       "label": "Length",
       "kind": "length",
-      "value": 76.25,
+      "min": 70.67,
+      "max": 76.25,
       "unit": "m",
       "approx": false,
-      "qualifier": "exact",
-      "note": "747-8 overall length (250 ft 2 in); earlier 747 versions were shorter",
-      "source": "boeing-acaps"
+      "qualifier": "range",
+      "note": "747-400 (231 ft 10.25 in) to 747-8 (250 ft 2 in)",
+      "source": [
+        "boeing-7474",
+        "boeing-acaps"
+      ]
     },
     {
       "key": "wingspan",
       "label": "Wingspan",
       "kind": "length",
-      "value": 68.4,
+      "min": 64.44,
+      "max": 68.4,
       "unit": "m",
       "approx": false,
-      "qualifier": "exact",
-      "note": "747-8 (224 ft 5 in)",
-      "source": "boeing-acaps"
+      "qualifier": "range",
+      "note": "747-400 (211 ft 5 in, jig position) to 747-8 (224 ft 5 in)",
+      "source": [
+        "boeing-7474",
+        "boeing-acaps"
+      ]
     },
     {
       "key": "height",
       "label": "Tail height",
       "kind": "length",
-      "min": 18.97,
+      "min": 18.8,
       "max": 19.51,
       "unit": "m",
       "approx": true,
       "qualifier": "range",
-      "note": "Ground to top of the tail, varying with loading and attitude (62 ft 3 in to 64 ft 0 in)",
-      "source": "boeing-acaps"
+      "note": "Ground to top of the tail, varying with version, loading and attitude",
+      "source": [
+        "boeing-7474",
+        "boeing-acaps"
+      ]
     },
     {
       "key": "mass",
       "label": "Maximum takeoff weight",
       "kind": "mass",
+      "min": 800000,
       "max": 987000,
       "unit": "lb",
       "approx": false,
-      "qualifier": "up to",
-      "note": "747-8 passenger version (447,695 kg)",
-      "source": "boeing-acaps"
+      "qualifier": "range",
+      "note": "Lightest listed 747-400 (GE engines) to the 747-8 passenger version",
+      "source": [
+        "boeing-7474",
+        "boeing-acaps"
+      ]
     }
   ],
-  "facts": [],
+  "facts": [
+    {
+      "text": "The 747-8 is 250 ft 2 in (76.25 m) long with a 224 ft 5 in (68.40 m) wingspan and a maximum takeoff weight of 987,000 lb (447,695 kg).",
+      "source": "boeing-acaps"
+    },
+    {
+      "text": "The 747-400 is 231 ft 10.25 in (70.67 m) long; its maximum takeoff weight ranges from 800,000 to 875,000 lb with General Electric engines.",
+      "source": "boeing-7474"
+    }
+  ],
   "sources": [
+    {
+      "id": "boeing-7474",
+      "publisher": "Boeing Commercial Airplanes",
+      "title": "747-400 Airplane Characteristics for Airport Planning (D6-58326-1, Rev F, December 2024)",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-400_Rev_F.pdf",
+      "accessed": "2026-09-25"
+    },
     {
       "id": "boeing-acaps",
       "publisher": "Boeing Commercial Airplanes",
@@ -80,8 +111,9 @@
   ],
   "wikipedia": "https://en.wikipedia.org/wiki/Boeing_747",
   "caveats": [
-    "Figures are for the 747-8. Earlier versions such as the 747-400 were shorter; their planning document could not be retrieved, so no figure for them is shown."
+    "Ranges run from the 747-400 to the 747-8. Earlier versions (747-100 to -300) are not included.",
+    "Each range starts with the 747-400 value from Boeing document D6-58326-1 and ends with the 747-8 value from D6-58326-3."
   ],
   "schemaType": "Product",
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }

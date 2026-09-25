@@ -19,29 +19,29 @@
     "x": "length"
   },
   "subtitle": "US Navy Gerald R. Ford-class supercarrier",
-  "description": "The Gerald R. Ford class is the newest class of US Navy nuclear-powered aircraft carriers. Naval Technology gives the class a length of 333 m, a flight deck 78 m wide and a displacement of about 100,000 tonnes.",
+  "description": "The Gerald R. Ford class is the newest class of US Navy nuclear-powered aircraft carriers. The Navy lists the lead ship, USS Gerald R. Ford (CVN 78), as 1,106 ft (337 m) long with a 256 ft wide flight deck and a full-load displacement of 100,000 long tons. It was delivered in 2017, and the older Nimitz-class carriers are almost the same size.",
   "measures": [
     {
       "key": "length",
       "label": "Length",
       "kind": "length",
-      "value": 333,
-      "unit": "m",
-      "approx": true,
-      "qualifier": "about",
-      "note": "Ford-class length as given by Naval Technology; some sources quote 337 m (1,106 ft) overall",
-      "source": "navaltech"
+      "value": 1106,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "USS Gerald R. Ford (CVN 78)",
+      "source": "navy-cvn78"
     },
     {
       "key": "flightDeckWidth",
       "label": "Flight deck width",
       "kind": "length",
-      "value": 78,
-      "unit": "m",
+      "value": 256,
+      "unit": "ft",
       "approx": false,
       "qualifier": "exact",
-      "note": "Maximum width of the flight deck",
-      "source": "navaltech"
+      "note": "Widest point of the flight deck",
+      "source": "navy-cvn78"
     },
     {
       "key": "beam",
@@ -59,15 +59,34 @@
       "label": "Displacement",
       "kind": "mass",
       "value": 100000,
-      "unit": "t",
+      "unit": "longTon",
       "approx": true,
       "qualifier": "about",
-      "note": "Full-load displacement: the mass of water the ship displaces",
-      "source": "navaltech"
+      "note": "Full load: the mass of water the ship displaces",
+      "source": "navy-cvn78"
     }
   ],
-  "facts": [],
+  "facts": [
+    {
+      "text": "The Navy fact file says the Nimitz and Gerald R. Ford-class carriers are the largest warships in the world, each designed for about 50 years of service with one mid-life refuelling.",
+      "source": "navy-factfile"
+    }
+  ],
   "sources": [
+    {
+      "id": "navy-cvn78",
+      "publisher": "US Navy, Naval Air Force Atlantic",
+      "title": "USS Gerald R. Ford (CVN 78): Command History",
+      "url": "https://www.airlant.usff.navy.mil/Organization/Aircraft-Carriers/USS-Gerald-R-Ford-CVN-78/Command-History/",
+      "accessed": "2026-09-25"
+    },
+    {
+      "id": "navy-factfile",
+      "publisher": "US Navy",
+      "title": "Aircraft Carriers - CVN (fact file)",
+      "url": "https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2169795/aircraft-carriers-cvn/",
+      "accessed": "2026-09-25"
+    },
     {
       "id": "navaltech",
       "publisher": "Naval Technology",
@@ -78,9 +97,10 @@
   ],
   "wikipedia": "https://en.wikipedia.org/wiki/Gerald_R._Ford-class_aircraft_carrier",
   "caveats": [
-    "The US Navy fact file blocks automated access, so these figures come from the trade publication Naval Technology. Other published figures give 1,106 ft (337 m) as the overall length, about 1 percent more.",
-    "The drawing is a simplified side view scaled to the 333 m length; its height is illustrative."
+    "The Navy page also lists a \"height\" of 134 feet, which matches the hull beam given by other sources, so it is not used here.",
+    "Naval Technology gives 333 m for the class; the Navy figure of 1,106 ft (337 m) for the lead ship is used.",
+    "The drawing is a simplified side view scaled to the 1,106 ft length; its height is illustrative."
   ],
   "schemaType": "Product",
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }

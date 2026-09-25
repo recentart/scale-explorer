@@ -34,7 +34,7 @@
   ],
   "facts": [
     {
-      "text": "Meyer Turku lists Legend of the Seas at 250,800 gross tonnage and 5,610 passengers.",
+      "text": "Meyer Turku lists Legend of the Seas at 250,800 gross tonnage and 5,610 passengers; the builder says Icon Class ships have room for around 7,600 passengers at full capacity.",
       "source": "meyer"
     }
   ],
@@ -53,5 +53,5 @@
     "The drawing is scaled to the 365 m length; its height is illustrative."
   ],
   "schemaType": "Product",
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }

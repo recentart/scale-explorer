@@ -6,9 +6,9 @@
 export const SHAPES = {
   'house': {
     w: 130, h: 100,
-    refY: 100,
+    refX: 130, refY: 54, // walls: full width, ground to the eaves at y = 46
     layers: [
-      { d: 'M0 46 V42 L65 8 L94 23.2 V3 H93 V0 H105 V3 H104 V28.4 L130 42 V46 H124 V100 H6 V46 Z', fill: '#c48f62' },
+      { d: 'M0 46 V42 L65 8 L94 23.2 V3 H93 V0 H105 V3 H104 V28.4 L130 42 V100 H0 Z', fill: '#c48f62' },
       { d: 'M0 46 V42 L65 8 L94 23.2 V3 H93 V0 H105 V3 H104 V28.4 L130 42 V46 Z', fill: '#9c4a3c' },
       { d: 'M16 54 H24.5 V68 H16 Z M25.5 54 H34 V68 H25.5 Z M56 54 H64.5 V68 H56 Z M65.5 54 H74 V68 H65.5 Z M96 54 H104.5 V68 H96 Z M105.5 54 H114 V68 H105.5 Z M16 76 H24.5 V90 H16 Z M25.5 76 H34 V90 H25.5 Z M96 76 H104.5 V90 H96 Z M105.5 76 H114 V90 H105.5 Z M60 26 H70 V36 H60 Z', fill: '#ece4cc' },
       { d: 'M56 74 H74 V100 H56 Z', fill: '#86573a' },

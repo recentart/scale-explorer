@@ -292,7 +292,7 @@ function dimensionsTable(full) {
     <td>${esc(formatMeasure(m, 'metric'))}</td>
     <td>${esc(formatMeasure(m, 'imperial'))}</td>
     <td>${esc(noteText(m))}</td>
-    <td><a class="ref" href="#src-${esc(m.source)}" aria-label="Source ${srcIndex[m.source]}">[${srcIndex[m.source]}]</a></td>
+    <td>${(Array.isArray(m.source) ? m.source : [m.source]).map(id => `<a class="ref" href="#src-${esc(id)}" aria-label="Source ${srcIndex[id]}">[${srcIndex[id]}]</a>`).join(' ')}</td>
   </tr>`).join('')}</tbody>
 </table></div>`
 }

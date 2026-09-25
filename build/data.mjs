@@ -91,7 +91,8 @@ export function validate({ site, categories, objects, UNITS, SHAPES }) {
       if (m.min != null && m.max == null) e(o, `${where}: min without max`)
       if (!QUALIFIERS.includes(m.qualifier)) e(o, `${where}: qualifier must be one of ${QUALIFIERS.join(', ')}`)
       if (typeof m.approx !== 'boolean') e(o, `${where}: approx must be true or false`)
-      if (!sources.has(m.source)) e(o, `${where}: source "${m.source}" is not listed`)
+      const ids = Array.isArray(m.source) ? m.source : [m.source]
+      if (!ids.length || ids.some(id => !sources.has(id))) e(o, `${where}: source "${ids.join(', ')}" is not listed`)
     }
     if (o.headline && !measures.has(o.headline)) e(o, `headline measure ${o.headline} not found`)
     if (o.headline && measures.has(o.headline) && UNITS[measures.get(o.headline).unit]?.kind !== 'length') e(o, 'headline must be a length')

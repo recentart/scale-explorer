@@ -46,7 +46,7 @@ function placeLabels(layout, labels) {
   const order = labels.slice().sort((a, b) => a.anchorY - b.anchorY)
   for (const l of order) {
     const w = Math.max(textW(l.name, 7.4), textW(l.dim, 6.5)) + 10
-    const h = 32
+    const h = l.dim ? 32 : 17
     // Keep clear of the axis labels on the left.
     const minX = Math.min(layout.padLeft - 4, W - w - 2)
     let x = Math.min(Math.max(minX, l.anchorX - w / 2), W - w - 2)
@@ -108,9 +108,10 @@ function scaleBar(layout, system) {
 export function renderStage(objects, {
   width = 960, maxHeight = 420, minHeight = 200, system = 'metric', highlight, idPrefix = 'st', compact = false,
 } = {}) {
+  const narrow = width < 520 && objects.length > 2
   const layout = layoutStage(objects, {
     width, maxHeight, minHeight,
-    padLeft: compact ? 44 : 56, padTop: compact ? 48 : 58, padBottom: compact ? 30 : 38,
+    padLeft: compact ? 44 : narrow ? 40 : 56, padTop: compact ? 48 : 58, padBottom: compact ? 30 : 38,
   })
   const { groundY, height } = layout
   const parts = []
@@ -126,7 +127,7 @@ export function renderStage(objects, {
       const mx = n1(it.cx)
       parts.push(`<g class="marker${isHi ? ' is-highlight' : ''}"><title>${esc(o.name)}: ${esc(dim)} (too small to see at this scale)</title>` +
         `<line x1="${mx}" x2="${mx}" y1="${groundY - 16}" y2="${groundY - 3}"/><path d="M${mx - 4} ${groundY - 9} L${mx} ${groundY - 2} L${mx + 4} ${groundY - 9} Z"/></g>`)
-      labels.push({ name: o.name, dim: `${dim} · too small to see`, anchorX: it.cx, anchorY: groundY - 18, hi: isHi })
+      labels.push({ name: o.name, dim: narrow && !isHi ? '' : `${dim} · too small to see`, anchorX: it.cx, anchorY: groundY - 18, hi: isHi })
       continue
     }
     const ranged = hasRange(o)
@@ -135,7 +136,9 @@ export function renderStage(objects, {
     parts.push(drawShape(it, ranged ? it.lo : it.hi, groundY, 'sil'))
     parts.push('</g>')
     const top = it.below ? groundY : groundY - it.hi.h
-    labels.push({ name: o.name, dim, anchorX: it.cx, anchorY: top, hi: isHi })
+    // On phones only the highlighted object keeps its value in the label;
+    // every value is still in the Bars view and the shape's tooltip.
+    labels.push({ name: o.name, dim: narrow && !isHi ? '' : dim, anchorX: it.cx, anchorY: top, hi: isHi })
   }
 
   const placed = placeLabels(layout, labels)
@@ -144,7 +147,7 @@ export function renderStage(objects, {
     const lead = l.anchorY - (l.y + l.h) > 10
       ? `<line class="leader" x1="${n1(Math.min(Math.max(l.anchorX, l.x + 4), l.x + l.w - 4))}" y1="${n1(l.y + l.h)}" x2="${n1(l.anchorX)}" y2="${n1(l.anchorY - 2)}"/>`
       : ''
-    return `${lead}<g class="label${l.hi ? ' is-highlight' : ''}"><text x="${n1(cx)}" y="${n1(l.y + 13)}" text-anchor="middle"><tspan class="label-name">${esc(l.name)}</tspan><tspan class="label-dim" x="${n1(cx)}" dy="15">${esc(l.dim)}</tspan></text></g>`
+    return `${lead}<g class="label${l.hi ? ' is-highlight' : ''}"><text x="${n1(cx)}" y="${n1(l.y + 13)}" text-anchor="middle"><tspan class="label-name">${esc(l.name)}</tspan>${l.dim ? `<tspan class="label-dim" x="${n1(cx)}" dy="15">${esc(l.dim)}</tspan>` : ''}</text></g>`
   }).join('')
 
   const summary = describeStage(layout, system)

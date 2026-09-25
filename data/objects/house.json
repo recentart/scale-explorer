@@ -16,7 +16,8 @@
   "headlineAdj": "wide",
   "profile": {
     "shape": "house",
-    "x": "footprintLength"
+    "x": "footprintLength",
+    "y": "wallHeight"
   },
   "subtitle": "Typical new US single-family home (median of homes completed in 2025)",
   "description": "The US Census Bureau surveys newly built homes every year. The median new single-family house completed in 2025 had 2,142 square feet of floor area, which is used here as the size of a typical house. New US homes are split almost evenly between one-storey and two-storey designs, with a small share of three storeys or more.",
@@ -41,6 +42,17 @@
       "approx": true,
       "qualifier": "typical",
       "note": "Same prototype house",
+      "source": "pnnl-prototype"
+    },
+    {
+      "key": "wallHeight",
+      "label": "Wall height (DOE prototype house)",
+      "kind": "length",
+      "value": 17,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Two storeys with 8.5 ft ceilings: the prototype table gives 2,366.4 sq ft of gross exterior wall around a 139.2 ft perimeter, which is 17 ft of wall height. The roof adds more",
       "source": "pnnl-prototype"
     },
     {
@@ -127,7 +139,7 @@
   ],
   "wikipedia": "https://en.wikipedia.org/wiki/Single-family_detached_home",
   "caveats": [
-    "The drawing is scaled to the 39.8 ft footprint length of the Department of Energy prototype house. Its height in the drawing is illustrative, because no authoritative source states a typical house height.",
+    "The drawing is scaled to the Department of Energy prototype house: 39.8 ft wide with 17 ft walls. The roof above the walls is illustrative, because no authoritative source states a typical roof height or overall house height.",
     "No height is given. No authoritative source (building code, planning guidance, government statistics or reputable architecture reference) was found that states a typical overall height for a two-storey house. The Census Bureau publishes the number of storeys, not heights, and building codes set minimum ceiling heights rather than typical house heights.",
     "No typical storey height is given. The only government figure found is the 8.5 ft ceiling height that DOE/PNNL assume for their energy-model prototype house. That is a modelling assumption for ceiling height, not a measured floor-to-floor or overall house height, so it appears only as a fact.",
     "The floor-area figure applies only to new US homes completed in 2025. Existing US homes and homes in other countries differ, and the median for new homes sold (2,194 sq ft) is slightly higher than for homes completed.",
