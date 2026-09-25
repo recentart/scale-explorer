@@ -1,0 +1,86 @@
+{
+  "slug": "airbus-a380",
+  "name": "Airbus A380",
+  "category": "vehicles",
+  "phrase": "an Airbus A380",
+  "aliases": [
+    "a380",
+    "superjumbo",
+    "plane",
+    "airliner",
+    "airplane"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "airbus-a380",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "A380-800, the largest passenger airliner",
+  "description": "The Airbus A380 is a double-deck, four-engine airliner and the largest passenger aircraft built. Airbus's airport planning document gives an overall length of 72.73 m, a wingspan of 79.75 m and a tail height of about 24.1 to 24.3 m. Depending on the weight variant, its maximum takeoff weight is up to 575 tonnes.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 72.73,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length (238.62 ft)",
+      "source": "airbus-ac"
+    },
+    {
+      "key": "wingspan",
+      "label": "Wingspan",
+      "kind": "length",
+      "value": 79.75,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "261.65 ft",
+      "source": "airbus-ac"
+    },
+    {
+      "key": "height",
+      "label": "Tail height",
+      "kind": "length",
+      "min": 24.12,
+      "max": 24.27,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Ground to top of the vertical tail, varying with weight and centre of gravity",
+      "source": "airbus-ac"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum takeoff weight",
+      "kind": "mass",
+      "max": 575000,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Heaviest weight variant (WV011); other variants are lighter",
+      "source": "airbus-ac"
+    }
+  ],
+  "facts": [],
+  "sources": [
+    {
+      "id": "airbus-ac",
+      "publisher": "Airbus",
+      "title": "A380 Aircraft Characteristics: Airport and Maintenance Planning (revision of December 2025)",
+      "url": "https://www.aircraft.airbus.com/sites/g/files/jlcbta126/files/2025-12/AC_A380_20251201.pdf",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Airbus_A380",
+  "caveats": [
+    "Heights depend on the aircraft's weight and balance; the range covers the loading cases in Airbus's table."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

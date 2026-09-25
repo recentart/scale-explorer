@@ -1,0 +1,117 @@
+{
+  "slug": "great-white-shark",
+  "name": "Great white shark",
+  "category": "animals",
+  "phrase": "a great white shark",
+  "aliases": [
+    "shark",
+    "white shark",
+    "jaws",
+    "carcharodon carcharias"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "great-white-shark",
+    "x": "length"
+  },
+  "scientificName": "Carcharodon carcharias",
+  "description": "The great white shark is one of the largest shark species and an apex predator, and females grow larger than males. According to the Smithsonian, average adult females are 15 to 16 ft long and males 11 to 13 ft. NOAA Fisheries gives an adult maximum of about 21 ft and a maximum weight of about 4,500 lb. Maximum size is disputed among researchers.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (average adult)",
+      "kind": "length",
+      "min": 11,
+      "max": 16,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average adults: males 11-13 ft, females 15-16 ft",
+      "source": "si-ocean-white-shark"
+    },
+    {
+      "key": "maxLength",
+      "label": "Maximum length",
+      "kind": "length",
+      "max": 21,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Adult maximum from NOAA's species summary; NOAA's biology text says 'up to about 20 feet'",
+      "source": "noaa-white-shark"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum mass",
+      "kind": "mass",
+      "max": 4500,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Maximum adult weight",
+      "source": "noaa-white-shark"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Modelling suggests a maximum total length of about 600 cm (20 ft), possibly up to 640 cm (21 ft). The maximum size is a subject of contentious debate.",
+      "source": "flmnh-white-shark"
+    },
+    {
+      "text": "Males mature at about 350-410 cm (10-13 ft) and females at about 450-500 cm (14-16 ft).",
+      "source": "flmnh-white-shark"
+    },
+    {
+      "text": "Newborn white sharks measure 109-165 cm (3.5-5 ft) in total length.",
+      "source": "flmnh-white-shark"
+    },
+    {
+      "text": "The species reaches about 600 cm and at least 1,554 kg.",
+      "source": "stri-white-shark"
+    },
+    {
+      "text": "The white shark is the largest shark in the mackerel shark family (Lamnidae).",
+      "source": "noaa-white-shark"
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa-white-shark",
+      "publisher": "NOAA Fisheries",
+      "title": "White Shark",
+      "url": "https://www.fisheries.noaa.gov/species/white-shark",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "si-ocean-white-shark",
+      "publisher": "Smithsonian Ocean (Smithsonian National Museum of Natural History)",
+      "title": "How Big are Great White Sharks?",
+      "url": "https://ocean.si.edu/ocean-life/sharks-rays/how-big-are-great-white-sharks",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "flmnh-white-shark",
+      "publisher": "Florida Museum of Natural History",
+      "title": "White Shark – Discover Fishes",
+      "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/carcharodon-carcharias/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "stri-white-shark",
+      "publisher": "Smithsonian Tropical Research Institute (Shorefishes of the Tropical Eastern Pacific)",
+      "title": "Species: Carcharodon carcharias, Great white shark",
+      "url": "https://biogeodb.stri.si.edu/sftep/en/thefishes/species/49",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_white_shark",
+  "caveats": [
+    "The live Smithsonian Ocean page blocked automated access. The average-length figures were read from an Internet Archive snapshot of the same URL (August 2026).",
+    "Sources give slightly different maximum lengths: NOAA says up to 21 ft in its summary and 'up to about 20 feet' in its text, while the Florida Museum says about 600 cm, possibly 640 cm, and mentions unconfirmed reports of 23 ft.",
+    "The Smithsonian Ocean page says the biggest white sharks reach 'up to 20 feet', slightly below NOAA's 21 ft."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

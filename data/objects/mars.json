@@ -1,0 +1,84 @@
+{
+  "slug": "mars",
+  "name": "Mars",
+  "category": "space",
+  "phrase": "Mars",
+  "aliases": [
+    "red planet",
+    "planet mars",
+    "planet"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "mars",
+    "x": "diameter"
+  },
+  "description": "Mars is the fourth planet from the Sun. At 6,792 km across the equator, it is roughly half as wide as Earth. Its mass is about 6.42 × 10^23 kg, a little over a tenth of Earth's.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 6792,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator",
+      "source": "nssdca-planets"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 6.4169e+23,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Source states 0.64169 × 10²⁴ kg",
+      "source": "nssdca-mars"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The equatorial radius of Mars is 3,396.2 km and its volumetric mean radius is 3,389.5 km.",
+      "source": "nssdca-mars"
+    },
+    {
+      "text": "NASA's fact sheet puts the mass of Mars at 0.107 times Earth's.",
+      "source": "nssdca-mars"
+    },
+    {
+      "text": "NASA describes Mars as having a radius of 2,106 miles (3,390 km), about half the size of Earth.",
+      "source": "nasa-mars"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-mars",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Mars Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nasa-mars",
+      "publisher": "NASA Science",
+      "title": "Mars: Facts",
+      "url": "https://science.nasa.gov/mars/facts/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mars",
+  "caveats": [],
+  "schemaType": "Place",
+  "updated": "2026-09-24"
+}

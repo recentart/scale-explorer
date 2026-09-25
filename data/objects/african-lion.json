@@ -1,0 +1,131 @@
+{
+  "slug": "african-lion",
+  "name": "African lion",
+  "category": "animals",
+  "phrase": "an African lion",
+  "aliases": [
+    "lion",
+    "big cat",
+    "panthera leo"
+  ],
+  "familiar": true,
+  "headline": "shoulderHeight",
+  "headlineAdj": "tall at the shoulder",
+  "profile": {
+    "shape": "african-lion",
+    "y": "shoulderHeight"
+  },
+  "scientificName": "Panthera leo",
+  "description": "The lion is the second-largest cat after the tiger, and males are clearly bigger than females. Adults stand about 3.5 to 4 ft at the shoulder. San Diego Zoo Wildlife Alliance gives head-and-body lengths of about 1.6 to 2.5 m, not counting a tail of up to about 1 m. Adults weigh roughly 120 to 225 kg, with males the heavier sex.",
+  "measures": [
+    {
+      "key": "shoulderHeight",
+      "label": "Shoulder height",
+      "kind": "length",
+      "min": 3.5,
+      "max": 4,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adults, ground to shoulder; the source also gives 1 to 1.2 m",
+      "source": "nzp-lion"
+    },
+    {
+      "key": "headBodyLength",
+      "label": "Head-body length",
+      "kind": "length",
+      "min": 158,
+      "max": 250,
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Excludes tail. Females 158-192 cm, males 172-250 cm (Wilson and Mittermeier 2009)",
+      "source": "sdzg-lion"
+    },
+    {
+      "key": "tailLength",
+      "label": "Tail length",
+      "kind": "length",
+      "min": 61,
+      "max": 100,
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Listed only in the males column of the fact sheet table; no separate female figure is given",
+      "source": "sdzg-lion"
+    },
+    {
+      "key": "mass",
+      "label": "Body mass",
+      "kind": "mass",
+      "min": 122,
+      "max": 225,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Females 122-192 kg, males 150-225 kg (record male 272 kg)",
+      "source": "sdzg-lion"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Average weights are about 190 kg for males and 126 kg for females. The record male weighed 272 kg (600 lb).",
+      "source": "sdzg-lion"
+    },
+    {
+      "text": "Shoulder height is about 123 cm (4 ft) in males and 107 cm (3.5 ft) in females.",
+      "source": "sdzg-lion"
+    },
+    {
+      "text": "A full-grown male is about 1.8-2.1 m long excluding a 1 m tail, stands about 1.2 m at the shoulder and weighs 170-230 kg. Females have a body length of about 1.5 m, a shoulder height of 0.9-1.1 m and weigh 120-180 kg.",
+      "source": "britannica-lion"
+    },
+    {
+      "text": "The Smithsonian's National Zoo says males grow to lengths of about 10 ft (3 m) with a 2 to 3 ft tail, and females to about 9 ft (2.7 m); it does not say whether the tail is included in these lengths.",
+      "source": "nzp-lion"
+    },
+    {
+      "text": "San Diego Zoo Wildlife Alliance gives a tail length of 27 to 41 in (70 to 105 cm) and male weights of 330 to 570 lb (150 to 260 kg).",
+      "source": "sdzwa-lion"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nzp-lion",
+      "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+      "title": "Lion",
+      "url": "https://nationalzoo.si.edu/animals/lion",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "sdzg-lion",
+      "publisher": "San Diego Zoo Wildlife Alliance Library",
+      "title": "Lion (Panthera leo) Fact Sheet: Physical Characteristics",
+      "url": "https://ielc.libguides.com/sdzg/factsheets/lions/characteristics",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "sdzwa-lion",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Lion",
+      "url": "https://animals.sandiegozoo.org/animals/lion",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "britannica-lion",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Lion",
+      "url": "https://www.britannica.com/animal/lion",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Lion",
+  "caveats": [
+    "The live Britannica page blocked automated access. Its figures were read from an Internet Archive snapshot of the same URL (June 2026).",
+    "The Smithsonian National Zoo's total lengths (males 10 ft, females 9 ft) do not say whether the tail is included, so they are recorded only as a fact and not as headBodyLength.",
+    "The tail-length range in the San Diego Zoo library table appears only in the males column. San Diego Zoo's animal page gives 27-41 in (70-105 cm) without splitting by sex.",
+    "Other sources put the top of the male weight range higher than 225 kg: the National Zoo gives up to 250 kg and the San Diego Zoo animal page up to 260 kg. Britannica gives female shoulder heights as low as 0.9 m, below the 3.5 ft (about 1 m) lower bound used here."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

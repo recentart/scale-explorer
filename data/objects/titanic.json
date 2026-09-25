@@ -1,0 +1,88 @@
+{
+  "slug": "titanic",
+  "name": "Titanic",
+  "category": "vehicles",
+  "phrase": "the Titanic",
+  "aliases": [
+    "rms titanic",
+    "ocean liner",
+    "ship",
+    "white star line"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "titanic",
+    "x": "length"
+  },
+  "subtitle": "RMS Titanic (1912)",
+  "description": "RMS Titanic was a British passenger liner of the White Star Line that sank on its maiden voyage in April 1912. Royal Museums Greenwich gives its overall length as 882.75 ft (269 m) and its breadth as 92.5 ft, with a gross tonnage of 46,329.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length overall",
+      "kind": "length",
+      "value": 882.75,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length (882 ft 9 in)",
+      "source": "rmg"
+    },
+    {
+      "key": "registeredLength",
+      "label": "Registered length",
+      "kind": "length",
+      "value": 852.5,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Length used for registration",
+      "source": "rmg"
+    },
+    {
+      "key": "beam",
+      "label": "Breadth",
+      "kind": "length",
+      "value": 92.5,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Width of the hull",
+      "source": "rmg"
+    },
+    {
+      "key": "depth",
+      "label": "Depth",
+      "kind": "length",
+      "value": 59.6,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Registered depth of the hull",
+      "source": "rmg"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Titanic's gross tonnage was 46,329 and its net tonnage 21,831. Tonnage measures volume, not weight.",
+      "source": "rmg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "rmg",
+      "publisher": "Royal Museums Greenwich",
+      "title": "Research guide D1: RMS Titanic fact sheet",
+      "url": "https://www.rmg.co.uk/collections/research-guides/research-guide-d1-rms-titanic-fact-sheet",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Titanic",
+  "caveats": [
+    "The drawing is scaled to the 882.75 ft overall length; the height of the funnels and masts in the drawing is illustrative."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

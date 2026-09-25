@@ -1,0 +1,86 @@
+{
+  "slug": "aircraft-carrier",
+  "name": "Aircraft carrier",
+  "category": "vehicles",
+  "phrase": "an aircraft carrier",
+  "aliases": [
+    "carrier",
+    "supercarrier",
+    "ford class",
+    "nimitz",
+    "warship",
+    "ship"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "aircraft-carrier",
+    "x": "length"
+  },
+  "subtitle": "US Navy Gerald R. Ford-class supercarrier",
+  "description": "The Gerald R. Ford class is the newest class of US Navy nuclear-powered aircraft carriers. Naval Technology gives the class a length of 333 m, a flight deck 78 m wide and a displacement of about 100,000 tonnes.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 333,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Ford-class length as given by Naval Technology; some sources quote 337 m (1,106 ft) overall",
+      "source": "navaltech"
+    },
+    {
+      "key": "flightDeckWidth",
+      "label": "Flight deck width",
+      "kind": "length",
+      "value": 78,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Maximum width of the flight deck",
+      "source": "navaltech"
+    },
+    {
+      "key": "beam",
+      "label": "Beam",
+      "kind": "length",
+      "value": 40.8,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Hull width",
+      "source": "navaltech"
+    },
+    {
+      "key": "mass",
+      "label": "Displacement",
+      "kind": "mass",
+      "value": 100000,
+      "unit": "t",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Full-load displacement: the mass of water the ship displaces",
+      "source": "navaltech"
+    }
+  ],
+  "facts": [],
+  "sources": [
+    {
+      "id": "navaltech",
+      "publisher": "Naval Technology",
+      "title": "Gerald R. Ford-class Nuclear-Powered Aircraft Carriers, US",
+      "url": "https://www.naval-technology.com/projects/gerald-r-ford-class/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Gerald_R._Ford-class_aircraft_carrier",
+  "caveats": [
+    "The US Navy fact file blocks automated access, so these figures come from the trade publication Naval Technology. Other published figures give 1,106 ft (337 m) as the overall length, about 1 percent more.",
+    "The drawing is a simplified side view scaled to the 333 m length; its height is illustrative."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

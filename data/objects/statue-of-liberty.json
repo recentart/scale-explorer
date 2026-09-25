@@ -1,0 +1,150 @@
+{
+  "slug": "statue-of-liberty",
+  "name": "Statue of Liberty",
+  "category": "structures",
+  "phrase": "the Statue of Liberty",
+  "aliases": [
+    "liberty",
+    "lady liberty",
+    "statue",
+    "liberty enlightening the world"
+  ],
+  "familiar": true,
+  "headline": "heightGroundToTorch",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "statue-of-liberty",
+    "y": "heightGroundToTorch"
+  },
+  "description": "The Statue of Liberty stands in New York Harbor. Its thin copper skin is held up by an internal framework, and the figure stands on a pedestal on top of a concrete foundation. The statue alone is about 46 m from its base to the torch, and the whole monument is about 93 m from the ground to the tip of the torch.",
+  "measures": [
+    {
+      "key": "heightGroundToTorch",
+      "label": "Ground to tip of torch",
+      "kind": "length",
+      "value": 92.99,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Whole monument, ground level to the tip of the torch, including foundation and pedestal (NPS also gives 305 ft 1 in)",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "key": "heightStatue",
+      "label": "Statue height (base to torch)",
+      "kind": "length",
+      "value": 46.05,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Statue only, top of base to torch (NPS also gives 151 ft 1 in)",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "key": "groundToPedestalTop",
+      "label": "Ground to top of pedestal",
+      "kind": "length",
+      "value": 46.94,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Ground level to the top of the pedestal, including the foundation (NPS also gives 154 ft 0 in)",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "key": "pedestalHeight",
+      "label": "Pedestal height",
+      "kind": "length",
+      "value": 89,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Pedestal only, excluding the 65 ft concrete foundation beneath it (source also gives 27 m)",
+      "source": "asce-metsection"
+    },
+    {
+      "key": "heelToHead",
+      "label": "Heel to top of head",
+      "kind": "length",
+      "value": 33.86,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "The figure itself, heel to top of head, excluding raised arm and torch (NPS also gives 111 ft 1 in)",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "key": "copperMass",
+      "label": "Weight of copper skin",
+      "kind": "mass",
+      "value": 176000,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Copper sheeting only",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "key": "frameworkMass",
+      "label": "Weight of framework",
+      "kind": "mass",
+      "value": 440000,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Internal support framework only",
+      "source": "nps-statue-statistics"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The concrete foundation weighs 54,000,000 lb.",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "text": "The concrete foundation under the pedestal is 65 ft (20 m) tall and was completed in 1884.",
+      "source": "asce-metsection"
+    },
+    {
+      "text": "The copper skin is only 3/32 of an inch thick, about the thickness of two pennies.",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "text": "In wind the statue can sway up to 3 inches and the torch up to 6 inches.",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "text": "The current torch, installed in 1986, is copper covered in 24-karat gold leaf. The original torch was moved to the Torch Gallery of the Statue of Liberty Museum in 2018.",
+      "source": "nps-statue-statistics"
+    },
+    {
+      "text": "The right arm is 42 ft long, the index finger 8 ft long, and the head measures 17 ft 3 in from chin to cranium.",
+      "source": "nps-statue-statistics"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps-statue-statistics",
+      "publisher": "National Park Service",
+      "title": "Statue Statistics - Statue Of Liberty National Monument",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "asce-metsection",
+      "publisher": "American Society of Civil Engineers, Metropolitan Section (History & Heritage landmarks)",
+      "title": "Statue of Liberty",
+      "url": "https://www.ascemetsection.org/committees/history-and-heritage/landmarks/statue-of-liberty",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+  "caveats": [
+    "NPS gives no single total weight for the statue. It lists the copper, the framework and the concrete foundation separately.",
+    "NPS lists no separate height for the pedestal alone; its 'Ground to pedestal' figure (154 ft) includes the foundation. The 89 ft pedestal height comes from the ASCE Metropolitan Section. Its 65 ft foundation plus 89 ft pedestal adds up to the NPS figure of 154 ft.",
+    "ASCE Metropolitan Section independently gives the same overall height (305 ft, 93 m) and statue height (151 ft, 46 m) as NPS. Its weights are much lower, though: 62,000 lb of copper and 250,000 lb of iron framework, against 176,000 lb and 440,000 lb from NPS. The NPS figures are used because NPS is the official source, but the weights should be treated with some caution.",
+    "NPS gives each height in both feet-and-inches and metres; the metric values are recorded here and the imperial ones are in the notes."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-24"
+}

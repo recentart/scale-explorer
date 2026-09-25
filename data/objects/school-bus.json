@@ -1,0 +1,118 @@
+{
+  "slug": "school-bus",
+  "name": "School bus",
+  "category": "vehicles",
+  "phrase": "a school bus",
+  "aliases": [
+    "bus",
+    "yellow bus",
+    "type c bus"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "school-bus",
+    "x": "length"
+  },
+  "subtitle": "Conventional (Type C) full-size school bus",
+  "description": "The familiar yellow school bus in the United States is usually a Type C, or conventional, bus: the engine sits under a hood in front of the windshield and the entrance door is behind the front wheels. In a study funded through the US DOT university transportation centers program, a 65/66-passenger Type C bus had a manufacturer-specified length of about 35.6 ft (10.9 m), and the national standards of the time capped school buses at 40 ft. Blue Bird lists its current Vision model as 96 inches wide and 121 to 128 inches tall.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (65/66-passenger Type C)",
+      "kind": "length",
+      "value": 35.63,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Manufacturer-specified overall length of a 65/66-passenger Type C bus used as a design vehicle in the study",
+      "source": "gattis"
+    },
+    {
+      "key": "maxLength",
+      "label": "Maximum length (national standards)",
+      "kind": "length",
+      "max": 40,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Overall length limit in the 1995 National Standards for School Transportation, as cited by the study",
+      "source": "gattis"
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "min": 121,
+      "max": 128,
+      "unit": "in",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Blue Bird Vision overall height, depending on configuration",
+      "source": "bluebird"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 96,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Blue Bird Vision exterior width",
+      "source": "bluebird"
+    },
+    {
+      "key": "gvwr",
+      "label": "Gross vehicle weight rating",
+      "kind": "mass",
+      "max": 33000,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Blue Bird Vision maximum GVWR, the most the loaded bus may weigh",
+      "source": "bluebird"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The Blue Bird Vision seats up to 83 passengers in its diesel, propane and gasoline versions.",
+      "source": "bluebird"
+    },
+    {
+      "text": "North Carolina's Type C specification limits body width to 96 inches and lists approximate body lengths of 244 to 402 inches for 41- to 72-passenger buses.",
+      "source": "ncdpi"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gattis",
+      "publisher": "Mack-Blackwell Transportation Center (US DOT University Transportation Centers program)",
+      "title": "Large School Bus Design Vehicle Dimensions (MBTC FR 1054-1, J. L. Gattis and M. D. Howard, 1998)",
+      "url": "https://rosap.ntl.bts.gov/view/dot/14445",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "bluebird",
+      "publisher": "Blue Bird Corporation",
+      "title": "Blue Bird Vision Diesel specification sheet",
+      "url": "https://d20zhcxsm1cs5t.cloudfront.net/uploads/documents/type-c-blue-bird-vision/Blue-Bird-BBCV-Diesel-Spec-Sheet.pdf",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "ncdpi",
+      "publisher": "North Carolina Department of Public Instruction",
+      "title": "2006 Type-C School Bus Specifications",
+      "url": "https://www.ncbussafety.org/documents/buses/typecspecs2006.pdf",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/School_bus",
+  "caveats": [
+    "School bus lengths vary with seating capacity. The 35.6 ft length is one manufacturer-specified 65/66-passenger bus from a 1998 study; larger buses approach 40 ft.",
+    "The current Blue Bird specification sheet gives height and width but not overall length."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

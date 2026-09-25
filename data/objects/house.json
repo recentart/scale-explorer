@@ -1,0 +1,138 @@
+{
+  "slug": "house",
+  "name": "House",
+  "category": "buildings",
+  "phrase": "a typical new house",
+  "aliases": [
+    "home",
+    "family home",
+    "single-family home",
+    "two-storey house",
+    "two-story house",
+    "building"
+  ],
+  "familiar": true,
+  "headline": "footprintLength",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "house",
+    "x": "footprintLength"
+  },
+  "subtitle": "Typical new US single-family home (median of homes completed in 2025)",
+  "description": "The US Census Bureau surveys newly built homes every year. The median new single-family house completed in 2025 had 2,142 square feet of floor area, which is used here as the size of a typical house. New US homes are split almost evenly between one-storey and two-storey designs, with a small share of three storeys or more.",
+  "measures": [
+    {
+      "key": "footprintLength",
+      "label": "Footprint length (DOE prototype house)",
+      "kind": "length",
+      "value": 39.8,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Two-storey single-family prototype that the US Department of Energy uses to represent a typical new home",
+      "source": "pnnl-prototype"
+    },
+    {
+      "key": "footprintWidth",
+      "label": "Footprint depth (DOE prototype house)",
+      "kind": "length",
+      "value": 29.8,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Same prototype house",
+      "source": "pnnl-prototype"
+    },
+    {
+      "key": "floorArea",
+      "label": "Floor area (median)",
+      "kind": "area",
+      "value": 2142,
+      "unit": "ft2",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Median floor area of new single-family houses completed in the US in 2025 (Census Bureau Survey of Construction)",
+      "source": "census-chars-highlights"
+    },
+    {
+      "key": "prototypeFloorArea",
+      "label": "Floor area (DOE prototype house)",
+      "kind": "area",
+      "value": 2376,
+      "unit": "ft2",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Conditioned floor area of the prototype, not counting any basement",
+      "source": "pnnl-prototype"
+    }
+  ],
+  "facts": [
+    {
+      "text": "About 1,005,000 single-family homes were completed in the US in 2025.",
+      "source": "census-chars-highlights"
+    },
+    {
+      "text": "The median new single-family home sold in 2025 had 2,194 square feet, slightly more than the median for homes completed.",
+      "source": "census-chars-highlights"
+    },
+    {
+      "text": "The average floor area of new single-family homes completed in 2025 was 2,378 square feet; regional medians ranged from 1,969 sq ft in the Midwest to 2,459 sq ft in the Northeast.",
+      "source": "census-sqft"
+    },
+    {
+      "text": "Of new single-family homes completed in 2025, 48% had one storey, 46% had two storeys (a category that includes 1½-storey and split-level houses) and 5% had three or more.",
+      "source": "census-chars-stories"
+    },
+    {
+      "text": "The Department of Energy prototype is a two-storey house with 8.5 ft ceilings.",
+      "source": "pnnl-prototype"
+    }
+  ],
+  "sources": [
+    {
+      "id": "census-chars-highlights",
+      "publisher": "US Census Bureau",
+      "title": "Highlights of 2025 Characteristics of New Housing",
+      "url": "https://www.census.gov/construction/chars/highlights.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "census-chars-stories",
+      "publisher": "US Census Bureau",
+      "title": "Number of Stories in New Single-Family Houses Completed (annual table)",
+      "url": "https://www.census.gov/construction/chars/xls/stories_cust.xls",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "census-sqft",
+      "publisher": "US Census Bureau",
+      "title": "Median and Average Square Feet of Floor Area in New Single-Family Houses Completed (annual table)",
+      "url": "https://www.census.gov/construction/chars/xls/squarefeet_cust.xls",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "census-chars-current",
+      "publisher": "US Census Bureau",
+      "title": "Characteristics of New Housing: Current Data",
+      "url": "https://www.census.gov/construction/chars/current.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "pnnl-prototype",
+      "publisher": "Pacific Northwest National Laboratory for the US Department of Energy (Building Energy Codes Program)",
+      "title": "Methodology for Evaluating Residential Energy Code Updates (PNNL-37098, December 2024), Table 1: Single-Family Prototype Characteristics",
+      "url": "https://www.energycodes.gov/sites/default/files/2024-10/residential_methodology_2024.pdf",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Single-family_detached_home",
+  "caveats": [
+    "The drawing is scaled to the 39.8 ft footprint length of the Department of Energy prototype house. Its height in the drawing is illustrative, because no authoritative source states a typical house height.",
+    "No height is given. No authoritative source (building code, planning guidance, government statistics or reputable architecture reference) was found that states a typical overall height for a two-storey house. The Census Bureau publishes the number of storeys, not heights, and building codes set minimum ceiling heights rather than typical house heights.",
+    "No typical storey height is given. The only government figure found is the 8.5 ft ceiling height that DOE/PNNL assume for their energy-model prototype house. That is a modelling assumption for ceiling height, not a measured floor-to-floor or overall house height, so it appears only as a fact.",
+    "The floor-area figure applies only to new US homes completed in 2025. Existing US homes and homes in other countries differ, and the median for new homes sold (2,194 sq ft) is slightly higher than for homes completed.",
+    "The 2,142 sq ft median appears both on the Census highlights page and in the Census detailed square-footage table; both come from the same Census survey."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-24"
+}

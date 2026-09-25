@@ -1,0 +1,57 @@
+{
+  "slug": "cruise-ship",
+  "name": "Cruise ship",
+  "category": "vehicles",
+  "phrase": "a giant cruise ship",
+  "aliases": [
+    "cruise liner",
+    "legend of the seas",
+    "icon of the seas",
+    "ship",
+    "boat"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "cruise-ship",
+    "x": "length"
+  },
+  "subtitle": "Example: Legend of the Seas (Icon class, 2026)",
+  "description": "Legend of the Seas, the third Icon-class ship built by Meyer Turku in Finland for Royal Caribbean, is one of the largest cruise ships ever built. The shipyard lists it as 365 m long, with a gross tonnage of 250,800 and room for 5,610 passengers. Gross tonnage measures a ship's enclosed volume, not its weight.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 365,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length as listed by the builder",
+      "source": "meyer"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Meyer Turku lists Legend of the Seas at 250,800 gross tonnage and 5,610 passengers.",
+      "source": "meyer"
+    }
+  ],
+  "sources": [
+    {
+      "id": "meyer",
+      "publisher": "Meyer Turku",
+      "title": "Legend of the Seas",
+      "url": "https://www.meyerturku.fi/en/products-and-technology/world-class-cruise-ships/legend-of-the-seas/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Icon-class_cruise_ship",
+  "caveats": [
+    "Cruise ships vary widely in size. This page uses one of the largest as an example.",
+    "The drawing is scaled to the 365 m length; its height is illustrative."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

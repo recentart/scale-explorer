@@ -1,0 +1,134 @@
+{
+  "slug": "eiffel-tower",
+  "name": "Eiffel Tower",
+  "category": "structures",
+  "phrase": "the Eiffel Tower",
+  "aliases": [
+    "eiffel",
+    "tour eiffel",
+    "paris tower",
+    "tower"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "eiffel-tower",
+    "x": "baseWidth",
+    "y": "height"
+  },
+  "description": "The Eiffel Tower is Gustave Eiffel's open-lattice wrought-iron tower on the Champ de Mars in Paris, built for the 1889 Exposition Universelle. Broadcast antennas have raised it above its original 312 m, most recently a DAB+ radio antenna added in March 2022, and it now stands 330 m tall. Its four pillars form a square 125 m on each side, and with all its installations it weighs about 10,100 tonnes.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height including antennas",
+      "kind": "length",
+      "value": 330,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Current height to the top of the antennas, including the DAB+ antenna added in March 2022 (the English version of the official site and SETE's press kit give 1,083 ft)",
+      "source": "toureiffel-fr"
+    },
+    {
+      "key": "baseWidth",
+      "label": "Base width (side of square)",
+      "kind": "length",
+      "value": 125,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Side of the square formed by the four pillars at ground level",
+      "source": "toureiffel-fr"
+    },
+    {
+      "key": "mass",
+      "label": "Total weight",
+      "kind": "mass",
+      "value": 10100,
+      "unit": "t",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Whole tower including its installations, in metric tonnes",
+      "source": "toureiffel-fr"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Before any antennas were added, the tower was 312 m tall.",
+      "source": "toureiffel-fr"
+    },
+    {
+      "text": "The metal frame on its own weighs 7,300 tonnes.",
+      "source": "toureiffel-fr"
+    },
+    {
+      "text": "Each of the four pillars is 25 m wide at ground level.",
+      "source": "toureiffel-fr"
+    },
+    {
+      "text": "The floors are at 57 m (first), 115 m (second) and 276 m (third) above the ground.",
+      "source": "toureiffel-fr"
+    },
+    {
+      "text": "The English version of the official site gives the current height as 1,083 feet and the original height without antennas as 1,024 feet.",
+      "source": "toureiffel-en"
+    },
+    {
+      "text": "Broadcast antennas raised the tower to 1,052 ft in 1957 and to 1,063 ft in 2000; a 20 ft DAB+ antenna added in March 2022 brought it to 1,083 ft.",
+      "source": "sete-press-kit"
+    },
+    {
+      "text": "Construction took 2 years, 2 months and 5 days, from January 28, 1887 to March 31, 1889.",
+      "source": "sete-press-kit"
+    },
+    {
+      "text": "The staircase in the East pillar has 1,665 steps from the esplanade to the top.",
+      "source": "sete-press-kit"
+    },
+    {
+      "text": "The tower is built almost entirely of open-lattice wrought iron.",
+      "source": "britannica-eiffel"
+    }
+  ],
+  "sources": [
+    {
+      "id": "toureiffel-fr",
+      "publisher": "SETE (official Eiffel Tower site, toureiffel.paris), read via Internet Archive capture of 10 Sep 2026",
+      "title": "La Tour en chiffres (Hauteur, poids, construction)",
+      "url": "https://web.archive.org/web/20260910034057/https://www.toureiffel.paris/fr/le-monument/chiffres-cle",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "toureiffel-en",
+      "publisher": "SETE (official Eiffel Tower site, toureiffel.paris), read via Internet Archive capture of 21 Sep 2026",
+      "title": "The Eiffel Tower facts, height & weight (key figures)",
+      "url": "https://web.archive.org/web/20260921094537/https://www.toureiffel.paris/en/the-monument/key-figures",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "sete-press-kit",
+      "publisher": "SETE (Société d'Exploitation de la Tour Eiffel), copy hosted by tarifs.org",
+      "title": "The Eiffel Tower Press Kit (English)",
+      "url": "https://www.tarifs.org/docs/eiffel/eiffel-tower-press-kit.pdf",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "britannica-eiffel",
+      "publisher": "Encyclopædia Britannica",
+      "title": "Eiffel Tower",
+      "url": "https://www.britannica.com/topic/Eiffel-Tower-Paris-France",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+  "caveats": [
+    "The live official site toureiffel.paris returns HTTP 403 to automated requests. Its key-figures pages were read from Internet Archive captures made on 10 Sep 2026 (French) and 21 Sep 2026 (English), which are the URLs cited.",
+    "The French official page gives heights in metres (330 m now, 312 m originally) and the English one gives them in feet (1,083 ft and 1,024 ft). The English page says '10,100 tons' where the French page says '10 100 tonnes', meaning metric tonnes.",
+    "The press kit is SETE's own document but was read from a third-party copy on tarifs.org. It is undated and mentions works due to finish in 2023, so it probably dates from 2022.",
+    "Britannica independently gives the same 330 m (1,083 ft) height and 10,100-ton weight. It also describes the tower as 300 m tall standing on a 5 m base, so quoted 'original heights' depend on what is included.",
+    "The older educational-card PDF hosted by Minecraft Education, cited in the earlier research, was dropped. It is not an official page, and its 'current height' of 324 m is out of date."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-24"
+}

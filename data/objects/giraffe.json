@@ -1,0 +1,136 @@
+{
+  "slug": "giraffe",
+  "name": "Giraffe",
+  "category": "animals",
+  "phrase": "a giraffe",
+  "aliases": [
+    "tallest animal",
+    "giraffa camelopardalis"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "giraffe",
+    "y": "height"
+  },
+  "subtitle": "Standing height to the top of the head",
+  "scientificName": "Giraffa camelopardalis",
+  "description": "The giraffe is the tallest living land animal, and males are markedly taller and heavier than females. San Diego Zoo Wildlife Alliance gives standing heights of up to about 18 ft for males and 14 ft for females. In one measured sample, adults averaged about 2.8 m at the shoulder for females and 3.3 m for males, and about 830 kg for females and 1,190 kg for males. Britannica gives maximum weights of about 1,930 kg for males and 1,180 kg for females.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (tallest females to tallest males)",
+      "kind": "length",
+      "min": 14,
+      "max": 18,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Maximum standing heights: females up to 14 ft (4.3 m), males up to 18 ft (5.5 m)",
+      "source": "sdzwa-giraffe"
+    },
+    {
+      "key": "shoulderHeight",
+      "label": "Shoulder height",
+      "kind": "length",
+      "min": 2.8,
+      "max": 3.31,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Mean shoulder height of measured adults: females 2.80 m, males 3.31 m (Ciofolo and Le Pendu 2013; 15-18 individuals). The bracketed values in the source are plus or minus 1 standard deviation, not minimum to maximum",
+      "source": "sdzg-giraffe"
+    },
+    {
+      "key": "mass",
+      "label": "Body mass",
+      "kind": "mass",
+      "min": 828.4,
+      "max": 1191.8,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Mean weight of measured adults: females 828.4 kg, males 1,191.8 kg (Ciofolo and Le Pendu 2013; 15-18 individuals)",
+      "source": "sdzg-giraffe"
+    },
+    {
+      "key": "maxMass",
+      "label": "Maximum mass (males)",
+      "kind": "mass",
+      "max": 1930,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Adult males",
+      "source": "britannica-giraffe"
+    },
+    {
+      "key": "maxMassFemale",
+      "label": "Maximum mass (females)",
+      "kind": "mass",
+      "max": 1180,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Adult females",
+      "source": "britannica-giraffe"
+    }
+  ],
+  "facts": [
+    {
+      "text": "In a sample of 15 to 18 measured giraffes, mean weight was 1,191.8 kg for males and 828.4 kg for females.",
+      "source": "sdzg-giraffe"
+    },
+    {
+      "text": "Mean total length from snout to tail tip was 5.05 m in males and 4.44 m in females in the same sample.",
+      "source": "sdzg-giraffe"
+    },
+    {
+      "text": "The giraffe's tail measures 76 to 110 cm.",
+      "source": "sdzg-giraffe"
+    },
+    {
+      "text": "Males may exceed 5.5 m (18 ft) in height, and the tallest females reach about 4.5 m. Giraffes grow to nearly full height by age four but keep gaining weight until seven or eight.",
+      "source": "britannica-giraffe"
+    },
+    {
+      "text": "A giraffe's neck is about 6 ft (1.8 m) long, and its legs are also about 6 ft long.",
+      "source": "sdzwa-giraffe"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sdzwa-giraffe",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Giraffe",
+      "url": "https://animals.sandiegozoo.org/animals/giraffe",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "sdzg-giraffe",
+      "publisher": "San Diego Zoo Wildlife Alliance Library",
+      "title": "Giraffes (Giraffa spp.) Fact Sheet: Physical Characteristics",
+      "url": "https://ielc.libguides.com/sdzg/factsheets/giraffes/characteristics",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "britannica-giraffe",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Giraffe",
+      "url": "https://www.britannica.com/animal/giraffe",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Giraffe",
+  "caveats": [
+    "Sources give only per-sex maxima for height, so these are stored as separate 'up to' values for males and females, not as a range. Britannica agrees on 18 ft (5.5 m) for males, which it says may be exceeded, but puts the tallest females at about 4.5 m rather than the San Diego Zoo's 4.3 m.",
+    "The San Diego Zoo animal page gives maximum weights of 3,000 lb (1,360 kg) for males and 1,500 lb (680 kg) for females. These are not used because the measured female mean (828.4 kg) already exceeds the female maximum, and Britannica gives much higher maxima (1,930 kg and 1,180 kg).",
+    "The shoulder-height and mass ranges run from the female mean to the male mean of a single small study (15-18 animals), not from the smallest to the largest adults.",
+    "The San Diego Zoo library fact sheet treats giraffes as Giraffa spp. because giraffe taxonomy is debated; Britannica now recognises four species.",
+    "The live Britannica page blocked automated access. Its figures were read from an Internet Archive snapshot (May 2026).",
+    "The Giraffe Conservation Foundation facts page gives no overall height or weight figures, and the Smithsonian National Zoo has no giraffe page."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

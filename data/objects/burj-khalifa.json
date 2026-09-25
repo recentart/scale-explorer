@@ -1,0 +1,98 @@
+{
+  "slug": "burj-khalifa",
+  "name": "Burj Khalifa",
+  "category": "buildings",
+  "phrase": "the Burj Khalifa",
+  "aliases": [
+    "burj",
+    "tallest building",
+    "skyscraper",
+    "dubai tower",
+    "khalifa tower"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "burj-khalifa",
+    "y": "heightToTip"
+  },
+  "description": "Burj Khalifa in Dubai, United Arab Emirates, completed in 2010, is the world's tallest building. CTBUH measures it at 828 m to its architectural top, which includes the spire, and 829.8 m to its very tip. It has 163 floors above ground, but the highest occupied floor is at 585.4 m, far below the top of the spire.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 828,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CTBUH height to architectural top, including the spire but not antennas (2,717 ft)",
+      "source": "ctbuh-burj"
+    },
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 829.8,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CTBUH height to the highest point of the building, including antennas and other functional-technical equipment (2,723 ft)",
+      "source": "ctbuh-burj"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 585.4,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CTBUH occupied height (1,921 ft)",
+      "source": "ctbuh-burj"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Burj Khalifa has 163 floors above ground and 1 below ground.",
+      "source": "ctbuh-burj"
+    },
+    {
+      "text": "It was completed in 2010.",
+      "source": "ctbuh-burj"
+    },
+    {
+      "text": "Its observatory is 555.7 m above the ground.",
+      "source": "ctbuh-burj"
+    },
+    {
+      "text": "Guinness World Records lists it as the tallest building, at 828 m (2,716 ft 6 in).",
+      "source": "gwr-tallest-building"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ctbuh-burj",
+      "publisher": "Council on Tall Buildings and Urban Habitat (The Skyscraper Center)",
+      "title": "Burj Khalifa - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/burj-khalifa/3",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "gwr-tallest-building",
+      "publisher": "Guinness World Records",
+      "title": "Tallest building",
+      "url": "https://www.guinnessworldrecords.com/world-records/tallest-building",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+  "caveats": [
+    "The commonly quoted 828 m is CTBUH's height to the architectural top, which includes the spire; it is not the height to the tip. CTBUH gives 829.8 m to the tip. The task brief called 828 m the 'to tip' height, which is not correct.",
+    "Guinness World Records independently gives 828 m (2,716 ft 6 in), which matches CTBUH's architectural height.",
+    "The official site burjkhalifa.ae returned HTTP 403, both live and through the Internet Archive, so no figures were read from it."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-24"
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "mount-everest",
+  "name": "Mount Everest",
+  "category": "nature",
+  "phrase": "Mount Everest",
+  "aliases": [
+    "everest",
+    "mt everest",
+    "sagarmatha",
+    "qomolangma",
+    "chomolungma",
+    "highest mountain",
+    "mountain"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "mount-everest",
+    "y": "height"
+  },
+  "subtitle": "Sagarmatha / Qomolangma, Nepal-China border",
+  "description": "Mount Everest, on the border between Nepal and China, is the highest mountain on Earth above sea level. A Nepali survey team measured the summit in 2019 and a Chinese team in 2020, and on 8 December 2020 the two countries jointly announced a height of 8,848.86 m (29,031.69 ft). The figure includes the snow and ice on the summit, and the National Geographic Society has adopted it as Everest's official height.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height above sea level",
+      "kind": "length",
+      "value": 8848.86,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Summit height including snow and ice cover; joint Nepal-China measurement announced 8 December 2020",
+      "source": "kathmandu-post"
+    }
+  ],
+  "facts": [
+    {
+      "text": "National Geographic reports the jointly announced height as 29,031.69 feet above sea level.",
+      "source": "natgeo"
+    },
+    {
+      "text": "The height was announced on 8 December 2020 in a joint statement by the Survey Department of Nepal and Chinese authorities.",
+      "source": "natgeo"
+    },
+    {
+      "text": "The National Geographic Society adopted the new figure, which includes the summit's snow and ice cover, as Everest's official height.",
+      "source": "natgeo"
+    },
+    {
+      "text": "The Nepali survey team summited on 22 May 2019 to place a GPS receiver; a Chinese survey team measured from the north side in spring 2020.",
+      "source": "natgeo"
+    },
+    {
+      "text": "The height was announced at the same time in Kathmandu and Beijing, at an event attended by Nepal's foreign minister Pradeep Gyawali and China's foreign minister Wang Yi; a separate 'rock height' was not announced.",
+      "source": "kathmandu-post"
+    },
+    {
+      "text": "The previously accepted height was 8,848 metres (29,028 feet).",
+      "source": "kathmandu-post"
+    }
+  ],
+  "sources": [
+    {
+      "id": "kathmandu-post",
+      "publisher": "The Kathmandu Post",
+      "title": "8,848.86 metres. That's the height of Mt Everest now",
+      "url": "https://kathmandupost.com/national/2020/12/08/it-s-official-mount-everest-is-8-848-86-metres-tall",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "natgeo",
+      "publisher": "National Geographic",
+      "title": "Mount Everest is more than two feet taller, China and Nepal announce",
+      "url": "https://www.nationalgeographic.com/science/article/new-height-of-mount-everest-announced-by-china-and-nepal",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Everest",
+  "caveats": [
+    "Britannica refused automated access (HTTP 403), so the figure comes from The Kathmandu Post's report of the official announcement, cross-checked against National Geographic's feet figure (29,031.69 ft).",
+    "The height includes the summit snow and ice cap; the underlying rock height was not announced.",
+    "The mountain outline is illustrative; only its height above sea level is to scale."
+  ],
+  "schemaType": "Mountain",
+  "updated": "2026-09-24"
+}

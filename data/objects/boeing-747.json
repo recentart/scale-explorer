@@ -1,0 +1,87 @@
+{
+  "slug": "boeing-747",
+  "name": "Boeing 747",
+  "category": "vehicles",
+  "phrase": "a Boeing 747",
+  "aliases": [
+    "747",
+    "jumbo jet",
+    "747-8",
+    "plane",
+    "airliner",
+    "airplane"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "boeing-747",
+    "x": "length",
+    "y": "height"
+  },
+  "subtitle": "747-8, the longest version",
+  "description": "The Boeing 747 'jumbo jet' first flew in 1969 and is known for its hump-shaped upper deck. Its final version, the 747-8, is also the longest: Boeing's airport planning document gives it a length of 250 ft 2 in (76.25 m), a wingspan of 224 ft 5 in (68.40 m) and a maximum takeoff weight of 987,000 lb.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 76.25,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "747-8 overall length (250 ft 2 in); earlier 747 versions were shorter",
+      "source": "boeing-acaps"
+    },
+    {
+      "key": "wingspan",
+      "label": "Wingspan",
+      "kind": "length",
+      "value": 68.4,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "747-8 (224 ft 5 in)",
+      "source": "boeing-acaps"
+    },
+    {
+      "key": "height",
+      "label": "Tail height",
+      "kind": "length",
+      "min": 18.97,
+      "max": 19.51,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Ground to top of the tail, varying with loading and attitude (62 ft 3 in to 64 ft 0 in)",
+      "source": "boeing-acaps"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum takeoff weight",
+      "kind": "mass",
+      "max": 987000,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "747-8 passenger version (447,695 kg)",
+      "source": "boeing-acaps"
+    }
+  ],
+  "facts": [],
+  "sources": [
+    {
+      "id": "boeing-acaps",
+      "publisher": "Boeing Commercial Airplanes",
+      "title": "747-8 Airplane Characteristics for Airport Planning (D6-58326-3, Rev D, December 2024)",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-8_Rev_D.pdf",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Boeing_747",
+  "caveats": [
+    "Figures are for the 747-8. Earlier versions such as the 747-400 were shorter; their planning document could not be retrieved, so no figure for them is shown."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

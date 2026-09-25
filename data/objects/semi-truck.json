@@ -1,0 +1,116 @@
+{
+  "slug": "semi-truck",
+  "name": "Semi truck",
+  "category": "vehicles",
+  "phrase": "a semi truck",
+  "aliases": [
+    "semi",
+    "truck",
+    "lorry",
+    "tractor trailer",
+    "18 wheeler",
+    "big rig"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "semi-truck",
+    "x": "length"
+  },
+  "subtitle": "Tractor with a long-haul semitrailer (interstate design vehicle)",
+  "description": "A semi truck is a tractor unit pulling a semitrailer. Road designers use the WB-67 'interstate' design vehicle, with a 67 ft wheelbase and an overall length of about 74 ft, to represent long-haul tractor-trailers. Federal rules set the width at 102 inches on the National Network and the gross weight limit at 80,000 lb, while height limits are set by the states.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Overall length (WB-67 design vehicle)",
+      "kind": "length",
+      "value": 74,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Long-haul tractor-semitrailer that road designers plan for; real rigs vary",
+      "source": "seattle"
+    },
+    {
+      "key": "height",
+      "label": "Height (typical state limits)",
+      "kind": "length",
+      "min": 13.5,
+      "max": 14,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Most state height limits range from 13 ft 6 in to 14 ft; there is no federal height limit",
+      "source": "fhwa-size"
+    },
+    {
+      "key": "width",
+      "label": "Width (federal limit)",
+      "kind": "length",
+      "value": 102,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Width that states must allow on the National Network",
+      "source": "fhwa-overview"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum gross weight",
+      "kind": "mass",
+      "max": 80000,
+      "unit": "lb",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Federal gross vehicle weight limit",
+      "source": "fhwa-overview"
+    },
+    {
+      "key": "minTrailer",
+      "label": "Minimum semitrailer length states must allow",
+      "kind": "length",
+      "value": 48,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "at least",
+      "note": "Federal minimum for the semitrailer in a tractor-semitrailer combination",
+      "source": "fhwa-overview"
+    }
+  ],
+  "facts": [
+    {
+      "text": "States may not impose an overall length limit on a tractor-semitrailer combination on the National Network.",
+      "source": "fhwa-size"
+    }
+  ],
+  "sources": [
+    {
+      "id": "seattle",
+      "publisher": "Seattle Department of Transportation (Streets Illustrated)",
+      "title": "3.11 Freight",
+      "url": "https://streetsillustrated.seattle.gov/design-standards/freight/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "fhwa-size",
+      "publisher": "Federal Highway Administration",
+      "title": "Federal Size Regulations for Commercial Motor Vehicles (FHWA-HOP-04-022)",
+      "url": "https://ops.fhwa.dot.gov/freight/publications/size_regs_final_rpt/index.htm",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "fhwa-overview",
+      "publisher": "Federal Highway Administration",
+      "title": "Vehicle Size and Weight Program Overview",
+      "url": "https://ops.fhwa.dot.gov/freight/sw/overview/index.htm",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Semi-trailer_truck",
+  "caveats": [
+    "Tractor-trailer lengths vary with the tractor and trailer. The 74 ft figure is the WB-67 design vehicle that road designers use for long-haul trucks."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}

@@ -1,0 +1,131 @@
+{
+  "slug": "hoover-dam",
+  "name": "Hoover Dam",
+  "category": "structures",
+  "phrase": "the Hoover Dam",
+  "aliases": [
+    "hoover",
+    "dam",
+    "boulder dam"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "hoover-dam",
+    "x": "crestLength",
+    "y": "height"
+  },
+  "description": "Hoover Dam is a concrete arch-gravity dam in Black Canyon on the Colorado River, on the Arizona-Nevada state line. It was built between 1931 and 1936 and holds back Lake Mead. In cross-section it tapers like an axe head, from 660 ft thick at its base to 45 ft at the top, where a road crosses the crest.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 726.4,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Foundation rock to the roadway on the crest; parapet towers and ornaments rise a further 40 ft",
+      "source": "usbr-faq"
+    },
+    {
+      "key": "crestLength",
+      "label": "Crest length",
+      "kind": "length",
+      "value": 1244,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Length of the dam along its crest",
+      "source": "usbr-projectdata"
+    },
+    {
+      "key": "crestWidth",
+      "label": "Width at top (crest)",
+      "kind": "length",
+      "value": 45,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Thickness of the dam at its top, where the road runs",
+      "source": "usbr-history"
+    },
+    {
+      "key": "baseThickness",
+      "label": "Thickness at base",
+      "kind": "length",
+      "value": 660,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Upstream-to-downstream thickness at the base",
+      "source": "usbr-history"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The dam itself contains three and one-quarter million cubic yards of concrete; the dam, powerplant and associated works together contain 4,360,000 cubic yards.",
+      "source": "usbr-faq"
+    },
+    {
+      "text": "Hoover Dam weighs more than 6,600,000 tons.",
+      "source": "usbr-faq"
+    },
+    {
+      "text": "The towers and ornaments on the parapet rise 40 feet above the crest.",
+      "source": "usbr-faq"
+    },
+    {
+      "text": "The maximum water pressure at the base of the dam is 45,000 pounds per square foot.",
+      "source": "usbr-faq"
+    },
+    {
+      "text": "As many as 20,000 vehicles a day drive across the 45 ft wide top of the dam between Nevada and Arizona.",
+      "source": "usbr-kidfacts"
+    },
+    {
+      "text": "The final bucket of concrete was placed in the main dam on May 29, 1935.",
+      "source": "usbr-history"
+    }
+  ],
+  "sources": [
+    {
+      "id": "usbr-faq",
+      "publisher": "US Bureau of Reclamation",
+      "title": "Hoover Dam - Frequently Asked Questions: The Dam",
+      "url": "https://www.usbr.gov/lc/hooverdam/faqs/damfaqs.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "usbr-projectdata",
+      "publisher": "US Bureau of Reclamation",
+      "title": "Hoover Dam - Reclamation project data (dimensions)",
+      "url": "https://www.usbr.gov/projects/index.php?id=122",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "usbr-history",
+      "publisher": "US Bureau of Reclamation",
+      "title": "The Boulder Canyon Project: Hoover Dam (history)",
+      "url": "https://www.usbr.gov/history/hoover.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "usbr-kidfacts",
+      "publisher": "US Bureau of Reclamation",
+      "title": "Hoover Dam - Kid Facts",
+      "url": "https://www.usbr.gov/lc/hooverdam/educate/kidfacts.html",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Hoover_Dam",
+  "caveats": [
+    "Reclamation pages give different concrete totals: 3.25 million cubic yards in the dam alone and 4,360,000 cubic yards including the powerplant and associated works (FAQ); 4,400,000 cubic yards for the dam, powerplant and associated structures (history and project-data pages); and '4 1/2 million cubic yards' (Kid Facts page).",
+    "The weight is given only as 'more than 6,600,000 tons', with no unit stated (probably short tons), so it is recorded as a fact rather than a measure.",
+    "Reclamation's project-data page confirms the headline dimensions independently of the FAQ and history pages: structural height 726.4 ft, crest length 1,244 ft, crest width 45 ft and base width 660 ft.",
+    "Reclamation describes the dam type in three ways: 'concrete arch-gravity' (FAQ), 'concrete gravity arch' (history page) and 'concrete thick arch' (project-data page)."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-24"
+}

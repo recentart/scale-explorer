@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare Sizes Side by Side – True Scale Comparison Tool | Scale Explorer</title>
+<meta name="description" content="Choose any two objects, from a human to the planet Earth, and see them side by side at their true relative size, with a person for scale.">
+<link rel="canonical" href="https://scale-explorer.freewebtoolss.workers.dev/compare">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Scale Explorer">
+<meta property="og:title" content="Compare Sizes Side by Side – True Scale Comparison Tool | Scale Explorer">
+<meta property="og:description" content="Choose any two objects, from a human to the planet Earth, and see them side by side at their true relative size, with a person for scale.">
+<meta property="og:url" content="https://scale-explorer.freewebtoolss.workers.dev/compare">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://scale-explorer.freewebtoolss.workers.dev/og/default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Compare Sizes Side by Side – True Scale Comparison Tool | Scale Explorer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/d39c8aecb3/site.css">
+<script type="module" src="/assets/d39c8aecb3/client/app.js"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Scale Explorer size comparison","url":"https://scale-explorer.freewebtoolss.workers.dev/compare","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://scale-explorer.freewebtoolss.workers.dev/"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://scale-explorer.freewebtoolss.workers.dev/compare"}]}</script>
+</head>
+<body data-page="compare">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="2" y="21" width="7" height="8" rx="1.6"/><rect x="12" y="13" width="7" height="16" rx="1.6"/><rect x="22" y="3" width="8" height="26" rx="1.6"/></svg><span>Scale Explorer</span></a>
+    <form class="search" role="search" action="/search" method="get" data-search>
+  <label class="search-label visually-hidden" for="site-search">What do you want to compare?</label>
+  <div class="search-field">
+    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+    <input id="site-search" name="q" type="search" value="" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Search objects" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="site-search-list">
+    <button class="search-submit" type="submit">Search</button>
+  </div>
+  <ul id="site-search-list" class="search-results" role="listbox" aria-label="Suggestions" hidden></ul>
+</form>
+    <div class="units" role="group" aria-label="Units for drawings">
+      <button type="button" data-system="metric" aria-pressed="true" title="Metric (metres)">m</button>
+      <button type="button" data-system="imperial" aria-pressed="false" title="Imperial (feet)">ft</button>
+    </div>
+  </div>
+  <nav class="site-nav" aria-label="Main"><div class="wrap"><ul><li><a href="/category/animals">Animals</a></li><li><a href="/category/vehicles">Vehicles</a></li><li><a href="/category/buildings">Buildings</a></li><li><a href="/category/structures">Structures</a></li><li><a href="/category/nature">Nature</a></li><li><a href="/category/space">Space</a></li><li><a href="/compare" aria-current="page">Compare</a></li><li><a href="/measure">Custom size</a></li><li><a href="/objects">All objects</a></li></ul></div></nav>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Compare</span></li></ol></nav>
+<header class="page-head">
+  <h1>Compare sizes</h1>
+  <p class="lede">Choose two objects to see them side by side at their true relative size. Add a human for scale, or up to five objects in total.</p>
+</header>
+<form class="compare-form" action="/compare" method="get" data-compare-form>
+  <div class="cf-row" data-pickers>
+    <label class="cf-pick"><span>First object</span><select name="a"><optgroup label="Animals"><option value="elephant">African elephant</option><option value="african-lion">African lion</option><option value="blue-whale" selected>Blue whale</option><option value="giraffe">Giraffe</option><option value="great-white-shark">Great white shark</option><option value="horse">Horse</option><option value="human">Human</option></optgroup><optgroup label="Vehicles"><option value="airbus-a380">Airbus A380</option><option value="aircraft-carrier">Aircraft carrier</option><option value="boeing-747">Boeing 747</option><option value="car">Car</option><option value="cruise-ship">Cruise ship</option><option value="school-bus">School bus</option><option value="semi-truck">Semi truck</option><option value="titanic">Titanic</option></optgroup><optgroup label="Buildings"><option value="burj-khalifa">Burj Khalifa</option><option value="empire-state-building">Empire State Building</option><option value="house">House</option></optgroup><optgroup label="Structures"><option value="football-field">American football field</option><option value="eiffel-tower">Eiffel Tower</option><option value="hoover-dam">Hoover Dam</option><option value="statue-of-liberty">Statue of Liberty</option></optgroup><optgroup label="Nature"><option value="redwood">Coast redwood</option><option value="grand-canyon">Grand Canyon</option><option value="mount-everest">Mount Everest</option><option value="niagara-falls">Niagara Falls</option></optgroup><optgroup label="Space"><option value="earth">Earth</option><option value="iss">International Space Station</option><option value="mars">Mars</option><option value="moon">Moon</option><option value="saturn-v">Saturn V</option><option value="starship">Starship</option></optgroup></select></label>
+    <button type="button" class="swap" data-swap aria-label="Swap the first and second objects" title="Swap"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 7h12l-3-3M17 17H5l3 3"/></svg></button>
+    <label class="cf-pick"><span>Second object</span><select name="b"><optgroup label="Animals"><option value="elephant">African elephant</option><option value="african-lion">African lion</option><option value="blue-whale">Blue whale</option><option value="giraffe">Giraffe</option><option value="great-white-shark">Great white shark</option><option value="horse">Horse</option><option value="human">Human</option></optgroup><optgroup label="Vehicles"><option value="airbus-a380">Airbus A380</option><option value="aircraft-carrier">Aircraft carrier</option><option value="boeing-747" selected>Boeing 747</option><option value="car">Car</option><option value="cruise-ship">Cruise ship</option><option value="school-bus">School bus</option><option value="semi-truck">Semi truck</option><option value="titanic">Titanic</option></optgroup><optgroup label="Buildings"><option value="burj-khalifa">Burj Khalifa</option><option value="empire-state-building">Empire State Building</option><option value="house">House</option></optgroup><optgroup label="Structures"><option value="football-field">American football field</option><option value="eiffel-tower">Eiffel Tower</option><option value="hoover-dam">Hoover Dam</option><option value="statue-of-liberty">Statue of Liberty</option></optgroup><optgroup label="Nature"><option value="redwood">Coast redwood</option><option value="grand-canyon">Grand Canyon</option><option value="mount-everest">Mount Everest</option><option value="niagara-falls">Niagara Falls</option></optgroup><optgroup label="Space"><option value="earth">Earth</option><option value="iss">International Space Station</option><option value="mars">Mars</option><option value="moon">Moon</option><option value="saturn-v">Saturn V</option><option value="starship">Starship</option></optgroup></select></label>
+  </div>
+  <div class="cf-extra" data-extra></div>
+  <div class="cf-options">
+    <button type="button" class="btn btn-ghost" data-add hidden>+ Add another object</button>
+    <input type="hidden" name="human" value="0">
+    <label class="check"><input type="checkbox" name="human" value="1" checked data-human> Include a human for scale</label>
+    <button class="btn" type="submit" data-submit>Compare</button>
+  </div>
+</form>
+<div class="ad-slot" data-ad-slot="below-form" hidden></div>
+<section class="compare-result" aria-labelledby="result-h" data-compare-result>
+  <h2 id="result-h" data-result-title>Blue whale vs Boeing 747</h2>
+  <ul class="sentences" data-sentences><li>A Boeing 747 is about 2.9 times as long as a blue whale.</li><li>A blue whale is about 14–17 times as long as an average adult is tall.</li><li>A Boeing 747 is about 45 times as long as an average adult is tall.</li></ul>
+  <div data-result-viz><figure class="viz" id="cmp" data-viz data-items="human,blue-whale,boeing-747" data-max-height="440">
+  <div class="viz-toolbar"><div class="viz-tabs" role="tablist" aria-label="View">
+      <button type="button" role="tab" id="cmp-tab-stage" aria-selected="true" aria-controls="cmp-stage">Side by side</button>
+      <button type="button" role="tab" id="cmp-tab-bars" aria-selected="false" aria-controls="cmp-bars" tabindex="-1">Bars</button>
+    </div></div>
+  <div class="viz-pane viz-stage" id="cmp-stage" role="tabpanel" aria-labelledby="cmp-tab-stage"><svg class="stage-svg" viewBox="0 0 960 254" width="960" height="254" role="img" aria-labelledby="cmp-svg-t cmp-svg-d"><title id="cmp-svg-t">Human, Blue whale, Boeing 747 drawn to the same scale</title><desc id="cmp-svg-d">Human: height 1.61–1.75 m. Blue whale: length (typical adult) 24–27 m. Boeing 747: length 76.25 m.</desc><g class="grid" aria-hidden="true"><line class="grid-line" x1="56" x2="946" y1="175.5" y2="175.5"/><text class="grid-label" x="50" y="179.5" text-anchor="end">5 m</text><line class="grid-line" x1="56" x2="946" y1="135" y2="135"/><text class="grid-label" x="50" y="139" text-anchor="end">10 m</text><line class="grid-line" x1="56" x2="946" y1="94.5" y2="94.5"/><text class="grid-label" x="50" y="98.5" text-anchor="end">15 m</text></g><line class="ground" x1="0" x2="960" y1="216" y2="216"/><g class="obj" data-slug="human"><title>Human: 1.61–1.75 m</title><g class="sil ghost" transform="translate(63.015 201.822) scale(0.04726151115303844 0.04726151115303844)"><path d="M 42 0 C 50.5 0 55.5 6 55.5 17 C 55.5 28 53 35 49 38.5 L 49.5 46 C 54 49 62 50 67 53 C 73 55 75 61 75 68 L 78 116 L 81.5 158 C 84 164 84 176 81 184 C 79 188 75 187 74.5 182 L 73 162 L 69 120 L 65 80 C 64.5 98 62 118 62 136 C 62 146 66 156 66 168 C 66 190 63 206 61 226 C 60 232 61 238 61 244 C 61 258 59 272 57 286 C 58 292 58 297 56 300 L 43 300 L 43 294 C 45 280 45 256 44 234 C 44 214 45 186 42 158 C 39 186 40 214 40 234 C 39 256 39 280 41 294 L 41 300 L 28 300 C 26 297 26 292 27 286 C 25 272 23 258 23 244 C 23 238 24 232 23 226 C 21 206 18 190 18 168 C 18 156 22 146 22 136 C 22 118 19.5 98 19 80 L 15 120 L 11 162 L 9.5 182 C 9 187 5 188 3 184 C 0 176 0 164 2.5 158 L 6 116 L 9 68 C 9 61 11 55 17 53 C 22 50 30 49 34.5 46 L 35 38.5 C 31 35 28.5 28 28.5 17 C 28.5 6 33.5 0 42 0 Z" fill="#687388"/><path d="M 28.5 17 C 28.5 6 33.5 0 42 0 C 50.5 0 55.5 6 55.5 17 C 52 11 47 9.5 42 9.5 C 37 9.5 32 11 28.5 17 Z" fill="#474f5f"/></g><g class="sil" transform="translate(63.171 202.933) scale(0.04355741593930248 0.04355741593930248)"><path d="M 42 0 C 50.5 0 55.5 6 55.5 17 C 55.5 28 53 35 49 38.5 L 49.5 46 C 54 49 62 50 67 53 C 73 55 75 61 75 68 L 78 116 L 81.5 158 C 84 164 84 176 81 184 C 79 188 75 187 74.5 182 L 73 162 L 69 120 L 65 80 C 64.5 98 62 118 62 136 C 62 146 66 156 66 168 C 66 190 63 206 61 226 C 60 232 61 238 61 244 C 61 258 59 272 57 286 C 58 292 58 297 56 300 L 43 300 L 43 294 C 45 280 45 256 44 234 C 44 214 45 186 42 158 C 39 186 40 214 40 234 C 39 256 39 280 41 294 L 41 300 L 28 300 C 26 297 26 292 27 286 C 25 272 23 258 23 244 C 23 238 24 232 23 226 C 21 206 18 190 18 168 C 18 156 22 146 22 136 C 22 118 19.5 98 19 80 L 15 120 L 11 162 L 9.5 182 C 9 187 5 188 3 184 C 0 176 0 164 2.5 158 L 6 116 L 9 68 C 9 61 11 55 17 53 C 22 50 30 49 34.5 46 L 35 38.5 C 31 35 28.5 28 28.5 17 C 28.5 6 33.5 0 42 0 Z" fill="#687388"/><path d="M 28.5 17 C 28.5 6 33.5 0 42 0 C 50.5 0 55.5 6 55.5 17 C 52 11 47 9.5 42 9.5 C 37 9.5 32 11 28.5 17 Z" fill="#474f5f"/></g></g><g class="obj" data-slug="blue-whale"><title>Blue whale: 24–27 m</title><g class="sil ghost" transform="translate(90 183.774) scale(0.5556142820603938 0.5556142820603938)"><path d="M0 21C12 19 28 18 42 20C90 14 150 4 230 2C300 0 360 4 385 14C396 19 400 25 399 30C392 40 370 48 330 52C260 58 150 54 90 40C70 34 55 28 42 26C28 26 12 25 0 23ZM102 13L116 5L122 11ZM305 42C290 48 275 53 262 56C276 55 292 51 310 45Z" fill="#58799f"/><path d="M396 33C380 43 350 51 320 53.5C340 48 370 41 396 33ZM140 46C200 53 260 54 300 51C260 56 190 56 140 46Z" fill="#9db4cc"/><path d="M370 22A2 2 0 1 1 370 21.9Z" fill="#26384d"/></g><g class="sil" transform="translate(102.347 187.355) scale(0.49387936183146114 0.49387936183146114)"><path d="M0 21C12 19 28 18 42 20C90 14 150 4 230 2C300 0 360 4 385 14C396 19 400 25 399 30C392 40 370 48 330 52C260 58 150 54 90 40C70 34 55 28 42 26C28 26 12 25 0 23ZM102 13L116 5L122 11ZM305 42C290 48 275 53 262 56C276 55 292 51 310 45Z" fill="#58799f"/><path d="M396 33C380 43 350 51 320 53.5C340 48 370 41 396 33ZM140 46C200 53 260 54 300 51C260 56 190 56 140 46Z" fill="#9db4cc"/><path d="M370 22A2 2 0 1 1 370 21.9Z" fill="#26384d"/></g></g><g class="obj" data-slug="boeing-747"><title>Boeing 747: 76.25 m</title><g class="sil ghost" transform="translate(328.246 57.936) scale(1.5443857176693285 1.4369461866696207)"><path d="M3 70L40 62L250 60C275 58 290 50 310 48C340 46 362 50 375 58C388 64 398 70 400 76C399 82 392 86 380 87L60 86C36 84 16 78 3 74ZM30 64L8 0H26L90 62ZM0 66L36 64L52 66L30 69ZM150 80L250 78L262 82L160 86ZM188 86H192V102H188ZM214 86H218V102H214ZM352 86H355V103H352Z" fill="#c8d0db"/><path d="M30 64L8 0H26L90 62ZM20 72H395V74.5H20Z" fill="#3d6fb6"/><path d="M176 88H206Q212 88 212 93Q212 98 206 98H176ZM220 86H250Q256 86 256 91Q256 96 250 96H220ZM150 80L250 78L262 82L160 86Z" fill="#8e98a6"/><path d="M182 106A4 4 0 1 1 190 106A4 4 0 1 1 182 106ZM191 106A4 4 0 1 1 199 106A4 4 0 1 1 191 106ZM208 106A4 4 0 1 1 216 106A4 4 0 1 1 208 106ZM217 106A4 4 0 1 1 225 106A4 4 0 1 1 217 106ZM349.5 106A4 4 0 1 1 357.5 106A4 4 0 1 1 349.5 106ZM377 60L389 64L388 67L376 64ZM300 54H350V56H300ZM60 66H290V68H60Z" fill="#39404b"/></g><g class="sil" transform="translate(328.246 62.311) scale(1.5443857176693285 1.3971742266080316)"><path d="M3 70L40 62L250 60C275 58 290 50 310 48C340 46 362 50 375 58C388 64 398 70 400 76C399 82 392 86 380 87L60 86C36 84 16 78 3 74ZM30 64L8 0H26L90 62ZM0 66L36 64L52 66L30 69ZM150 80L250 78L262 82L160 86ZM188 86H192V102H188ZM214 86H218V102H214ZM352 86H355V103H352Z" fill="#c8d0db"/><path d="M30 64L8 0H26L90 62ZM20 72H395V74.5H20Z" fill="#3d6fb6"/><path d="M176 88H206Q212 88 212 93Q212 98 206 98H176ZM220 86H250Q256 86 256 91Q256 96 250 96H220ZM150 80L250 78L262 82L160 86Z" fill="#8e98a6"/><path d="M182 106A4 4 0 1 1 190 106A4 4 0 1 1 182 106ZM191 106A4 4 0 1 1 199 106A4 4 0 1 1 191 106ZM208 106A4 4 0 1 1 216 106A4 4 0 1 1 208 106ZM217 106A4 4 0 1 1 225 106A4 4 0 1 1 217 106ZM349.5 106A4 4 0 1 1 357.5 106A4 4 0 1 1 349.5 106ZM377 60L389 64L388 67L376 64ZM300 54H350V56H300ZM60 66H290V68H60Z" fill="#39404b"/></g></g><g class="label"><text x="637.1" y="32.9" text-anchor="middle"><tspan class="label-name">Boeing 747</tspan><tspan class="label-dim" x="637.1" dy="15">76.25 m</tspan></text></g><g class="label"><text x="201.1" y="158.8" text-anchor="middle"><tspan class="label-name">Blue whale</tspan><tspan class="label-dim" x="201.1" dy="15">24–27 m</tspan></text></g><g class="label"><text x="92.8" y="176.8" text-anchor="middle"><tspan class="label-name">Human</tspan><tspan class="label-dim" x="92.8" dy="15">1.61–1.75 m</tspan></text></g><g class="scale-bar" aria-hidden="true"><path d="M56 237 V242 H137 V237"/><text x="143" y="243">10 m</text></g></svg></div>
+  <div class="viz-pane viz-bars" id="cmp-bars" role="tabpanel" aria-labelledby="cmp-tab-bars" hidden><ol class="bars"><li class="bar-row"><span class="bar-name"><a href="/objects/human">Human</a></span><span class="bar-dim">height</span><span class="bar-track"><svg viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect class="bar-range" x="0" y="2" width="23" height="12" fill="#687388"/><rect class="bar-fill" x="0" y="2" width="21.2" height="12" fill="#687388"/></svg></span><span class="bar-value">1.61–1.75 m</span></li><li class="bar-row"><span class="bar-name"><a href="/objects/blue-whale">Blue whale</a></span><span class="bar-dim">length (typical adult)</span><span class="bar-track"><svg viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect class="bar-range" x="0" y="2" width="359.8" height="12" fill="#58799f"/><rect class="bar-fill" x="0" y="2" width="319.8" height="12" fill="#58799f"/></svg></span><span class="bar-value">24–27 m</span></li><li class="bar-row"><span class="bar-name"><a href="/objects/boeing-747">Boeing 747</a></span><span class="bar-dim">length</span><span class="bar-track"><svg viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect class="bar-fill" x="0" y="2" width="1000" height="12" fill="#c8d0db"/></svg></span><span class="bar-value">76.25 m</span></li></ol></div>
+  <p class="viz-note" data-viz-note hidden></p>
+  <figcaption class="viz-caption">Everything is drawn to the same scale, standing on the same ground line. Silhouettes are simplified outlines scaled to the measured dimension. A faded outline shows the top of a size range.</figcaption>
+</figure></div>
+  <div data-result-zoom></div>
+  <div data-result-ladder></div>
+</section>
+<div class="ad-slot" data-ad-slot="below-visualization" hidden></div>
+<section class="section" aria-labelledby="pop-h">
+  <h2 id="pop-h">Popular comparisons</h2>
+  <ul class="link-list"><li><a href="/compare?items=blue-whale,boeing-747">Blue whale vs Boeing 747</a></li><li><a href="/compare?items=titanic,cruise-ship">Titanic vs Cruise ship</a></li><li><a href="/compare?items=eiffel-tower,burj-khalifa">Eiffel Tower vs Burj Khalifa</a></li><li><a href="/compare?items=saturn-v,starship">Saturn V vs Starship</a></li><li><a href="/compare?items=earth,moon">Earth vs Moon</a></li><li><a href="/compare?items=statue-of-liberty,empire-state-building">Statue of Liberty vs Empire State Building</a></li></ul>
+</section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="2" y="21" width="7" height="8" rx="1.6"/><rect x="12" y="13" width="7" height="16" rx="1.6"/><rect x="22" y="3" width="8" height="26" rx="1.6"/></svg><span>Scale Explorer</span></p>
+      <p>See how big things really are. Measurements come from NASA, NOAA, the US National Park Service, manufacturers and other published sources, cited on every page.</p>
+    </div>
+    <nav aria-label="Categories"><h2>Explore</h2><ul><li><a href="/category/animals">Animals</a></li><li><a href="/category/vehicles">Vehicles</a></li><li><a href="/category/buildings">Buildings</a></li><li><a href="/category/structures">Structures</a></li><li><a href="/category/nature">Nature</a></li><li><a href="/category/space">Space</a></li></ul></nav>
+    <nav aria-label="Tools"><h2>Tools</h2><ul>
+      <li><a href="/compare">Compare two objects</a></li>
+      <li><a href="/measure">Visualise your own size</a></li>
+      <li><a href="/objects">All objects</a></li>
+      <li><a href="/about">About the data</a></li>
+      <li><a href="https://github.com/recentart/scale-explorer">Source code</a></li>
+    </ul></nav>
+  </div>
+  <div class="wrap footer-note"><p>No accounts, cookies or tracking. Drawings are computed in your browser. Data last reviewed 24 September 2026.</p></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+{
+  "slug": "horse",
+  "name": "Horse",
+  "category": "animals",
+  "phrase": "a horse",
+  "aliases": [
+    "thoroughbred",
+    "pony",
+    "stallion",
+    "mare",
+    "equus caballus"
+  ],
+  "familiar": true,
+  "headline": "heightAtWithers",
+  "headlineAdj": "tall at the shoulder",
+  "profile": {
+    "shape": "horse",
+    "y": "heightAtWithers"
+  },
+  "subtitle": "Light riding horse (height example: Thoroughbred)",
+  "scientificName": "Equus caballus",
+  "description": "Horse size depends heavily on breed, from miniature horses to heavy draft breeds, so the height here uses the Thoroughbred, a well-documented light riding breed. Horse height is measured from the ground to the top of the withers, the ridge between the shoulder blades, and is traditionally given in hands of 4 inches. A Thoroughbred stands about 16 to 17 hands, and the Merck Veterinary Manual uses 500 kg as the reference weight for an average adult horse.",
+  "measures": [
+    {
+      "key": "heightAtWithers",
+      "label": "Height at withers",
+      "kind": "length",
+      "min": 64,
+      "max": 68,
+      "unit": "in",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Thoroughbred, ground to top of withers. The source gives 16 to 17 hands (hh), converted here at 4 in per hand to 64 to 68 in",
+      "source": "amnh-thoroughbred"
+    },
+    {
+      "key": "mass",
+      "label": "Body mass",
+      "kind": "mass",
+      "value": 500,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Reference adult weight for 'average horses' in Merck nutrient tables (the same tables use 200 kg for ponies and 900 kg for draft horses). Not specific to the Thoroughbred",
+      "source": "merck-horse-nutrition"
+    },
+    {
+      "key": "bodyLength",
+      "label": "Body length",
+      "kind": "length",
+      "min": 220,
+      "max": 280,
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Range across the whole domestic species (all breeds); the account does not say where length is measured from",
+      "source": "adw-horse"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Horses are measured from the ground to the top of the withers, and one hand equals 4 inches (10 cm).",
+      "source": "amnh-measuring"
+    },
+    {
+      "text": "The Shire, one of the tallest breeds, can reach 19 hands (76 in), while miniature horses can be as small as 5 hands (20 in).",
+      "source": "amnh-measuring"
+    },
+    {
+      "text": "The American Museum of Natural History describes the average Thoroughbred as about 16 hands (163 cm) at the withers and about 1,000 lb (454 kg) in weight.",
+      "source": "amnh-thoroughbred"
+    },
+    {
+      "text": "The average height of today's Thoroughbred is a little over 16 hands, and its legs carry more than 1,000 pounds of body weight.",
+      "source": "osu-thoroughbred"
+    },
+    {
+      "text": "By convention, ponies are horses under 14.2 hands (about 147 cm), while draft horses can stand up to 20 hands (200 cm).",
+      "source": "britannica-horse"
+    },
+    {
+      "text": "The Merck Veterinary Manual's nutrient tables use estimated adult weights of 200 kg for ponies, 500 kg for average horses and 900 kg for draft horses.",
+      "source": "merck-horse-nutrition"
+    },
+    {
+      "text": "Across breeds, domestic horses range from 227 to 900 kg in mass.",
+      "source": "adw-horse"
+    }
+  ],
+  "sources": [
+    {
+      "id": "amnh-thoroughbred",
+      "publisher": "American Museum of Natural History (OLogy)",
+      "title": "Thoroughbred",
+      "url": "https://www.amnh.org/explore/ology/zoology/all-about-horses/thoroughbred",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "amnh-measuring",
+      "publisher": "American Museum of Natural History (OLogy)",
+      "title": "Measuring Horses",
+      "url": "https://www.amnh.org/explore/ology/zoology/all-about-horses/measuring-horses",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "merck-horse-nutrition",
+      "publisher": "Merck Veterinary Manual",
+      "title": "Nutritional Requirements of Horses and Other Equids",
+      "url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-horses/nutritional-requirements-of-horses-and-other-equids",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "adw-horse",
+      "publisher": "Animal Diversity Web, University of Michigan Museum of Zoology",
+      "title": "Equus caballus (horse)",
+      "url": "https://animaldiversity.org/accounts/Equus_caballus/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "osu-thoroughbred",
+      "publisher": "Oklahoma State University, Breeds of Livestock",
+      "title": "Thoroughbred Horses",
+      "url": "https://breeds.okstate.edu/horses/thoroughbred-horses",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "britannica-horse",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "Horse: Anatomical adaptations",
+      "url": "https://www.britannica.com/animal/horse/Anatomical-adaptations",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Horse",
+  "caveats": [
+    "No authoritative source found gave a single typical height range for all horses, so height is anchored on the Thoroughbred. The mass figure is the Merck 'average horse' reference weight, not a Thoroughbred figure.",
+    "The live AMNH, Oklahoma State University and Britannica pages blocked automated access. Their figures were read from Internet Archive snapshots of those same URLs (AMNH November 2025 and February 2026, Oklahoma State March 2026, Britannica March 2026).",
+    "The Animal Diversity Web body-length range covers all breeds and does not define how length is measured. ADW accounts are university-hosted but often student-written, so treat it as a secondary source.",
+    "The heightAtWithers values are converted from hands (1 hand = 4 in). The source states 16-17 hh."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

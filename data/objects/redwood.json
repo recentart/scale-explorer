@@ -1,0 +1,129 @@
+{
+  "slug": "redwood",
+  "name": "Coast redwood",
+  "category": "nature",
+  "phrase": "the tallest coast redwood",
+  "aliases": [
+    "redwood",
+    "redwood tree",
+    "tallest tree",
+    "hyperion",
+    "sequoia",
+    "tree",
+    "sequoia sempervirens"
+  ],
+  "familiar": true,
+  "headline": "tallestHeight",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "redwood",
+    "y": "tallestHeight"
+  },
+  "subtitle": "Tallest known tree: Hyperion, Redwood National Park",
+  "scientificName": "Sequoia sempervirens",
+  "description": "The coast redwood is the tallest tree species on Earth. Its natural range is an irregular coastal strip about 724 km long, from the far southwest corner of Oregon to Monterey County in California, where heavy summer fogs keep the air humid. The tallest known specimen, a tree named Hyperion in Redwood National Park, was discovered in 2006; Guinness World Records lists its 2019 height as 116.07 m. Redwoods taller than 61 m (200 ft) are common, and the biggest trunks reach about 7 m (22 ft) wide at the base.",
+  "measures": [
+    {
+      "key": "tallestHeight",
+      "label": "Tallest known tree (Hyperion)",
+      "kind": "length",
+      "value": 116.07,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Hyperion, measured by climbing and direct tape-drop; 2019 height (it was 115.55 m in 2006)",
+      "source": "guinness"
+    },
+    {
+      "key": "commonHeight",
+      "label": "Common mature height",
+      "kind": "length",
+      "value": 61,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "at least",
+      "note": "Redwoods over 61 m (200 ft) are common; many trees on deep, moist riverside benches exceed 91 m (300 ft)",
+      "source": "usfs-silvics"
+    },
+    {
+      "key": "maxTrunkDiameter",
+      "label": "Maximum trunk width",
+      "kind": "length",
+      "max": 22,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Trunk width at the base of the largest coast redwoods (NPS also gives 7 m)",
+      "source": "nps-redw"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Hyperion was discovered by Chris Atkins and Michael Taylor on 25 August 2006; its 2006 height, measured by climbing and direct tape-drop, was 115.55 m (379 ft 1.2 in).",
+      "source": "guinness"
+    },
+    {
+      "text": "Guinness World Records gives Hyperion's trunk diameter as 4.94 m (16 ft 2.5 in) and its estimated aboveground dry mass as 209 metric tonnes.",
+      "source": "guinness"
+    },
+    {
+      "text": "Hyperion is estimated to be between 600 and 800 years old.",
+      "source": "guinness"
+    },
+    {
+      "text": "The US Forest Service says redwood trunks 610 cm (240 in) or more in diameter at 1.5 m above the ground are rare.",
+      "source": "usfs-silvics"
+    },
+    {
+      "text": "The oldest redwood found so far, dated by growth-ring counts, is nearly 2,200 years old.",
+      "source": "usfs-silvics"
+    },
+    {
+      "text": "The redwood belt is generally 8 to 56 km (5 to 35 mi) wide and runs from the Chetco River in Oregon to Salmon Creek Canyon in southern Monterey County, California.",
+      "source": "usfs-silvics"
+    },
+    {
+      "text": "Save the Redwoods League describes Hyperion as standing 380 feet tall.",
+      "source": "stl"
+    }
+  ],
+  "sources": [
+    {
+      "id": "guinness",
+      "publisher": "Guinness World Records",
+      "title": "Tallest tree living",
+      "url": "https://www.guinnessworldrecords.com/world-records/tallest-tree-living",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "usfs-silvics",
+      "publisher": "USDA Forest Service",
+      "title": "Redwood | Silvics of North America",
+      "url": "https://research.fs.usda.gov/silvics/redwood",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nps-redw",
+      "publisher": "National Park Service, Redwood National and State Parks",
+      "title": "About the Trees",
+      "url": "https://www.nps.gov/redw/learn/nature/about-the-trees.htm",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "stl",
+      "publisher": "Save the Redwoods League",
+      "title": "Coast Redwoods",
+      "url": "https://www.savetheredwoods.org/redwoods/coast-redwoods/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Sequoia_sempervirens",
+  "caveats": [
+    "Hyperion's height is re-measured from time to time. The latest figure on an authoritative page is Guinness World Records' 2019 value of 116.07 m, which agrees with Save the Redwoods League's rounded 380 ft. Enthusiast and press sites report later remeasurements (2025-2026), but no primary source for them could be fetched, so they are left out.",
+    "The NPS 'About the Trees' page still gives a maximum height of 367 feet (112 m), and the USDA Forest Service silvics manual gives 112.1 m measured in 1964. Both predate Hyperion's discovery, so the NPS page is used only for trunk width.",
+    "The 22 ft (7 m) trunk width from NPS is measured at the base. The Forest Service measures diameter at 1.5 m above the ground, where it calls trunks of 610 cm (20 ft) or more rare, so the two figures are not directly comparable.",
+    "No authoritative source gives a closed typical height range, so common height is recorded as a lower bound ('more than 61 m is common')."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

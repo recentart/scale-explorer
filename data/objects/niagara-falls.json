@@ -1,0 +1,127 @@
+{
+  "slug": "niagara-falls",
+  "name": "Niagara Falls",
+  "category": "nature",
+  "phrase": "Niagara's Horseshoe Falls",
+  "aliases": [
+    "niagara",
+    "horseshoe falls",
+    "american falls",
+    "waterfall",
+    "falls"
+  ],
+  "familiar": false,
+  "headline": "horseshoeHeight",
+  "headlineAdj": "high",
+  "profile": {
+    "shape": "niagara-falls",
+    "y": "horseshoeHeight"
+  },
+  "subtitle": "Horseshoe (Canadian) Falls and American Falls, Niagara River",
+  "description": "Niagara Falls is a group of waterfalls on the Niagara River, on the border between Canada and the United States. The Horseshoe Falls, mostly on the Canadian side, is the largest: its crest is about 670 m long and the water drops an average of 57 m. The American Falls has a shorter crest, and its visible drop is smaller because a pile of fallen rock (talus) sits at its base. A 1950 treaty between Canada and the United States sets how much water must go over the falls, because the rest can be diverted for hydroelectric power.",
+  "measures": [
+    {
+      "key": "horseshoeHeight",
+      "label": "Horseshoe Falls height",
+      "kind": "length",
+      "value": 57,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average drop of the Canadian Horseshoe Falls into the Lower Niagara River (188 ft)",
+      "source": "niagara-parks"
+    },
+    {
+      "key": "horseshoeCrestLength",
+      "label": "Horseshoe Falls crest length",
+      "kind": "length",
+      "value": 670,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Width of the Horseshoe Falls crest line (2,200 ft)",
+      "source": "niagara-parks"
+    },
+    {
+      "key": "americanHeight",
+      "label": "American Falls height",
+      "kind": "length",
+      "min": 21,
+      "max": 34,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Drop of the American Falls (70-110 ft); varies along the crest because of the talus rock pile at its base (per Destination Niagara USA)",
+      "source": "niagara-parks"
+    },
+    {
+      "key": "americanCrestLength",
+      "label": "American Falls crest length",
+      "kind": "length",
+      "value": 260,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Width of the American Falls crest line (850 ft)",
+      "source": "niagara-parks"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Under a 1950 treaty between Canada and the United States, the flow over the falls must be at least 100,000 cubic feet per second (2,832 cubic metres per second) during daylight hours of the tourist season (April 1 to October 31).",
+      "source": "niagara-parks"
+    },
+    {
+      "text": "At all other times the flow over the falls must be at least 50,000 cfs (1,416 cubic metres per second); water above the required flows may be diverted for power generation.",
+      "source": "niagara-parks"
+    },
+    {
+      "text": "More than 168,000 cubic metres (6 million cubic feet) of water go over the crest line every minute during peak daytime tourist hours.",
+      "source": "niagara-parks"
+    },
+    {
+      "text": "The plunge pool below the Horseshoe Falls is 35 metres (100 ft) deep.",
+      "source": "niagara-parks"
+    },
+    {
+      "text": "New York State's Niagara Falls State Park puts the flow at 75,750 gallons per second over the American and Bridal Veil Falls and 681,750 gallons per second over the Horseshoe Falls.",
+      "source": "nys-park"
+    },
+    {
+      "text": "Destination Niagara USA says about 90% of the river's flow goes over the Horseshoe Falls, and gives the Horseshoe Falls a height of 188 feet and a 2,200-foot crest line.",
+      "source": "niagara-usa"
+    }
+  ],
+  "sources": [
+    {
+      "id": "niagara-parks",
+      "publisher": "Niagara Parks Commission",
+      "title": "Niagara Falls Geology Facts & Figures",
+      "url": "https://www.niagaraparks.com/visit-niagara-parks/plan-your-visit/niagara-falls-geology-facts-figures/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nys-park",
+      "publisher": "Niagara Falls State Park (New York)",
+      "title": "Amazing Niagara Facts",
+      "url": "https://www.niagarafallsstatepark.com/park-information/amazing-niagara-facts/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "niagara-usa",
+      "publisher": "Destination Niagara USA",
+      "title": "Guide to Niagara Falls: Horseshoe, American & Bridal Veil",
+      "url": "https://www.niagarafallsusa.com/the-source/american-horseshoe-and-bridal-veil-falls-a-primer/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Niagara_Falls",
+  "caveats": [
+    "Flow over the falls is regulated and changes with season and time of day. The treaty figures are minimum flows over the falls, not the river's total natural flow.",
+    "Destination Niagara USA gives the American Falls crest line as about 1,000 feet, longer than Niagara Parks' 850 ft (260 m). The Niagara Parks Commission figure is kept; the difference may come from where the crest is taken to end.",
+    "The Bridal Veil Falls, a small separate fall beside the American Falls, is not measured separately here.",
+    "The drawing is scaled to the Horseshoe Falls average drop of 57 m. Its width is illustrative: the 670 m crest line follows a curve."
+  ],
+  "schemaType": "Waterfall",
+  "updated": "2026-09-24"
+}

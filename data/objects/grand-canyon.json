@@ -1,0 +1,127 @@
+{
+  "slug": "grand-canyon",
+  "name": "Grand Canyon",
+  "category": "nature",
+  "phrase": "the Grand Canyon",
+  "aliases": [
+    "canyon",
+    "grand canyon national park",
+    "colorado river canyon"
+  ],
+  "familiar": false,
+  "headline": "averageDepth",
+  "headlineAdj": "deep",
+  "profile": {
+    "shape": "grand-canyon",
+    "x": "averageWidth",
+    "y": "averageDepth"
+  },
+  "subtitle": "Grand Canyon National Park, Arizona",
+  "description": "The Grand Canyon is a canyon in Arizona with the Colorado River running along its floor. Measured along the river from Lees Ferry to the Grand Wash Cliffs, it is 277 miles long. On average it is about 10 miles from rim to rim and a mile deep, but its size varies a lot: it narrows to 600 feet at Marble Canyon, widens to 18 miles in places and is about 6,000 feet deep at its deepest.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 277,
+      "unit": "mi",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "River miles along the Colorado River from Lees Ferry (mile 0) to the Grand Wash Cliffs (446 km)",
+      "source": "nps-faq"
+    },
+    {
+      "key": "averageWidth",
+      "label": "Average width",
+      "kind": "length",
+      "value": 10,
+      "unit": "mi",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average rim-to-rim width (16 km)",
+      "source": "nps-stats"
+    },
+    {
+      "key": "maxWidth",
+      "label": "Maximum width",
+      "kind": "length",
+      "max": 18,
+      "unit": "mi",
+      "approx": false,
+      "qualifier": "up to",
+      "note": "Maximum rim-to-rim width (28.8 km)",
+      "source": "nps-stats"
+    },
+    {
+      "key": "minWidth",
+      "label": "Minimum width",
+      "kind": "length",
+      "value": 600,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Narrowest rim-to-rim point, at Marble Canyon (180 m)",
+      "source": "nps-stats"
+    },
+    {
+      "key": "averageDepth",
+      "label": "Average depth",
+      "kind": "length",
+      "value": 1,
+      "unit": "mi",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average depth of the canyon (1.6 km)",
+      "source": "nps-stats"
+    },
+    {
+      "key": "maxDepth",
+      "label": "Maximum depth",
+      "kind": "length",
+      "max": 6000,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Vertical depth from rim to river at the deepest point (1829 m)",
+      "source": "nps-faq"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Near Grand Canyon Village on the South Rim, the canyon is a vertical mile (about 5,000 feet / 1,524 m) deep from rim to river.",
+      "source": "nps-faq"
+    },
+    {
+      "text": "Grand Canyon National Park covers 1,904 square miles (4,931 square km).",
+      "source": "nps-stats"
+    },
+    {
+      "text": "The average elevation of the South Rim is 7,000 feet (2,100 m) and of the North Rim 8,000 feet (2,400 m).",
+      "source": "nps-stats"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nps-faq",
+      "publisher": "National Park Service, Grand Canyon National Park",
+      "title": "Frequently Asked Questions",
+      "url": "https://www.nps.gov/grca/faqs.htm",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nps-stats",
+      "publisher": "National Park Service, Grand Canyon National Park",
+      "title": "Park Statistics",
+      "url": "https://www.nps.gov/grca/learn/management/statistics.htm",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canyon",
+  "caveats": [
+    "The NPS Park Statistics page gives the park's length as 278 river miles (447 km), the same as its figure for the Colorado River inside the park. The NPS FAQ gives the canyon as 277 miles (446 km) from Lees Ferry to the Grand Wash Cliffs, and that figure is used here.",
+    "The FAQ gives the maximum width as 18 miles / 29 km; the Park Statistics page gives 18 miles (28.8 km).",
+    "The drawing is an average cross-section: 10 miles (16 km) from rim to rim and 1 mile (1.6 km) deep, with a simplified outline of cliffs and terraces."
+  ],
+  "schemaType": "Landform",
+  "updated": "2026-09-24"
+}

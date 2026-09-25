@@ -1,0 +1,107 @@
+{
+  "slug": "iss",
+  "name": "International Space Station",
+  "category": "space",
+  "phrase": "the International Space Station",
+  "aliases": [
+    "iss",
+    "space station",
+    "station"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "iss",
+    "x": "length"
+  },
+  "description": "The International Space Station is a crewed orbiting laboratory run by a partnership of five space agencies from 15 countries, and it has been continuously occupied since November 2000. NASA gives its size as 356 feet (109 m) from end to end, one yard short of an American football field including the end zones. Its pressurized modules run 218 feet along the main axis, and the whole station has a mass of about 925,000 pounds (about 420 tonnes).",
+  "measures": [
+    {
+      "key": "length",
+      "label": "End-to-end length",
+      "kind": "length",
+      "value": 356,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "End to end (109 m); the same as the solar array wingspan",
+      "source": "nasa-iss"
+    },
+    {
+      "key": "pressurizedModuleLength",
+      "label": "Pressurized module length",
+      "kind": "length",
+      "value": 218,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Along the major axis (67 m)",
+      "source": "nasa-iss"
+    },
+    {
+      "key": "trussLength",
+      "label": "Truss length",
+      "kind": "length",
+      "value": 310,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Integrated truss structure (94 m)",
+      "source": "nasa-iss"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 925335,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Whole station (419,725 kg) as listed by NASA (page last updated July 2024); changes as modules, cargo and visiting vehicles come and go",
+      "source": "nasa-iss"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The station's pressurized volume is 35,491 cubic feet (1,005 cubic meters); its habitable volume is 13,696 cubic feet (388 cubic meters), not counting visiting vehicles.",
+      "source": "nasa-iss"
+    },
+    {
+      "text": "Eight solar arrays generate 75 to 90 kilowatts of power.",
+      "source": "nasa-iss"
+    },
+    {
+      "text": "The solar array wingspan, 356 feet (109 m), is longer than an Airbus A380's wingspan (262 feet, 80 m).",
+      "source": "nasa-iss"
+    },
+    {
+      "text": "ESA's ISS page lists the station as 108 m wide, 74 m long and 45 m high.",
+      "source": "esa-iss"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa-iss",
+      "publisher": "NASA",
+      "title": "International Space Station Facts and Figures",
+      "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "esa-iss",
+      "publisher": "European Space Agency",
+      "title": "ISS: International Space Station",
+      "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station/ISS_International_Space_Station",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/International_Space_Station",
+  "caveats": [
+    "The station's mass changes as modules, cargo and visiting vehicles are added or removed.",
+    "ESA measures the long truss-and-array axis as the station's 'width' (108 m), which matches NASA's 356 ft (109 m) end-to-end figure; ESA's 74 m 'length' is along the pressurized modules. ESA's '~450,000 kg at completion' is an older planning figure; ESA's 'About the ISS' page gives 420 tonnes, in line with NASA's 419,725 kg.",
+    "The drawing is a front view scaled to the 109 m (356 ft) end-to-end span. The height of the drawing is illustrative: the solar arrays rotate to track the Sun."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-24"
+}

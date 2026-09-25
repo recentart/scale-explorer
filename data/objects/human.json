@@ -1,0 +1,77 @@
+{
+  "slug": "human",
+  "name": "Human",
+  "category": "animals",
+  "phrase": "an average adult",
+  "aliases": [
+    "person",
+    "people",
+    "adult",
+    "man",
+    "woman",
+    "human height",
+    "homo sapiens"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "human",
+    "y": "height"
+  },
+  "subtitle": "Average adult (measured US averages, age 20 and over)",
+  "scientificName": "Homo sapiens",
+  "description": "These are measured averages for U.S. adults aged 20 and older from the CDC's National Center for Health Statistics. The average woman is about 5 ft 3.5 in tall and the average man about 5 ft 9 in. Average body mass runs from about 172 lb for women to about 199 lb for men. Individuals vary widely around these means.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "min": 63.5,
+      "max": 68.9,
+      "unit": "in",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Measured mean standing height, U.S. adults aged 20+: women 63.5 in, men 68.9 in (NHANES, Aug 2021 to Aug 2023)",
+      "source": "cdc-fastats"
+    },
+    {
+      "key": "mass",
+      "label": "Body mass",
+      "kind": "mass",
+      "min": 171.8,
+      "max": 199,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Measured mean body weight, U.S. adults aged 20+: women 171.8 lb, men 199.0 lb (NHANES, Aug 2021 to Aug 2023)",
+      "source": "cdc-fastats"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The CDC figures are measured values, not self-reported, taken from the report Anthropometric Reference Data for Children and Adults: United States, August 2021 to August 2023.",
+      "source": "cdc-fastats"
+    },
+    {
+      "text": "Average waist circumference of U.S. adults aged 20 and older is 40.6 in for men and 38.5 in for women.",
+      "source": "cdc-fastats"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cdc-fastats",
+      "publisher": "CDC National Center for Health Statistics",
+      "title": "FastStats: Body Measurements",
+      "url": "https://www.cdc.gov/nchs/fastats/body-measurements.htm",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Human",
+  "caveats": [
+    "The figures are U.S. national averages. They are not global averages, and average height and weight differ considerably between countries.",
+    "The range runs from the female mean to the male mean. It is not the full range of adult sizes."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

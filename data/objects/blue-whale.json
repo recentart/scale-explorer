@@ -1,0 +1,124 @@
+{
+  "slug": "blue-whale",
+  "name": "Blue whale",
+  "category": "animals",
+  "phrase": "a blue whale",
+  "aliases": [
+    "whale",
+    "largest animal",
+    "balaenoptera musculus"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "blue-whale",
+    "x": "length"
+  },
+  "scientificName": "Balaenoptera musculus",
+  "description": "The blue whale is the largest animal known to have lived. Most adults seen today are around 80 to 90 ft long, and Antarctic blue whales, the largest population, can reach about 110 ft. NOAA Fisheries gives a maximum weight of about 330,000 lb, and females are generally larger than males.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length (typical adult)",
+      "kind": "length",
+      "min": 80,
+      "max": 90,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "typical",
+      "note": "Commonly observed adult length",
+      "source": "tmmc-blue-whale"
+    },
+    {
+      "key": "maxLength",
+      "label": "Maximum length",
+      "kind": "length",
+      "max": 110,
+      "unit": "ft",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Antarctic blue whales; North Atlantic and North Pacific blue whales grow up to about 90 ft",
+      "source": "noaa-blue-whale"
+    },
+    {
+      "key": "mass",
+      "label": "Maximum mass",
+      "kind": "mass",
+      "max": 330000,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "up to",
+      "note": "Maximum weight in NOAA's species summary (Antarctic population)",
+      "source": "noaa-blue-whale"
+    },
+    {
+      "key": "averageMass",
+      "label": "Typical mass",
+      "kind": "mass",
+      "min": 200000,
+      "max": 300000,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average adult weight",
+      "source": "tmmc-blue-whale"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Antarctic blue whales are generally larger than other subspecies. In the North Atlantic and North Pacific, blue whales grow up to about 90 ft and weigh over 100,000 lb.",
+      "source": "noaa-blue-whale"
+    },
+    {
+      "text": "As in many other baleen whales, female blue whales are generally larger than males.",
+      "source": "noaa-blue-whale"
+    },
+    {
+      "text": "Calves are about 23 ft long at birth and weigh 5,000 to 6,000 lb. Some individuals have been recorded at over 100 ft.",
+      "source": "tmmc-blue-whale"
+    },
+    {
+      "text": "The National Park Service says blue whales can grow to about 100 ft and may weigh around 160 tons.",
+      "source": "nps-blue-whale"
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa-blue-whale",
+      "publisher": "NOAA Fisheries",
+      "title": "Blue Whale",
+      "url": "https://www.fisheries.noaa.gov/species/blue-whale",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "tmmc-blue-whale",
+      "publisher": "The Marine Mammal Center",
+      "title": "Blue Whale",
+      "url": "https://www.marinemammalcenter.org/animal-care/learn-about-marine-mammals/cetaceans/blue-whale",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nps-blue-whale",
+      "publisher": "U.S. National Park Service",
+      "title": "Blue Whale",
+      "url": "https://www.nps.gov/places/blue-whale.htm",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nmsf-blue-whale",
+      "publisher": "National Marine Sanctuary Foundation",
+      "title": "Sea Wonder: Blue Whale",
+      "url": "https://marinesanctuary.org/blog/sea-wonder-blue-whale/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Blue_whale",
+  "caveats": [
+    "NOAA Fisheries gives no typical adult length range, so the typical range comes from The Marine Mammal Center, a nonprofit marine mammal hospital and research centre.",
+    "NOAA words the maximum weight two ways on the same page: 'Up to 330,000 pounds' in the summary and 'more than 330,000 pounds' for Antarctic whales in the text.",
+    "The National Marine Sanctuary Foundation gives fully grown lengths of '70 to nearly 90 feet' and weights up to 300,000 lb, slightly lower than The Marine Mammal Center's typical length."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "empire-state-building",
+  "name": "Empire State Building",
+  "category": "buildings",
+  "phrase": "the Empire State Building",
+  "aliases": [
+    "empire state",
+    "esb",
+    "skyscraper",
+    "new york skyscraper"
+  ],
+  "familiar": true,
+  "headline": "heightToTip",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "empire-state-building",
+    "y": "heightToTip"
+  },
+  "description": "The Empire State Building is a 102-storey skyscraper in Manhattan, New York City, completed in 1931 after about 13 months of construction. CTBUH puts its architectural top at 381 m (1,250 ft), and the spire and broadcast antenna take it to 443.2 m (1,454 ft).",
+  "measures": [
+    {
+      "key": "heightToTip",
+      "label": "Height to tip",
+      "kind": "length",
+      "value": 443.2,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CTBUH height to tip, including the antenna (1,454 ft)",
+      "source": "ctbuh-esb"
+    },
+    {
+      "key": "heightArchitectural",
+      "label": "Height (architectural)",
+      "kind": "length",
+      "value": 381,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CTBUH height to architectural top (1,250 ft); the owners give 1,250 ft as the height to the roof of the 102nd floor",
+      "source": "ctbuh-esb"
+    },
+    {
+      "key": "occupiedHeight",
+      "label": "Height to highest occupied floor",
+      "kind": "length",
+      "value": 373.1,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "CTBUH occupied height (1,224 ft)",
+      "source": "ctbuh-esb"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The building's owners give its height as 1,454 feet (443 meters) including the spire and antenna, and 1,250 feet to the roof of the 102nd floor.",
+      "source": "esb-facts"
+    },
+    {
+      "text": "It has 102 floors above ground and 1 below ground.",
+      "source": "ctbuh-esb"
+    },
+    {
+      "text": "The building weighs 365,000 tons, according to its official site.",
+      "source": "esb-facts"
+    },
+    {
+      "text": "The 86th-floor observatory is 1,050 feet (320 meters) above the ground.",
+      "source": "esb-facts"
+    },
+    {
+      "text": "It was completed in 1931 after 13 months (410 days) of construction.",
+      "source": "esb-facts"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ctbuh-esb",
+      "publisher": "Council on Tall Buildings and Urban Habitat (The Skyscraper Center)",
+      "title": "Empire State Building - The Skyscraper Center",
+      "url": "https://www.skyscrapercenter.com/building/empire-state-building/261",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "esb-facts",
+      "publisher": "Empire State Realty Trust (Empire State Building official site)",
+      "title": "Empire State Building Facts & Figures",
+      "url": "https://www.esbnyc.com/about/facts-figures",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Empire_State_Building",
+  "caveats": [
+    "The official ESB page converts 1,250 ft to 380 m in one sentence and to 381 m in another; CTBUH gives 381 m. The CTBUH metric values are used for the measures. The two sources agree on 1,454 ft to the tip and 1,250 ft to the roof.",
+    "The official site gives the weight as '365,000 tons' without saying whether these are short or metric tons, so it is recorded only as a fact."
+  ],
+  "schemaType": "LandmarksOrHistoricalBuildings",
+  "updated": "2026-09-24"
+}

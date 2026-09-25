@@ -1,0 +1,133 @@
+{
+  "slug": "football-field",
+  "name": "American football field",
+  "category": "structures",
+  "phrase": "an American football field",
+  "aliases": [
+    "football field",
+    "nfl field",
+    "gridiron",
+    "football pitch",
+    "field",
+    "stadium"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "football-field",
+    "x": "length"
+  },
+  "subtitle": "NFL regulation field and goal posts (2026 Official Playing Rules)",
+  "description": "An NFL field is a rectangle 360 feet long and 160 feet wide. A 10-yard end zone at each end leaves 300 feet of field of play between the goal lines. The crossbar at each end sits over the end line, 10 feet above the ground, on a single-post goal set back behind it, and the uprights rise another 35 feet above the crossbar.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length including end zones",
+      "kind": "length",
+      "value": 360,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "End line to end line, including both end zones (equal to 120 yd)",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "key": "playingLength",
+      "label": "Field of play (goal line to goal line)",
+      "kind": "length",
+      "value": 300,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Goal line to goal line, excluding end zones (equal to 100 yd); dimension label on the rulebook's field diagram",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 160,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Sideline to sideline (equal to 53 1/3 yd)",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "key": "endZoneDepth",
+      "label": "End zone depth",
+      "kind": "length",
+      "value": 10,
+      "unit": "yd",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance from each goal line to its end line",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "key": "crossbarHeight",
+      "label": "Crossbar height",
+      "kind": "length",
+      "value": 10,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Ground to the top face of the crossbar",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "key": "uprightHeight",
+      "label": "Upright height above crossbar",
+      "kind": "length",
+      "value": 35,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "How far the uprights extend above the crossbar (not measured from the ground)",
+      "source": "nfl-rulebook-2026"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The crossbar is 18 feet 6 inches long, and the uprights are 3 to 4 inches in diameter.",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "text": "NFL goal posts are the single-standard type, bright gold, offset from the end line, and have a 4-by-42-inch orange ribbon attached to the top of each upright.",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "text": "The inbounds lines (hash marks) are 70 feet 9 inches in from each sideline.",
+      "source": "nfl-rulebook-2026"
+    },
+    {
+      "text": "The web version of the NFL rulebook on the league's Football Operations site gives the same 360 ft by 160 ft field and the same goal-post dimensions.",
+      "source": "nfl-ops-rulebook"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nfl-rulebook-2026",
+      "publisher": "National Football League",
+      "title": "2026 Official Playing Rules of the National Football League (Rule 1: The Field)",
+      "url": "https://media.nfl.com/content/dam/communications/Official%20Playing%20Rules/2026%20Official%20Playing%20Rules.pdf",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nfl-ops-rulebook",
+      "publisher": "National Football League (NFL Football Operations)",
+      "title": "NFL Rulebook (web version), Rule 1: The Field",
+      "url": "https://operations.nfl.com/the-rules/nfl-rulebook/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/American_football_field",
+  "caveats": [
+    "The rulebook gives the overall length and width in feet (360 ft by 160 ft), not in yards; 120 yd and 53 1/3 yd are the same values converted.",
+    "The 300 ft field-of-play length comes from the dimension labels on the rulebook's field diagram. The rule text itself sets the goal lines 10 yards in from each end line.",
+    "Both sources are published by the NFL, the body that sets these dimensions, so there is no more authoritative independent source to check against."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-24"
+}

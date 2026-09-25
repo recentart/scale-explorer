@@ -1,0 +1,110 @@
+{
+  "slug": "elephant",
+  "name": "African elephant",
+  "category": "animals",
+  "phrase": "an African elephant",
+  "aliases": [
+    "elephant",
+    "bush elephant",
+    "savanna elephant",
+    "loxodonta africana"
+  ],
+  "familiar": true,
+  "headline": "shoulderHeight",
+  "headlineAdj": "tall at the shoulder",
+  "profile": {
+    "shape": "elephant",
+    "y": "shoulderHeight"
+  },
+  "subtitle": "African savanna (bush) elephant",
+  "scientificName": "Loxodonta africana",
+  "description": "The African savanna elephant is the largest living land animal, and males are much bigger than females. According to San Diego Zoo Wildlife Alliance, adult females stand about 2.5 to 3.0 m at the shoulder and adult males about 2.9 to 3.7 m. Females average about 2,800 kg and males about 6,000 kg. Measured from the tip of the trunk along the head and body, not counting the tail, an adult is roughly 6 to 7.5 m long.",
+  "measures": [
+    {
+      "key": "shoulderHeight",
+      "label": "Shoulder height",
+      "kind": "length",
+      "min": 2.5,
+      "max": 3.7,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Adult females 2.5-3.0 m (usually no taller than 2.6 m); adult males 2.9-3.7 m",
+      "source": "sdzg-elephant"
+    },
+    {
+      "key": "mass",
+      "label": "Body mass",
+      "kind": "mass",
+      "min": 2800,
+      "max": 6000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "average",
+      "note": "Average adult female 2,800 kg to average adult male 6,000 kg",
+      "source": "sdzg-elephant"
+    },
+    {
+      "key": "bodyLength",
+      "label": "Head-body length",
+      "kind": "length",
+      "min": 600,
+      "max": 750,
+      "unit": "cm",
+      "approx": true,
+      "qualifier": "range",
+      "note": "Head-body length including the trunk, both sexes; the 100-150 cm tail is listed separately",
+      "source": "sdzg-elephant"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The savanna elephant's tail measures 100 to 150 cm.",
+      "source": "sdzg-elephant"
+    },
+    {
+      "text": "Male bush elephants often grow as tall as 3.2 to 4 m at the shoulder and weigh up to between 4,500 and 6,100 kg. The largest known bush elephant weighed 10,886 kg (24,000 lb).",
+      "source": "britannica-bush-elephant"
+    },
+    {
+      "text": "On average, males are more than 20 percent taller than females and nearly twice as heavy.",
+      "source": "britannica-bush-elephant"
+    },
+    {
+      "text": "San Diego Zoo Wildlife Alliance gives average shoulder heights of 8 ft for females and 10 to 10.5 ft for males. Its record male weighed about 24,000 lb and stood 13 ft (3.96 m) at the shoulder.",
+      "source": "sdzwa-elephant"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sdzg-elephant",
+      "publisher": "San Diego Zoo Wildlife Alliance Library",
+      "title": "African Elephants (Loxodonta africana and L. cyclotis) Fact Sheet: Physical Characteristics",
+      "url": "https://ielc.libguides.com/sdzg/factsheets/african_elephant/characteristics",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "sdzwa-elephant",
+      "publisher": "San Diego Zoo Wildlife Alliance",
+      "title": "Elephant",
+      "url": "https://animals.sandiegozoo.org/animals/elephant",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "britannica-bush-elephant",
+      "publisher": "Encyclopaedia Britannica",
+      "title": "African bush elephant",
+      "url": "https://www.britannica.com/animal/African-bush-elephant",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/African_bush_elephant",
+  "caveats": [
+    "The mass range runs between the female and male averages, not between the smallest and largest adults. Large bulls can far exceed 6,000 kg (the record is 10,886 kg).",
+    "Sources differ on shoulder height: Britannica says males often reach 3.2 to 4 m, above the San Diego Zoo library's 3.7 m top figure, while the San Diego Zoo animal page gives a lower female average (8 ft, about 2.4 m) than the library's 2.5 m minimum. The record bull stood 3.96 m.",
+    "The live Britannica page blocked automated access. Its figures were read from an Internet Archive snapshot (February 2026); the older URL African-savanna-elephant now redirects to African-bush-elephant.",
+    "The Smithsonian National Zoo has no African elephant species page (the Asian elephant page exists), so San Diego Zoo Wildlife Alliance is the primary source."
+  ],
+  "schemaType": "Taxon",
+  "updated": "2026-09-24"
+}

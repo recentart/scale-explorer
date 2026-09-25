@@ -1,0 +1,105 @@
+{
+  "slug": "saturn-v",
+  "name": "Saturn V",
+  "category": "space",
+  "phrase": "the Saturn V",
+  "aliases": [
+    "saturn 5",
+    "saturn five",
+    "apollo rocket",
+    "moon rocket",
+    "rocket"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "saturn-v",
+    "y": "height"
+  },
+  "subtitle": "Apollo-era Moon rocket, 1967-1973",
+  "description": "The Saturn V was the rocket NASA used to send Apollo astronauts to the Moon; the Apollo versions had three stages, and a two-stage version launched the Skylab space station in 1973. It was developed at NASA's Marshall Space Flight Center in Huntsville, Alabama. It stood 363 feet (111 m) tall, about as high as a 36-story building, and was 33 feet (396 inches) in diameter. Fully fuelled for liftoff it weighed about 2.8 million kilograms (6.2 million pounds).",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 363,
+      "unit": "ft",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Full vehicle height (111 m); the Smithsonian lists its Saturn V as 4,356 in (363 ft) tall overall",
+      "source": "nasa"
+    },
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 396,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall diameter (equal to 33 ft, the first stage's diameter) as catalogued by the Smithsonian for its Saturn V on loan to NASA Johnson Space Center",
+      "source": "nasm"
+    },
+    {
+      "key": "liftoffMass",
+      "label": "Liftoff mass",
+      "kind": "mass",
+      "value": 2800000,
+      "unit": "kg",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Fully fuelled for liftoff (6.2 million pounds); rounded, representative figure",
+      "source": "nasa"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The Saturn V produced 34.5 million newtons (7.6 million pounds) of thrust at launch.",
+      "source": "nasa"
+    },
+    {
+      "text": "The first Saturn V was launched in 1967 and the last, uncrewed, in 1973 to put the Skylab space station into orbit.",
+      "source": "nasa"
+    },
+    {
+      "text": "NASA gives the Saturn V first stage (S-IC) as 138 feet long and 33 feet in diameter.",
+      "source": "nasa-stennis"
+    },
+    {
+      "text": "The Smithsonian's Saturn V, on loan to NASA Johnson Space Center in Houston, is described as the only existing Saturn V with all flyable stages.",
+      "source": "nasm"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nasa",
+      "publisher": "NASA",
+      "title": "What Was the Saturn V? (Grades 5-8)",
+      "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-was-the-saturn-v-grades-5-8/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nasm",
+      "publisher": "Smithsonian National Air and Space Museum",
+      "title": "Rocket, Liquid Fuel, Launch Vehicle, Saturn V, with Transporter",
+      "url": "https://airandspace.si.edu/collection-objects/rocket-liquid-fuel-launch-vehicle-saturn-v-transporter/nasm_A19780111000",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nasa-stennis",
+      "publisher": "NASA",
+      "title": "Transport of Saturn V Rocket Stage to Stennis Space Center a Matter of Real History",
+      "url": "https://www.nasa.gov/news-release/transport-of-saturn-v-rocket-stage-to-stennis-space-center-a-matter-of-real-history/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Saturn_V",
+  "caveats": [
+    "Liftoff mass varied from mission to mission; NASA's figure is a rounded, representative value.",
+    "The 396 in (33 ft) diameter is the widest body diameter, set by the first stage; the upper stages were narrower."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-24"
+}

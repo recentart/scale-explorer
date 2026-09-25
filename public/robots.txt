@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scale-explorer.freewebtoolss.workers.dev/sitemap.xml

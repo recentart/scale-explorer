@@ -1,0 +1,95 @@
+{
+  "slug": "earth",
+  "name": "Earth",
+  "category": "space",
+  "phrase": "Earth",
+  "aliases": [
+    "the earth",
+    "world",
+    "planet earth",
+    "globe",
+    "planet"
+  ],
+  "familiar": true,
+  "headline": "equatorialDiameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "earth",
+    "x": "equatorialDiameter"
+  },
+  "description": "Earth is the third planet from the Sun and the largest of the rocky (terrestrial) planets. It is slightly flattened, so its equatorial diameter of 12,756 km is a little larger than its pole-to-pole diameter. NASA's fact sheet gives a volumetric mean radius of 6,371 km and a mass of about 5.97 × 10²⁴ kg.",
+  "measures": [
+    {
+      "key": "equatorialDiameter",
+      "label": "Equatorial diameter",
+      "kind": "length",
+      "value": 12756,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter at the equator",
+      "source": "nssdca-planets"
+    },
+    {
+      "key": "radius",
+      "label": "Mean radius",
+      "kind": "length",
+      "value": 6371,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Volumetric mean radius (mean diameter is twice this)",
+      "source": "nssdca-earth"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 5.9722e+24,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Total mass; source states 5.9722 × 10²⁴ kg",
+      "source": "nssdca-earth"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Earth's equatorial radius is 6,378.137 km and its polar radius is 6,356.752 km.",
+      "source": "nssdca-earth"
+    },
+    {
+      "text": "NASA gives Earth's equatorial diameter as 7,926 miles (12,756 kilometers), the biggest of the terrestrial planets.",
+      "source": "nasa-earth"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-earth",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Earth Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nasa-earth",
+      "publisher": "NASA Science",
+      "title": "Facts About Earth",
+      "url": "https://science.nasa.gov/earth/facts/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Earth",
+  "caveats": [
+    "NASA gives a mean radius rather than a mean diameter, so it is recorded as radius."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-24"
+}

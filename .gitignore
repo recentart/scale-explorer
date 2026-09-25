@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+.scratch/
+.e2e/
+.dev.vars
+*.log

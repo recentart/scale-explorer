@@ -1,0 +1,87 @@
+{
+  "slug": "moon",
+  "name": "Moon",
+  "category": "space",
+  "phrase": "the Moon",
+  "aliases": [
+    "the moon",
+    "luna",
+    "lunar"
+  ],
+  "familiar": true,
+  "headline": "diameter",
+  "headlineAdj": "wide",
+  "profile": {
+    "shape": "moon",
+    "x": "diameter"
+  },
+  "subtitle": "Earth's natural satellite",
+  "description": "The Moon is Earth's only natural satellite. NASA lists it as 3,475 km across, a little over a quarter of Earth's diameter. Its mass is about 7.35 × 10^22 kg, roughly 1.2 percent of Earth's.",
+  "measures": [
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 3475,
+      "unit": "km",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Diameter as listed in NASA's Planetary Fact Sheet (whose notes define the column as equatorial); equals twice the Moon's volumetric mean radius of 1,737.4 km",
+      "source": "nssdca-planets"
+    },
+    {
+      "key": "mass",
+      "label": "Mass",
+      "kind": "mass",
+      "value": 7.346e+22,
+      "unit": "kg",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Source states 0.07346 × 10²⁴ kg",
+      "source": "nssdca-moon"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The Moon's volumetric mean radius is 1,737.4 km, its equatorial radius 1,738.1 km and its polar radius 1,736.0 km.",
+      "source": "nssdca-moon"
+    },
+    {
+      "text": "NASA's fact sheet puts the Moon's mass at 0.0123 times Earth's.",
+      "source": "nssdca-moon"
+    },
+    {
+      "text": "NASA describes the Moon as having a radius of about 1,080 miles (1,740 km), less than a third of the width of Earth.",
+      "source": "nasa-moon"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nssdca-moon",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nssdca-planets",
+      "publisher": "NASA Space Science Data Coordinated Archive",
+      "title": "Planetary Fact Sheet - Metric",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "nasa-moon",
+      "publisher": "NASA Science",
+      "title": "Moon Facts",
+      "url": "https://science.nasa.gov/moon/facts/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Moon",
+  "caveats": [
+    "The Planetary Fact Sheet's 3,475 km matches twice the Moon's mean radius (1,737.4 km). Twice the equatorial radius on the Moon Fact Sheet (1,738.1 km) would give about 3,476 km. The difference is about 1 km."
+  ],
+  "schemaType": "Place",
+  "updated": "2026-09-24"
+}

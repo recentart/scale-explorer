@@ -1,0 +1,118 @@
+{
+  "slug": "starship",
+  "name": "Starship",
+  "category": "space",
+  "phrase": "SpaceX's Starship",
+  "aliases": [
+    "spacex starship",
+    "spacex",
+    "super heavy",
+    "starship v3",
+    "rocket"
+  ],
+  "familiar": true,
+  "headline": "height",
+  "headlineAdj": "tall",
+  "profile": {
+    "shape": "starship",
+    "y": "height"
+  },
+  "subtitle": "Full stack: Super Heavy booster + Starship upper stage (Version 3)",
+  "description": "Starship is SpaceX's fully reusable launch system: a Super Heavy first-stage booster with the Starship spacecraft stacked on top as the upper stage. SpaceX's site gives the stack as 124 m tall and 9 m in diameter, with a 72 m booster and a 52 m ship, and uses Version 3 (V3) footage for these sections. SpaceX launched V3 in May 2026 on the 12th Starship test flight, and Scientific American called it the tallest and most powerful rocket ever built.",
+  "measures": [
+    {
+      "key": "height",
+      "label": "Full-stack height",
+      "kind": "length",
+      "value": 124,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Super Heavy plus Starship, Version 3 (SpaceX also gives 407 ft); earlier versions were slightly shorter",
+      "source": "spacex"
+    },
+    {
+      "key": "diameter",
+      "label": "Diameter",
+      "kind": "length",
+      "value": 9,
+      "unit": "m",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Body diameter of booster and ship (29.5 ft)",
+      "source": "spacex"
+    },
+    {
+      "key": "boosterHeight",
+      "label": "Super Heavy booster height",
+      "kind": "length",
+      "value": 72,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Super Heavy first stage, Version 3 (236 ft)",
+      "source": "spacex"
+    },
+    {
+      "key": "shipHeight",
+      "label": "Starship (ship) height",
+      "kind": "length",
+      "value": 52,
+      "unit": "m",
+      "approx": true,
+      "qualifier": "about",
+      "note": "Starship upper stage/spacecraft, Version 3 (171 ft)",
+      "source": "spacex"
+    }
+  ],
+  "facts": [
+    {
+      "text": "SpaceX gives Super Heavy's propellant capacity as 3,650 t and its thrust as 8,240 tf (18.1 Mlbf), from 33 Raptor engines.",
+      "source": "spacex"
+    },
+    {
+      "text": "SpaceX gives the Starship upper stage's propellant capacity as 1,600 t, and says the system is designed to carry more than 100 metric tonnes to orbit when fully reusable.",
+      "source": "spacex"
+    },
+    {
+      "text": "Scientific American reported on 22 May 2026 that fully stacked, Starship V3 is 408 feet (124 meters) tall with about 18 million pounds of thrust, on the 12th Starship test flight.",
+      "source": "sciam"
+    },
+    {
+      "text": "Before its debut, V3 was expected to stand about five feet taller than Starship V2.",
+      "source": "payload"
+    }
+  ],
+  "sources": [
+    {
+      "id": "spacex",
+      "publisher": "SpaceX",
+      "title": "Starship",
+      "url": "https://www.spacex.com/vehicles/starship/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "sciam",
+      "publisher": "Scientific American",
+      "title": "SpaceX launches Starship V3—the world's most powerful and tallest rocket ever",
+      "url": "https://www.scientificamerican.com/article/spacex-launches-starship-v3-the-worlds-most-powerful-and-tallest-rocket-ever/",
+      "accessed": "2026-09-24"
+    },
+    {
+      "id": "payload",
+      "publisher": "Payload",
+      "title": "What to Expect from Starship V3",
+      "url": "https://payloadspace.com/what-to-expect-from-starship-v3/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/SpaceX_Starship",
+  "caveats": [
+    "spacex.com/vehicles/starship renders its content with JavaScript, so a plain page fetch returns no text. The figures were read from the page's own content bundle served by spacex.com, whose section videos are labelled V3.",
+    "SpaceX's figures are rounded to whole metres (72 m + 52 m = 124 m). SpaceX gives the full stack as 407 ft; Scientific American gives 408 ft (124 m).",
+    "Starship's dimensions have changed between versions (V1, V2, V3), and the heights here are for Version 3. Exact V1 and V2 heights could not be confirmed from a fetched authoritative page.",
+    "SpaceX does not state a liftoff mass, so none is recorded. Adding up the propellant capacities would only be an estimate and was not done."
+  ],
+  "schemaType": "Thing",
+  "updated": "2026-09-24"
+}

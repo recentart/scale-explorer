@@ -1,0 +1,97 @@
+{
+  "slug": "car",
+  "name": "Car",
+  "category": "vehicles",
+  "phrase": "a mid-size car",
+  "aliases": [
+    "automobile",
+    "sedan",
+    "toyota camry",
+    "camry",
+    "vehicle"
+  ],
+  "familiar": true,
+  "headline": "length",
+  "headlineAdj": "long",
+  "profile": {
+    "shape": "car",
+    "x": "length"
+  },
+  "subtitle": "Mid-size sedan (example: 2026 Toyota Camry)",
+  "description": "Passenger cars come in many sizes, so this page uses one of the best-selling mid-size sedans in the United States, the 2026 Toyota Camry, as a well-documented example. Toyota lists it at 193.5 inches (about 4.9 m) long and 56.9 inches tall. Compact cars are shorter, while pickup trucks and large SUVs are longer.",
+  "measures": [
+    {
+      "key": "length",
+      "label": "Length",
+      "kind": "length",
+      "value": 193.5,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall length, 2026 Camry (XLE and Nightshade AWD grades)",
+      "source": "toyota"
+    },
+    {
+      "key": "width",
+      "label": "Width",
+      "kind": "length",
+      "value": 72.4,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall width",
+      "source": "toyota"
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "kind": "length",
+      "value": 56.9,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Overall height",
+      "source": "toyota"
+    },
+    {
+      "key": "wheelbase",
+      "label": "Wheelbase",
+      "kind": "length",
+      "value": 111.2,
+      "unit": "in",
+      "approx": false,
+      "qualifier": "exact",
+      "note": "Distance between front and rear axles",
+      "source": "toyota"
+    },
+    {
+      "key": "mass",
+      "label": "Curb weight",
+      "kind": "mass",
+      "min": 3627,
+      "max": 3649,
+      "unit": "lb",
+      "approx": true,
+      "qualifier": "range",
+      "note": "2026 Camry XLE and Nightshade with all-wheel drive; other grades differ",
+      "source": "toyota"
+    }
+  ],
+  "facts": [],
+  "sources": [
+    {
+      "id": "toyota",
+      "publisher": "Toyota Motor Sales, U.S.A.",
+      "title": "2026 Toyota Camry Specifications",
+      "url": "https://www.toyota.com/camry/features/",
+      "accessed": "2026-09-24"
+    }
+  ],
+  "wikipedia": "https://en.wikipedia.org/wiki/Toyota_Camry",
+  "caveats": [
+    "This is one example car, not an average. Toyota.com lists these dimensions for the XLE and Nightshade all-wheel-drive grades; small hatchbacks are about a metre shorter and full-size pickup trucks longer.",
+    "The specification page was read in a web browser because Toyota.com blocks simple automated downloads."
+  ],
+  "schemaType": "Product",
+  "updated": "2026-09-24"
+}
