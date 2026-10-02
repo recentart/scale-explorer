@@ -8,6 +8,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { loadData, toClient } from './data.mjs'
 import * as T from './templates.mjs'
+import { adSettings } from '../src/lib/ads.js'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -21,12 +22,20 @@ async function listFiles(dir) {
   return out.sort()
 }
 
+// Without ads nothing loads from anywhere else. Ad networks load scripts, frames
+// and images from many changing hosts (and AdSense needs inline styles and
+// eval), so turning ads on widens the policy to any https: source.
+const STRICT_CSP = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+const ADS_CSP = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https:; frame-src https: about:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+
 async function exists(p) {
   try { await stat(p); return true } catch { return false }
 }
 
-export async function build({ outDir = process.env.OUT_DIR ? path.resolve(process.env.OUT_DIR) : path.join(ROOT, 'public'), quiet = false } = {}) {
+// `ads` overrides data/site.json's ad settings (used by the tests).
+export async function build({ outDir = process.env.OUT_DIR ? path.resolve(process.env.OUT_DIR) : path.join(ROOT, 'public'), quiet = false, ads: adsOverride } = {}) {
   const { site, categories, objects } = await loadData(ROOT)
+  const ads = adSettings(adsOverride === undefined ? site.ads : adsOverride)
   const clientObjects = objects.map(toClient)
 
   // Browser assets, fingerprinted as one folder so relative imports keep working
@@ -65,7 +74,7 @@ export async function build({ outDir = process.env.OUT_DIR ? path.resolve(proces
   const ogFiles = new Set((await exists(path.join(staticDir, 'og'))) ? (await readdir(path.join(staticDir, 'og'))) : [])
 
   const ctx = {
-    site, categories, objects, clientObjects, assets,
+    site, categories, objects, clientObjects, assets, ads,
     clientBySlug: Object.fromEntries(clientObjects.map(o => [o.slug, o])),
     categoryBySlug: Object.fromEntries(categories.map(c => [c.slug, c])),
     ogDefault: ogFiles.has('default.png') ? '/og/default.png' : null,
@@ -91,13 +100,15 @@ export async function build({ outDir = process.env.OUT_DIR ? path.resolve(proces
 ${urls.map(u => `  <url><loc>${site.url}${u === '/' ? '/' : u}</loc><lastmod>${site.updated}</lastmod></url>`).join('\n')}
 </urlset>
 `)
+  if (ads?.network === 'adsense') await write('ads.txt', `google.com, ${ads.client.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0
+`)
   await write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`)
   await write('_headers', `/*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy: ${ads ? ADS_CSP : STRICT_CSP}
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

@@ -1,16 +1,18 @@
 // End-to-end browser tests. Drives headless Chrome over the DevTools protocol
 // (no npm dependencies; needs Node 22+ for the global WebSocket).
 //
-//   node tools/e2e.mjs                 builds nothing; serves ./public locally
+//   node tools/e2e.mjs                 builds nothing; serves ./public locally (PORT=… to change 8799)
 //   BASE_URL=https://… node tools/e2e.mjs   tests a deployed site instead
 //
 // Screenshots go to .e2e/ (git-ignored). Exits non-zero on any failure.
 
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, writeFile, mkdtemp, rm } from 'node:fs/promises'
+import os from 'node:os'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { startServer } from './serve.mjs'
 import { launchChrome, sleep } from './cdp.mjs'
+import { build } from '../build/build.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const SHOTS = path.join(ROOT, '.e2e')
@@ -18,8 +20,9 @@ const SHOTS = path.join(ROOT, '.e2e')
 let server = null
 let BASE = process.env.BASE_URL?.replace(/\/$/, '')
 if (!BASE) {
-  server = await startServer(8799)
-  BASE = 'http://127.0.0.1:8799'
+  const port = Number(process.env.PORT) || 8799
+  server = await startServer(port)
+  BASE = `http://127.0.0.1:${port}`
 }
 
 const chrome = await launchChrome()
@@ -52,7 +55,7 @@ async function goto(urlPath) {
     const l = m => { if (m.method === 'Page.loadEventFired') { listeners.delete(l); res() } }
     listeners.add(l)
   })
-  const nav = await send('Page.navigate', { url: BASE + urlPath })
+  const nav = await send('Page.navigate', { url: /^https?:/.test(urlPath) ? urlPath : BASE + urlPath })
   if (nav.errorText) throw new Error(`navigate ${urlPath}: ${nav.errorText}`)
   await loaded
   await settle()
@@ -450,6 +453,142 @@ await check('calculations run in the browser with the network off', async () => 
   assert(conv === '4,828.03 m|15,840 ft|4.82803 km|3 mi', conv)
   await send('Network.emulateNetworkConditions', { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 })
 })
+
+// Ads, with made-up IDs and the ad networks stubbed out, on a separate local
+// build (the real site may have ads off). Local runs only.
+if (!process.env.BASE_URL) {
+  console.log('\nAds (test settings, network stubbed)')
+  const adsOut = await mkdtemp(path.join(os.tmpdir(), 'scale-explorer-ads-e2e-'))
+  const run = async (ads, fn) => {
+    await build({ outDir: adsOut, quiet: true, ads })
+    const srv = await startServer(0, adsOut)   // any free port
+    try { await fn(`http://127.0.0.1:${srv.address().port}`) } finally { srv.close() }
+  }
+  let adsenseMode = 'filled'   // what the stubbed network does: filled | unfilled | blocked
+  const adsenseStub = mode => `(function () {
+    function run() {
+      document.querySelectorAll('ins.adsbygoogle:not([data-ad-status])').forEach(function (i) {
+        i.setAttribute('data-ad-status', '${mode}')
+        if ('${mode}' === 'filled') { var d = document.createElement('div'); d.className = 'stub-ad'; d.style.cssText = 'width:100%;height:100%;background:#d33'; i.appendChild(d) }
+      })
+    }
+    window.adsbygoogle = { push: run }; run()
+  })()`
+  // Sandboxed ad frames run in their own process, where requests cannot be
+  // stubbed; attach to them so the test can look inside and see their errors.
+  const adFrames = []
+  const FETCH = { patterns: [{ urlPattern: '*googlesyndication.com*' }] }
+  listeners.add(async m => {
+    const sid = m.sessionId
+    if (m.method === 'Target.attachedToTarget') {
+      const child = m.params.sessionId
+      adFrames.push(child)
+      await send('Runtime.enable', {}, child).catch(() => {})
+      await send('Runtime.runIfWaitingForDebugger', {}, child).catch(() => {})
+      return
+    }
+    if (m.method !== 'Fetch.requestPaused') return
+    const { requestId, request } = m.params
+    const js = b => send('Fetch.fulfillRequest', { requestId, responseCode: 200, responseHeaders: [{ name: 'Content-Type', value: 'text/javascript' }, { name: 'Access-Control-Allow-Origin', value: '*' }], body: Buffer.from(b).toString('base64') }, sid)
+    if (request.url.includes('googlesyndication.com')) {
+      if (adsenseMode === 'blocked') send('Fetch.failRequest', { requestId, errorReason: 'BlockedByClient' }, sid)
+      else js(adsenseStub(adsenseMode))
+    } else send('Fetch.continueRequest', { requestId }, sid)
+  })
+  await send('Fetch.enable', FETCH)
+  await send('Target.setAutoAttach', { autoAttach: true, waitForDebuggerOnStart: true, flatten: true })
+  const rect = sel => evaluate(`(() => { const r = document.querySelector(${JSON.stringify(sel)})?.getBoundingClientRect(); return r && { top: r.top + scrollY, bottom: r.bottom + scrollY, left: r.left, right: r.right, width: r.width, height: r.height } })()`)
+  const filled = place => evaluate(`document.querySelector('.ad[data-ad="${place}"]')?.dataset.adFilled || null`)
+  const shown = sel => evaluate(`(() => { const e = document.querySelector(${JSON.stringify(sel)}); return !!e && e.getBoundingClientRect().width > 0 })()`)
+
+  try {
+    await run({ network: 'adsense', client: 'ca-pub-0000000000000000', slots: { bottom: '1111111111', sidebar: '2222222222' } }, async base => {
+      await check('desktop: a 728×90 banner above the footer and a 300×250 box beside the page, both labelled', async () => {
+        await viewport(1366, 900)
+        await goto(base + '/objects/blue-whale')
+        await waitFor(`document.querySelectorAll('.stub-ad').length === 2`)
+        assert(await filled('bottom') === '728x90', `bottom ${await filled('bottom')}`)
+        assert(await filled('sidebar') === '300x250', `sidebar ${await filled('sidebar')}`)
+        const bottom = await rect('.ad-bottom .ad-box'), side = await rect('.ad-sidebar .ad-box')
+        assert(bottom.width === 728 && bottom.height === 90, JSON.stringify(bottom))
+        assert(side.width === 300 && side.height === 250, JSON.stringify(side))
+        const labels = await evaluate(`[...document.querySelectorAll('.ad .ad-label')].map(l => l.textContent + ':' + (l.getBoundingClientRect().height > 0))`)
+        assert(labels.join() === 'Advertisement:true,Advertisement:true', labels.join())
+        const viz = await rect('.viz-section'), main = await rect('.content-main'), footer = await rect('.site-footer')
+        assert(side.top >= viz.bottom && side.left >= main.right, `sidebar overlaps: ${JSON.stringify({ side, viz, main })}`)
+        assert(bottom.top >= main.bottom && bottom.bottom <= footer.top, `banner not between content and footer: ${JSON.stringify({ bottom, main, footer })}`)
+        assert(await noOverflow(), 'overflow')
+        await fullScreenshot('ads-desktop-blue-whale')
+      })
+      await check('desktop: other pages get only the bottom banner', async () => {
+        for (const p of ['/', '/compare?items=titanic,cruise-ship', '/category/space', '/about']) {
+          await goto(base + p)
+          await waitFor(`document.querySelectorAll('.stub-ad').length === 1`)
+          assert(await filled('bottom') === '728x90' && !await evaluate(`!!document.querySelector('.ad-sidebar')`), p)
+        }
+        assert((await evaluate('document.querySelector(".footer-note").textContent')).includes('Ads are provided by Google AdSense'), 'footer note')
+      })
+      await check('phone: a 320×50 banner, no sidebar, nothing wider than the screen', async () => {
+        for (const w of [375, 320]) {
+          await viewport(w, 812, true)
+          await goto(base + '/objects/blue-whale')
+          await waitFor(`document.querySelectorAll('.stub-ad').length === 1`)
+          assert(await filled('bottom') === '320x50', `${w}: bottom ${await filled('bottom')}`)
+          assert(await filled('sidebar') === null && !await shown('.ad-sidebar'), `${w}: sidebar shown`)
+          assert(await noOverflow(), `${w}: overflow`)
+        }
+        await fullScreenshot('ads-phone-blue-whale')
+      })
+      await check('the sidebar fills when a narrow window is widened', async () => {
+        await viewport(1366, 900)
+        await waitFor(`document.querySelector('.ad-sidebar')?.dataset.adFilled === '300x250'`)
+      })
+      await check('no ad available: the boxes are removed, not left empty', async () => {
+        adsenseMode = 'unfilled'
+        await goto(base + '/objects/blue-whale')
+        await waitFor(`document.querySelectorAll('.ad').length === 0`)
+      })
+      await check('ad blocker: the boxes are removed and the page still works', async () => {
+        adsenseMode = 'blocked'
+        await goto(base + '/objects/blue-whale')
+        await waitFor(`document.querySelectorAll('.ad').length === 0`)
+        assert(await evaluate(`document.querySelectorAll('#viz-stage .stage-svg .obj').length >= 2`), 'drawing missing')
+        // the blocked script's own load error is expected; nothing else may fail
+        for (let i = problems.length - 1; i >= 0; i--) if (/googlesyndication|ERR_BLOCKED_BY_CLIENT/.test(problems[i])) problems.splice(i, 1)
+      })
+      adsenseMode = 'filled'
+    })
+    await run({ network: 'adsterra', host: 'ads.test.invalid', slots: { bottom: { '728x90': 'a'.repeat(32), '320x50': 'b'.repeat(32) }, sidebar: { '300x250': 'c'.repeat(32) } } }, async base => {
+      await check('Adsterra: banners run in sandboxed frames of the right size', async () => {
+        adFrames.length = 0
+        await viewport(1366, 900)
+        await goto(base + '/objects/blue-whale')
+        await waitFor(`document.querySelectorAll('.ad iframe').length === 2`)
+        const frames = await evaluate(`[...document.querySelectorAll('.ad iframe')].map(f => f.width + 'x' + f.height + ' ' + f.getAttribute('sandbox')).sort()`)
+        assert(frames.join('|') === '300x250 allow-scripts allow-popups allow-popups-to-escape-sandbox|728x90 allow-scripts allow-popups allow-popups-to-escape-sandbox', frames.join('|'))
+        await evaluate(`document.querySelector('.ad-bottom').scrollIntoView()`)
+        const t0 = Date.now()
+        while (adFrames.length < 2 && Date.now() - t0 < 5000) await sleep(50)
+        await sleep(300)
+        // Inside each frame: the banner settings ran (so the security policy allows
+        // them) and the banner script comes from the configured host.
+        const inside = []
+        for (const sid of adFrames) {
+          const r = await send('Runtime.evaluate', { expression: `JSON.stringify([atOptions.key[0], atOptions.width + 'x' + atOptions.height, document.scripts[1].src.replace(/[0-9a-f]{32}/, 'KEY')])`, returnByValue: true }, sid)
+          inside.push(r.result.value || r.exceptionDetails?.exception?.description)
+        }
+        const want = ['["a","728x90","https://ads.test.invalid/KEY/invoke.js"]', '["c","300x250","https://ads.test.invalid/KEY/invoke.js"]']
+        assert(inside.sort().join('|') === want.join('|'), inside.join('|') || 'no frames attached')
+        // The made-up banner host cannot load; that error is expected.
+        for (let i = problems.length - 1; i >= 0; i--) if (/ads\.test\.invalid|ERR_NAME_NOT_RESOLVED/.test(problems[i])) problems.splice(i, 1)
+      })
+    })
+  } finally {
+    await send('Target.setAutoAttach', { autoAttach: false, waitForDebuggerOnStart: false, flatten: true })
+    await send('Fetch.disable')
+    await rm(adsOut, { recursive: true, force: true })
+  }
+}
 
 // ---------------------------------------------------------------------------
 

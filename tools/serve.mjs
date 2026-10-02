@@ -2,14 +2,14 @@
 // /objects/blue-whale serves objects/blue-whale.html, *.html URLs redirect to
 // the clean URL, unknown paths get 404.html with status 404, and the headers
 // from public/_headers (including the Content-Security-Policy) are applied.
-// Usage: node tools/serve.mjs [port]
+// Usage: node tools/serve.mjs [port]   (startServer(port, dir) serves another build)
 
 import http from 'node:http'
 import { readFile, stat } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public')
+const PUBLIC = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public')
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',
   '.svg': 'image/svg+xml', '.png': 'image/png', '.json': 'application/json', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8',
@@ -19,7 +19,7 @@ async function isFile(p) {
   try { return (await stat(p)).isFile() } catch { return false }
 }
 
-async function loadHeaderRules() {
+async function loadHeaderRules(ROOT) {
   let text = ''
   try { text = await readFile(path.join(ROOT, '_headers'), 'utf8') } catch { return [] }
   const rules = []
@@ -33,8 +33,8 @@ async function loadHeaderRules() {
   return rules.map(r => ({ ...r, re: new RegExp('^' + r.pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*') + '$') }))
 }
 
-export async function startServer(port = 8788) {
-  const rules = await loadHeaderRules()
+export async function startServer(port = 8788, ROOT = PUBLIC) {
+  const rules = await loadHeaderRules(ROOT)
   const server = http.createServer(async (req, res) => {
     const url = new URL(req.url, 'http://localhost')
     let p = decodeURIComponent(url.pathname)
@@ -71,5 +71,5 @@ export async function startServer(port = 8788) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const port = Number(process.argv[2]) || 8788
   await startServer(port)
-  console.log(`Serving ${ROOT} at http://127.0.0.1:${port}`)
+  console.log(`Serving ${PUBLIC} at http://127.0.0.1:${port}`)
 }

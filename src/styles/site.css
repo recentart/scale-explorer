@@ -254,7 +254,7 @@ input[aria-invalid="true"] { border-color: var(--warn); }
 
 .content-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; margin-top: 24px; }
 @media (min-width: 1024px) {
-  .content-grid:has(> .rail:not([hidden])) { grid-template-columns: minmax(0, 1fr) 300px; }
+  .content-grid:has(> .rail) { grid-template-columns: minmax(0, 1fr) 300px; }
 }
 .content-main > section { margin-bottom: 36px; }
 .content-main > section h2 { padding-top: 6px; }
@@ -438,15 +438,22 @@ input[aria-invalid="true"] { border-color: var(--warn); }
 .footer-note { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 0.86rem; color: var(--ink-3); }
 .footer-note p { margin: 0; }
 
-/* Future ad placements stay collapsed until filled. */
-.ad-slot:empty, .rail:empty { display: none; }
+/* Ads (src/lib/ads.js): small, labelled, never over the drawings. The sidebar
+   only shows where the object page has room for a second column. */
+.ad { margin: 32px auto 0; text-align: center; }
+.ad-label { margin: 0 0 4px; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.ad-box { margin: 0 auto; max-width: 100%; overflow: hidden; }
+.ad-bottom .ad-box { min-height: 50px; }
+@media (min-width: 800px) { .ad-bottom .ad-box { min-height: 90px; } }
+.rail { display: none; }
+@media (min-width: 1024px) { .rail { display: block; } .rail .ad { margin-top: 0; } }
 
 @media (prefers-reduced-motion: no-preference) {
   .card-link, .pair-card a, .cat-card a, .btn { transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s; }
 }
 
 @media print {
-  .site-header, .site-footer, .viz-toolbar, .ladder-nav, .ladder-dots, .search { display: none !important; }
+  .site-header, .site-footer, .viz-toolbar, .ladder-nav, .ladder-dots, .search, .ad, .rail { display: none !important; }
   .ladder-step[hidden] { display: block !important; }
 }
 

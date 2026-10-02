@@ -49,10 +49,12 @@ export async function launchChrome({ port = 9333 } = {}) {
       msg.error ? reject(new Error(msg.error.message)) : resolve(msg.result)
     } else if (msg.method) for (const l of listeners) l(msg)
   }
-  const send = (method, params = {}) => new Promise((resolve, reject) => {
+  // sessionId addresses a child target (e.g. an out-of-process iframe) after
+  // Target.setAutoAttach with flatten: true; its events carry msg.sessionId.
+  const send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
     const n = ++id
     pending.set(n, { resolve, reject })
-    ws.send(JSON.stringify({ id: n, method, params }))
+    ws.send(JSON.stringify({ id: n, method, params, ...(sessionId ? { sessionId } : {}) }))
   })
   const evaluate = async expr => {
     const r = await send('Runtime.evaluate', { expression: expr, awaitPromise: true, returnByValue: true })

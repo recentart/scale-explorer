@@ -58,5 +58,14 @@
     "coronavirus",
     "mount-everest",
     "milky-way"
-  ]
+  ],
+  "ads": {
+    "network": "",
+    "client": "",
+    "host": "",
+    "slots": {
+      "bottom": "",
+      "sidebar": ""
+    }
+  }
 }

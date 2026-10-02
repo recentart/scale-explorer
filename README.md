@@ -75,11 +75,34 @@ The site is a Cloudflare Workers static-assets deployment (no Worker script). `w
 npx wrangler deploy
 ```
 
-`public/_headers` sets a strict Content-Security-Policy (`script-src 'self'`, no inline scripts or style attributes) and long-lived caching for the fingerprinted `/assets/<hash>/` folder.
+`public/_headers` sets a strict Content-Security-Policy (`script-src 'self'`, no inline scripts or style attributes) while ads are off and long-lived caching for the fingerprinted `/assets/<hash>/` folder.
 
-## Future ad placements
+## Ads
 
-There are no ads. Pages contain empty, hidden placeholders where ads could go later without a redesign: `data-ad-slot="below-visualization"`, `data-ad-slot="between-sections"`, `data-ad-slot="below-form"` and a desktop sidebar (`<aside class="rail" data-ad-slot="sidebar">`). The object-page layout switches to two columns only when the sidebar is not hidden. Any ad script will need the CSP in `build/build.mjs` widened.
+Ads are off until `"ads"` in `data/site.json` is filled in. While it is empty, the build outputs no ad markup or scripts, and the strict CSP stays. When it is filled in, two small, labelled places appear:
+
+- **bottom**: one banner above the footer on every page: 728×90, or 320×50 on narrow screens.
+- **sidebar**: one 300×250 box beside object pages, on screens 1024 px and wider only.
+
+Nothing else is ever loaded: no pop-ups, pop-unders, sticky or anchor ads, interstitials or auto ads. A slot that gets no ad, or is blocked by an ad blocker, is removed rather than left as an empty box.
+
+Google AdSense (needs a domain you own; AdSense does not accept `*.workers.dev`):
+
+```json
+"ads": { "network": "adsense", "client": "ca-pub-1234567890123456", "slots": { "bottom": "1111111111", "sidebar": "2222222222" } }
+```
+
+Create two "Display" ad units in AdSense and use their IDs as the slots. In the AdSense dashboard, leave **Auto ads** and their **overlay formats** (anchor and vignette ads) off. Turn on Google's consent message under Privacy & messaging for visitors in the EU and UK. The build writes `ads.txt` for you.
+
+Adsterra (works on `*.workers.dev`): create one Banner per size and copy each key and the script host from its code (`//<host>/<key>/invoke.js`):
+
+```json
+"ads": { "network": "adsterra", "host": "www.highperformanceformat.com", "slots": { "bottom": { "728x90": "<key>", "320x50": "<key>" }, "sidebar": { "300x250": "<key>" } } }
+```
+
+Each Adsterra banner runs in a sandboxed frame, so it cannot redirect or script the page. Don't add Adsterra's Popunder, Social Bar or Direct Link codes.
+
+Turning ads on widens the CSP to any `https:` source (ad networks load from many hosts). The footer and the About page's privacy section then name the network and link to its privacy policy. The settings are checked at build time, and `npm test` plus `node tools/e2e.mjs` cover both networks with made-up IDs and a stubbed network.
 
 ## License
 

@@ -10,6 +10,7 @@ import { sizeOf, shapeOf } from '../lib/layout.js'
 import { compareSentence, comparisonSet, phraseOf, howManyFit } from '../lib/compare.js'
 import { parseLength, formatNumber, fromBase, INPUT_UNITS, UNITS } from '../lib/units.js'
 import { formatMeasure, measureRange, midOf } from '../lib/measures.js'
+import { initAds } from './ads.js'
 
 const BY = new Map(OBJECTS.map(o => [o.slug, o]))
 const INDEX = buildIndex(OBJECTS, CATEGORIES)
@@ -597,6 +598,7 @@ function init() {
   }
   hydrateAll()
   document.documentElement.classList.add('js')
+  try { initAds() } catch (err) { console.warn('Ads failed', err) }
 }
 
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init)

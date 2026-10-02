@@ -10,6 +10,7 @@ import { pickReferences, sizeOf, shapeOf } from '../src/lib/layout.js'
 import { compareSentence, comparisonSet, adjOf, phraseOf, factorText, howManyFit } from '../src/lib/compare.js'
 import { howManyHtml } from '../src/lib/figure.js'
 import { formatNumber, UNITS } from '../src/lib/units.js'
+import { adSlot, NETWORKS } from '../src/lib/ads.js'
 
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1)
 const SMALL_WORDS = new Set(['a', 'an', 'the', 'of', 'and', 'or', 'in', 'on', 'at', 'to', 'vs'])
@@ -83,7 +84,7 @@ function footer(ctx) {
       <li><a href="${esc(ctx.site.repo)}">Source code</a></li>
     </ul></nav>
   </div>
-  <div class="wrap footer-note"><p>No accounts, cookies or tracking. Drawings are computed in your browser. Data last reviewed ${esc(humanDate(ctx.site.updated))}.</p></div>
+  <div class="wrap footer-note"><p>${ctx.ads ? `No accounts or analytics. Ads are provided by ${esc(NETWORKS[ctx.ads.network].name)}, which may use cookies (<a href="/about#a4">privacy</a>).` : 'No accounts, cookies or tracking.'} Drawings are computed in your browser. Data last reviewed ${esc(humanDate(ctx.site.updated))}.</p></div>
 </footer>`
 }
 
@@ -145,7 +146,7 @@ ${header(ctx, active)}
 <main id="main" tabindex="-1">
 ${main}
 </main>
-${footer(ctx)}
+${adSlot(ctx.ads, 'bottom')}${footer(ctx)}
 </body>
 </html>
 `
@@ -355,7 +356,6 @@ ${crumbs(ctx, trail)}
   ${vizFigure(ctx, lineup, { id: 'viz', highlight: obj.slug, chips })}
   <p class="viz-actions"><a class="btn btn-ghost" href="/compare?items=${esc(obj.slug)},${esc((refs[0] || human).slug)}">Compare ${esc(obj.name)} with something else →</a></p>
 </section>
-<div class="ad-slot" data-ad-slot="below-visualization" hidden></div>
 
 <div class="content-grid">
   <div class="content-main">
@@ -383,8 +383,6 @@ ${crumbs(ctx, trail)}
       <p class="fine">Factors compare the ${esc(headlineLabel(obj))} of ${esc(phraseOf(obj))} with each object’s own main measurement (${esc(headlineLabel(human))} for a human). Where a size varies, the factor is given as a range.</p>
     </section>
 
-    <div class="ad-slot" data-ad-slot="between-sections" hidden></div>
-
     ${full.caveats?.length ? `<section aria-labelledby="notes-h">
       <h2 id="notes-h">Notes on these figures</h2>
       <ul class="notes">${full.caveats.map(c => `<li>${esc(c)}</li>`).join('')}</ul>
@@ -395,7 +393,7 @@ ${crumbs(ctx, trail)}
       ${sourcesList(full)}
     </section>
   </div>
-  <aside class="rail" data-ad-slot="sidebar" hidden></aside>
+  ${adSlot(ctx.ads, 'sidebar') ? `<div class="rail">${adSlot(ctx.ads, 'sidebar')}</div>` : ''}
 </div>
 
 <section class="section" aria-labelledby="rel-h">
@@ -460,7 +458,6 @@ ${crumbs(ctx, trail)}
   ${vizFigure(ctx, list, { id: 'viz', chips: list })}
   ${zoomFigures(ctx, list, 'viz')}
 </section>
-<div class="ad-slot" data-ad-slot="below-visualization" hidden></div>
 <section class="section" aria-labelledby="list-h">
   <h2 id="list-h">${esc(cat.name)} from smallest to largest</h2>
   <ul class="card-grid">${list.map(o => objectCard(o)).join('')}</ul>
@@ -505,7 +502,6 @@ ${crumbs(ctx, trail)}
     <p id="you-error" class="form-error" data-you-error hidden></p>
   </div>
 </form>
-<div class="ad-slot" data-ad-slot="below-form" hidden></div>
 <section class="compare-result" aria-labelledby="result-h" data-compare-result>
   <h2 id="result-h" data-result-title>${esc(a.name)} vs ${esc(b.name)}</h2>
   <ul class="sentences" data-sentences>${[compareSentence(b, a), compareSentence(a, human), compareSentence(b, human)].map(s => `<li>${esc(s)}</li>`).join('')}</ul>
@@ -514,7 +510,6 @@ ${crumbs(ctx, trail)}
   <div data-result-zoom></div>
   <div data-result-ladder></div>
 </section>
-<div class="ad-slot" data-ad-slot="below-visualization" hidden></div>
 <section class="section" aria-labelledby="pop-h">
   <h2 id="pop-h">Popular comparisons</h2>
   <ul class="link-list">${popular}</ul>
@@ -555,7 +550,6 @@ ${crumbs(ctx, trail)}
 <section class="measure-result" aria-live="polite" data-measure-result>
   <noscript><p>Turn on JavaScript to draw your own size. Everything is calculated in your browser; nothing is sent anywhere.</p></noscript>
 </section>
-<div class="ad-slot" data-ad-slot="below-visualization" hidden></div>
 </div>`
   return layout(ctx, {
     path: '/measure',
@@ -610,6 +604,14 @@ ${sections}
   })
 }
 
+function privacyText(ctx) {
+  const local = 'All searching, comparing and drawing happens in your browser. The only thing Scale Explorer itself stores is your choice of meters or feet, kept in your browser’s local storage.'
+  if (!ctx.ads) return `<p>There are no accounts, no cookies, no analytics and no tracking. ${local}</p>`
+  const net = NETWORKS[ctx.ads.network]
+  return `<p>There are no accounts and no analytics. ${local}</p>
+<p>To pay for the site, a few small, labelled ads are shown by ${esc(net.name)}: one banner at the bottom of each page and, on wide screens, one box beside object pages. ${esc(net.name)} may use cookies and similar technology to choose ads and count views and clicks; see <a href="${esc(net.privacy)}">${esc(net.name)}’s privacy information</a>. Ad blockers work normally, and the site works the same with ads blocked.</p>`
+}
+
 export function aboutPage(ctx) {
   const trail = [['/', 'Home'], ['/about', 'About']]
   const publishers = [...new Set(ctx.objects.flatMap(o => o.sources.map(s => s.publisher)))].sort((a, b) => a.localeCompare(b))
@@ -635,7 +637,7 @@ ${crumbs(ctx, trail)}
 <section aria-labelledby="a3"><h2 id="a3">Units</h2>
 <p>Conversions use the exact international definitions: 1 foot = 0.3048 m, 1 mile = 1,609.344 m, 1 pound = 0.45359237 kg. Converted figures are rounded to the precision of the original source, so they never look more precise than the measurement they come from.</p></section>
 <section aria-labelledby="a4"><h2 id="a4">Privacy</h2>
-<p>There are no accounts, no cookies, no analytics and no tracking. All searching, comparing and drawing happens in your browser. The only thing stored is your choice of meters or feet, kept in your browser’s local storage.</p></section>
+${privacyText(ctx)}</section>
 <section aria-labelledby="a5"><h2 id="a5">Corrections</h2>
 <p>Found a figure that is wrong or out of date? Please open an issue on <a href="${esc(ctx.site.repo)}/issues">GitHub</a> with a link to a better source.</p></section>
 </div>`
